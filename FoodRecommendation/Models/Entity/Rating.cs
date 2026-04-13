@@ -13,9 +13,9 @@ public partial class Rating
 
     public byte Score { get; set; }
 
-    public string? Comment { get; set; }
+    public string Comment { get; set; }
 
-    public DateTime? CreatedAt { get; set; }
+    public DateTime CreatedAt { get; set; }
 
     public virtual Recipe Recipe { get; set; } = null!;
 

@@ -2,9 +2,10 @@
 {
     public class Constants
     {
-        public const string None = "None";
-        public const string Success = "Success";
-        public const string Error = "Error";
+        public const string None = "info";
+        public const string Success = "success";
+        public const string Error = "error";
+        public const string Warning = "warning";
     }
 
     public class Role

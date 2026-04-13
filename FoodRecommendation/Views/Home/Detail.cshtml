@@ -1,5 +1,5 @@
 ﻿@model FoodRecommendation.Models.Model.RecipeModel;
-
+@using System.Net 
 @{
     ViewData["Title"] = "Chi tiết món ăn";
 }
@@ -17,9 +17,9 @@
         <div class="col-12 col-md-3">
             <div class="ratio shadow-sm rounded overflow-hidden object-fit-cover" style="--bs-aspect-ratio: 114.28%">
                 <img src="@(string.IsNullOrEmpty(Model.ImageUrl) ? "/img/default-recipe.jpeg" : Model.ImageUrl)"
-                     alt="Recipe-Picture"
-                     class="object-fit-cover"
-                     onerror="this.onerror=null; this.src='/img/default-recipe.jpeg';">
+                alt="Recipe-Picture"
+                class="object-fit-cover"
+                onerror="this.onerror=null; this.src='/img/default-recipe.jpeg';">
             </div>
         </div>
 
@@ -28,16 +28,16 @@
 
             <div class="d-flex align-items-center mt-4">
                 <div class="rounded-circle overflow-hidden me-2 flex-shrink-0 border border-1 border-secondary shadow-sm"
-                     style="width: 35px; height: 35px; background-color: #e2e8f0;">
+                style="width: 35px; height: 35px; background-color: #e2e8f0;">
                     <img src="@(string.IsNullOrEmpty(Model.AvatarUrl) ? "/img/user-icon.png" : Model.AvatarUrl)"
-                         alt="Avatar"
-                         class="w-100 h-100 object-fit-cover"
-                         onerror="this.src='/img/user-icon.png';">
+                    alt="Avatar"
+                    class="w-100 h-100 object-fit-cover"
+                    onerror="this.src='/img/user-icon.png';">
                 </div>
                 <span class="font-medium text-dark ms-2">@Model.UserName</span>
             </div>
 
-            <p class="italic text-gray-600 border-l-4 border-gray-200 pl-4 mb-6 mt-3">@Model.DescriptionRecipes</p>
+            @* <p class="italic text-gray-600 border-l-4 border-gray-200 pl-4 mb-6 mt-3">@Model.DescriptionRecipes</p> *@
 
             <div class="d-flex gap-3 mt-auto">
                 <button class="px-4 py-2 flex items-center gap-2 btn btn-outline-orange fw-medium">
@@ -78,8 +78,18 @@
             <div class="d-flex justify-content-between align-items-center mb-4 mt-4 mt-md-0">
                 <h5 class="mb-0 text-uppercase fw-bold mb-0">Các bước thực hiện</h5>
                 <span class="text-muted">
-                    <i class="fa-regular fa-clock me-1"></i>@Model.Cooktime
+                    @{
+                        var totalMinutes = (double)(Model.Cooktime ?? 0);
+                        var time = TimeSpan.FromMinutes(totalMinutes);
+
+                        var display = time.TotalHours >= 1
+                        ? $"{(int)time.TotalHours}h" + (time.Minutes > 0 ? $" {time.Minutes}p" : "")
+                        : $"{time.Minutes} phút";
+                    }
+                    <i class="fa-regular fa-clock me-1"></i>@display
                 </span>
+
+
             </div>
 
             <div class="row">
@@ -88,7 +98,7 @@
                     <div class="d-flex mb-4">
                         <div class="flex-shrink-0">
                             <div class="d-flex align-items-center justify-content-center rounded-circle bg-orange text-white shadow-sm"
-                                 style="width: 40px; height: 40px;">
+                            style="width: 40px; height: 40px;">
                                 @item.StepNumber
                             </div>
                         </div>
@@ -101,8 +111,8 @@
                                     <div class="col-3 pe-0">
                                         <div class="ratio ratio-5x4 rounded overflow-hidden">
                                             <img src="@i"
-                                                 class="w-100 h-100 object-fit-cover"
-                                                 onerror="this.src='/img/default-recipe.jpeg';" />
+                                            class="w-100 h-100 object-fit-cover"
+                                            onerror="this.src='/img/default-recipe.jpeg';" />
                                         </div>
                                     </div>
                                 }
@@ -115,20 +125,113 @@
     </div>
 
     <hr>
-    
+
     <div class="mb-5">
         <h5 class="fw-bold mb-4">Bình luận</h5>
-        <div class="d-flex align-items-start">
+            @if (User.Identity.IsAuthenticated)
+            {
+                <div class="d-flex mb-4">
+                    <div class="flex-shrink-0">
+                        <div class="rounded-circle bg-light border me-3 overflow-hidden"
+                             style="width: 40px; height: 40px;">
+                            <img src="@(string.IsNullOrEmpty(Model.AvatarUrl) ? "/img/user-icon.png" : Model.AvatarUrl)"
+                                 alt="Avatar"
+                                 class="w-100 h-100 object-fit-cover"
+                                 onerror="this.src='/img/user-icon.png';">
+                        </div>
+                    </div>
 
-            <div class="rounded-circle bg-light border p-2 me-3"><i class="fa-solid fa-user text-muted"></i></div>
-            <div class="flex-grow-1">
-                <div class="text-warning mb-1 small"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                <div class="d-flex">
-                    <input type="text" class="form-control comment-input" placeholder="Thêm bình luận...">
-                    <button class="btn btn-link text-muted"><i class="fa-solid fa-paper-plane"></i></button>
+                <div class="flex-grow-1 ms-1">
+                    <div id="ratingError" class="text-danger small mb-1 d-none">Vui lòng chọn sao đánh giá!</div>
+
+                    <div class="star-rating mb-2" style="cursor: pointer; color: #ffc107;">
+                        <i class="fa-regular fa-star star-item" data-index="1"></i>
+                        <i class="fa-regular fa-star star-item" data-index="2"></i>
+                        <i class="fa-regular fa-star star-item" data-index="3"></i>
+                        <i class="fa-regular fa-star star-item" data-index="4"></i>
+                        <i class="fa-regular fa-star star-item" data-index="5"></i>
+                    </div>
+
+                    <form asp-controller="Home" asp-action="AddComment" method="post" id="cmtForm">
+                        @Html.AntiForgeryToken()
+                        <div class="input-group">
+                            <input type="hidden" name="RatingValue" id="RatingValue" value="0" />
+                            <input type="hidden" name="RecipeId" value="@Model.RecipeId" />
+
+                            <input type="text"
+                                   name="Comment"
+                                   id="CommentInput"
+                                   class="form-control rounded-pill py-2 shadow-none comment-input"
+                                   placeholder="Thêm bình luận...">
+                            <button type="submit" class="btn btn-link text-muted">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </div>
+                        <div id="commentError" class="text-danger small mt-1 d-none">Vui lòng nhập nội dung bình luận!</div>
+                    </form>
                 </div>
-            </div>
-        </div>
+                </div>
+            }
+            else
+            {
+                <div class="d-flex mb-4">
+                    <div class="flex-shrink-0">
+                        <div class="rounded-circle bg-light border me-3 d-flex align-items-center justify-content-center"
+                                style="width: 40px; height: 40px;">
+                            <i class="fa-solid fa-user text-muted"></i>
+                        </div>
+                    </div>
+
+                    <div class="flex-grow-1">
+                        <div class="d-flex">
+                            <input type="text"
+                                    readonly
+                                    class="form-control rounded-pill py-2 shadow-none comment-input bg-white"
+                                    placeholder="Thêm bình luận"
+                               onclick="window.location.href = '/Account/Login?returnUrl=@WebUtility.UrlEncode(Context.Request.Path + Context.Request.QueryString)';">
+                            <button class="btn btn-link text-muted"><i class="fa-solid fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+            }
+
+            @foreach(var r in Model.Ratings)
+            {
+                <div class="d-flex mb-4">
+                    <div class="flex-shrink-0">
+                        <div class="rounded-circle bg-light border me-3 overflow-hidden"
+                             style="width: 40px; height: 40px;">
+                        <img src="@(string.IsNullOrEmpty(r.AvatarUrl) ? "/img/user-icon.png" : r.AvatarUrl)"
+                                 alt="Avatar"
+                                 class="w-100 h-100 object-fit-cover"
+                                 onerror="this.src='/img/user-icon.png';">
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="flex-grow-1">
+                        <div>
+                            <b class="small">@r.UserName</b>
+                            <small class="text-muted" style="font-size: 10px;">@r.FormattedCreatedAt</small>
+                        </div>
+                        <div class="text-warning">
+                            @for (int i = 1; i <= 5; i++)
+                            {
+                                if (i <= r.Score)
+                                {
+                                    <i class="fa-solid fa-star"></i>
+                                }
+                                else
+                                {
+                                    <i class="fa-regular fa-star"></i>
+                                }
+                            }
+                        </div>
+                        <p class="mb-0 small">@r.Comment</p>
+                    </div>
+                </div>
+            }
     </div>
 
     <div>

@@ -29,6 +29,7 @@ namespace FoodRecommendation.Controllers
         }
 
         [HttpGet]
+        [AllowAnonymous]
         public IActionResult Login(string? returnUrl = null)
         {
             if (User.Identity.IsAuthenticated)
@@ -48,7 +49,7 @@ namespace FoodRecommendation.Controllers
                 TempData.Remove("ToastType");
             }
 
-            return View();
+            return View(new AccountModel());
         }
 
         [HttpPost]
@@ -62,14 +63,14 @@ namespace FoodRecommendation.Controllers
                 return View(model);
             }
 
+            ViewData["ReturnUrl"] = returnUrl;
+
             var user = await _authService.AuthenticationUser(model);
 
             if (user == null)
             {
                 ModelState.AddModelError("Email", " ");
                 ModelState.AddModelError("Password", "Email hoặc mật khẩu không chính xác!");
-
-                ViewBag.ToastMessage = "Email hoặc mật khẩu không chính xác!";
                 ViewBag.ToastType = Constants.Error;
 
                 return View(model);
@@ -84,6 +85,7 @@ namespace FoodRecommendation.Controllers
             }
             var claims = new List<Claim>
             {
+                new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString()),
                 new Claim(ClaimTypes.Name, user.Username ?? user.Email),
                 new Claim(ClaimTypes.Email, user.Email),
                 new Claim(ClaimTypes.Role, user.RoleUser ?? "User"),
@@ -97,8 +99,7 @@ namespace FoodRecommendation.Controllers
             CookieAuthenticationDefaults.AuthenticationScheme,
             principal);
 
-            // Điều hướng
-            if (!string.IsNullOrEmpty(returnUrl))
+            if (!string.IsNullOrEmpty(returnUrl) && Url.IsLocalUrl(returnUrl))
             {
                 return Redirect(returnUrl);
             }

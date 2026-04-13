@@ -16,7 +16,7 @@
 <div class="row justify-content-center mt-5">
    <div class="col-md-8">
        <form action="/Search" method="get" class="d-flex gap-0 2">
-            <div class="input-group  search-box flex-nowrap shadow-sm">
+            <div class="input-group search-box flex-nowrap shadow-sm">
                <span class="input-group-text bg-white ps-3">
                     <i class="fa-solid fa-magnifying-glass text-muted"></i>
                </span>
@@ -64,7 +64,15 @@
                                     @if (item.Cooktime > 0)
                                     {
                                         <span class="text-muted small">
-                                            <i class="fa-regular fa-clock me-1"></i>@item.Cooktime'
+                                            @{
+                                                var totalMinutes = (double)(item.Cooktime ?? 0);
+                                                var time = TimeSpan.FromMinutes(totalMinutes);
+
+                                                var display = time.TotalHours >= 1
+                                                ? $"{(int)time.TotalHours}h" + (time.Minutes > 0 ? $" {time.Minutes}p" : "")
+                                                : $"{time.Minutes} phút";
+                                            }
+                                            <i class="fa-regular fa-clock me-1"></i>@display
                                         </span>
                                     }
                                 </div>

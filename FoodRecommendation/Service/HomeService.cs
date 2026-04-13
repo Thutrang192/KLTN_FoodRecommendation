@@ -45,8 +45,9 @@ namespace FoodRecommendation.Service
                 .Include(r => r.User)
                 .Include(r => r.Ingredients)
                 .Include (r => r.Steps.OrderBy(s => s.StepNumber))
-                .ThenInclude(s => s.StepImages)
-                .Include(r => r.Ratings.OrderByDescending(rt => rt.CreatedAt).Take(5))
+                    .ThenInclude(s => s.StepImages)
+                .Include(r => r.Ratings)                    
+                    .ThenInclude(rt => rt.User)
                 .FirstOrDefaultAsync(r => r.RecipeId == recipeId && (r.IsDeleted == null || r.IsDeleted == false));
 
             if (recipe == null) return null;
@@ -78,11 +79,15 @@ namespace FoodRecommendation.Service
                 }).ToList(),
 
                 // Chỉ có 5 rating mới nhất
-                Ratings = recipe.Ratings.Select(rt => new RatingModel
+                Ratings = recipe.Ratings
+                    .OrderByDescending(rt => rt.CreatedAt)
+                    .Take(5)
+                    .Select(rt => new RatingModel
                 {
                     RatingId = rt.RatingId,        
                     UserId = rt.UserId,
-                    UserName = rt.User?.Username,
+                    UserName = rt.User?.Username ?? "Người dùng",
+                    AvatarUrl = rt.User?.AvatarUrl ?? "",
                     Score = rt.Score,             
                     Comment = rt.Comment,
                     CreatedAt = rt.CreatedAt
@@ -110,6 +115,19 @@ namespace FoodRecommendation.Service
                 .FirstOrDefaultAsync();
 
             return model;
+        }
+
+        public async Task<bool> AddRating(Rating rating)
+        {
+            // Kiểm tra xem đã đánh giá chưa
+            var isExisted = await _context.Ratings.AnyAsync(r =>
+                r.UserId == rating.UserId && r.RecipeId == rating.RecipeId);
+
+            if (isExisted) return false;
+
+            await _context.Ratings.AddAsync(rating);
+            await _context.SaveChangesAsync();
+            return true;
         }
     }
 }

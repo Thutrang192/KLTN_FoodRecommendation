@@ -1,9 +1,9 @@
-﻿using System.Diagnostics;
-using FoodRecommendation.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using FoodRecommendation.Service;
 using System.Security.Claims;
+using FoodRecommendation.Models.Entity;
+using FoodRecommendation.Constant;
 
 namespace FoodRecommendation.Controllers
 {
@@ -47,6 +47,51 @@ namespace FoodRecommendation.Controllers
         public IActionResult CreateRecipe()
         {
             return View();
+        }
+
+        [HttpPost]
+        [Authorize] 
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> AddComment(int RecipeId, int RatingValue, string Comment)
+        {
+            if (RatingValue <= 0 || string.IsNullOrWhiteSpace(Comment))
+            {
+                TempData["ToastMessage"] = "Dữ liệu không hợp lệ!";
+                TempData["ToastType"] = Constants.Error;
+                return RedirectToAction("Detail", new { id = RecipeId });
+            }
+
+            var userIdStr = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (string.IsNullOrEmpty(userIdStr)) return Unauthorized();
+
+            int userId = int.Parse(userIdStr);
+
+            var newRating = new Rating
+            {
+                RecipeId = RecipeId,
+                UserId = userId,
+                Score = (byte)RatingValue,
+                Comment = Comment, 
+                CreatedAt = DateTime.Now
+            };
+
+            // 3. Lưu vào Database
+            var result = await _homeService.AddRating(newRating);
+
+            if (result)
+            {
+                TempData["ToastMessage"] = "Đăng bình luận thành công!";
+                TempData["ToastType"] = Constants.Success;
+
+                return RedirectToAction("Detail", new { id = RecipeId });
+            } else
+            {
+                TempData["ToastMessage"] = "Bạn đã đánh giá món ăn này rồi!";
+                TempData["ToastType"] = Constants.Warning;
+            }
+
+            return RedirectToAction("Detail", "Home", new { id = RecipeId });
+
         }
 
         public IActionResult Noti()
