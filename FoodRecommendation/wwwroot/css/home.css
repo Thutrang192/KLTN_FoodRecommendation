@@ -1,0 +1,49 @@
+﻿/* Bo góc cho toàn bộ nhóm input */
+.search-box {
+    border-radius: 20px; /* Tăng chỉ số này để bo tròn hơn */
+    overflow: hidden; /* Đảm bảo nội dung bên trong không tràn khỏi góc bo */
+    border: 1px solid #ced4da;
+}
+
+.search-box .input-group-text,
+.search-box .form-control {
+    border: none; /* Bỏ viền mặc định của từng phần tử để dùng viền của search-box */
+    border-radius: 0;
+}
+
+    .search-box .form-control:focus {
+        box-shadow: none;
+    }
+
+/* Tùy chỉnh nút bấm cho đồng bộ độ bo */
+.btn-custom {
+    border-radius: 50px !important;
+    background-color: #f5a65b;
+    color: white;
+    padding: 0 30px;
+}
+
+.multiline-ellipsis {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Số dòng muốn hiển thị */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* Đảm bảo chiều cao ổn định để các Card đều nhau */
+    min-height: 3em; /* Tương đương 2 dòng chữ */
+    line-height: 1.5em;
+}
+
+.ratio-5x4 {
+    --bs-aspect-ratio: 80%;
+}
+
+.min-w-fit-custom {
+    min-width: fit-content;
+}
+
+@media print {
+    .print-contents {
+        display: contents;
+    }
+}

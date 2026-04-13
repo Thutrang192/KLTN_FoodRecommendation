@@ -1,0 +1,139 @@
+﻿@model FoodRecommendation.Models.Model.RecipeModel;
+
+@{
+    ViewData["Title"] = "Chi tiết món ăn";
+}
+
+@{
+    Layout = "_Layout";
+}
+
+@section Scripts {
+    <link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
+}
+
+<div class="ms-0 me-5">
+    <div class="row mb-5 mt-4">
+        <div class="col-12 col-md-3">
+            <div class="ratio shadow-sm rounded overflow-hidden object-fit-cover" style="--bs-aspect-ratio: 114.28%">
+                <img src="@(string.IsNullOrEmpty(Model.ImageUrl) ? "/img/default-recipe.jpeg" : Model.ImageUrl)"
+                     alt="Recipe-Picture"
+                     class="object-fit-cover"
+                     onerror="this.onerror=null; this.src='/img/default-recipe.jpeg';">
+            </div>
+        </div>
+
+        <div class="col-12 col-md-9 d-flex flex-column">
+            <h2 class="fw-bold m-0">@Model.Title</h2>
+
+            <div class="d-flex align-items-center mt-4">
+                <div class="rounded-circle overflow-hidden me-2 flex-shrink-0 border border-1 border-secondary shadow-sm"
+                     style="width: 35px; height: 35px; background-color: #e2e8f0;">
+                    <img src="@(string.IsNullOrEmpty(Model.AvatarUrl) ? "/img/user-icon.png" : Model.AvatarUrl)"
+                         alt="Avatar"
+                         class="w-100 h-100 object-fit-cover"
+                         onerror="this.src='/img/user-icon.png';">
+                </div>
+                <span class="font-medium text-dark ms-2">@Model.UserName</span>
+            </div>
+
+            <p class="italic text-gray-600 border-l-4 border-gray-200 pl-4 mb-6 mt-3">@Model.DescriptionRecipes</p>
+
+            <div class="d-flex gap-3 mt-auto">
+                <button class="px-4 py-2 flex items-center gap-2 btn btn-outline-orange fw-medium">
+                    <i class="fa-regular fa-bookmark"></i> Lưu
+                </button>
+                <button class="px-4 py-2 flex items-center gap-2 btn btn-outline-orange fw-medium">
+                    <i class="fa-regular fa-flag"></i> Báo cáo món
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+            <div class="d-flex justify-content-between align-items-center">
+                <h5 class="mb-0 text-uppercase fw-bold"><i class="fa-solid fa-utensils me-2"></i> Nguyên liệu</h5>
+
+                <span class="text-muted">
+                    <i class="fa-regular fa-user me-1"></i>@Model.Serving
+                </span>
+            </div>
+
+            <div class="mt-3 card">
+                <ul class="list-group list-group-flush">
+                    @foreach (var item in Model.Ingredients)
+                    {
+                        <li class="list-group-item d-flex align-items-center">
+                            <span class="me-1">@item.Quantity</span>
+                            <span>@item.IngredientsText</span>
+                        </li>
+                    }
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-9">
+            <div class="d-flex justify-content-between align-items-center mb-4 mt-4 mt-md-0">
+                <h5 class="mb-0 text-uppercase fw-bold mb-0">Các bước thực hiện</h5>
+                <span class="text-muted">
+                    <i class="fa-regular fa-clock me-1"></i>@Model.Cooktime
+                </span>
+            </div>
+
+            <div class="row">
+                @foreach (var item in Model.Steps)
+                {
+                    <div class="d-flex mb-4">
+                        <div class="flex-shrink-0">
+                            <div class="d-flex align-items-center justify-content-center rounded-circle bg-orange text-white shadow-sm"
+                                 style="width: 40px; height: 40px;">
+                                @item.StepNumber
+                            </div>
+                        </div>
+
+                        <div class="flex-grow-1 ms-3">
+                            <p class="mb-3">@item.StepText</p>
+                            <div class="row">
+                                @foreach (var i in item.ImgUrl)
+                                {
+                                    <div class="col-3 pe-0">
+                                        <div class="ratio ratio-5x4 rounded overflow-hidden">
+                                            <img src="@i"
+                                                 class="w-100 h-100 object-fit-cover"
+                                                 onerror="this.src='/img/default-recipe.jpeg';" />
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    
+    <div class="mb-5">
+        <h5 class="fw-bold mb-4">Bình luận</h5>
+        <div class="d-flex align-items-start">
+
+            <div class="rounded-circle bg-light border p-2 me-3"><i class="fa-solid fa-user text-muted"></i></div>
+            <div class="flex-grow-1">
+                <div class="text-warning mb-1 small"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                <div class="d-flex">
+                    <input type="text" class="form-control comment-input" placeholder="Thêm bình luận...">
+                    <button class="btn btn-link text-muted"><i class="fa-solid fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h5 class="fw-bold mb-4">Có thể bạn cũng thích</h5>
+
+    </div>
+</div>
+

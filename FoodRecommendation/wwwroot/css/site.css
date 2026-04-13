@@ -1,0 +1,151 @@
+﻿html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.btn-orange {
+    background-color: rgb(255 153 51);
+    color: #FFFFFF;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 4px 14px 0 rgba(255, 153, 51, 0.39);
+}
+.bg-orange {
+    background-color: rgb(255 153 51);
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.btn-orange:active {
+    transform: translateY(1px);
+}
+
+.text-custom {
+    color: rgb(255 153 51) !important;
+}
+
+/* Thêm vào site.css */
+.hide-arrow::after {
+    display: none !important;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+.btn-outline-orange {
+    color: rgb(255 153 51);
+    border-color: rgb(255 153 51);
+    background-color: transparent;
+    transition: all 0.3s ease;
+    border-width: 2px;
+    border-radius: 25px;
+}
+
+.validation-message-wrapper {
+    min-height: 1.5em; /* Khoảng cách cố định cho 1 dòng lỗi */
+    margin-top: 2px; /* Khoảng cách nhỏ giữa input và lỗi */
+}
+
+.validation-message-wrapper:empty {
+    min-height: 1.5em;
+}
+
+/* 1. Đặt màu mặc định cho cả icon và chữ */
+.dropdown-item {
+    color: #808080 !important; 
+    display: flex !important;
+    align-items: center;
+    text-decoration: none !important;
+}
+
+/* Ép icon đi theo màu cha */
+.dropdown-item i {
+    color: inherit !important;
+    width: 25px;
+    text-align: center;
+}
+
+/* Ép màu khi hover */
+.dropdown-item:hover {
+    background-color: #f8fafc !important;
+    color: rgb(255 153 51) !important; 
+}
+
+.dropdown-item.active,
+.dropdown-item.active:focus,
+.dropdown-item.active:hover {
+    color: rgb(255 153 51) !important;
+    background-color: #fff7ed !important; /* nền cam nhạt */
+    font-weight: 600 !important;
+}
+
+.dropdown-item.active i,
+.dropdown-item.active:focus i,
+.dropdown-item.active:hover i {
+    color: rgb(255 153 51) !important;
+}
+
+/* Sidebar style */
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100; /* Nằm trên các thành phần khác */
+    padding: 48px 0 0; /* Khoảng cách phía trên */
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    height: 100vh;
+    overflow-y: auto; /* Cho phép cuộn bên trong sidebar nếu quá dài */
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #333;
+    padding: 10px 20px;
+}
+
+.nav-link:hover {
+    color: #f38121; /* Màu cam giống Chef */
+    background-color: #f8f9fa;
+}
+
+.nav-link i {
+    width: 20px;
+    text-align: center;
+}
+
+/* Điều chỉnh lề cho nội dung chính để không bị sidebar đè lên */
+@media (min-width: 768px) {
+    main {
+        margin-left: 250px; /* Độ rộng của sidebar */
+    }
+}
+
+.text-secondary {
+    font-size: 20px;
+    font-weight: 900;
+}
