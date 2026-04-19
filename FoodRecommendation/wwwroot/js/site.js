@@ -1,4 +1,5 @@
-﻿let selectedRating = 0;
+﻿// ----------------- RATING ---------------------
+let selectedRating = 0;
 
 // 1. Logic chọn sao
 document.querySelectorAll('.star-item').forEach(star => {
@@ -58,3 +59,9 @@ document.getElementById('cmtForm').addEventListener('submit', function (e) {
         e.preventDefault();
     }
 });
+
+function loadRelatedRecipes(recipeId) {
+    $.get('/Home/GetRelatedRecipe/' + recipeId, function (data) {
+        $('#related-recipes-container').html(data);
+    });
+}

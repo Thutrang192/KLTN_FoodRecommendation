@@ -35,6 +35,7 @@ builder.Services.AddAuthentication(options =>
     options.Cookie.Name = "FoodRecCookie"; // Đặt tên để tránh trùng lặp
 }); builder.Services.AddAuthorization();
 
+builder.Services.AddHttpClient();
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

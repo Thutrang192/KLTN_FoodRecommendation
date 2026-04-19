@@ -10,6 +10,29 @@
 
 @section Scripts {
     <link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
+    <script>
+        $(document).ready(function () {
+            var currentRecipeId = @Model.RecipeId;
+            console.log("1. Bắt đầu gọi Ajax cho RecipeId:", currentRecipeId);
+
+            $.ajax({
+                url: '/Home/GetRelatedRecipe',
+                type: 'GET',
+                data: {id: currentRecipeId},
+                success: function (data) {
+                    console.log("2. Kết nối C# thành công. Dữ liệu nhận được:", data);
+                    $('#related-recipes-container').html(data);
+                },
+                error: function (xhr, status, error) {
+                    console.error("2. Lỗi Ajax!");
+                    console.error("Trạng thái:", status);
+                    console.error("Nội dung lỗi:", xhr.responseText);
+                    $('#related-recipes-container').html('<p class="text-danger">Lỗi Ajax: ' + error + '</p>');
+                }
+            });
+        });
+    </script>
+
 }
 
 <div class="ms-0 me-5">
@@ -127,7 +150,7 @@
     <hr>
 
     <div class="mb-5">
-        <h5 class="fw-bold mb-4">Bình luận</h5>
+        <h5 class="fw-bold mb-4">Bình luận (@Model.Ratings.Count())</h5>
             @if (User.Identity.IsAuthenticated)
             {
                 <div class="d-flex mb-4">
@@ -213,7 +236,7 @@
                     <div class="flex-grow-1">
                         <div>
                             <b class="small">@r.UserName</b>
-                            <small class="text-muted" style="font-size: 10px;">@r.FormattedCreatedAt</small>
+                            <small class="text-muted" style="font-size: 12px;">@r.FormattedCreatedAt</small>
                         </div>
                         <div class="text-warning">
                             @for (int i = 1; i <= 5; i++)
@@ -234,9 +257,10 @@
             }
     </div>
 
-    <div>
-        <h5 class="fw-bold mb-4">Có thể bạn cũng thích</h5>
-
+    <h5 class="fw-bold mb-4">Có thể bạn cũng thích</h5>
+    <div id="related-recipes-container">
+        <p class="text-muted small italic">Đang tìm kiếm món ăn tương tự...</p>
     </div>
+  
 </div>
 

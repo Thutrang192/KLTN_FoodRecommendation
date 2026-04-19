@@ -4,6 +4,9 @@ using FoodRecommendation.Service;
 using System.Security.Claims;
 using FoodRecommendation.Models.Entity;
 using FoodRecommendation.Constant;
+using System.Net.Http.Json;
+using Microsoft.EntityFrameworkCore;
+using FoodRecommendation.Models.Model;
 
 namespace FoodRecommendation.Controllers
 {
@@ -11,11 +14,20 @@ namespace FoodRecommendation.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IHomeService _homeService;
+        private readonly HttpClient _httpClient;
+        private readonly FoodContext _db;
 
-        public HomeController(ILogger<HomeController> logger, IHomeService homeService)
+        public HomeController(
+            ILogger<HomeController> logger, 
+            IHomeService homeService,
+            IHttpClientFactory httpClientFactory,
+            FoodContext db)
         {
             _logger = logger;
             _homeService = homeService;
+            _httpClient = httpClientFactory.CreateClient();
+            _db = db;
+            _httpClient.Timeout = TimeSpan.FromSeconds(30);
         }
 
         [ResponseCache(NoStore = true, Location = ResponseCacheLocation.None)]
@@ -104,7 +116,63 @@ namespace FoodRecommendation.Controllers
             return View();
         }
 
+        [HttpGet]
+        public async Task<IActionResult> GetRelatedRecipe(int id)
+        {
+            try
+            {
+                var pythonUrl = $"http://127.0.0.1:8000/recommend/{id}";
+                var response = await _httpClient.GetAsync(pythonUrl);
 
+                if (response.IsSuccessStatusCode)
+                {
+                    var relatedIds = await response.Content.ReadFromJsonAsync<List<int>>();
+                    
+                    if (relatedIds != null && relatedIds.Count > 0)
+                    {
+
+                        var recipesFromDb = await _db.Recipes
+                            .Include(r => r.User)
+                            .Where(r => relatedIds.Contains(r.RecipeId) && r.IsDeleted == false)
+                            .ToListAsync();
+
+                        var sortedRelatedRecipes = relatedIds
+                        .Select(rid => recipesFromDb.FirstOrDefault(r => r.RecipeId == rid))
+                        .Where(r => r != null)
+                        .Select(r => new RecipeModel()
+                        {
+                            RecipeId = r.RecipeId,
+                            Title = r.Title,
+                            ImageUrl = r.ImageUrl,
+                            Cooktime = r.Cooktime,
+                            Serving = r.Serving,
+                            UserName = r.User?.Username,
+                            RoleUser = r.User?.RoleUser,
+                        });
+
+                        return PartialView("_RelatedRecipePartial", sortedRelatedRecipes);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Luu y: Co ID tu Python nhung khong tim thay mon nao trong DB (Check IsDeleted hoac RecipeId).");
+                    }    
+                }
+                else
+                {
+                    Console.WriteLine($"LOI: Python tra ve StatusCode = {response.StatusCode}");
+                }    
+            }
+            catch (HttpRequestException ex)
+            {
+                Console.WriteLine($"Lỗi kết nối Python API: {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Lỗi hệ thống: {ex.Message}");
+            }
+
+            return Content("<p>Không có món ăn gợi ý phù hợp.</p>");
+        }
        
     }
 }

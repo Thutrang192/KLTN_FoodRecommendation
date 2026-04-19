@@ -129,5 +129,33 @@ namespace FoodRecommendation.Service
             await _context.SaveChangesAsync();
             return true;
         }
+
+        public async Task<bool> ToggleSaveRecipe(int recipeId, int userId)
+        {
+            var existingSave = await _context.Collections
+                .FirstOrDefaultAsync(s => s.RecipeId == recipeId && s.UserId == userId);
+
+            if (existingSave != null)
+            {
+                // 2. Nếu đã tồn tại -> Xóa (Unsave)
+                _context.Collections.Remove(existingSave);
+                await _context.SaveChangesAsync();
+                return false; 
+            }
+            else
+            {
+                var newSave = new Collection
+                {
+                    RecipeId = recipeId,
+                    UserId = userId,
+                    CreatedAt = DateTime.Now 
+                };
+
+                await _context.Collections.AddAsync(newSave);
+                await _context.SaveChangesAsync();
+                return true; 
+            }
+        }
+
     }
 }

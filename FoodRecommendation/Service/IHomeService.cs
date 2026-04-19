@@ -10,5 +10,6 @@ namespace FoodRecommendation.Service
         //Task<List<RecipeModel>> GetRecipeAll(Expression<Func<Recipe, bool>> expression);
         Task<RecipeModel> GetRecipeById(int recipeId, int userId);
         Task<bool> AddRating(Rating rating);
+        Task<bool> ToggleSaveRecipe(int recipeId, int userId);
     }
 }

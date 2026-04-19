@@ -17,14 +17,6 @@
             Delete = 3,
         }
 
-        public enum GenderEnum : int
-        {
-            None = 0, // Chọn giới tính
-            Male = 1, // Nam
-            Female = 2, // Nữ
-            Other = 3, // Khác
-        }
-
         public enum RecipeStatus : int
         {
             Archived = 0, // Luu tru

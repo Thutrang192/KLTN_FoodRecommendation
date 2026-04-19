@@ -33,5 +33,9 @@ namespace FoodRecommendation.Models.Model
         public List<RatingModel> Ratings { get; set; } = new();
         public RatingModel? YourRating { get; set; }
         public int TotalRatings { get; set; }
+
+        // trang thai
+        public bool IsSaved { get; set; }
+        public bool IsReported { get; set; }
     }
 }
