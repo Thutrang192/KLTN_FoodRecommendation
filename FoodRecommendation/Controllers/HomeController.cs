@@ -26,6 +26,7 @@ namespace FoodRecommendation.Controllers
             _logger = logger;
             _homeService = homeService;
             _httpClient = httpClientFactory.CreateClient();
+            _httpClient.BaseAddress = new Uri("http://127.0.0.1:8000/");
             _db = db;
             _httpClient.Timeout = TimeSpan.FromSeconds(30);
         }
@@ -141,7 +142,7 @@ namespace FoodRecommendation.Controllers
         {
             try
             {
-                var pythonUrl = $"http://127.0.0.1:8000/recommend/{id}";
+                var pythonUrl = $"/recommend/{id}";
                 var response = await _httpClient.GetAsync(pythonUrl);
 
                 if (response.IsSuccessStatusCode)

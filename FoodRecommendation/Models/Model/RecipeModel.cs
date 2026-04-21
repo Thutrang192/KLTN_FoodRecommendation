@@ -44,5 +44,8 @@ namespace FoodRecommendation.Models.Model
         public bool IsReported { get; set; }
         public bool IsDeleted { get; set; }
         public bool IsVerified { get; set; }
+
+        // mon lien quan
+        public List<int> RelatedRecipeIds { get; set; } = new();
     }
 }
