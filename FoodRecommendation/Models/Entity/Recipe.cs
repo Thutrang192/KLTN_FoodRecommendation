@@ -27,6 +27,8 @@ public partial class Recipe
 
     public bool? IsDeleted { get; set; }
 
+    public bool IsVerified { get; set; }
+
     public virtual ICollection<Collection> Collections { get; set; } = new List<Collection>();
 
     public virtual ICollection<Ingredient> Ingredients { get; set; } = new List<Ingredient>();

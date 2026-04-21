@@ -48,10 +48,17 @@ namespace FoodRecommendation.Service
                     .ThenInclude(s => s.StepImages)
                 .Include(r => r.Ratings)                    
                     .ThenInclude(rt => rt.User)
-                .FirstOrDefaultAsync(r => r.RecipeId == recipeId && (r.IsDeleted == null || r.IsDeleted == false));
+                .FirstOrDefaultAsync(r => r.RecipeId == recipeId);
 
             if (recipe == null) return null;
 
+            var totalRatings = await _context.Ratings
+                .CountAsync(rt => rt.RecipeId == recipeId);
+
+            var isReported = UserId > 0
+                && await _context.Reports
+                    .AnyAsync(rp => rp.RecipeId == recipeId && rp.UserId == UserId);
+            
             var model = new RecipeModel
             {
                 RecipeId = recipe.RecipeId,
@@ -61,7 +68,8 @@ namespace FoodRecommendation.Service
                 VideoUrl = recipe.VideoUrl,
                 Cooktime = recipe.Cooktime,
                 Serving = recipe.Serving,
-                CreatedAt = recipe.CreatedAt,
+                CreatedAt = recipe.CreatedAt ?? DateTime.Now,
+                RoleUser = recipe.User.RoleUser,
 
                 UserName = recipe.User?.Username ?? "Ẩn danh",
 
@@ -83,23 +91,24 @@ namespace FoodRecommendation.Service
                     .OrderByDescending(rt => rt.CreatedAt)
                     .Take(5)
                     .Select(rt => new RatingModel
-                {
-                    RatingId = rt.RatingId,        
-                    UserId = rt.UserId,
-                    UserName = rt.User?.Username ?? "Người dùng",
-                    AvatarUrl = rt.User?.AvatarUrl ?? "",
-                    Score = rt.Score,             
-                    Comment = rt.Comment,
-                    CreatedAt = rt.CreatedAt
-                }).ToList(),
+                    {
+                        RatingId = rt.RatingId,
+                        UserId = rt.UserId,
+                        UserName = rt.User?.Username ?? "Người dùng",
+                        AvatarUrl = rt.User?.AvatarUrl ?? "",
+                        Score = rt.Score,
+                        Comment = rt.Comment,
+                        CreatedAt = rt.CreatedAt
+                    }).ToList(),
 
                 // Tính điểm trung bình
                 AvgScore = recipe.Ratings.Any()
                            ? (decimal)recipe.Ratings.Average(rt => rt.Score)
-                           : 0,
+                           : 0m,
 
-                TotalRatings = await _context.Ratings.CountAsync(rt => rt.RecipeId == recipeId)
-            };
+                TotalRatings = totalRatings,
+                IsReported = isReported
+            }; 
 
             // Lấy rating của người dùng hiện tại 
             model.YourRating = await _context.Ratings
@@ -155,6 +164,76 @@ namespace FoodRecommendation.Service
                 await _context.SaveChangesAsync();
                 return true; 
             }
+        }
+
+        public async Task<bool> SubmitReport(int userId, int recipeId, string reason)
+        {
+            try
+            {
+                var existingReport = await _context.Reports
+                    .AnyAsync(r => r.UserId == userId && r.RecipeId == recipeId);
+
+                if (existingReport)
+                {
+                    return false; 
+                }
+
+                // kiểm tra trạng thái Verified
+                var recipe = await _context.Recipes.FindAsync(recipeId);
+                if (recipe == null) return false;
+
+                var report = new Report
+                {
+                    UserId = userId,
+                    RecipeId = recipeId,
+                    Reason = reason,
+                    StatusReport = "Pending",
+                    CreatedAt = DateTime.Now
+                };
+
+                if (recipe.IsVerified == true)
+                {
+                    report.StatusReport = "Processed"; 
+                    report.ResolvedAt = DateTime.Now;
+
+                    var noti = new Notification
+                    {
+                        UserId = userId,
+                        RecipeId = recipeId,
+                        Content = $"Cảm ơn bạn, món ăn '{recipe.Title}' đã được đội ngũ quản trị kiểm duyệt và xác nhận an toàn trước đó.",
+                        CreatedAt = DateTime.Now
+                    };
+                    _context.Notifications.Add(noti);
+                }
+
+                _context.Reports.Add(report);
+
+                await _context.SaveChangesAsync();
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
+        public async Task<List<NotiModel>> GetNoti(int userId)
+        {
+            var result =  await _context.Notifications
+                .Where(n => n.UserId == userId)
+                .OrderByDescending(n => n.CreatedAt)
+                .Select(n => new NotiModel
+                {
+                    RecipeId = n.RecipeId,
+                    Title = n.Recipe.Title,
+                    ImageUrl = n.Recipe.ImageUrl,
+                    Content = n.Content,
+                    CreatedAt = n.CreatedAt ?? DateTime.Now,
+                })
+                .ToListAsync();
+
+            return result ?? new List<NotiModel>();
         }
 
     }

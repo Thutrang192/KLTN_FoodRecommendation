@@ -20,14 +20,14 @@
                 type: 'GET',
                 data: {id: currentRecipeId},
                 success: function (data) {
-                    console.log("2. Kết nối C# thành công. Dữ liệu nhận được:", data);
-                    $('#related-recipes-container').html(data);
-                },
+                console.log("2. Kết nối C# thành công. Dữ liệu nhận được:", data);
+                $('#related-recipes-container').html(data);
+            },
                 error: function (xhr, status, error) {
-                    console.error("2. Lỗi Ajax!");
-                    console.error("Trạng thái:", status);
-                    console.error("Nội dung lỗi:", xhr.responseText);
-                    $('#related-recipes-container').html('<p class="text-danger">Lỗi Ajax: ' + error + '</p>');
+                console.error("2. Lỗi Ajax!");
+                console.error("Trạng thái:", status);
+                console.error("Nội dung lỗi:", xhr.responseText);
+                $('#related-recipes-container').html('<p class="text-danger">Lỗi Ajax: ' + error + '</p>');
                 }
             });
         });
@@ -57,7 +57,15 @@
                     class="w-100 h-100 object-fit-cover"
                     onerror="this.src='/img/user-icon.png';">
                 </div>
-                <span class="font-medium text-dark ms-2">@Model.UserName</span>
+
+                @* <div style="color: red; font-size: 10px;"> *@
+                @*     DEBUG: RoleUser = "@Model.RoleUser" | IsAdmin = @string.Equals(Model.RoleUser, "Admin", StringComparison.OrdinalIgnoreCase) *@
+                @* </div> *@
+
+                <span class="font-medium text-dark ms-2">
+                    @(string.Equals(Model.RoleUser, "Admin", StringComparison.OrdinalIgnoreCase) ? "Chef" : Model.UserName)
+                </span>
+                
             </div>
 
             @* <p class="italic text-gray-600 border-l-4 border-gray-200 pl-4 mb-6 mt-3">@Model.DescriptionRecipes</p> *@
@@ -66,9 +74,24 @@
                 <button class="px-4 py-2 flex items-center gap-2 btn btn-outline-orange fw-medium">
                     <i class="fa-regular fa-bookmark"></i> Lưu
                 </button>
-                <button class="px-4 py-2 flex items-center gap-2 btn btn-outline-orange fw-medium">
-                    <i class="fa-regular fa-flag"></i> Báo cáo món
-                </button>
+
+                <div id="report-container">
+                    @if (Model.IsReported)
+                    {
+                        <button class="px-4 py-2 flex items-center gap-2 btn btn-outline-orange fw-medium" disabled title="Bạn đã báo cáo món này">
+                            <i class="fa-solid fa-flag"></i> Đã báo cáo món
+                        </button>
+                    }
+                    else 
+                    {
+                        <button id="btn-report-trigger"
+                            class="px-4 py-2 flex items-center gap-2 btn btn-outline-orange fw-medium"
+                            data-recipe-id="@Model.RecipeId"
+                            data-logged-in="@(User.Identity?.IsAuthenticated == true ? "true" : "false")">
+                            <i class="fa-regular fa-flag"></i> Báo cáo món
+                        </button>
+                    }
+                </div>
             </div>
         </div>
     </div>
@@ -101,15 +124,18 @@
             <div class="d-flex justify-content-between align-items-center mb-4 mt-4 mt-md-0">
                 <h5 class="mb-0 text-uppercase fw-bold mb-0">Các bước thực hiện</h5>
                 <span class="text-muted">
-                    @{
+                    @if (Model.Cooktime > 0)
+                    {
                         var totalMinutes = (double)(Model.Cooktime ?? 0);
                         var time = TimeSpan.FromMinutes(totalMinutes);
 
                         var display = time.TotalHours >= 1
                         ? $"{(int)time.TotalHours}h" + (time.Minutes > 0 ? $" {time.Minutes}p" : "")
                         : $"{time.Minutes} phút";
+                        
+                        <i class="fa-regular fa-clock me-1"></i>@display
                     }
-                    <i class="fa-regular fa-clock me-1"></i>@display
+                    
                 </span>
 
 
@@ -262,5 +288,54 @@
         <p class="text-muted small italic">Đang tìm kiếm món ăn tương tự...</p>
     </div>
   
+</div>
+
+<div class="modal fade" id="reportModal" tabindex="-1" aria-labelledby="reportModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-center w-100" id="reportModalLabel">
+                    <i class="fa-solid fa-triangle-exclamation text-danger"></i> Báo cáo món ăn
+                </h5>
+            </div>
+
+            <div class="modal-body">
+                <p class="text-muted small">Vui lòng cho chúng tôi biết vấn đề bạn gặp phải với món ăn này.</p>
+
+                <div class="mb-3">
+                    <div id="reportOptions">
+                        <div class="form-check mb-2">
+                            <input class="form-check-input report-checkbox" type="checkbox" value="Nội dung hình ảnh phản cảm" id="reason1">
+                            <label class="form-check-label" for="reason1">Nội dung hình ảnh phản cảm</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input report-checkbox" type="checkbox" value="Công thức sai lệch/Không thực tế" id="reason2">
+                            <label class="form-check-label" for="reason2">Công thức sai lệch/Không thực tế</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input report-checkbox" type="checkbox" value="Ngôn từ thù địch, kích động" id="reason3">
+                            <label class="form-check-label" for="reason3">Ngôn từ thù địch, kích động</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input report-checkbox" type="checkbox" value="Lý do khác" id="reasonOther">
+                            <label class="form-check-label" for="reasonOther">Lý do khác...</label>
+                        </div>
+
+                        <textarea class="form-control mt-2 d-none" id="otherReasonText" rows="2" placeholder="Nhập chi tiết lý do khác..."></textarea>
+                    </div>
+
+                    <div id="reportError" class="text-danger small mt-2 d-none">Vui lòng chọn một lý do để gửi báo cáo.</div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Hủy bỏ</button>
+                <button type="button" id="btnSendReport" class="btn btn-danger px-4">
+                    Gửi báo cáo
+                </button>
+            </div>
+        </div>
+
+    </div>
 </div>
 

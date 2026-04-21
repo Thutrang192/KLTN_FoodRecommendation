@@ -1,0 +1,135 @@
+﻿@using FoodRecommendation.Models.Model;
+@model IEnumerable<RecipeModel>
+
+@{
+    ViewData["Title"] = "Quản lý món ăn";
+}
+
+@{
+    Layout = "_Layout";
+}
+
+<div class="container mt-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2>Quản lý món ăn (@Model.Count())</h2>
+        <form asp-action="Recipe" method="get" class="d-flex gap-2 mb-3">
+            <div class="input-group">
+                <input type="text" name="search" class="form-control" placeholder="Tìm tên công thức..." value="@Context.Request.Query["search"]">
+                <select name="status" class="form-select" style="max-width: 170px;">
+                    <option value="all" selected="@(Context.Request.Query["status"] == "all")">Tất cả</option>
+                    <option value="active" selected="@(Context.Request.Query["status"] == "active")">Đang hoạt động</option>
+                    <option value="hidden" selected="@(Context.Request.Query["status"] == "hidden")">Đã ẩn</option>
+                </select>
+                <button type="submit" class="btn btn-primary">Tìm</button>
+                <a asp-action="Recipe" class="btn btn-outline-secondary">Làm mới</a>
+            </div>
+        </form>
+    </div>
+
+    <div class="card shadow">
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Hình ảnh</th>
+                        <th>Tiêu đề</th>
+                        <th>Ngày tạo</th>
+                        <th>Trạng thái</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+
+                <tbody id="recipeTableBody">
+                    @{
+                        int i = 1;
+                    }
+                    @if (Model != null && Model.Any())
+                    {
+                        foreach (var recipe in Model)
+                        {
+                            <tr>
+                                <td>@(i++)</td>
+                                <td>
+                                    <img src="@(string.IsNullOrEmpty(recipe.ImageUrl) ? "/img/default-recipe.jpeg" : recipe.ImageUrl)"
+                                         width="70" class="rounded shadow-sm">
+                                </td>
+                                <td class="fw-bold">@recipe.Title</td>
+                                <td class="text-nowrap">@recipe.FormattedCreatedAt</td>
+                                <td>
+                                    <span id="status-@recipe.RecipeId"
+                                          class="badge p-sm-2 @(recipe.IsDeleted == false ? "bg-success" : "bg-secondary")"
+                                          style="cursor: pointer"
+                                          onclick="toggleStatus(@recipe.RecipeId, @recipe.IsDeleted.ToString().ToLower(), @(recipe.TotalReport > 0 ? "true" : "false"))">
+                                        @(recipe.IsDeleted == false ? "Đang hoạt động" : "Đã ẩn")
+                                    </span>
+
+                                    @* @if (recipe.IsDeleted == true && (recipe.IsVerified == false || recipe.IsVerified == null)) *@
+                                    @* { *@
+                                    @*     <p class="text-danger fw-bold" style="font-size: 0.7rem;"> *@
+                                    @*         <i class="bi bi-exclamation-triangle"></i> Bị ẩn do vi phạm *@
+                                    @*     </p> *@
+                                    @* } *@
+                                </td>
+
+                                <td>
+                                    <a asp-controller="Home" asp-action="Detail" asp-route-id="@recipe.RecipeId" class="btn btn-sm btn-outline-orange">Xem chi tiết</a>
+                                </td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="6" class="text-center">Không tìm thấy công thức nào.</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script>
+    async function toggleStatus(id, isDeletedParam, hasReportParam) {
+        const isDeleted = (isDeletedParam === true || isDeletedParam === 'true');
+        const hasReport = (hasReportParam === true || hasReportParam === 'true');
+
+        let confirmMsg = "";
+        
+        if (isDeleted) {
+            if (hasReport)
+            {
+                confirmMsg = "CẢNH BÁO: Món ăn này đang bị ẩn do vi phạm.\n\n" +
+                             "Sau khi mở lại, hệ thống sẽ gửi thông báo giải trình cho những người đã báo cáo.\n" +
+                             "Bạn chắc chắn muốn hiện lại?";
+            } else {
+                confirmMsg = "Xác nhận hiển thị lại món ăn này";
+            }
+        } else {
+            confirmMsg = "Bạn có chắc chắn muốn ẩn món ăn này?";
+        }
+
+        if (!confirm(confirmMsg)) return;
+
+        const url = isDeleted ? '/Admin/RestoreRecipe' : '/Admin/HideRecipe';
+
+        try {
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(id)
+            });
+
+            if (response.ok) {
+                location.reload();
+            } else {
+                const errText = await response.text();
+                alert("Lỗi xử lý yêu cầu: " + errText);
+            }
+        } catch (err) {
+            console.error(err);
+            alert("Không thể kết nối máy chủ.");
+        }
+    }
+</script>

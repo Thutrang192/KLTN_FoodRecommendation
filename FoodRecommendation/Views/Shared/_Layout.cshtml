@@ -49,7 +49,7 @@
                 {
                     <div class="d-flex align-items-center ms-auto">
 
-                        <a class="nav-link px-2 py-2 position-relative" asp-controller="Home" asp-action="Noti">
+                        <a class="nav-link px-2 py-2 position-relative" asp-controller="Home" asp-action="Notifications">
                             <i class="far fa-bell fs-5 text-dark"></i>
                             <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger p-1"></span>
                         </a>
@@ -141,13 +141,13 @@
                             </a>
                         </li>
 
-                        <li class="nav-item">
+                        @* <li class="nav-item"> *@
 
-                            <a class="dropdown-item @GetActiveClass("Home", "CreateRecipe")"
-                               asp-area="" asp-controller="Home" asp-action="CreateRecipe">
-                                <i class="fa fa-book me-2"></i> Viết công thức
-                            </a>
-                        </li>
+                        @*     <a class="dropdown-item @GetActiveClass("Home", "CreateRecipe")" *@
+                        @*        asp-area="" asp-controller="Home" asp-action="CreateRecipe"> *@
+                        @*         <i class="fa fa-book me-2"></i> Viết công thức *@
+                        @*     </a> *@
+                        @* </li> *@
                         
                     </ul>
 
@@ -160,22 +160,22 @@
                                 <i class="fa fa-bookmark me-2"></i> Món đã lưu
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="dropdown-item" href="#">
-                                <i class="fa fa-user me-2"></i> Món của tôi
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="dropdown-item" href="#">
-                                <i class="fa fa-check-square me-2"></i> Đã lên sóng
-                            </a>
-                        </li>
+                        @* <li class="nav-item"> *@
+                        @*     <a class="dropdown-item" href="#"> *@
+                        @*         <i class="fa fa-user me-2"></i> Món của tôi *@
+                        @*     </a> *@
+                        @* </li> *@
+                        @* <li class="nav-item"> *@
+                        @*     <a class="dropdown-item" href="#"> *@
+                        @*         <i class="fa fa-check-square me-2"></i> Đã lên sóng *@
+                        @*     </a> *@
+                        @* </li> *@
                     </ul>
 
                     @if (User.IsInRole("Admin"))
                     {
                         <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase text-custom">
-                            <span>Quản trị</span>
+                            <span>Quản trị viên</span>
                         </h6>
                         <ul class="nav flex-column mb-2">
                             <li class="nav-item">
@@ -183,13 +183,17 @@
                                     <i class="fa fa-user me-2"></i> Người dùng
                                 </a>
                             </li>
+
                             <li class="nav-item">
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item @GetActiveClass("Admin", "Recipe")"
+                                    asp-area="" asp-controller="Admin" asp-action="Recipe">
                                     <i class="fa fa-utensils me-2"></i> Món ăn
                                 </a>
                             </li>
+
                             <li class="nav-item">
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item @GetActiveClass("Admin", "Report")" 
+                                    asp-area="" asp-controller="Admin" asp-action="Report">
                                     <i class="fa fa-flag me-2"></i> Báo cáo
                                 </a>
                             </li>
@@ -218,20 +222,12 @@
     
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    
     <script src="~/js/site.js" asp-append-version="true"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     
     @await RenderSectionAsync("Scripts", required: false)
 
-    <script>
-        window.addEventListener('pageshow', function (event) {
-            // Nếu trang được lấy từ bộ nhớ đệm (Back button)
-            if (event.persisted || (window.performance && window.performance.navigation.type === 2)) {
-                // Tải lại trang để Server render lại giao diện đúng (Ẩn/Hiện nút Login)
-                window.location.reload();
-            }
-        });
-    </script>
+    <!-- Script SweetAlert2 và Toast -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script>
@@ -256,6 +252,16 @@
                     icon: type || 'info', 
                     title: message
                 });
+            }
+        });
+    </script>
+
+    <script>
+        window.addEventListener('pageshow', function (event) {
+            // Nếu trang được lấy từ bộ nhớ đệm (Back button)
+            if (event.persisted || (window.performance && window.performance.navigation.type === 2)) {
+                // Tải lại trang để Server render lại giao diện đúng (Ẩn/Hiện nút Login)
+                window.location.reload();
             }
         });
     </script>

@@ -55,6 +55,26 @@ namespace FoodRecommendation.Controllers
             return View(model);
         }
 
+        [HttpPost]
+        public async Task<IActionResult> ReportRecipe(int recipeId, string reason)
+        {
+            if (!User.Identity.IsAuthenticated)
+            {
+                return Json(new { success = false, redirectUrl = Url.Action("Login", "Account") });
+            }
+
+            var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
+
+            var result = await _homeService.SubmitReport(userId, recipeId, reason);
+
+            if (result)
+            {
+                return Json(new { success = true, message = "Báo cáo thành công!" });
+            }
+
+            return Json(new { success = false, message = "Bạn đã báo cáo món này rồi." });
+        }
+
         [Authorize]
         public IActionResult CreateRecipe()
         {
@@ -173,6 +193,27 @@ namespace FoodRecommendation.Controllers
 
             return Content("<p>Không có món ăn gợi ý phù hợp.</p>");
         }
-       
+
+        [HttpGet]
+        public async Task<IActionResult> Notifications()
+        {
+            var userIdClaim = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (string.IsNullOrEmpty(userIdClaim))
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
+            int userId = int.Parse(userIdClaim);
+
+            var notifications = await _homeService.GetNoti(userId);
+            
+            if (notifications == null)
+            {
+                notifications = new List<NotiModel>();
+            }
+
+            return View(notifications);
+        }
+
     }
 }

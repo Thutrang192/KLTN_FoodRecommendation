@@ -100,6 +100,8 @@ public partial class FoodContext : DbContext
                 .HasForeignKey(d => d.UserId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_Notifications_User");
+
+            
         });
 
         modelBuilder.Entity<Rating>(entity =>
@@ -136,6 +138,9 @@ public partial class FoodContext : DbContext
             entity.HasOne(d => d.User).WithMany(p => p.Recipes)
                 .HasForeignKey(d => d.UserId)
                 .HasConstraintName("FK__Recipes__UserId__48CFD27E");
+            entity.Property(e => e.IsVerified)
+              .HasColumnName("IsVerified")
+              .HasDefaultValue(false);
         });
 
         modelBuilder.Entity<Report>(entity =>

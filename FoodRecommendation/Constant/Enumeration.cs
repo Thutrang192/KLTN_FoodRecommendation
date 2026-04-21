@@ -22,8 +22,6 @@
             Archived = 0, // Luu tru
             Pending = 1, // Chờ duyệt
             Approved = 2, // Duyệt
-            Rejected = 3 // Từ Chối
-
         }
 
 

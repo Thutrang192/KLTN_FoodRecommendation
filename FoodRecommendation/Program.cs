@@ -17,6 +17,7 @@ builder.Services.AddDbContext<FoodContext>(options =>
 
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IHomeService, HomeService>();
+builder.Services.AddScoped<IAdminService, AdminService>();
 builder.Services.AddScoped<DbSeeder>();                    
 builder.Services.AddScoped(typeof(IBaseService<>), typeof(BaseService<>)); 
 builder.Services.AddSession();

@@ -13,7 +13,8 @@ namespace FoodRecommendation.Models.Model
         public string? VideoUrl { get; set; }
         public int? Cooktime { get; set; }
         public int? Serving { get; set; }
-        public DateTime? CreatedAt { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public string FormattedCreatedAt => CreatedAt.ToString("dd/MM/yyyy HH:mm") ?? "";
 
         [NotMapped]
         public decimal AvgScore { get; set; }
@@ -34,8 +35,14 @@ namespace FoodRecommendation.Models.Model
         public RatingModel? YourRating { get; set; }
         public int TotalRatings { get; set; }
 
+        // report
+        public List<ReportModel> Reports { get; set; }
+        public int TotalReport { get; set; }
+
         // trang thai
         public bool IsSaved { get; set; }
         public bool IsReported { get; set; }
+        public bool IsDeleted { get; set; }
+        public bool IsVerified { get; set; }
     }
 }
