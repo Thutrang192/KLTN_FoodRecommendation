@@ -1,0 +1,6609 @@
+﻿IngredientId,RecipeId,IngredientName,Quantity
+1,1,cà rốt,2 củ
+2,1,khoai tây,2 củ
+3,1,bí đỏ,1 miếng
+4,1,thịt heo,150 g
+5,1,hành lá,1 cây
+6,1,muối,1 ít
+7,1,bột ngọt,1 ít
+8,2,dứa,1/2 Quả
+9,2,tỏi,3 tép
+10,2,ớt,1/2 quả
+11,2,sả,2 cây
+12,2,Mắm nêm,1 chai
+13,2,đường,3 Thìa
+14,3,tép,300 g
+15,3,thịt heo,100 g
+16,3,hành lá,30 g
+17,3,Gia vị,
+19,5,đùi gà,1 cái
+20,5,sa tế,1 mcf
+21,5,hạt nêm,1/2 mcf
+22,5,tiêu,1/2 mcf
+34,7,thịt heo,300 g
+35,7,rong biển,2 gói
+36,7,cơm,2 chén
+37,7,Gia vị,
+41,9,trứng gà,2 cái
+42,9,sữa  (1 bịch),220 ml
+43,9,đường,2 muỗng cafe
+44,10,rau mầm cải ngọt (hoặc loại nào tùy thích),100 gr
+45,10,cà chua,100 gr
+46,10,"táo (hoặc các loại quả khác: dâu , mận ...)",1 trái
+47,10,trứng gà,1 quả
+48,10,trứng cút,10 quả
+49,10,chanh dây ( chanh leo ),100 gr
+50,11,đậu hũ,2 miếng
+51,11,rau răm,1 ít
+52,11,Dầu ăn,
+53,12,nấm bào ngư,150 gr
+54,12,cà chua,2 quả
+55,12,hạt nêm,1 muỗng cà phê
+56,12,muối,1 ít
+57,12,đường,1 ít
+58,12,hành lá,1 ít
+59,13,bắp ngọt,1 trái
+60,13,tóp mỡ,Ít
+61,13,trứng gà,2 trái
+62,13,hành lá,10 g
+63,13,Nước mắm,
+64,14,cá bớp,500 gr
+65,14,rau muống,1 nắm
+66,14,bắp chuối,1 nắm
+67,14,kèo nèo,1 nắm
+68,14,cà chua,1 trái
+69,14,rau nhút,1 nắm
+70,14,"rau ngổ , ngò gai",1 ít
+71,14,me,1 vắt
+72,14,tỏi,1 tbsp
+73,14,ớt,3-4 lát
+74,14,"Gia vị: muối, đường, nước mắm",
+75,15,rau cải xanh / cải đắng,1 bó
+76,15,tôm ,150 gr
+77,15,"gia vị: hành tím, muối, bột ngọt",
+78,16,Thịt bò,200 g
+79,16,(200g) Su hào,1 củ
+80,16,(50g) Cà rốt,1/2 củ
+81,16,Nấm mèo,5 g
+82,16,Hành lá,2 nhánh
+83,16,Bột bắp,1 thìa cà phê
+84,16,Tỏi,3 tép
+85,16,Dầu ăn,1 thìa canh
+86,16,Nước mắm,1 thìa canh
+87,16,Dầu hào,1 thìa canh
+88,16,Tiêu,1/4 thìa cà phê
+89,17,cá nục,3 con
+90,17,Dầu ăn,
+91,18,đuôi heo,1 cái
+92,18,khoai môn,1 củ
+93,18,ngò rí,
+94,18,Gia vị,
+95,19,Ức gà,500 gr
+96,19,Nấm hương,4 tai
+97,19,đậu hũ,30 gr
+98,19,"rau củ: bắp, đậu hà lan , cà rốt,…",100 gr
+99,19,Hành lá ,1 tbsp
+100,19,Xì dầu,2 muỗng
+101,19,Rượu nấu ăn (hoặc mirin ),1 muỗng
+102,19,xì dầu,1/2 muỗng
+103,19,Tiêu,1/2 muỗng
+104,19,Bột bắp / bột khoai tây,2 muỗng
+105,19,Muối,1 ít
+106,19,Dầu hào,1 muỗng
+107,19,Dầu ăn,1 ít
+108,20,Sườn heo,700-800 gr
+109,20,Bột bắp,2 thìa ăn phở
+110,20,tinh bột ngô,1 thìa ăn phở
+111,20,hạt nêm,1/2 thìa ăn phở
+112,20,rượu nấu ăn,1/2 thìa ăn phở
+113,20,trứng gà,1 quả
+114,20,tiêu,Xíu
+115,20,Bột baking soda,1 tcf
+116,20,xì dầu,1 thìa ăn phở
+117,20,dầu hào,1 thìa ăn phở
+118,20,đường,1/2 tcf
+119,20,hành tây,1/2 củ
+120,20,tỏi,1 củ
+121,20,khoai lang,1/2 củ
+122,21,củ cải,500 g
+123,21,trứng gà,3 quả
+124,21,"Hành lá , hành củ , rau mùi , tiêu, gia vị",
+125,22,bột gạo,50 g
+126,22,bột mì,25 g
+127,22,bột năng,25 g
+128,22,đậu xanh,50 g
+129,22,thịt ba chỉ,1 miếng
+130,22,tỏi,2 tép
+131,22,nước mắm,3 mc
+132,22,bột ngọt,1/2 mcf
+133,22,đường,1 mc
+134,23,bò,300 gr
+135,23,táo,1 trái
+136,23,hành tây,1/4 củ
+137,23,nấm hương,4 cái
+138,23,xì dầu,1 mc
+140,23,đường,1/2 mcf
+141,23,hủ tiếu ,2 vắt
+142,23,Giá,
+143,23,"tỏi, muối, bột ngọt",
+144,24,bóng cá chay,100 g
+145,24,nước mắm,2 muỗng canh
+146,24,đường,1 muỗng canh
+147,24,nước lọc,2 muỗng canh
+148,24,mè rang,20 g
+149,24,Chanh,
+150,24,Ớt,
+151,24,Dưa leo,
+152,25,cá cơm trắng,100 g
+153,25,rau dền,1 bó
+154,25,gừng,1 miếng
+155,25,Gia vị,
+156,26,Đậu cô ve,200 g
+157,26,Cà chua,2 quả
+158,26,Bắp,200 g
+159,26,Thịt bò,100 g
+160,26,Hành,1 củ
+161,26,Dầu ăn,1 muỗng canh
+162,26,Muối,1/2 muỗng cà phê
+163,26,Nước mắm,1 muỗng cà phê
+164,26,Hạt nêm,1/2 muỗng cà phê
+165,27,Gà,"1,5 kg"
+166,27,Sả,6 cây
+167,27,ớt,4 trái
+168,27,Hành tây,1 củ (100g)
+169,27,Nước mắm,3 muỗng canh
+170,27,Đường,1 muỗng canh
+171,27,Tương ớt,2 muỗng canh
+172,27,Dầu ăn,2 muỗng canh
+173,27,dầu hào,2 muỗng canh
+174,27,tỏi,1 củ
+175,27,hành tím,3 củ
+176,28,tôm,1.6 kg
+177,28,muối (nếu thích),1 mcf
+178,29,Măng củ ,500 g
+179,29,Nấm rơm hoặc 50 gr nấm rơm khô,150 g
+180,29,Củ ngưu bàng ,100 g
+181,29,Muối,1 thìa cà phê
+182,29,Hạt nêm,1 thìa canh
+183,29,Rau mùi,
+184,30,bí xanh,300 gr
+185,30,cua,100 gr
+186,30,"Gia vị: muối, hành tím",
+187,30,hành lá,1 muỗng canh
+188,31,Cá cờ,300 g
+189,31,Tiêu xanh,10 g
+190,31,Hành tím,1 củ
+191,31,Tỏi,2 tép
+192,31,Nước mắm,2 muỗng canh
+193,31,Đường,1 muỗng cà phê
+194,31,Nước màu,1 muỗng cà phê
+195,31,Dầu ăn,1 muỗng canh
+196,31,Ớt,1 trái
+197,32,mực,600 gr
+198,32,cần tây,1 bó
+199,32,thơm,1/2 trái
+200,32,cà chua,3 trái
+202,33,Cải rổ,200 g
+203,33,Nấm mèo,10 g
+204,33,(hoặc poro: 1 nhánh) Hành tím,1 củ
+205,33,(nếu dùng) Tỏi,2 tép
+206,33,Nước tương,1.5 muỗng canh
+207,33,Dầu ăn,1 muỗng canh
+208,33,Dầu mè,1 muỗng cà phê
+209,33,Muối,1/4 muỗng cà phê
+210,33,Tiêu,1/4 muỗng cà phê
+212,34,cà rốt,1 củ
+213,34,bắp,1/2 trái
+214,34,đậu que,250 g
+215,34,cơm nguội,700 g
+216,34,dầu ăn,5 ml
+217,34,"Gia vị (muối, bột ngọt)",
+218,35,Nui,50 g
+219,35,Thịt heo,100 g
+220,35,(50g) Cà rốt,1/2 củ
+221,35,hành tím,
+222,35,Hành lá,2 nhánh
+223,35,Nước hầm xương,600 ml
+224,35,Dầu ăn,1 muỗng cà phê
+225,35,Nước mắm,1 muỗng cà phê
+226,35,Muối,1/4 muỗng cà phê
+227,36,Bột mì,50 g
+228,36,Nước,50 ml
+229,36,Bắp cải,200 g
+230,36,Trứng gà,2 quả
+231,36,Cá ngừ đóng hộp,1 hộp (khoảng 80g)
+232,36,Tôm,50 g
+233,36,Sốt okonomiyaki,30 g
+234,36,Mayonnaise,20 g
+235,36,Cá ngừ,5 g
+236,37,cá nục,1 kg
+237,37,nước mắm,50 ml
+238,37,muối,10 gr
+239,37,mì chính,5 gr
+240,37,tiêu,5 gr
+241,37,đường,20 gr
+243,37,cà chua,3 quả
+244,38,cá chim,1 con
+245,38,thịt ba chỉ,250 gr
+246,38,tôm,100 gr
+247,38,Nước mắm,
+248,38,"Rau sống , dưa leo",
+249,38,Bánh tráng cuốn,
+250,39,thịt ba chỉ,500 gr
+251,39,lá mắc mật,40
+255,39,mắm tôm,1 chén
+256,39,ớt,1 quả
+257,39,Gia vị,
+258,40,Củ cải,200 g
+259,40,Thịt heo,150 g
+260,40,Muối,1/4 muỗng cà phê
+261,40,Nước mắm,1 muỗng canh
+262,40,Đường,1/2 muỗng cà phê
+263,40,nước màu thốt nốt,1/2 muỗng cà phê
+264,40,Dầu ăn,1 muỗng canh
+265,40,Tiêu,1/4 muỗng cà phê
+266,41,cá ( loại nào cũng được),2 con
+267,41,hành tây,1 củ
+268,41,gừng,1 miếng
+269,41,hành lá,30 g
+270,41,Gia vị,
+271,42,Rau bồ ngót,
+272,42,"Tôm , mực",
+273,42,"Hành tím , tỏi , Hành lá",
+274,42,"Gia vị: đường, muối, dầu ăn, tiêu ,…",
+275,43,thịt heo xay,350
+276,43,giò sống,100 gr
+277,43,nước mắm,1 mcf
+278,43,hạt nêm,1 mcf
+279,43,bột ngọt,1 xíu
+280,43,đường,2 mcf
+281,43,dầu hào,1 mc
+282,43,bột tỏi,1 mcf
+283,43,bột hành,1 mcf
+284,43,tiêu,1 xíu
+285,44,đậu hũ,
+286,44,Dầu ăn,
+287,44,muối,Xíu
+288,45,đuôi heo,500 g
+289,45,củ sen,300 g
+290,45,hạt sen,200 g
+291,45,"Hành lá , rau mùi",
+292,46,nếp Thái,150 g
+293,46,thịt gà,80 g
+294,46,nấm đông cô,2 cái
+295,46,Lạp xưởng,1/2 cây
+296,46,xá xíu,40 g
+297,46,dầu ăn,1 muỗng canh
+298,46,nước tương,1 muỗng cà phê
+299,46,hành lá,1 nhánh
+300,46,muối,1/4 muỗng cà phê
+301,47,thịt heo (lựa phần nạc mỡ xen kẽ),500 gram
+302,47,hành tây,1 củ
+303,47,hành tím,2-3 củ
+304,47,baking soda,1 tbsp
+305,47,sữa đặc,2 tbsp
+306,47,muối,2 tsp
+307,47,hạt nêm,2 tsp
+308,47,tiêu,2 tsp
+309,48,Cá trắm,1 kg
+310,48,thịt ba chỉ,300 g
+312,49,thịt cá,800 g
+313,49,thì là,50 g
+314,49,bột năng,30 g
+315,49,"mì chính , hạt tiêu",
+316,50,Cá cơm,
+317,50,Nước mắm,
+319,50,đường,Chút
+320,51,giò heo,1/2 cái
+321,51,thơm,1 trái
+323,51,hành lá,20 g
+324,51,Gia vị,
+325,52,chân gà,10 cái
+326,52,cà chua,3 trái
+327,52,Ngò rí,
+328,52,hành tím,5 củ
+329,52,Gia vị,
+330,53,măng,1 kg
+331,53,Thịt xay,300 g
+332,53,Nấm hương,50 g
+333,53,Mộc nhĩ,50 g
+334,53,"hành , dầu hào, mắm, mì chính , dầu ăn",
+335,53,Trứng,2 quả
+339,55,cá cơm,300 g
+340,55,Bột chiên giòn,
+341,55,gừng,1 miếng
+342,55,Gia vị,
+343,56,thịt heo,300 g
+344,56,khóm,1/2 trái
+345,56,đường cát,4 mcf
+346,56,muối,1/4mcf
+347,56,bột ngọt,1/2mcf
+348,56,tiêu,1/2mcf
+349,56,nước mắm,2mc
+350,57,Bột mì,100 g
+351,57,bột bắp,10 gr
+352,57,Bơ,30 g
+353,57,Sữa ,60 ml
+354,57,Trứng gà,1 quả
+357,57,Đường xay,15 g
+360,58,cá rô phi,1 con
+361,58,Muối,1 thìa cà phê
+362,58,Thì là,10 g
+363,58,Cải con,50 g
+364,58,Rau cần nước,100 g
+365,58,Bún ,400 g
+366,58,Bột chiên giòn,50 g
+367,58,Dấm bỗng,2 thìa canh
+368,58,Nước mắm,1 thìa canh
+369,58,Đường,1 thìa cà phê
+370,58,Bột hành,1 thìa cà phê
+371,58,Bột nghệ,1 thìa cà phê
+372,58,Cà chua,2 quả (150 g)
+373,58,Nghệ ,1 nhánh (10 g)
+374,58,(15g) Hành tím,3 củ
+375,58,(30g) Gừng,1 củ
+376,58,chả cá,160 gr
+377,59,thịt ba chỉ,300 g
+378,59,cá cơm,150 g
+379,59,thơm,1/4 trái
+380,59,hành tím,1 mc
+381,59,hành lá,20 g
+382,59,Gia vị,
+383,60,Gà,500 gr
+384,60,bột mì,150 gr
+385,60,bột bắp,80 gr
+386,60,"Hạt nêm , muối, tiêu, hành tím, đường",
+387,61,miến,50 gram
+388,61,nấm hương / đông cô  loại to,5-6 tai
+389,61,nấm đùi gà,2 cây
+390,61,cải mèo,1 cây
+391,61,cà rốt,1 nửa củ
+392,61,hành lá,1 nắm
+393,61,dầu hào,2 thìa
+394,61,xì dầu,1 thìa
+395,61,dầu ăn,1 thìa
+396,61,dầu mè,1/ 2 thìa
+397,61,hành,1 củ
+398,62,bột mì,80 g
+399,62,bột khoai tây,80 g
+400,62,nước,170g
+402,62,dầu ăn,1 mc
+403,62,chả tôm,150g
+404,62,thịt heo xay,150g
+405,62,ngò rí,2 tép
+406,62,bột nêm,1/2mcf
+407,62,tiêu,1/4 mcf
+408,62,trứng (nếu có),1/2mc
+410,63,tôm,150 gr
+411,63,bột bánh bèo,
+412,63,bột gạo,160 gr
+413,63,bột năng,40 gr
+414,63,muối,1/2 muỗng cafe
+415,63,dầu ăn,1 muỗng canh
+416,63,nước lọc,250 gr
+417,63,nước sôi,250 gr
+419,64,Đậu nành lên men natto,1 hộp
+420,64,trứng,1 quả
+423,65,cá bớp,2 khúc
+424,65,thịt ba chỉ,150 g
+425,65,cà chua,2 trái
+426,65,Hành lá,
+427,65,Gia vị,
+428,66,cá khoai,300 gram
+429,66,rau ngon,1/2 mớ
+430,66,thìa là,1 nắm
+431,66,bột nghệ,1 tí
+432,66,hành,2 củ
+433,66,tỏi,1 tép
+434,66,gừng,1 nhánh
+435,66,nước mắm,2 thìa
+436,66,dầu ăn,1/2 thìa
+437,67,cá hồi,1 khúc (200 gr)
+438,67,cam ( cam Úc),1/2 quả
+439,67,muối,1 chút xíu
+440,67,tỏi,1 tsp
+441,67,bơ,1 tbsp
+442,68,đậu rồng,250 g
+443,68,thịt bò,200 g
+444,69,thịt heo xay,300 g
+445,69,giò sống,100 g
+447,69,nấm đông cô,20 g
+448,69,mỡ,1 muỗng canh
+449,69,muối,1 muỗng cf
+450,69,dầu mè,2 muỗng cf
+451,69,tiêu,1 muỗng cf
+452,69,tương cà,4 muỗng canh
+453,69,nước,2 chén
+454,69,bột bắp,1 muỗng canh
+455,69,Gia vị,
+456,70,thịt heo,250 g
+457,70,lá lốt,10 g
+458,70,dầu hào,1 muỗng
+459,70,muối,1 ít
+460,70,tiêu xay,1 ít
+461,70,bột ngọt,1 ít
+462,71,trám,100 g
+463,71,thịt heo xay,100 g
+464,71,cơm nguội,2 bát con
+465,71,"Gia vị, hành",
+466,72,thịt bò,500 g
+467,72,Đậu trắng,50 g
+468,72,Đậu đỏ,50 g
+469,72,Đậu ngự,50 g
+470,72,Đậu mắt ngọc,50 g
+471,72,Đậu Hà Lan,50 g
+472,72,Cà rốt,1 củ (100g)
+473,72,Khoai tây,1 củ (100g)
+474,72,Nước dừa,1000 ml
+475,72,Cà chua,
+476,72,Hành tây,1/2 củ (50g)
+477,72,Tiêu,1/2 thìa cà phê
+478,72,"Gia vị (muối, đường, hạt nêm)",
+479,73,cá cơm,1 vỉ
+480,73,gừng,1 miếng
+481,73,tỏi,1 mc
+482,73,nước mắm,1/2 chén
+483,73,Gia vị,
+484,74,"tempeh ngũ đậu ,",100 gr
+485,74,nấm,100 gr
+486,74,cà chua,2 trái
+487,75,cá Lóc,700 gam
+488,75,bầu,200 gam
+489,75,nấm rơm,150 gam
+490,75,gạo,130 gam
+491,75,hành tây,1 củ
+492,75,hành tím,3 củ
+493,75,tỏi,1 tbsp
+494,75,gừng,20 gam
+495,75,hành phi,100 gam
+496,75,hành lá,50 gam
+497,75,đường,1/2 tbsp
+498,75,muối,1/2 tsp
+499,75,hạt nêm,1 tbsp
+500,75,bột ngọt,1.5 tsp
+501,75,tiêu,3 tsp
+502,75,nước mắm,2 tbsp
+503,75,dầu ăn,2 tbsp
+504,76,thịt bò,150 gr
+505,76,khoa tây,500 gr
+506,76,dầu ăn,100 gr
+507,76,tỏi,3 tép
+508,76,củ hành tím,4
+509,76,dầu hào,2 muỗng cafe
+510,76,hạt nêm,1 muỗng cafe
+511,76,đường,1 muỗng cafe
+512,76,tiêu,1/2 muỗng cafe
+513,77,Su su,2 trái
+514,77,Thịt heo xay,100 g
+515,77,Muối,1/2 muỗng cà phê
+516,77,Tiêu,1/3 muỗng cà phê
+517,77,Nước mắm,1 muỗng cà phê
+518,77,Dầu ăn,1 muỗng canh
+519,77,Tỏi,1 muỗng cà phê
+520,78,nấm sò,1 kg
+521,78,Bột nêm ngưu bàng,1 thìa cafe
+522,78,nước tương,1 thìa cafe
+523,79,hạt sen,100 g
+524,79,mướp,2 quả
+525,79,nấm đùi gà,2 cây
+526,79,"Hành lá, gia vị",
+527,80,giò heo,1 chiếc
+528,80,mắm tôm,1 thìa canh
+529,80,riềng,100 g
+530,80,mẻ,3 thìa canh
+531,80,hành,1 củ
+532,80,tỏi,3 nhánh
+533,80,nước dừa,
+534,80,Gia vị,
+535,81,thịt ba chỉ,500 g
+536,81,gừng,1 mẩu
+537,81,hành,
+538,81,giấm,2 mc
+539,81,muối,1 mcf
+541,82,cánh gà,500 gam
+542,82,nấm đông cô,12 cái
+543,82,gừng,10 gam
+544,82,dầu mè,1 tbsp
+545,82,dầu ăn,2 tbsp
+546,82,muối,1/2 tsp
+548,82,hạt nêm,1/2 tsp
+549,82,bột ngọt,1/4 tsp
+550,82,đường phèn,1 tsp
+551,82,tiêu,1 tbsp
+552,82,rượu,1/2 tbsp
+553,83,Thịt bò,300 g
+554,83,Rau tần ô,500 g
+555,83,(  nhỏ) Tỏi,3 tép
+556,83,Dầu ăn,1 muỗng canh
+557,83,Dầu hào,1 muỗng cà phê
+558,83,Nước tương,1 muỗng cà phê
+559,83,Đường,1 muỗng cà phê
+561,84,cá rô phi,500 g
+562,84,thịt heo xay,200 g
+563,84,mộc nhĩ,2 tai
+564,84,"Hành củ , tiêu, gia vị",
+565,84,bột chiên giòn,1 gói
+566,85,tôm ,
+567,85,cà rốt,1 củ
+568,85,rau tía tô,1/2 bó
+569,85,đậu phộng rang,2 nắm
+570,85,nước mắm,2 mc
+571,85,hành phi,1 ít
+572,86,trứng gà,2
+573,86,sữa bơ (lait ribot / buttermilk),1/2 cup
+574,86,muối,1 nhúm
+575,86,bơ (demi-sel),25 gr
+576,86,bánh mì Sandwich,4 lát
+578,87,Cá hồi,1 miếng
+579,87,Bắp cải,50 g
+580,87,(thái lát) Hành tây,30 g
+581,87,Hành lá,1 nhánh
+582,87,Bơ,10 g
+584,87,Miso trắng (hoặc đỏ),2 muỗng canh
+585,87,Mirin,1.5 muỗng canh
+586,87,Rượu,1 muỗng canh
+587,87,Đường,1 muỗng canh
+588,87,Nước tương,0.5 muỗng cà phê
+589,88,cá ồ,1/2 kg
+590,88,thịt heo,150 g
+591,88,mỡ,100 g
+592,88,cải chua,200 g
+593,88,chuối,5 trái
+594,88,mắm,3 muỗng
+595,88,đường,1 muỗng
+596,88,dầu hào,1 muỗng
+597,88,ớt sừng,1 trái
+598,88,trái ớt xiêm,1 vài
+599,88,hành lá,2 cây
+600,89,cá cơm ,250 gr
+601,89,bột chiên giòn,
+602,89,"hành tím , hành lá , tiêu",
+603,90,thịt bò,300 g
+604,90,cải son,150 g
+605,90,húng thơm,2 nhánh
+606,90,hành tím,1 củ
+607,90,tỏi,2-3 tép
+608,90,mè,10 g
+609,90,Nước mắm,
+610,90,"Gia vị: nước tương , hạt nêm, dầu ăn, dầu mè, tiêu",
+611,91,thịt heo,300 g
+612,91,tỏi,1 mc
+613,91,Gia vị,
+614,92,gà,1/2 con
+615,92,lòng gà,1 bộ
+616,92,khoai môn,1/3 củ
+617,92,gạo,1 lon
+618,92,hành tím ,1 củ
+619,92,Ngò rí,
+620,92,Gia vị,
+621,93,Đỗ khế,150 g
+622,93,Thịt bò,400 g
+623,93,Súp lơ trắng,2 cây
+624,93,"Tỏi , gừng , dầu ăn, muối",
+625,94,thịt heo,1 chiếc
+626,94,giò heo,1 chiếc
+627,94,hoa hồi,3 bông
+628,94,thảo quả,1
+629,94,quế,1 một miếng
+631,94,nước tương,2 thìa canh
+632,94,xì dầu,2 thìa canh
+633,94,đường phèn,1 cục
+634,94,rượu,2 thìa cf
+635,94,mắm,1 thìa canh
+636,95,sườn heo,500 gr
+637,95,thơm,1/4 trái
+638,95,trứng cút ,15 quả
+639,95,ớt,2 trái
+640,95,tiêu xanh,1 nhánh
+641,95,Sốt kho đa dụng,100 ml
+643,95,nước dừa,
+644,96,măng,100 g
+645,96,giò heo,600 g
+646,96,hành tím,1/4 củ
+647,96,tiêu,1 muỗng cafe
+648,96,nước mắm,1 muỗng
+649,96,muối,1 ít
+650,96,đường,1 muỗng
+651,96,mỡ (hoặc dầu ăn),3 muỗng
+652,96,hành lá,3 cây
+653,96,ngò rí,1 cây
+654,96,ớt,2-3 lát
+655,97,thịt ba chỉ,1 kg
+656,97,lá chanh,30 gr
+658,97,hành tím,5 củ
+659,97,tỏi,1 củ
+661,98,Trứng gà,2 quả
+662,98,Nước,220 ml
+663,98,(cắt lát) Đậu bắp,1-2 quả
+664,98,Cá ngừ ( katsuobushi ),5 g
+665,98,Muối,1/4 thìa cà phê
+666,98,(để ngâm cá ngừ bào ) Nước nóng,50 ml
+667,99,Gà,"1,5 kg"
+668,99,Phở,
+669,99,Giá,
+670,99,Xà lách,
+671,99,Rau mùi,
+672,99,"Gừng , hành tây",
+673,99,Lạc,
+674,99,Hành phi,
+676,99,Tỏi,
+677,99,Ớt,
+678,99,Nước tương,
+679,99,Dầu hào,
+680,99,Tương ớt,
+681,99,Đường,
+682,99,Dấm,
+683,99,Nước mắm,
+684,100,thịt heo,350 g
+685,100,nấm đùi gà,150 g
+686,100,hành lá,5 cây
+687,100,dầu hào,1 muỗng
+688,100,dầu ăn,1 muỗng
+689,100,tỏi,1 củ
+690,100,ớt,1/2 trái
+691,100,hành tím,1 củ
+692,100,tiêu,1 ít
+693,101,thịt heo,250 g
+694,101,ớt chuông,1 quả
+695,101,tỏi,2 tép
+696,101,hành lá,2 nhánh
+697,101,mỡ,2 muỗng canh
+698,101,dầu hào,1 muỗng canh
+700,102,Cơm nguội,300 g
+701,102,Kim chi,80 g
+702,102,Thịt bò,100 g
+703,102,Hành tây,1/2 củ
+704,102,Ớt chuông,1/4 quả
+705,102,Hành,2 củ
+706,102,Phô mai,50 g
+707,102,Trứng,3 cái
+708,102,Dầu ăn,1 muỗng canh
+709,102,Nước mắm,1 muỗng cà phê
+710,102,Hạt nêm,1 muỗng cà phê
+711,102,Mì chính,1/2 muỗng cà phê
+712,102,Hạt tiêu,1/2 muỗng cà phê
+713,102,(nếu có) Tương ớt ( gochujang ),1 muỗng cà phê
+719,104,cá hố,3 miếng
+720,104,dầu ăn,50 ml
+721,104,muối,1 ít
+722,105,cá đối,500 gr
+723,105,"Mỡ , nước mắm, đường, bột ngọt, nước màu , tiêu, ớt",
+724,106,cá thác lác,400 g
+725,106,hành lá,10 g
+726,106,Gia vị,
+727,107,xương heo,400 g
+728,107,nước mắm,1 chén
+729,107,tỏi,1 mc
+730,107,Gia vị,
+731,108,bột bánh mì,300 gr
+732,108,Dầu oliu,10 gr
+733,108,nước,200 gr
+734,108,Men,3 gr
+735,108,Đường,5 gr
+736,108,Muối,6 gr
+739,108,sốt cà,2 thìa
+740,108,phô mai,2 thìa
+741,108,tôm,4-6 con
+742,108,bắp ngọt,2 thìa
+743,108,mayonnaise,2 thìa
+744,108,bacon,1 thìa
+745,108,Xúc xích phô mai,
+746,108,xúc xích mini,6 cái
+748,108,tương cà,2 thìa
+749,109,thịt bò,300 g
+750,109,hành tây ,2 củ
+751,109,hành lá,30 g
+752,109,tỏi ,1 mc
+753,109,đậu phộng rang,1 mc
+754,109,Gia vị,
+755,110,cá chốt,300 gr
+756,110,ớt,5 trái
+757,110,mỡ,1 muỗng canh
+758,110,tóp mỡ,2 muỗng canh
+759,110,"Gia vị: muối, nước mắm , đường, ớt bột , tiêu",
+760,111,mắm Cá Trèn,300 gam
+761,111,thịt ba chỉ,400 gam
+762,111,tỏi ,2 tbsp
+763,111,ớt,1 trái
+764,111,bột ngọt,1/2 tsp
+765,111,đường,4 tbsp
+766,111,tắc,4-5 trái
+767,112,đùi gà,450 gr
+768,112,trứng,1 cái
+769,112,hành,50 gr
+770,112,tiêu,1/2 muỗng cafe
+771,112,muối,5 gr
+772,112,đường,15 gr
+773,112,bột ngọt,5 gr
+774,112,nước tương,15 gr
+775,112,nước mắm,15 gr
+776,112,dầu ăn,80 gr
+777,112,bột men đỏ,5 gr
+778,112,bột bắp,10 gr
+780,113,đùi gà,500 g
+781,113,Pate,100 g
+782,113,Tiêu xanh,3 nhánh
+783,113,Táo đỏ,6 quả
+784,113,Nấm đông cô,100 g
+785,113,Cà rốt,1 củ
+786,113,Khoai tây,1 củ
+787,113,(khoảng 400ml) Nước dừa,1 trái
+788,113,Nước lọc,200 ml
+789,113,Hành lá,2 nhánh
+790,113,Muối,1/2 muỗng cà phê
+791,113,Nước mắm,1 muỗng canh
+792,113,Bánh mì (ăn kèm),4 ổ
+793,114,thịt heo,400 gr
+794,114,da heo,200 gr
+795,114,tai heo (1 cái tai nhỏ),200 gr
+796,114,giò sống ( mọc ),200 gr
+798,114,đường,1/2 muỗng canh
+799,114,rượu ,1/2 muỗng canh
+800,114,hạt nêm,1 muỗng canh
+801,114,tiêu,1 muỗng cafe
+802,114,bột tỏi,2 muỗng cafe
+803,114,bột hồng cúc ( bột gạo men đỏ),1/2 muỗng cafe
+804,114,bột ngọt,1 muỗng cafe
+805,114,tiêu hạt,2 muỗng cafe
+806,115,thịt heo,300 g
+807,115,măng,400 g
+808,115,hành tím,4 củ
+809,115,tiêu,1/2 muỗng cafe
+810,115,mỡ,2 muỗng
+811,115,dầu hào,2 muỗng
+812,115,mắm,1 muỗng
+813,115,muối,1 ít
+814,115,bột ngọt (tuỳ thích),1 ít
+815,116,hủ tiếu,100 g
+816,116,mực và tôm,50 g
+817,116,cải trắng,1 củ
+818,116,cải đỏ,1 củ
+819,116,nước lọc,500 ml
+820,116,thịt ,50 g
+821,116,hành tím và tỏi,5 củ
+822,116,trứng cút,10 quả
+823,116,Giá và quế và hành lá,50 g
+824,116,"đường phèn, dầu ăn, bột ngọt, hạt nêm, muối",1 muỗng
+825,117,tôm,4 con
+826,117,thịt heo xay,100 g
+827,117,tép khô,1 mc
+828,117,cải thìa,300 g
+829,117,Gia vị,
+837,119,Rau dền,
+838,119,Tôm ,
+840,119,Hành tím,
+841,119,Muối,
+842,119,Dầu ăn,
+843,119,Hành lá,
+849,121,cơm,250 g
+850,121,nước dùng gà,650 ml
+851,121,"bột năng, gạo",100 g
+852,121,thịt heo xay,200 g
+853,121,"nấm hương, nấm mèo",25 g
+854,121,trứng cút,8-10 quả
+855,121,"Hành phi , hành lá , hành tím, tỏi",
+856,122,rau muống,1 bó
+857,122,tôm,150 g
+858,122,Hành lá,
+859,122,Gia vị,
+860,123,bánh hỏi khô,240 gr
+861,123,thịt ba chỉ,200 gr
+862,123,hành lá,1 nhánh
+863,123,tóp mỡ,1 ít
+864,123,tỏi,1-2 tép
+865,123,ớt,1 trái
+866,124,Nấm đông cô,10 cái
+867,124,Cải thìa,500 g
+868,124,Thịt gà,300 g
+869,124,Dầu hào,0.5 muỗng canh
+870,124,Nước tương,0.5 muỗng canh
+871,124,Đường,1 muỗng cà phê
+872,124,Dầu mè,1 muỗng cà phê
+873,124,Tiêu xay,0.5 muỗng cà phê
+874,124,Tỏi,2 tép
+875,124,Hành lá,1 nhánh
+876,124,Muối,1 ít
+877,124,Cơm,2 chén
+878,125,cá trác,3 con
+879,125,dưa môn,300 g
+880,126,thịt ba chỉ,300 g
+881,126,thơm ( dứa ),150 g
+882,126,hạt nêm,1 muỗng cafe
+883,126,nước mắm,2 muỗng canh
+884,126,tỏi,1 muỗng cafe
+885,126,đường,1 muỗng cafe
+886,126,dầu ăn,1 muỗng canh
+887,126,nước lọc,100 ml
+888,126,ớt,1 trái
+889,126,hành lá,2 nhánh
+890,127,bánh canh,1 kg
+891,127,sườn heo,500 g
+892,127,tôm,200 g
+893,127,thịt heo,100 g
+894,128,thịt heo xay,200 g
+895,128,cà chua,3 quả
+896,128,dứa,1/4 quả
+897,128,"Hành củ , hành lá . rau mùi",
+898,129,"gà 1,5kg",1 con
+899,129,táo đỏ,5 quả
+900,129,sâm,3 cây
+901,129,"Gia vị: mì chính ,hạt nêm, tiêu",
+902,130,xương heo,500 g
+903,130,bún,500 g
+904,130,bắp cải,100 g
+905,130,hành lá,50 g
+906,130,hành tím,2 củ
+907,130,Gia vị,
+908,131,"cá chim 2,5kg",1 con
+909,131,sả,2 cây
+910,131,ớt,2 quả
+911,131,mì chính,2 thìa cà phê
+912,131,dầu hào,1 thìa canh
+913,131,đường,2 thìa cà phê
+914,131,hạt nêm,3 thìa cà phê
+915,131,tương ớt,1 thìa canh
+916,131,mỡ,1 thìa canh
+917,132,Khoai tây,150 g
+918,132,Khoai môn cao ( loại bở),150 g
+919,132,Bông cải xanh (dùng bông cải baby sẽ tiện hơn),100 g
+920,132,Đậu que ( đậu cove ),10 cái
+921,132,cà rốt,1 khúc
+922,132,Đậu hũ,150 g (2 miếng)
+923,132,nấm đông cô ( loại đã sơ chế),100 g
+924,132,Bột cà ri (hãng Vianco là gợi ý - lưu ý là muỗng vơi),2 muỗng cà phê
+925,132,Sả,2 cây
+926,132,Đường,1 muỗng
+927,132,Sữa đậu nành không đường ( loại làm thủ công),500 ml
+928,132,"Muối, hạt nêm",
+929,132,ớt,1 ít
+930,132,Dầu ăn,
+931,133,Gà lát chay,100 g
+932,133,Sả,1 muỗng canh
+933,133,Mật ong,1 muỗng canh
+934,133,Lá chanh ,2-3 lá
+935,133,Nước tương,1 muỗng canh
+936,133,Hạt nêm,1/2 muỗng cà phê
+937,133,Ớt,
+938,133,Dầu ăn,1 muỗng canh
+939,134,"cá viên, bò viên",150 g
+940,134,tép khô,10 g
+941,134,mướp ,1 trái
+942,134,hành lá,20 g
+943,134,Gia vị,
+944,135,Củ sen,150 g
+945,135,cá thác lác,200 g
+946,135,Ớt chuông,2 trái
+947,135,Cà chua,4 quả
+948,135,tiêu,1/2 muỗng cà phê
+949,135,Hạt nêm,1 muỗng cà phê
+950,135,Đường,"1,5 muỗng canh"
+951,135,Nước mắm,1 muỗng canh
+952,135,Dầu ăn,2 muỗng canh
+953,135,hành lá,2 nhánh
+954,135,Nước dừa,100 ml
+955,135,cà chua,
+956,135,Muối,1/2 muỗng cà phê
+957,135,Hành lá hoặc boaro,2 nhánh
+958,135,"Hành tím , tỏi",1 muỗng canh
+959,136,Cá sòng,2 con(khoảng 400g)
+960,136,Gừng,20 g
+962,136,Dưa leo,1 quả (100 g)
+963,136,Bánh tráng mè,6 cái
+964,136,Nước mắm,3 muỗng canh
+965,136,Đường,1 muỗng canh
+966,136,chanh,
+967,136,Ớt,1 quả
+968,137,sườn heo,350 gr
+969,137,tôm,300 gr
+970,137,mực,200 gr
+971,137,cà chua,3 trái
+972,137,sa tế,1 mcf
+973,137,"Gia vị: muối, đường, bột ngọt",
+974,138,thịt ba chỉ,500 gr
+975,138,Gia vị ướp,
+976,138,nước mắm,1mc 
+977,138,xì dầu,1 mc
+978,138,đường/ mật ong,1 mc
+979,138,sữa đặc,1 mc
+980,138,dầu hào,1 mc
+981,138,nước màu,1 mc
+982,138,bột nêm,1 mcf
+983,138,ngũ vị hương,1 mcf
+984,138,dầu màu điều/ bột điều,1/2 mcf
+985,138,"bột hành , bột tỏi",
+986,139,cá bống,500 gram
+987,139,nghệ,100 gram
+988,139,"Hành tím , ớt",
+989,139,"Gia vị: muôi, nước mắm , dầu ăn, ớt , đường",
+990,140,thịt heo xay,100 g
+991,140,giò sống,100 g
+992,140,nấm hương,10 tai
+993,140,bì heo,2 miếng
+994,140,mộc nhĩ,2 tai
+995,140,"tiêu, hành , gia vị",
+996,141,ruốc biển,700 gr
+997,141,cải bẹ,1 bó
+998,141,thịt xay,100 gr
+999,141,hộp rau mầm,1
+1000,141,cà chua,10 trái
+1001,141,trứng gà,2
+1002,141,"Gia vị: mắm , muối, bột ngọt, tiêu, hành lá",
+1003,142,Thịt ba chỉ,200 g
+1004,142,Hành,1 cây
+1005,142,Tỏi,1 muỗng cà phê
+1006,142,Nước mắm,1 muỗng canh
+1007,142,(hoặc 2/3 mc) Đường,1 muỗng canh
+1008,142,Mè,1 muỗng cà phê
+1013,144,cá bạc má,1/2 kg
+1014,144,cà chua,3 trái
+1015,144,thơm,Ít
+1016,144,Ngò rí,1 chén
+1017,145,thịt heo,400 g
+1018,145,sả,1 mc
+1019,145,mắm ruốc,1 mcf
+1020,145,dầu màu điều,1 mcf
+1021,145,hạt nêm,1 mcf
+1022,145,tiêu xay,1/2 mcf
+1023,145,dầu ăn,1 mc
+1024,146,sườn heo,600 g
+1025,146,khoai tây,300 g
+1026,146,cà rốt,100 g
+1027,146,cà chua,150 g
+1028,146,tỏi,3 tép
+1029,146,nước dừa,500 ml
+1030,146,gia vị ,
+1031,146,dầu ăn,1 muỗng canh
+1032,146,muối,1/2 muỗng cà phê
+1033,146,tiêu,1/4 muỗng cà phê
+1034,146,"Hành lá, ngò rí",
+1035,147,Gà lát chay,
+1036,147,Nghệ ,
+1037,147,Nước mắm,
+1038,147,"Hạt nêm , đường",
+1039,148,mì trứng,4 vắt
+1040,148,rau muống,1 nắm
+1041,148,tôm,4 con
+1042,148,"Gia vị:mì chính ,nước tương",
+1043,149,Khổ qua,2 trái
+1044,149,Đậu phụ,100 g
+1045,149,Tàu hũ ky,20 g
+1046,149,Miến,10 g
+1047,149,Mộc nhĩ ( nấm mèo ),1 cái
+1048,149,Hạt nêm,2 muỗng cà phê
+1049,149,Đường,1/2 muỗng cà phê
+1050,149,Tiêu,1/2 muỗng cà phê
+1051,149,Nước dùng củ đậu ( củ sắn ),800 ml
+1052,149,Rau mùi ( ngò rí ),5 g
+1053,150,Cá thu (hoặc cá cờ ),300 g
+1054,150,Sứa,100 g
+1055,150,chả cá(nếu thích),100 gr
+1056,150,Cà chua,1 quả
+1057,150,Thơm ( dứa ),1/4 quả
+1058,150,Sả,2 cây
+1059,150,củ Hành tím,2
+1060,150,Gừng,3 lát mỏng
+1061,150,Rễ ngò,2 nhánh
+1062,150,Bún,400 g
+1063,150,Hành lá,2 nhánh
+1064,150,Rau thơm,1 ít
+1065,150,Hành phi,2 thìa cà phê
+1066,150,Nước mắm,2 thìa canh
+1067,150,Muối,1/2 thìa cà phê
+1068,150,Đường,1/2 thìa cà phê
+1069,150,Tiêu,1/4 thìa cà phê
+1070,150,nước lọc,500 ml
+1072,151,"Đậu hũ , cà rốt , khoai tây , viên cà ri Nhật, gia vị",
+1073,151,nước lọc,1/2 chén
+1074,152,Mì udon,200 g
+1075,152,Thịt bò (mình dùng bắp hoa cắt sẵn),150 g
+1076,152,Giá,50 g
+1077,152,Hẹ,30 g
+1078,152,cải bắp,1/2
+1079,152,Mè rang,1 muỗng cà phê
+1080,152,Dầu ăn,
+1082,152,Tỏi,1 muỗng cà phê
+1083,152,Dầu hào,1 muỗng canh
+1084,152,Dầu mè,1 muỗng canh
+1085,152,Nước tương,2 muỗng canh
+1086,152,Đường,2 muỗng canh
+1087,152,tương ớt,1 muỗng canh
+1088,152,Nước lọc,2 muỗng canh
+1089,153,cá hường,1 con
+1090,153,muối ớt,1 muỗng cafe
+1091,153,mỡ,4 muỗng
+1095,155,cá thác lác,300 g
+1096,155,cà chua,2 trái
+1097,155,nước mắm,1/3 chén
+1098,155,Hành lá,
+1099,155,Gia vị,
+1100,156,cá Điêu Hồng,500 gam
+1101,156,cà chua,3 trái
+1102,156,hành tây,1 củ
+1103,156,hành lá,2 nhánh
+1104,156,cần tàu,1 nắm nhỏ
+1105,156,hành tím,1/2 tbsp
+1106,156,tỏi,1/2 tbsp
+1107,156,dầu ăn,2 tbsp
+1108,156,muối,1/4 tsp
+1109,156,đường,1/2 tbsp
+1110,156,bột ngọt,1 tsp
+1111,156,nước mắm,1 tbsp
+1112,156,giấm,1 tbsp
+1113,156,tiêu,1/2 tsp
+1117,158,mực khô,1 con
+1118,158,măng,2-3 miếng
+1119,158,"hành , rau mùi",3-4 cây
+1120,158,hành,1 củ
+1121,158,tỏi,1 củ
+1122,158,mỡ,2 thìa
+1123,158,nước mắm,1 thìa
+1124,158,bột nêm,1 thìa
+1126,158,xương gà,1 bộ
+1127,158,hành,1/2 củ
+1129,158,sá sùng (có thể bỏ qua ),3-4 con
+1130,159,Nấm đùi gà,200 g
+1131,159,Ớt,2 quả
+1132,159,Đường,1 muỗng cà phê
+1133,159,Nước mắm,2 muỗng canh
+1134,159,Hạt nêm,
+1135,159,Dầu ăn,1 muỗng
+1136,160,đậu hũ,1 miếng
+1137,160,chả chay,1 khúc
+1138,160,cà chua,2 trái
+1139,160,giá,200g
+1140,160,nấm rơm,100g
+1141,160,kim chi,100g
+1142,160,sả,1 tép
+1143,160,"rau quế , ngò gai",50g
+1144,161,mỳ quảng khô,100-150 gram
+1145,161,bò ,200-300 gram
+1146,161,trứng cút,7-10 quả
+1147,161,cà chua,1 quả
+1148,161,củ nén,1 nắm
+1149,161,tỏi,2 tép
+1150,161,dầu hào,2 thìa
+1151,161,bột nêm hoặc mắm,1 thìa
+1152,161,bột nghệ,1 ít
+1153,161,hành lá và rau mùi,"2,3 cây"
+1155,161,bánh đa,1 cái
+1156,161,lạc rang,1 bát con
+1157,161,hành phi,2 thìa
+1158,161,dầu ăn,2 thìa
+1159,162,Lê,150 g
+1160,162,Táo đỏ,6 quả
+1161,162,hoàng kì,3 lát
+1162,162,gừng,5 lát
+1163,162,Kỉ tử,1 muỗng canh
+1164,162,Tuyết nhĩ,1/2 cái
+1165,162,Đường,50 g
+1166,162,Nước,800 ml
+1183,164,thịt heo,400 g
+1184,164,Bột chiên giòn,
+1185,164,Bột năng,
+1186,164,Gia vị,
+1187,165,củ cải,2 cây
+1188,165,xương heo,400 gr
+1189,165,"gia vị: hành lá , hành tím , muối, bột ngọt, tiêu",
+1190,166,thịt ba chỉ,1 kg
+1191,166,giấm,
+1192,166,ngũ vị hương,1/2 mcf
+1193,167,tôm ,150 gr
+1194,167,cà chua,2 trái
+1195,167,hành tím,3 củ
+1197,167,hành lá,2 tép
+1198,167,ngò rí,2 tép
+1199,167,ớt,1 trái
+1200,167,dầu ăn,2 muỗng cafe
+1201,167,"Gia vị: muối, nước mắm, hạt nêm, đường, bột ngọt, tiêu",
+1202,167,bún gạo lứt ,150 gr
+1203,168,mực ống,1 kg
+1204,168,thịt heo xay,500 gr
+1205,168,giò sống ,1 cốc
+1206,168,"nước mắm , bột canh, mì chính",Chút
+1207,168,tinh bột bắp or khoai tây,2-3 thìa canh
+1209,169,sườn heo,350 g
+1210,169,khoai tây,5 củ
+1211,169,hành tím,3 củ
+1212,169,đậu hũ,
+1213,169,muối,1 ít
+1214,169,hành lá,2 cây
+1215,169,ngò rí,2 cây
+1216,170,cá bè trang (600 gr),2 con
+1217,170,tỏi,3 tép
+1218,170,nước mắm,2 mc
+1219,170,ớt,2 trái
+1220,170,đường,1.5 mc
+1221,170,bột ngọt,1 xíu
+1222,171,thịt heo,300 g
+1223,171,lá húng quế,1 nắm
+1224,171,tỏi ,1 mc
+1225,171,Gia vị,
+1226,172,đùi gà (rút xương hoặc 1 miếng ức gà ),1 cái
+1227,172,ớt chuông đỏ,1/2 quả
+1228,172,ớt chuông vàng,1/2 quả
+1229,172,dầu hào,1 thìa
+1230,172,tiêu xanh,1 nhánh
+1231,172,sả,1 củ
+1232,172,gừng,1 nhánh nhỏ
+1233,172,bột chiên giòn,2 thìa
+1234,172,dầu ăn,1 bát
+1235,172,hành lá hoặc rau mùi,1 ít
+1236,173,Ốc hương,
+1237,173,Sốt trứng muối,
+1238,173,"Sả, gừng , ớt",
+1239,173,Bơ,
+1240,173,Bắp,
+1241,174,"lòng gà ( gan , tim , mề, trứng non )",300 g
+1242,174,giá,200 gr
+1243,174,hành tím,1 củ
+1244,174,hạt nêm,2 tsp
+1245,174,nước mắm,1 tbsp
+1246,174,tiêu,1 tsp
+1247,175,cá diêu hồng chay (300gr),1 con
+1248,175,cà chua,2 quả
+1249,175,hành tây,1 củ
+1250,175,Rau xà lách,
+1251,175,Hành tím ,
+1252,175,Tỏi ,
+1253,175,Ớt ,
+1254,176,susu,1 trái
+1255,176,đậu ve,Nắm
+1256,176,thịt bò,100 gr
+1257,176,"Xì dầu , hạt nêm, bột ngọt, tiêu",
+1261,178,Bánh mì sandwich,1 lát
+1262,178,Chuối,1/2 quả
+1263,178,Phô mai,10 g
+1264,178,Trứng gà,1/2 quả
+1265,178,Sữa ,20 ml
+1266,178,Mật ong,10 ml
+1267,178,mè,1 chút
+1268,179,Thịt ba chỉ,300 g
+1269,179,Mắm ruốc,1 muỗng canh
+1270,179,me,1 muỗng canh
+1271,179,Sả ,2 muỗng canh
+1272,179,Ớt ,1 muỗng canh
+1273,179,Hành tím ,1 muỗng canh
+1274,179,đường,2 muỗng canh
+1275,179,Nước sôi,1/2 chén
+1276,179,Dầu ăn,1 muỗng canh
+1277,180,chả cá thác lác,200 g
+1278,180,Thịt heo xay,100 g
+1279,180,bầu,1/2 trái
+1280,180,hành lá,2 tép
+1281,180,bột nêm,1mcf
+1282,180,bột ngọt,1mcf
+1283,180,muối,1/4 mcf
+1284,180,tiêu,1/4 mcf
+1285,181,rau cải,1 bó
+1286,181,giò sống,100 gr
+1287,181,thịt heo xay,100 gr
+1288,181,tôm  ,50 gr
+1289,181,nấm mèo,ít
+1290,181,"gia vị: muối, bột ngọt, hành tím",
+1291,182,cá trích,1/2 kg
+1292,182,Bột chiên giòn,80 g
+1293,182,Tỏi ,1 chén nhỏ
+1294,182,Mè,
+1295,182,ớt,1 trái
+1296,183,tôm,1 kg
+1297,183,Củ hành tím,2/3
+1298,183,củ Tỏi,1
+1299,183,ớt,4-5 trái
+1300,183,chanh,3-4 trái
+1301,183,ngò gai,2 bó
+1302,183,lá chanh,4/5
+1303,183,Wasabi,1 muỗng
+1304,183,tương ớt 🌶️,2-3 muỗng
+1305,184,Đùi gà,500 g
+1306,184,Lá dứa,10
+1307,184,Ngũ vị hương,1/2 gói
+1308,184,Nước tương,1 thìa canh
+1309,184,Hạt nêm,1 thìa canh
+1310,184,Nước mắm,1 thìa canh
+1311,184,Tương ớt,1 thìa canh
+1312,184,Mật ong,1 thìa canh
+1313,184,Đường,1/2 thìa canh
+1314,184,Dầu hào,1 thìa canh
+1315,184,Ớt bột,1/2 thìa canh
+1316,184,Dầu ăn,1 thìa canh
+1317,184,tỏi  ,5 tép
+1318,184,cốt me,1 thìa
+1319,185,Rau ngót,300 g
+1320,185,Nấm hầu thủ ( loại đã sơ chế),50 g
+1321,185,"Hạt nêm , muối, dầu ăn",
+1322,185,Nước,800 ml
+1323,186,cá hồng,1 con
+1324,186,dứa,1 miếng
+1325,186,tiêu xanh,2 dây
+1326,186,nước mắm,2 tbsp
+1327,186,đường,2 tbsp
+1328,186,"dầu hào, dầu mè, nước tương, hành phi , tỏi",1 tbsp
+1329,187,dưa hường,2 trái
+1330,187,nấm kim châm,1 gói
+1331,187,ngò rí,
+1332,188,thịt ba chỉ,500 g
+1333,188,cải mục muối,100 g
+1334,188,dầu mè,2 mcf
+1335,188,muối,10 g
+1336,188,gừng,2 lát
+1337,189,rau cần tây,1 bó
+1338,189,củ hành tây,1/3
+1339,189,cà chua,vài trái
+1340,189,thịt bò,250 gr
+1342,190,dầu ăn,1 muỗng canh
+1343,190,thịt gà,100 gr
+1344,190,nấm đông cô,20 gr
+1345,190,dầu mè,1/2 muỗng cà phê
+1346,190,bột bắp,5 gr
+1347,190,"gia vị: muối, tiêu, hạt nêm",1 ít
+1348,190,Hành ngò,5 gr
+1349,190,Bột năng,18 gr
+1351,190,đậu xanh,120 gram
+1352,190,muối,1/8 thìa cafe
+1353,190,hạt tiêu,1/4 thìa cafe
+1354,190,bột nếp (cần dùng bột nếp Thái để vỏ bánh thơm ngon),220 gram
+1355,190,bột năng,20 gram
+1356,190,nước (khoảng 45 độ C),180 gram
+1357,191,giò heo,1 kg
+1358,191,măng,1 kg
+1359,191,củ hành tây,1
+1360,191,củ hành tím,6
+1361,191,hành lá,3 tép
+1362,191,gừng,1 củ
+1363,191,bún(để ăn bún riêu ),"1,5 kg"
+1364,191,"Gia vị: muối, hạt nêm, nước mắm, đường, bột ngọt, tiêu",
+1366,192,cua,2 con
+1367,192,giò heo,1/2 cái
+1368,192,nấm rơm,300 gr
+1369,192,bánh canh bột lọc,1 kg
+1370,192,hành tím,10 củ
+1371,192,dầu màu điều,5 muỗng canh
+1372,192,bột năng (hoặc bột bắp ),1 muỗng canh
+1373,192,Ngò rí,1 chén
+1374,192,ớt,2 muỗng canh
+1375,192,tiêu,2 muỗng cafe
+1376,192,chanh,2 trái
+1377,192,"Gia vị: nước mắm , hạt nêm, đường, bột ngọt",
+1378,193,đùi gà,1
+1379,193,cải ngọt,3 cây
+1380,193,Hành ngò,
+1381,193,Gia vị,
+1382,194,đậu bắp,500 gr
+1383,194,cà rốt,1 củ
+1384,194,nấm rơm,50 gr
+1386,194,hành boaro,1 tbsp
+1387,194,nước tương,2 tbsp
+1388,194,xì dầu,1 tbsp
+1389,194,đường thốt nốt,1 tsp
+1390,195,gà(nên chọn gà ta / gà thả vườn ),1 con
+1391,195,"Hành tím, hành tây, hoa hồi, thảo quả , quế, gừng ,ngò rí, hành lá , tiêu hạt(tiêu đen hoặc tiêu sọ hoặc tiêu xanh )",
+1392,195,lòng gà (ko bắt buộc),Bộ
+1393,195,xương gà,1 kg
+1394,195,"Gia vị: hạt nêm, đường phèn, bột ngọt, bột canh",
+1395,195,"bánh phở (dùng loại sợi, nếu mua loại miếng thì cắt thành sợi vừa ăn)",1 kg
+1396,195,"Hành tây , rau mùi, ngò rí , hành lá , tương đen",
+1397,195,"Bò viên , gà viên",
+1398,196,nui ,200 gr
+1399,196,xương heo,200 gr
+1400,196,củ cải,1 cây
+1401,196,"gia vị: hành lá , tiêu, muối, bột ngọt",
+1402,197,Gà chay,100 g
+1403,197,Mật ong,1 muỗng canh
+1404,197,Nước tương,1 muỗng canh
+1405,197,"hạt nêm, muối",1 ít
+1406,197,Dầu ăn,1 muỗng canh
+1407,197,Lá chanh,
+1408,197,Ớt  hoặc ớt khô tùy thích,
+1409,198,Cá lưỡi trâu ( cá bơn ),4 miếng (2 con)
+1410,198,Muối,1/3 muỗng cà phê
+1411,198,Bột bắp,1 muỗng cafe
+1412,198,Dầu ăn,100 ml
+1413,199,cá bạc má,1/2 kg
+1414,199,dưa cải muối,350 g - 400g
+1415,199,cà chua,2 trái
+1417,200,Sụn heo ( sụn mặt trăng),300 g
+1418,200,Sả,2 cây
+1419,200,Lá chanh,6 cái
+1420,200,Nước mắm,1 muỗng cafe
+1421,200,mật ong,1 muỗng cà phê
+1422,200,Tiêu,1/4 muỗng cà phê
+1423,200,Dầu ăn,1 muỗng canh
+1424,201,Cơm,150 g
+1425,201,Cà rốt,30 g
+1426,201, Rong biển,1 miếng
+1427,201,Hành lá,1 nhánh
+1428,202,Tai heo,600 g
+1429,202,Cà rốt,100 g
+1430,202,Cóc,150 g
+1431,202,hành tím,15 tép
+1432,202,tỏi,10 tép
+1433,202,Nước lọc,3 chén
+1434,202,Giấm gạo,4 chén
+1435,202,Đường,5 chén
+1436,202,muối,4 muỗng cà phê
+1437,202,Bột mì,100 g
+1438,202,"hành lá , gừng",Vài
+1439,203,thịt gà,800 gr
+1442,203,nước lọc,2.5 lít
+1443,203,cơm rượu,1 bát con
+1444,203,nấm đông cô ,100 gr
+1445,203,ớt,2 quả
+1447,203,nước mắm,1 chén
+1448,204,Mỳ sợi  Hàn Quốc 칼국수 소면,
+1449,204,Hành baoro,
+1450,204,Tỏi ,1 thìa ăn cơm
+1451,204,Ớt ,1 quả
+1452,204, Tương đậu Hàn Quốc,1/2 thìa ăn cơm
+1453,204, Tương ớt Hàn Quốc,1/2 thìa ăn cơm
+1454,204, Bột ớt Hàn Quốc,1 thìa ăn cơm
+1455,204, Nước mắm cá ngừ Hàn Quốc,1 thìa ăn cơm
+1457,204,Trứng gà,1 quả
+1458,204,Hành lá,1 nhánh
+1459,204,Tiêu,1 chút
+1460,204,Vừng,1 thìa cà phê
+1461,204,Dầu ăn,1 thìa ăn cơm
+1462,204,Nước lọc,2 bát ăn cơm
+1463,205,tôm,700 g
+1464,205,tỏi ,1 mc
+1465,205,bơ,1 mc
+1466,205,dầu ăn,2 mc
+1467,205,nước mắm,1/3 chén
+1468,205,đường,1 mcf
+1469,205,tỏi,1 mcf
+1470,205,hành lá,10 g
+1472,206,Tỏi  (tuỳ ý),
+1473,206,tương đậu,1 mc
+1474,206,Đường,0.5 mc
+1475,206,Mè,0.5 mc
+1476,206,Dầu mè,0.5 mc
+1477,206,Tương ớt (không ăn cay thì bỏ qua ),0.5 mc
+1478,206,nước luộc thịt,2 mc
+1480,206,Rau mè,tuỳ thích
+1481,206,Kim chi,vừa đủ ăn
+1482,206,Tỏi,vừa đủ ăn
+1483,206,Dưa leo,vừa đủ ăn
+1484,206,xà lách,vừa đủ ăn
+1486,206,Thịt ba chỉ,300 g - 400g
+1487,206,Nước tương,2 mc
+1488,206,Rượu nấu ăn,1 mc
+1489,206,Tương đậu,1 mc
+1490,206,Gừng,2 lát
+1491,206,Rosémary ( lá hương thảo ) (tuỳ ý),0.5 mcf
+1493,206,Tiêu (tiêu xay cũng được),1 mcf
+1494,206,Nước (vượt qua mặt thịt ),1500 ml
+1495,206,Tỏi,2 củ
+1496,206,Hành tây,1/2 củ
+1497,206,"lá nguyệt quế (tuỳ ý, có thì sẽ rất ngon)",1 chiếc
+1498,207,Nấm tuyết,20 g
+1499,207,nấm đông cô ,20 g
+1500,207,Nước tương,1/2 muỗng canh
+1501,207,Ngũ vị hương,1 chút xíu
+1502,207,tía tô (hoặc rau thơm khác),4 cái
+1503,208,Nấm hương ,15 g
+1504,208,Nấm lộc nhung,15 g
+1505,208,Bí xanh,300 g
+1506,208,Hạt nêm chay,1 thìa cà phê
+1507,208,Muối,1/2 thìa cà phê
+1508,208,Nước,1 lít
+1509,209,Thịt ba chỉ,1 kg
+1510,209,Đường,4 muỗng canh
+1511,209,Mật ong,1 muỗng canh
+1512,209,Nước mắm,3 muỗng canh
+1513,209,Hành tím ,4 củ
+1514,209,Tỏi,4 tép
+1515,209,hành tây,1 củ
+1516,209,(gần 1 lít) Nước dừa ,3 lon
+1517,209,Trứng gà,7 quả
+1518,210,thịt bò,350 gr
+1519,210,súp lơ trắng,
+1520,210,bông cải xanh,1
+1521,210,"tỏi , hành lá , tiêu, nước mắm, bột nêm",ít
+1522,211,Tôm,200 g
+1523,211,bột bánh xèo,1
+1524,211,bột chiên giòn,1
+1525,211,trứng gà,1
+1526,211,khoai lang và khoai môn,2 củ
+1527,211,đậu xanh,20 g
+1528,211,Hành lá,2 cọng
+1530,211,"dầu ăn, hạt nêm, bột ngọt,đường",2mcf
+1531,212,Tôm ,300 g
+1532,212,Muối,1/2 thìa cà phê
+1533,212,Tiêu,1/2 thìa cà phê
+1534,212,Tỏi ,2 thìa canh
+1535,212,Bơ,30 g
+1536,212,Nước,4 thìa canh
+1537,212,Đường,1/2 thìa cà phê
+1538,212,Nước mắm,1 thìa canh
+1539,212,Dầu hào,1 thìa canh
+1540,212,Tương ớt,2 thìa canh
+1541,212,Tiêu,1/2 thìa cà phê
+1542,213,đậu hũ,3 miếng
+1543,213,thịt heo xay,150 g
+1544,213,tóp mỡ,50 g
+1545,213,đậu phộng,1 mcf
+1546,213,hành lá,30 g
+1547,213,nước mắm,1/2 chén
+1548,213,Gia vị,
+1549,214,đùi gà (tùy sở thích),2
+1550,214,gạo,"1,5 lon"
+1551,214,"Dưa leo , cà chua",
+1552,214,Gia vị,
+1553,215,gà,1 con
+1554,215,muối ớt,1 chén
+1555,215,dưa leo,1-2 trái
+1556,215,rau răm,1 chén
+1566,217,cá thác lác,100 gr
+1567,217,bông bí,100 gr
+1568,217,nước lọc,1 tô
+1569,218,trắng,3 chén cơm
+1570,218,thịt heo,1/2 chén
+1571,218,chả các loại,Ít
+1572,218,kim chi,1/2 chén
+1573,218,tỏi ,1 mc
+1574,218,hành lá,1 mc
+1575,218,Gia vị,
+1576,219,chả cá,400 g
+1577,219,thịt heo,100 g
+1578,219,tóp mỡ,50 g
+1579,219,cà chua,3 trái
+1580,219,Hành ngò,
+1581,219,Gia vị,
+1582,220,cá,500 g
+1583,220,tỏi,3 tép
+1584,220,hành tím,3 củ
+1585,220,tiêu,1/2mcf
+1586,220,ớt,4 trái
+1587,220,nước mắm,4 mc
+1588,220,đường,2 mc
+1589,220,bột ngọt,1/3 mcf
+1590,221,Cá mó,3 con (khoảng 600g)
+1591,221,(đập dập) Sả,2 cây
+1592,221,Dầu ăn,100 ml
+1593,221,Nước mắm,2 muỗng canh
+1594,221,Tỏi,2 tép
+1595,221,Ớt,1 quả
+1596,221,đường,1 muỗng canh
+1597,221,chanh,1 muỗng canh
+1598,222,cá Kèo,300 gam
+1599,222,thịt ba chỉ (hoặc thịt nọng ),300 gam
+1600,222,hành tím ,1 tbsp
+1601,222,tỏi ,1 tbsp
+1602,222,đường,6 tbsp
+1603,222,nước mắm,120 gam
+1604,222,nước lọc,120 gam
+1605,222,bột ngọt,1/2 tbsp
+1606,222,hạt nêm,1/2 tbsp
+1607,222,tương ớt,1 tbsp
+1608,222,sa tế,1/2 tbsp
+1609,222,dầu màu điều,1 tbsp
+1610,222,nước màu dừa,1.5 tbsp
+1611,222,tiêu,1 tbsp
+1615,224,thịt xay,100 g
+1617,224,tép ,50 g
+1618,224,Hành lá,
+1619,224,bắp cải,1/8 cái
+1620,224,cà chua,3 trái
+1621,224,Gia vị,
+1622,225,da heo,500 gr
+1623,225,chân gà,500 gr
+1624,225,huyết heo,300 gr
+1625,225,tôm khô,40 gr
+1626,225,gạo,60 gr
+1627,225,nếp,40 gr
+1628,225,hành tím,3 củ
+1629,225,rượu,2 muỗng canh
+1630,225,gừng ,2 muỗng canh
+1631,225,"hành lá , ngò rí , ớt , chanh , giá",
+1632,225,"Gia vị: nước mắm, muối, hạt nêm, đường, bột ngọt, tiêu",
+1635,227,nghệ,2 chén cơm
+1636,227,chả chiên,200 g
+1637,227,tôm ,5 con
+1638,227,lạp xưởng,2 cây
+1639,227,Hành lá,
+1640,227,Gia vị,
+1641,228,thịt gà,500 gr
+1642,228,bột nghệ,1/2 muỗng cafe
+1643,228,củ gừng ,1
+1644,228,củ hành tím,2
+1645,228,tỏi,2 tép
+1646,228,ớt,2 trái
+1647,228,"Gia vị: muối, nước mắm , hạt nêm, đường, bột ngọt",
+1649,228,sữa bò gạo,2/3 lon
+1650,229,Cá nục,1 kí
+1651,229,"hành lá , tiêu, hạt nêm",Ít
+1652,229,nước mắm,2 muỗng
+1653,229,đường,2 muỗng
+1654,229,"chanh , tỏi",1 trái
+1655,230,thịt heo xay,100 g
+1656,230,rong biển,50 g
+1657,230,nấm đùi gà,100 g
+1658,230,đậu hũ,1 bìa
+1659,230,hành lá,2 củ
+1660,230,tiêu ,1 ít
+1661,230,gừng ,1 ít
+1662,230,dầu mè,1 ít
+1663,230,xì dầu,1 muỗng
+1664,231,xương heo,500 g
+1665,231,hành tím,3 củ
+1666,231,hành lá,10 cây
+1667,231,ngò rí,3 cây
+1668,231,tiêu ,1 muỗng cafe
+1669,231,muối hồng,1 muỗng cafe
+1670,231, nước mắm,1 chén
+1671,231,ớt,1 vài trái
+1672,232,thịt bò,400 g
+1673,232,kim chi,100 g
+1674,232,hạt nêm,2 tsp
+1675,232,"nấm, đậu hũ (ăn kèm tuỳ thích)",100 g
+1676,233,thịt gà,700 g
+1677,233,bột bắp hoặc bột khoai tây,70 g
+1678,233,bột mì,30 g
+1679,233,trứng,1 quả
+1680,233,"Gia vị: bột hành,bột tỏi,hạt nêm,tiêu,nước tương",
+1681,233,Sốt lúc lắc,
+1682,233,nước tương,3 tbsp
+1683,233,tương cà,2 tbsp
+1684,233,đường,2 tbsp
+1685,233,dầu hào,1 tbsp
+1686,233,giấm,1 tbsp
+1687,233,"Ớt chuông,hành tây,tỏi ",
+1688,234,gà viên,400 g
+1689,234,bắp cải,100 g
+1690,234,oregano,3 g
+1691,234,cam vàng,1 trái
+1692,234,nước,1 chén
+1693,234,bột năng,2 muỗng cf
+1694,234,Gia vị,
+1695,235,mực ,250 gr
+1696,235,hành tây,1 củ
+1697,235,ớt chuông đỏ,1/2 quả
+1698,235,ớt chuông xanh,1/2 quả
+1699,235,ớt chuông vàng,1/2 quả
+1700,235,"Ớt, sả, tỏi, hành khô",1 ít
+1703,236,bí xanh,1 trái
+1704,236,giò sống,100 g
+1705,236,tép khô,20 g
+1706,236,Hành khô,
+1707,236,Gia vị,
+1708,237,nấm đùi gà,2 cái
+1709,237,thịt heo xay,100 g
+1710,237,cà chua,3 trái
+1711,237,hành lá,2 cây
+1712,237,Gia vị,
+1714,239,đùi gà ,1
+1715,239,nấm đùi gà,2 cây
+1716,239,nước tương,1 thìa
+1717,239,dầu hào,1/2 thìa
+1718,239,bột bắp,1/2 thìa
+1719,239,gừng,Vài lát
+1720,239,Hành lá,1 ít
+1725,241,cá cơm,3 lạng
+1726,241,"Nước mắm, hạt nêm, ớt bột , tiêu, dầu ăn",
+1727,241,"nước màu , đường, bột ngọt",
+1728,241,"Hành , tỏi ",
+1729,242,heo viên bì (sẵn siêu thị),1 kg
+1730,242,xốt hàn quốc ( gochujang ),2 mc
+1731,242,nước tương,1 mc
+1732,242,nước lọc,500 ml
+1733,242,đường,1 mc
+1734,242,hạt nêm,1/2 mc
+1735,242,"ớt, tỏi, mè, hành lá , hành tây",
+1736,243,cá hú,3 khúc
+1737,243,giấm,1/2 chén
+1738,243,sả,1 cây
+1739,243,tiêu xanh,1/2
+1740,243,ớ,3-4 trái
+1741,243,sốt kho đa dụng,1/2 chén
+1742,244,trứng non,200 gr
+1743,244,đùi gà (rim ngũ vị hoặc rim mật ong),5 cái
+1744,244,xá bấu (rim ăn kèm),1 ít
+1746,244,mỡ,1 ít
+1747,244,hành,1 ít
+1749,244,"nếp (nếp cái hoa vàng, nếp nương )",500 gr
+1750,244,bắp ngọt,1 trái
+1751,244,lá dứa,3 nhánh
+1752,245,đùi gà (lọc xương),4 cái
+1753,245,khoai tây,6-7 củ
+1754,245,bắp ngọt (tuỳ chọn),250 g
+1755,245,"Gia vị: hạt nêm, đường, nước tương, tương ớt",
+1756,246,khô cá lóc,1 con
+1757,246,xoài,1 quả
+1758,246,Húng lủi,20 g
+1759,247,nước đường bánh dẻo,60 gr
+1760,247,bột bánh dẻo,200 gr
+1761,247,nhân kem trứng muối dẻo,150 gr
+1762,247,khoai lang hấp,50 gr
+1763,248,Nấm đùi gà,400 g
+1764,248,Nấm bào ngư,50 g
+1765,248,Đậu,1/2 lát
+1766,248,nấm mèo,2 tai
+1767,248,cà rốt,1/2 củ
+1768,248,Hạt nêm,
+1769,248,Boaro,1 nhánh
+1770,248,Nước tương,2 muỗng canh
+1771,248,Đường,1 muỗng cà phê
+1772,248,Tương ớt,1 muỗng cà phê
+1773,249,cá đuối,300 g
+1774,249,tỏi,2
+1775,249,thơm ( dứa ),1 khúc
+1776,249,cà chua,1 trái
+1777,249,bạc hà ( dọc mùng ),1 cây
+1778,249,giá,200 g
+1779,249,hoa chuối ,1 ít
+1780,249,"me  (hoặc me sống, quả sấu )",1 muỗng
+1781,249,ngỗ ( ngò om ),1 ít
+1782,249,hành lá,1 ít
+1783,249,ngò gai ( ngò tàu ),1 ít
+1784,249,húng quế trắng ( lá é ),3 cây
+1785,249,nước mắm,1 muỗng
+1786,249,muối,1 ít
+1787,249,đường,1 muỗng cafe
+1788,249,bột ngọt,1 ít
+1789,250,ếch,400 gr
+1791,250,dầu mè,1 muỗng canh
+1792,250,xì dầu,1 muỗng canh
+1793,250,bột bắp,1 muỗng canh
+1794,250,tiêu,1/2 muỗng cà phê
+1796,250,gừng ,1 nhánh
+1797,250,tỏi,4 tép
+1798,250,ớt,4 trái
+1799,250,Hành lá,
+1801,250,đường,1 muỗng canh
+1802,250,nước tương,1 muỗng canh
+1803,250,dầu hào,1 muỗng canh
+1804,250,xì dầu,1 muỗng canh
+1805,250,rượu,1 muỗng canh
+1806,250,muối,1/3 muỗng canh
+1807,250,tiêu ,1 nhúm
+1808,250,Ớt bột,
+1809,250,Ớt,
+1810,250,Nước lọc,
+1814,252,thơm (khóm),1 trái
+1815,252,tim gà,"0,5 kí"
+1816,252,rau cần tàu,100 g
+1817,253,đậu gà ,300 g
+1818,253,đậu đen,200 g
+1819,253,bột men (Rhizopus oligosporus),1.5-2 muỗng cà phê
+1820,253,giấm (để ức chế vi khuẩn có hại),2 muỗng canh
+1821,254,cá chim,500 g
+1823,254,tỏi,1/2 củ
+1824,254,ớt,1/2 quả
+1825,254,mắm,"1,5 thìa canh"
+1826,254,đường,1/2 thìa canh
+1827,254,nước,2 thìa canh
+1828,255,Trứng vịt,3 quả
+1829,255,Củ cải muối ( xá bấu ),50 g
+1830,255,Tỏi,1 tép
+1831,255,Đường,1 muỗng cà phê
+1832,255,Hạt nêm,1 muỗng cà phê
+1833,255,mirin,1 muỗng canh
+1834,255,Dầu ăn,1 muỗng canh
+1835,255,Hành lá,1 nhánh
+1836,256,Thịt heo xay,225 g
+1837,256,(khoảng 50g) Bún,1 bịch
+1838,256,Nấm mèo,60 ml
+1839,256,Trứng gà,4 quả
+1840,256,Bột nêm,1/2 muỗng canh
+1841,256,Đường,2/3 muỗng canh
+1842,256,Nước mắm,1/2 muỗng canh
+1843,256,Tiêu ,1 muỗng cà phê
+1844,256,Củ hành tím,4 muỗng canh
+1845,256,Củ hành trắng,4 muỗng canh
+1846,257,thịt bò xay,200 gam
+1847,257,tỏi ,1/2 tbsp
+1848,257,lá Oregano,1/4 tsp
+1849,257,hạt nêm,
+1850,257,bột ngọt,
+1851,257,đường,
+1852,257,dầu hào,
+1853,257,tiêu,
+1854,257,chanh,
+1855,257,hành tây,1/2 củ
+1856,257,ớt chuông,1/4 trái
+1857,257,củ cà rốt,1/2
+1858,257,cà chua,1 trái
+1859,257,dầu ăn,1.5 tbsp
+1868,260,cánh gà,500 gr
+1869,261,Gạo,1 cup
+1870,261,nước,
+1871,261,"Thịt heo  (ướp sơ với đầu hành lá , 1mcf: gia vị tiêu, bột nêm, nước mắm, đường)",250 g
+1872,261,Trứng bắc thảo,4 quả
+1873,261,Hành lá,2 nhánh
+1874,261,Tỏi,2 tép
+1875,261,Hành tím,1 củ
+1876,261,Dầu ăn,1 muỗng canh
+1877,261,Gừng,1 nhánh nhỏ
+1878,261,Nước mắm,1 muỗng canh
+1879,261,Đường,2/3 muỗng canh
+1880,261,Muối,1/2 muỗng cà phê
+1881,261,Tiêu,1/2 muỗng cà phê
+1882,261,bột nêm,1 mc
+1883,262,cá sơn thóc (=600gr),5 con
+1884,262,thơm,1/2 trái
+1885,262,cà chua,4 trái
+1886,262,"Gia vị: muối, bột ngọt, hành lá , ngò rí , tiêu",
+1887,263,Thịt heo,150 g
+1888,263,Mộc nhĩ,1 tai
+1889,263,Cải bẹ xanh,200 g
+1890,263,"củ Hành tím ,  ",1
+1891,263,Dầu ăn,1 muỗng canh
+1892,263,Nước,800 ml
+1893,263,Muối hồng,1/2 muỗng cà phê
+1894,263,Tiêu,1/4 muỗng cà phê
+1895,264,đùi gà,400 g
+1896,264,hành tây,1 củ
+1897,264,sả,2 tép
+1898,264,cà rốt,1 củ
+1899,264,khoai tây,2 củ
+1900,264,bột năng,2 muỗng
+1901,264,cà ri dầu,1/2 hũ
+1902,264,cà ri bột,1 gói
+1903,264,"Gia vị: nước mắm, hạt nêm, nước cốt dừa",
+1904,265,cá Trê,500 gam
+1905,265,nước mắm,50 ml
+1906,265,nước lọc,150 ml
+1907,265,bột ngọt,1/2 tsp
+1908,265,dầu ăn,4 tbsp
+1909,266,cá rô phi,500 g
+1910,266,bột chiên giòn,1 gói
+1911,267,(khoảng 500g) Cá chim,1 con
+1912,267,(cắt lát) Gừng,10 g
+1913,267,(cắt khúc) Hành lá,2 nhánh
+1914,267,(cắt sợi ) Ớt,1 quả
+1915,267,Nước tương,3 muỗng canh
+1916,267,củ ( nhỏ ) Hành tím,1
+1917,267,( nhỏ ) Tỏi,2 tép
+1918,267,Đường,1 muỗng cà phê
+1919,267,mirin,1 muỗng canh
+1920,268,bí đao,1 trái
+1921,268,xương heo,500 gr
+1922,269,mực,1 khay
+1923,269,hành tây,2 củ
+1924,269,cà chua,2 trái
+1925,269,hành lá,3 cây
+1926,269,Gia vị,
+1927,270,thịt ba chỉ,500 gr
+1928,270,"Gia vị: ngũ vị hương , muối, bột ngọt, đường",
+1932,272,Vịt,500 g
+1933,272,Cải chua,200 g
+1934,272,Ớt ,3 trái
+1935,272,Nước mắm,2 muỗng canh
+1936,272,Đường,1 muỗng canh
+1937,272,Hành tím,2 củ
+1938,272,Tỏi,2 tép
+1939,272,Dầu ăn,1 muỗng canh
+1940,272,Nước lọc / nước dừa,200 ml
+1941,273,thịt gà (luộc rồi),150 g
+1942,273,rau tiến vua,100 g
+1943,273,Cà rốt,30 g
+1944,273,Rau răm,10 g
+1945,273,Hành phi,10 g
+1946,273,Nước mắm,2 muỗng canh
+1947,273,Đường,1 muỗng canh
+1948,273,chanh,1 muỗng canh
+1949,273,Tỏi,1 tép
+1950,273,Ớt,1 trái
+1951,274,cà chua,3 trái
+1952,274,thịt xay,100 g
+1953,274,nấm đùi gà,2 cái
+1954,274,hành lá,20 g
+1955,274,trứng gà,4 trái
+1956,274,Gia vị,
+1957,275,rau ngót,200 g
+1958,275,nước,200 ml
+1959,275,cá rô,1/2 cân
+1960,276,cá chim trà,1 con
+1961,276,nước (đủ phần 1 tô),800-1000 ml
+1962,276,bún ,1 phần
+1963,276,chả cá,Vài lát
+1964,276,củ hành tây ,1/4
+1966,276,muối,1 mcf
+1967,276,bột ngọt,1 mcf
+1968,276,đường,1.5 mcf
+1969,276,"tiêu, hành lá",xíu
+1970,277,tôm,700 gr
+1971,277,tỏi ,2 mc
+1972,277,bơ,25 gr
+1973,277,bột nêm,1/2 mcf
+1974,277,muối,1/2 mcf
+1975,277,mắm,1 mcf
+1976,277,đường,2 mcf
+1977,277,tiêu,1 xíu
+1978,278,Dạ dày heo,300 g
+1979,278,hành tây,1 củ
+1980,278,Rau răm,
+1981,278,"Tỏi , ớt, chanh",
+1982,278,"Gia vị: muối, tiêu, đường, mắm",
+1983,279,đậu hũ,1 bìa (200 g)
+1984,279,"( ngâm nở,  ) Nấm mèo khô",2 g
+1985,279,trứng,2 cái
+1986,279,Muối,1/5 muỗng cà phê
+1987,279,Tiêu,1/5 muỗng cà phê
+1988,279,củ (  nhỏ) Hành tím,1
+1989,280,Măng,100 g
+1990,280,Nấm tuyết,20 g
+1991,280,Đậu hũ,100 g
+1992,280,Dầu mè,1 muỗng cà phê
+1994,280,Muối,1/2 muỗng cà phê
+1995,280,Tiêu,1/4 muỗng cà phê
+1996,280,bột bắp,3 muỗng canh
+1997,280,nước lọc,3 muỗng canh
+1998,281,thịt bò xay,400 g
+1999,281,gia vị Tacos,1 gói
+2000,281,cà chua,2 tbsp
+2002,281,bơ,1 quả
+2003,281,cà chua,1 quả
+2004,281,chanh,20 ml
+2005,281,rau mùi,1 nắm
+2006,281,vỏ bánh tacos,12 cái
+2007,281,xà lách,1 cây
+2008,282,chân gà rút xương,500 g
+2009,282,"gừng , sả, rượu",1 ít
+2010,282,"tỏi, ớt , sả , tiêu xanh",1 ít
+2011,282,"nước mắm,đường, nước,  dấm (nguyên liệu nấu nước mắm )",2 chén
+2012,283,Thịt heo,200 g
+2013,283,Tôm ,200 g
+2014,283,(khoảng 500g) Đu đủ hường,1/2 trái
+2015,283,Nước mắm,4 muỗng canh
+2016,283,Đường,4 muỗng canh
+2017,283,chanh,4 muỗng canh
+2018,283,Tỏi,4 tép
+2019,283,Ớt,3 trái
+2020,283,Rau răm,10 g
+2021,283,Đậu phộng,30 g
+2022,284,nấm đùi gà,5 cây
+2023,284,tỏi,2 tép
+2025,284,nước tương,2 tbsp
+2026,284,đường,1 tbsp
+2027,284,dầu mè,1 tbsp
+2028,285,cá rô phi,
+2029,285,hành khô,2 củ
+2030,285,gừng,1 miếng
+2031,285,rau cần nước,1 mớ
+2032,285,"cà chua , gia vị",02 quả
+2033,286,thịt bò,1 kg
+2034,286,Quế hồi,0.5 lạng
+2035,286,"Hạt tiêu , hạt nêm, nước mắm , dầu màu điều",
+2036,286,Rượu trắng,
+2037,286,"Tỏi , hành khô , gừng",
+2038,286,cà chua,5 quả
+2039,287,bò ,200 g
+2040,287,hành,1 mcf
+2041,287,Gia vị,
+2042,288,bò,50 g
+2043,288,thịt xông khói,2 lát
+2044,288,mì Ý,70 g
+2045,288,sốt kem,2 mc
+2046,288,tỏi ,1 mcf
+2047,288,Gia vị,
+2048,289,xương heo,400 gr
+2049,289,tôm ,130 gr
+2050,289,khoai tím / khoai mỡ,1 củ
+2051,289,"gia vị: muối, tiêu, bột ngọt, hành",
+2056,291,lưỡi heo,1 cái
+2057,291,hành tím,2 củ
+2058,291,Gia vị,
+2059,292,Trứng non (đã luộc hoặc hấp chín ),300 g
+2060,292,"tỏi, hành tím",1 muỗng canh
+2061,292,dầu ăn,1 mc
+2062,292,Bơ,10 g
+2063,292,Đường,1 muỗng canh
+2064,292,Nước mắm,2/3 muỗng canh
+2065,292,Dầu hào,1/2 muỗng canh
+2066,292,Tiêu,1/2 muỗng cà phê
+2067,292,củ hành trắng,20 g
+2068,292,Hành lá,10 g
+2069,293,Mì Ý,150 g
+2070,293,whipping cream,200 ml
+2071,293,Nấm đùi gà (dùng mũ nấm),50 g
+2072,293,Hành tây  ,2 muỗng canh
+2073,293,Bơ,1 muỗng nhỏ (5 g)
+2074,293,Muối,1/2 muỗng cà phê (2 g)
+2076,293,Dầu ô liu,1 muỗng nhỏ (5 ml)
+2077,293,(tùy chọn) Đường,1/3 muỗng cà phê
+2078,293,"(cắt , nếu có) Lá parsley ",1 muỗng nhỏ
+2079,294,Thịt ghẹ,200 g
+2080,294,Cơm nguội,4 chén 
+2081,294,Trứng gà,4 quả
+2082,294,(  nhỏ) Tỏi,6 tép
+2083,294,(cắt nhỏ) Hành lá,2 nhánh
+2084,294,Hạt nêm,1 muỗng canh
+2085,294,Nước mắm,1 muỗng canh
+2086,294,Muối,1/2 muỗng cà phê
+2087,294,Đường,1 muỗng cà phê
+2088,294,Bột ngọt,1/4 muỗng cà phê
+2089,294,Mỡ,2 muỗng canh
+2090,295,xương heo,400 g
+2091,295,tôm,100 g
+2092,295,chả cá,1/2 kg
+2093,295,hẹ,100 g
+2094,296,gạo,400 g
+2095,296,nước,480 ml
+2096,296,mỡ,120 g
+2097,296,nước mắm,4 muỗng canh
+2098,296,muối,1/2 muỗng cà phê
+2099,296,ớt ,4 trái
+2100,297,rau salad xoong,1 bó
+2101,297,thịt nạc ,1 chén nhỏ
+2102,297,đậu hũ non,1 lát
+2103,298,cá cơm,150 g
+2104,298,thịt ba rọi,200 g
+2105,298,hành lá,1 mc
+2106,298,Gia vị,
+2107,299,đùi gà,1 cái
+2108,299,cà rốt,200 g
+2109,299,củ dền,200 g
+2110,299,củ cải,200 g
+2111,299,bắp ngọt,100 g
+2112,299,táo tàu ,10 quả
+2113,299,củ hành tím,1
+2114,299,nước,1 lít
+2115,299,muối,1 thìa cà phê
+2116,299,ngò rí,Vài cọng
+2117,300,cá chim (800gr),1 con
+2118,300,củ hành tây,1/4
+2119,300,xì dầu,1 ít
+2120,300,hành lá,1 ít
+2121,300,tiêu,1 ít
+2122,301,(khoảng 300g) Khổ qua,2 trái
+2123,301,Trứng gà,2 quả
+2124,301,Dầu ăn,1 muỗng canh
+2125,301,Muối,1/2 muỗng cà phê
+2126,301,Tiêu ,1/4 muỗng cà phê
+2127,301,(dùng kèm) Nước tương,2 muỗng canh
+2128,301,"(  nhỏ, dùng kèm) Ớt",1 trái
+2129,302,tôm hùm,1 con
+2130,302,muối,1 chén
+2132,302,"rau răm, dưa leo",1 ít
+2141,304,cá đổng,4 con
+2142,304,muối,1 mcf
+2143,304,bột ngọt,1 mcf
+2144,304,ớt (tùy thích cay),2 trái
+2145,304,tiêu (nếu thích),1 ít
+2146,304,đường (nếu thích),1 xíu
+2147,305,cá chỉ vàng,10 con
+2148,305,xoài chua,1 quả
+2149,305,rau răm,1 nắm
+2150,305,nước mắm,1 thìa
+2151,305,mì chính,1 thìa
+2152,305,tương ớt,1 ít
+2153,305,nước lọc,3 thìa
+2170,307,Hạt sen ,150 g
+2171,307,Hạt điều sống,50 g
+2172,307,Bắp ngọt,1/2 trái
+2173,307,Nấm đông cô ,50 g
+2174,307,Hạt nêm,2 muỗng cà phê
+2175,307,Dầu ăn,1 muỗng canh
+2176,307,Tiêu,1/4 muỗng cà phê
+2177,307,Rau ngò rí,
+2178,308,Bún ,300 g
+2179,308,Sườn non,300 g
+2180,308,Cá thác lác,200 g
+2181,308,Tôm,8 con
+2182,308,Chả cá,100 g
+2183,308,Khổ qua,1 trái
+2184,308,Rau salad xoong,100 g
+2185,308,Hành phi,2 muỗng canh
+2186,308,Tiêu ,1 muỗng cà phê
+2187,308,Muối,1 muỗng cà phê
+2188,308,Nước mắm,1 muỗng canh
+2189,308,củ Hành tím,2
+2190,308,Nước lọc,1.5 lít
+2191,308,"nấm đùi gà , nấm đông cô , nấm bào ngư ",100 gr
+2192,309,trứng gà,2 quả
+2193,309,thịt bò,100 g
+2194,309,hành tím hoặc đầu hành lá,1 củ
+2195,309,tiêu ,1 ít
+2196,309,muối hồng,1 xíu
+2197,309,dầu ăn,2 muỗng
+2198,310,thịt heo,5 lạng
+2199,310,trứng,4 quả
+2200,310,Ngũ vị hương,1 gói
+2201,310,Hành khô,3 củ
+2202,310,Rau cải cúc,1 bó
+2203,310,thịt ,1-2 lạng
+2204,311,Đâụ gà ,250 gr
+2205,311,Dầu oliu  ,1 thìa café
+2206,311,Ớt bột  ,1 thìa cafe
+2207,311,Muối  ,1/4 thìa cafe
+2208,312,cá lóc ,1 con
+2209,312,mực,500 g
+2210,312,tôm,500 g
+2211,312,nấm rơm,50 g
+2212,312,bún ,500 g
+2213,312,giá,
+2214,312,Hành lá,
+2215,312,Gia vị,
+2216,313,bí đỏ,380 g
+2217,313,lá lốt,8 g
+2218,313,đậu phộng,100 g
+2219,313,muối hồng,1 ít
+2220,313,bột ngọt (tuỳ sở thích),1 ít
+2221,314,Cánh gà,500 g
+2222,314,Chanh,1 quả
+2223,314,Muối,2 g
+2224,314,Đường,4 thìa canh
+2225,314,Nước mắm,2 thìa canh
+2226,314,Tương ớt,1 thìa canh
+2227,314,(  nhỏ) Tỏi,2 tép
+2228,314,(  nhỏ) Ớt,1 quả
+2229,314,Bơ,10 g
+2230,314,củ (cắt lát) Hành tây,1/2
+2231,314,Chanh (cho sốt),1/2 quả
+2232,315,đùi gà,400 g
+2233,315,"Khoai , Cà Rốt , Củ Cải , Hành Tây",2 củ
+2234,315,Bột Cà Ri Barona,1 gói
+2235,315,"Sả, Tỏi , Hành ,",2-4 nhánh
+2236,315,cốt dừa Coconut Cream,80-100 g
+2237,316,bí đỏ,1/2 quả
+2238,316,óc heo,2 bộ
+2239,316,mì chính,1 thìa cafe
+2240,316,nước mắm,"1,5 thìa canh"
+2241,316,hạt tiêu,1 thìa cafe
+2242,317,khoai tây,600 g
+2243,317,thịt ba chỉ,200 g
+2244,317,hành lá,3 tép
+2245,317,nước tương,2 mc
+2246,317,dầu hào,1 mc
+2247,317,đường,1 mc
+2248,318,Cà chua bi,8 trái
+2249,318,Dưa leo ,4 trái
+2250,318,Xà lách,5 lá
+2251,318,Cà rốt,8 lát
+2252,318,Bắp ngọt,3 muỗng canh
+2253,318,Gà nướng,2 miếng
+2254,318,sốt dầu dấm,2 tbsp
+2255,319,cua đồng,300 gr
+2256,319,Mọc nấm hương,250 gr
+2257,319,Tóp mỡ,5 tsp
+2258,319,nước lọc,2 lít
+2259,319,dấm bỗng (Tự Làm Dấm Bỗng Từ Cơm Rượu Nếp Lứt),1/2 chén
+2260,319,đậu hũ,500 gr
+2261,319,thịt bò,400 gr
+2262,319,chả bì,200 gr
+2263,319,cà chua,2 quả
+2264,319,bún,250 gr
+2265,319,củ hành tím ,1
+2266,319,mắm tôm ,1 chén
+2268,320,đậu hũ,2 bìa
+2269,320,thịt heo xay,130 g
+2270,320,ớt ,15 g
+2271,320,tương ớt,20 g
+2272,320,dầu hào,15 g
+2273,320, tiêu,10 g
+2274,320,sa tế,20 g
+2275,320,nước lọc,1 chén
+2276,320,hành tỏi ,2 muỗng canh
+2277,320,hành lá,1 muỗng canh
+2278,320,mỡ,1 muỗng canh
+2279,320,dầu mè,1 muỗng cafe
+2280,320,bột bắp,1/2 chén
+2281,320,Gia vị,
+2282,321,thịt heo xay,200 g
+2283,321,tôm ,200 g
+2284,321,mộc nhĩ,20 g
+2285,321,nấm hương,20 g
+2286,321,"Gia vị, tiêu, hành khô",
+2287,321,"bắp cải , hành lá",
+2288,322,tôm,350 gr
+2289,322,dứa ( quả thơm ),1 quả
+2290,322,bột chiên giòn,2 muỗng canh
+2291,322,dầu ăn,300 gr
+2293,322,mayonnaise,100 gr
+2294,322,dứa,50 gr
+2295,322,sữa đặc,25 gr
+2296,322,tương ớt,20 gr
+2297,322,mù tạt,20 gr
+2298,323,cá hường,4 con
+2299,323,muối,1 muỗng cafe
+2300,323,Dầu ăn,
+2301,324,thịt ba chỉ,450 g
+2302,324,tỏi ,4-5 tép
+2303,324,hành lá,Ít
+2304,324,"Gia vị: đường, nước tương, dầu mè, tiêu",
+2305,325,đậu rồng,10 trái
+2306,325,nấm linh chi,1 hộp
+2307,325,tỏi ,1 mc
+2308,325,Gia vị,
+2309,326,xoài,1 quả
+2310,326,tôm khô,1 muỗng canh
+2311,326,củ cà rốt,1/4
+2312,326,rau răm,5 cọng
+2313,326,trứng vịt muối,1 quả
+2314,326,Nước mắm,2 tbsp
+2315,327,cơm (cùi) Dừa bánh tẻ,300 g
+2316,327,xì dầu (hoặc 2 muỗng canh nước tương),1 muỗng canh
+2317,327,Muối,1/4 muỗng cà phê
+2318,327,Mật mía (hay 1 muỗng đường),1 muỗng canh
+2319,327,Nước ép dứa (có thể bỏ qua ),2 muỗng canh
+2320,327,Dầu ăn,1 muỗng
+2321,327,nước,20 ml
+2322,328,cá lóc ( cá quả ),400 gr
+2323,328,rau cần nước,250 gr
+2324,328,cà chua,2 quả
+2325,328,củ hành tím,5
+2326,328,dầu ăn,2 muỗng canh
+2327,328,"Gia vị: Muối, nước mắm , hạt nêm, bột ngọt, tiêu",
+2328,329,cơm,1 chén
+2329,329,thịt bò,100 g
+2330,329,nước tương,1 muỗng canh
+2331,329,dầu ăn,1 muỗng cà phê
+2332,329,hành lá,1 nhánh
+2333,329,trứng gà,1 quả
+2334,329,kim chi,50 g
+2335,329,bắp cải,30 g
+2336,329,mè ,1/2 muỗng cà phê
+2337,330,Khoai môn,200 g
+2338,330,Nấm rơm  (hoặc sấy khô),100 g
+2339,330,Nước,800 ml
+2340,330,Muối,1/2 muỗng cà phê
+2341,330,Hạt nêm,1 muỗng cà phê
+2342,330,Rau mùi,5 g
+2343,330,Ngò gai,5 g
+2344,331,nước,500 ml
+2345,331,bột ngũ cốc( loại để nấu cháo tương tự bột yến mạch ),100 ml
+2346,331,táo (khoảng 1/4 trái táo cỡ vừa),50 g
+2347,331,đậu lăng,50 g
+2348,331,trứng,2 quả
+2349,331,Muối,
+2350,331,Tiêu,
+2351,331,dưa mắm,Vài lát
+2352,332,súp lơ trắng,1
+2353,332,thịt bò,150 gr
+2354,332,tỏi,2 tép
+2355,332,"gia vị: dầu hào, xì dầu, muối, bột ngọt, hạt nêm, mắm, tiêu, hành lá",
+2356,333,Cải mèo,400 g
+2357,333,Thịt ,100 g
+2358,333,Gừng,5 g
+2359,333,Hành lá,10 g
+2360,333,Muối,2 g
+2361,333,Nước mắm,5 ml
+2362,333,Dầu ăn,5 ml
+2363,333,Nước,500 ml
+2364,334,cá cơm,400 gr
+2365,334,mỡ,50 gr
+2366,334,thơm,1/2 trái
+2367,334,ớt,4 trái
+2368,334,ớt bột,2 muỗng canh
+2369,334,nước mắm,2 muỗng canh
+2370,334,đường,1 muỗng canh
+2371,334,bột ngọt,2 muỗng cafe
+2372,334,nước màu dừa,1 muỗng cafe
+2373,334,mỡ,2 muỗng canh
+2374,335,thịt ba chỉ,300 g
+2375,335,gừng,2 lát
+2376,335,hành tím,1 củ
+2377,335,muối hồng,"1,5 mcf"
+2378,335,dầu mè,1 muỗng canh
+2379,336,nấm đùi gà,500 g
+2380,336,Bột chiên giòn,1 ít
+2381,336,sả,3 củ
+2382,336,bột rang muối,1 gói
+2383,337,bí ngòi,1 trái
+2384,337,bánh rong biển,1
+2385,337,súp rau củ,1 viên
+2386,337,củ hành tím,1
+2387,338,Thịt ba chỉ,200 g
+2388,338,Măng,200 g
+2389,338,Nước dừa ,200 ml
+2390,338,Nước mắm,2 muỗng canh
+2391,338,Tiêu ,1/2 muỗng cà phê
+2392,338,Hành lá,2 nhánh
+2393,338,Dầu ăn,1 muỗng canh
+2394,338,Hành tím ,1 muỗng cà phê
+2395,339,tỏi 🧄,5-6 tép
+2396,339,Củ hành tây 🧅,1
+2397,339,giá đỗ,5 nghìn
+2398,339,Thịt bò xay,1 phần
+2399,339,mỳ  (mỳ nào tuỳ bạn thích nhé),6-7 cuộn
+2400,339,bơ,10 g
+2401,339,nước tương,3 muỗng canh
+2402,339,xì dầu(không có thì cho nhiều nước tương chút là được),1 muỗng canh
+2403,339,dầu hào,1 muỗng canh
+2404,339,bột ngọt,1 thìa cf
+2405,339,hạt nêm,1 thìa cf
+2406,339,bột nghệ,1 thìa cf
+2407,340,cá rô hoặc cá quả,500 g
+2409,340,hành khô,100 g
+2410,340,"rau cần , hành , thì là",1 mớ
+2411,340,"Gia vị, tiêu",
+2415,342,bí đỏ,300 g
+2416,342,đuôi heo,1/3 cái
+2418,342,Gia vị,
+2423,344,cá cờ,300 g
+2424,344,Bắp cải,100 g
+2425,344,Lá giang,30 g
+2426,344,Cà chua,1 quả (100 g)
+2427,344,Nước mắm,2 muỗng canh
+2428,344,củ (10g) Hành tím,1
+2429,344,Tỏi,2 tép (5 g)
+2430,344,Dầu ăn,1 muỗng canh
+2431,344,Nước lọc,800 ml
+2432,344,Muối,1/2 muỗng cà phê
+2433,344,Đường,1/2 muỗng cà phê
+2434,344,Rau ngổ,5 g
+2435,344,Ngò gai,5 g
+2436,345,đậu hũ,5 bìa
+2437,345,thịt heo xay,150 g
+2438,345,Nấm mèo,10 g
+2439,345,hành lá,1/2 chén
+2440,346,đùi gà,800 gr
+2441,346,"Xì dầu , dầu hào, muối, đường, tiêu,",
+2442,347,gạo (để nấu cơm),1 lon sữa bò
+2443,347,trứng gà,1 quả
+2444,347,tỏi ,"1,5 muỗng canh"
+2445,347,thịt gà( Chicken Luncheon),150 gr
+2446,347,lạp xưởng (hoặc thịt heo ),150 gr
+2448,347,dầu ăn,3 muỗng canh
+2449,347,ớt ,2 trái
+2450,347,ngò rí,10 gr
+2451,347,"Gia vị: Hạt nêm , đường, muối, tiêu, nước tương, bột ngọt",
+2452,348,Khoai mỡ,200 g
+2453,348,Nước hầm xương,800 ml
+2454,348,Rau ngổ,5 g
+2455,348,Ngò gai,5 g
+2456,348,Hành lá,5 g
+2457,348,Ngò rí,3 g
+2458,348,Muối,3 g
+2459,348,Hạt nêm,4 g
+2460,348,Tiêu,1 g
+2461,349,cải thìa,300 g
+2462,349,tép khô (con ruốc),20 g
+2463,349,nước,1 l
+2464,349,muối,1 muỗng cà phê
+2465,349,hạt nêm,1/2 muỗng cà phê
+2469,351,vịt (lựa vịt ít mỡ),1 con
+2470,351,trứng cút (luộc lột vỏ),50
+2471,351,"tiêu xanh , tỏi, hành tím , ớt, gừng, nước dừa , lá chuối",
+2472,352,ức gà,1 lb
+2473,352,sả ,1 chén nhỏ
+2474,352,tỏi,6 củ
+2475,352,dầu ăn,1 tbsp
+2476,353,(tùy loại ) Tôm,8 con
+2477,353,trứng,1 cái
+2478,353,Mayonnaise,5 muỗng canh
+2479,353,chanh,1 muỗng cà phê
+2480,353,Muối,1/4 muỗng cà phê
+2481,353,Tiêu,1/4 muỗng cà phê
+2482,353,Phô mai mozzarella,50 g
+2483,354,nấm đùi gà,250 gr
+2484,354,ớt,2 trái
+2485,354, tiêu xanh,2 dây
+2486,354,nước tương,1 muỗng canh
+2487,354,mật mía,1 muỗng cafe
+2488,354,muối tiêu,1 chút xíu
+2489,354,dầu ăn,1 tsp
+2490,354,boaro hoặc đầu hành /tỏi ,1 tsp
+2491,355,thịt heo,400 g
+2492,355,cà chua,3 trái
+2493,355,ngò gai,10 g
+2494,355,tỏi ,1 mc
+2495,355,Gia vị,
+2496,356,sườn non,500 g
+2497,356,trứng cút,30 quả
+2498,356,sả,2 cây
+2499,356,tỏi,2-3 tép
+2500,356,hành,1 củ
+2501,356,hạt tiêu,1 tsp
+2502,356,hạt nêm,1 tbsp
+2503,356,dầu hào,2 tbsp
+2504,357,cá thác lác,300 g
+2505,357,hành lá,30 g
+2506,357,khoai tây,8 củ
+2507,357,cà rốt ,2 củ
+2508,357,hành tỏi ,1 mc
+2509,357,nước dừa,1 bịch 500ml
+2510,357,Gia vị,
+2511,358,đỗ,1 bát con
+2512,358,thịt heo (ăn bao nhiêu lấy bấy nhiêu),1 cục
+2513,358,muối,1 thìa
+2514,358,mì chính,1 thìa
+2515,359,xương ức gà,600 g
+2516,359,thịt ức gà,150 g
+2517,359,cà rốt,1 củ
+2518,359,bắp,1 trái
+2519,359,chả lụa,50 g
+2520,359,jambon hoặc ham,50 g
+2521,359,nấm đông cô,7-8 tai
+2522,359,nấm đùi gà,50 g
+2523,359,trứng gà,2 quả
+2524,359,"Gia vị: muối,bột ngọt,hạt nêm,tiêu,đường,nước mắm,dầu mè",
+2530,361,bún,1 ít
+2531,361,đậu hủ ,1 bìa
+2532,361,xà lách,Vài
+2533,361,cà rốt ,1/2 củ
+2534,361,cải hồng,1/2 củ
+2536,361,Nước tương,
+2537,361,tỏi,1 tép
+2538,361,ớt ,1 trái
+2539,361,nước tương,2-3 mc
+2540,362,cá nục ,250 gr
+2541,362,xoài,1 trái
+2542,362,ớt,2 trái
+2543,362,tỏi,1 tép
+2544,362,"Gia vị: muối, nước mắm , đường",
+2545,362,Dầu ăn,
+2546,363,Mì tôm,1 gói
+2547,363,Mực ,100 g
+2548,363,Rau ngổ,5 g
+2549,363,Ngò gai,5 g
+2551,363,Nước,400 ml
+2552,364,Thịt heo,100 g
+2553,364,Cà chua,1 quả
+2554,364,Nấm hải sản,100 g
+2555,364,Nước,500 ml
+2556,364,Muối,1/2 thìa cà phê
+2557,364,Hạt nêm,1 thìa cà phê
+2558,364,Dầu ăn (Tuỳ chọn),1 thìa canh
+2559,364,nước,500 ml
+2560,364,nước mắm,1/2 thìa cà phê
+2561,365,Trứng gà,1 quả
+2562,365,Dầu ăn (1 muỗng canh),10 ml
+2563,365,(tùy chọn) Muối tiêu,1 nhúm
+2566,366,Thịt bò xay,300 g
+2567,366,Mỡ heo,80 g
+2568,366,Tỏi ,30 g
+2569,366,Hành lá,20 g
+2570,366,Lá lốt (tuỳ ý để ướp ),
+2571,366,Hạt nêm,1 muỗng canh
+2572,366,Bột ngọt,1/2 muỗng canh
+2573,366,Nước mắm,1/2 muỗng canh
+2574,366,Tiêu,1/2 muỗng cà phê
+2576,366,Lá lốt (bản to để cuốn),
+2577,366,xà lách,
+2578,366,Bánh tráng,
+2579,366,Dưa leo,1 quả
+2580,367,ếch (đã làm sạch),1 kí
+2581,367,cà chua,2 quả
+2582,367,măng ,300 gr
+2583,367,nấm hương ,10 cái
+2584,367,dứa,1/4 quả
+2585,367,sả,4 cây
+2586,367,dầu màu điều,1 tbsp
+2587,367,bột nghệ,1 tsp
+2588,367,củ hành tây,1/2
+2589,367,dừa,2 quả
+2590,367,sa tế,1 muỗng canh
+2591,367,ớt sừng,1 quả
+2592,367,măng,100 gr
+2593,367,"lá lốt , tía tô , mùi tàu",1 nắm
+2594,367,mẻ hoặc dấm,1 ít
+2595,367,bột chiên giòn hoặc bột bắp,2 tbsp
+2596,367,Bún ,500 gr
+2598,367,"Gia vị: muối, đường, nước mắm",1 ít
+2599,368,"thịt gà (luộc, xé)",1 cái
+2600,368,dưa leo,2 trái
+2601,368,hành tây ,1/2 củ
+2603,369,thịt heo xay,150 g
+2604,369,mướp,1 trái
+2605,369,bắp ngọt,100 g
+2606,369,táo tàu ,50 g
+2607,369,kỷ tử,10 g
+2608,369,gia vị knorr,1 viên
+2609,369,dầu mè,1 muỗng cf
+2610,369,tiêu,1 muỗng cf
+2611,370,Cá bống,300 g
+2612,370,Nghệ   ,20 g
+2613,370,Tỏi,5 tép
+2614,370,Ớt,2 quả
+2615,370,Nước mắm,2 muỗng canh
+2616,370,Đường,1 muỗng cà phê
+2617,370,Tiêu,1/2 muỗng cà phê
+2618,370,Dầu ăn / mỡ nước,1 muỗng canh
+2619,371,ghẹ ,250 gr
+2620,371,rau đay,300 gr
+2621,371,mướp hương,300 gr
+2622,371,hành tím,1 củ
+2623,371,dầu ăn,2 muỗng cafe
+2624,371,"Gia vị: muối, hạt nêm, bột ngọt, tiêu",
+2632,373,Cánh gà,500 g
+2633,373,Tiêu,1/2 thìa cà phê
+2634,373,Bột ớt,1 thìa cà phê
+2635,373,Hạt nêm,1 thìa cà phê
+2636,373,Bột bắp,5 thìa canh
+2637,373,(tách hạt ) Bắp ngọt,1 trái
+2638,373,Tỏi ,2 thìa canh
+2639,373,Ớt ,1 thìa canh
+2640,373,( loại nào cũng được) Bơ,30 g
+2641,373,Dầu ăn,
+2642,373,Tương ớt,5 thìa canh
+2643,373,Nước mắm,1 thìa canh
+2644,373,Nước lọc,1/2 chén
+2645,373,Đường,1 thìa canh
+2646,374,xương gà,1 bộ
+2647,374,đùi gà,1 cái
+2648,374,hẹ,20 g
+2649,374,hành lá,Ít
+2650,374,bánh canh,500 g
+2651,374,Gia vị,
+2652,375,Cá tắc kè,5 con (750 g)
+2653,375,Rau răm,30 g
+2654,375,Chanh,1 quả
+2655,375,Muối,1 thìa cà phê
+2656,375,Nước mắm,3 thìa canh
+2657,375,Ớt,2 trái
+2658,375,Tỏi,2 tép
+2659,375,Đường,1 thìa cà phê
+2660,376,cơm nguội,3 tô
+2661,376,trứng,5 quả
+2662,376,"bắp ngọt, đậu hà lan , đậu que , cà rốt , hành tây",100 g
+2663,376,"chả lụa , lạp xưởng ,xúc xích, xúc xích phô mai (xúc xích trắng)",50 g
+2664,376,Hành lá,
+2665,376,tương cà hoặc 1 hộp cà hộp,1/3 cup
+2666,376,mayonnaise,1/4 cup
+2667,376,tương ớt,2 tbsp
+2668,376,dầu hào,2 tbsp
+2669,376,dầu màu điều,2 tbsp
+2670,376,phô mai ,1-2 lát
+2671,376,"Gia vị: bột tỏi, bột hành ,hạt nêm,nước tương,lá oregano",
+2672,377,Tôm ,150 g
+2673,377,Mướp hương,200 g
+2674,377,Táo đỏ,8 quả
+2675,377,Hành lá,2 nhánh
+2676,377,Nước,800 ml
+2677,377,Dầu ăn,1 muỗng canh
+2678,377,hạt nêm,1 muỗng canh
+2679,377,Muối,1/2 muỗng cà phê
+2680,377,Tiêu,1/4 muỗng cà phê
+2681,378,đùi gà,10 cái
+2682,378,nước mắm,3 muỗng canh
+2684,378,tiêu,1/2 muỗng cf
+2685,378,dầu ăn,300 ml
+2686,378,xà lách,5
+2687,378,ngò rí,1 nhánh
+2688,379,Thịt bò (chín),
+2691,379,"Muối, đường, hạt nêm, bột canh",
+2693,379,Dừa non,
+2694,379,táo,2-3 quả
+2695,379,Hành tây,
+2696,379,sả,3-4 củ
+2697,379,Ớt,
+2698,379,Dứa,
+2699,379,Rau mùi,
+2700,379,Hành  ,
+2701,379,Rau mùi tàu,
+2702,379,nước dừa,1 lít
+2703,379,nước khoáng có ga,500 ml
+2704,379,"dấm, đường, muối, bột canh",
+2708,379,Bún,
+2709,379,Mì tôm (để ăn với nước dùng nếu có nhu cầu 😊),
+2710,379,"Cà rốt , dưa chuột , dứa ",
+2711,379,"Xà lách , cải thảo , nấm (nói chung là rau củ theo mùa tuỳ nhu cầu thui ạ)",
+2712,379,Quẩy,
+2713,379,Đậu hũ,
+2714,379,Thịt bò,
+2716,379,Bánh tráng,
+2717,380,Bún ,1 kí
+2718,380,Đậu phụ,8 miếng
+2719,380,"Lòng heo (tim heo , gan heo , phèo, bao tử , dồi huyết đã luộc)",800 g
+2720,380,thịt ba chỉ (đã luộc),200 gr
+2721,380,Húng lủi,10 g
+2722,380,Húng láng,10 g
+2723,380,Kinh giới,10 g
+2724,380,hành lá,1 nắm
+2725,380,Dầu ăn,1 muỗng canh
+2727,380,Mắm tôm,2 muỗng canh
+2728,380,Đường,2 muỗng cà phê
+2729,380,chanh,2 muỗng cà phê
+2730,380,Ớt ,1 quả
+2731,381,Thịt heo xay,500 g
+2732,381,Hành tím ,1 muỗng canh
+2733,381,Tỏi ,1 muỗng cà phê
+2734,381,Bột bắp,1 muỗng canh
+2735,381,Nước tương,3 muỗng canh
+2736,381,tiêu,1 nhúm
+2737,381,muối,1 nhúm
+2738,381,mirin,1 muỗng canh
+2739,381,Đường,1/2 muỗng canh
+2740,381,Dầu ăn,2 muỗng canh
+2741,381,Mè,1 muỗng cà phê
+2742,381,Tiêu,1/2 muỗng cà phê
+2743,381,Hành lá,1 nhánh
+2744,381,bột chiên giòn,2 muỗng canh
+2745,382,vịt,1 con
+2746,382,củ sen,300 g
+2747,382,dừa,1 quả
+2748,382,"Hành củ , gừng , gia vị",
+2749,383,cá basa,500 gr
+2750,383,ức gà ,150 gr
+2751,383,bột khoai tây ( bột năng),50 gr
+2752,383,bột nở (baking powder),5 gr
+2753,383,hành tím ,1 muỗng canh
+2754,383,bột tỏi,1 muỗng cafe
+2755,383,nước mắm,2 muỗng cafe
+2756,383,đường,2 muỗng cafe
+2757,383,bột ngọt,1 muỗng cafe
+2758,383,tiêu,1 muỗng cafe
+2759,383,dầu ăn hoặc mỡ heo nước,1 muỗng canh
+2761,384,Nấm tràm,100 g
+2762,384,Tiêu xanh,1 nhánh
+2763,384,Rau răm,1 nắm
+2764,384,Nước mắm,1 muỗng canh
+2765,384,Nước tương,1 muỗng canh
+2766,384,Đường,2 muỗng cà phê
+2767,384,Muối,1 ít
+2768,384,Dầu ăn,1 ít
+2769,385,bí đỏ,500 gr
+2770,385,cá hồi,2 lát
+2771,385,hành tây,1 củ
+2772,385,ngò rí,3 tép
+2773,385,dầu olive,2 muỗng canh
+2774,385,"Gia vị: muối, hạt nêm, bột ngọt, tiêu",
+2775,386,gà,1/2 con
+2776,386,củ gừng ,1
+2777,386,Gia vị,
+2778,387,Thịt vai,500 g
+2779,387,Thịt ba chỉ,500 g
+2780,387,Sữa đặc,2 muỗng canh
+2781,387,Nước,1
+2782,387,Baking soda,1 thìa cà phê
+2783,387,( ướp + thêm khi hầm )Muối,1 thìa cà phê
+2784,387,Tiêu,1 ít
+2785,387,Hành tím,5 củ
+2786,388,vịt,1 con
+2787,388,nước dừa,200 ml
+2788,388,nấm rơm,200 g
+2789,388,khoai môn,1 củ
+2790,388,rau muống ,1 bó
+2791,388,dầu màu điều,1 tsp
+2792,388,nước mắm,2 tbsp
+2793,388,"hạt nêm, tiêu",1 tsp
+2794,388,"tỏi,  ",1 củ
+2796,388,chao ngọt,2 tbsp
+2797,388,sữa đặc,1 tbsp
+2798,388,ớt ,1 trái
+2799,389,dưa hường,2 trái
+2800,389,giò lụa,1 lát
+2801,390,chân gà,10 cái
+2802,390,mướp,2 trái
+2803,390,hành lá,20 g
+2804,390,Gia vị,
+2806,391,thịt lợn,400 gr
+2807,391,Gừng,
+2808,391,"Muối, tiêu,hạt nêm",
+2810,391,tinh bột khoai tây,300 gr
+2811,391,Nước,
+2812,391,Dầu ăn,
+2814,391,nước,250 ml
+2815,391,nước tương,3 thìa
+2816,391,đường,2 thìa
+2817,391,giấm,2 thìa
+2818,391,tương cà,1 thìa
+2819,391,hạt nêm,1/2 thìa cà phê
+2820,391,"Cà rốt , hành tây, táo , dứa và dưa chuột (xắt hạt lựu tỉa hoa theo sở thích)",
+2821,392,thịt bò,300 gr
+2822,392,dầu ăn,3 muỗng canh
+2823,392,nước tương,1 muỗng canh
+2824,392,hạt nêm,2 muỗng cafe
+2825,392,đường,2 muỗng cafe
+2826,392,bột bắp,1 muỗng cafe
+2827,392,tiêu ,1 muỗng cafe
+2828,392,hành tây,1 củ
+2829,392,tỏi ,1 muỗng canh
+2830,392,hành tím ,1 muỗng canh
+2831,392,sả,2 muỗng canh
+2832,392,"xà lách , rau thơm, giá",500 gr
+2833,392,bún,1 kg
+2834,392,đậu phộng,100 gr
+2835,392,ớt ,1 muỗng canh
+2836,392,nước mắm,1 chén
+2837,392,sắn ,1 củ
+2838,392,cà rốt,1/2 củ
+2839,393,chả cá,0.5 kg
+2840,393,Dưa leo,0.5 kg
+2841,393,rau sống,500 g
+2842,393,ớt,2 trái
+2843,393,tỏi,1 củ
+2844,393,nước mắm,5 muỗng
+2845,393,đường,5 muỗng
+2847,394,cá hồi,400 gr
+2848,394,muối,1 nhúm
+2849,394,khoai tây,100 gr
+2851,395,hàu,300 g
+2852,395,thịt heo xay,100 g
+2853,395,cà chua,1 trái
+2854,395,hành lá,2 củ
+2855,395,dầu ăn hoặc mỡ,1 muỗng
+2856,395,nước,800 ml
+2857,395,rau răm,1/2 bó
+2858,395,hành lá,2 cây
+2859,395,ngò,2 cây
+2860,395,ớt ,2 lát
+2861,396,cá cơm ,1 vỉ  340g
+2862,396,gừng ,1 miếng
+2863,396,bột chiên giòn,4 mc
+2864,396,Gia vị,
+2865,397,Thịt heo xay,80 g
+2866,397,Nấm mèo,20 g
+2867,397,Trứng gà,3 quả
+2868,397,Hành lá,2 cọng
+2869,397,nước mắm,1 muỗng canh
+2870,397,Tiêu ,1 ít
+2871,397,Dầu ăn,2 muỗng canh
+2872,398,"rau: bắp ngọt , cà rốt , đậu Hà Lan",1 gói
+2873,398,cơm,2 chén
+2874,398,chả bì ,2 cây
+2875,398,hành lá,20 g
+2876,398,Gia vị,
+2877,399,thịt bò,250 g
+2878,399,cà chua,1 trái
+2879,399,tỏi,1 muỗng
+2880,399,cải chua,200 g
+2881,399,ngỗ,2 cây
+2882,399,rau răm,2 cây
+2883,399,ngò gai,
+2884,399,ngò rí,1 cây
+2885,400,da heo,50 g
+2886,400,thịt heo xay,100 g
+2887,400,mồng tơi,1 bó
+2888,400,Gia vị,
+2889,401,thịt bò,150 gr
+2890,401,su su,1 củ
+2891,401,đậu ve,1 ít
+2892,401,ngò rí,1 bó
+2893,401,"gia vị: dầu hào, mắm , muối, bột nêm, tiêu",
+2894,402,thịt bò,1 kg
+2895,402,khoai tây,600 gr
+2896,402,cà rốt,300 gr
+2897,402,hành tây,150 gr
+2898,402,cà ri (125gr),1 hộp
+2899,402,tỏi ,2 muỗng canh
+2900,402,dầu ăn,1 muỗng canh
+2901,402,"Dầu hào , dầu mè, nước tương, hạt nêm, tiêu",Gia vị:
+2902,403,tempeh,200 g
+2903,403,nấm đùi gà,100 g
+2904,403,sa kê,100 g
+2905,403,bơ,10 g
+2906,403,tỏi,
+2907,403,bột nghệ,1 thìa cf
+2908,403,bột ngô,1 thìa canh
+2909,404,thịt heo,500 gr
+2910,404,táo,1 trái
+2911,404,hành tây,1 củ
+2912,404,"hành tím, tỏi ",3 củ
+2913,404,rượu nấu ăn,1/2 cup
+2914,404,"garlic, pepper seasoning",1 tbsp
+2915,404,muối,2 tsp
+2916,404,bột quế (cinnamon),2 tsp
+2917,404,lá thơm (bay leaves),2
+2918,404,nước tương,2 tbsp
+2919,404,đường,1 tbsp
+2920,405,Cá bạc má,2 con (khoảng 400g)
+2921,405,Mía,2 lóng (khoảng 20cm)
+2922,405,Riềng,1 củ nhỏ (30g)
+2923,405,Trà khô,1 tbsp
+2924,405,Nước mắm,2 tbsp
+2925,405,Tương ớt,1 tbsp
+2926,405,Dầu mè,1 tbsp
+2927,405,Mật ong,2 tbsp
+2928,405,Dầu hào,1 tbsp
+2929,405,Tiêu,1/2 tsp
+2930,405,Ớt,1 quả
+2931,405,Hành tím,2 củ
+2932,405,Tỏi,2 tép
+2933,405,Dấm,2 tbsp
+2934,406,thịt heo xay (nhiều mỡ một chút sẽ ngon hơn),500g
+2935,406,hạt nêm,2 g
+2936,406,mắm tép,60 g
+2937,406,tỏi,25 g
+2938,406,hành,25 g
+2939,406,đường,20 g
+2940,406,sả,10 g
+2941,406,riềng,50 g
+2942,406,dầu màu điều,30 g
+2943,406,dầu ăn,50 g
+2944,407,măng (đã luộc chín),400 g
+2945,407,chả cá ,250 g
+2946,407,cải chua,200 g
+2947,407,mỡ ,2 muỗng
+2948,407,hành tím,3 củ
+2949,407,nước mắm,1 muỗng
+2950,407,muối hồng,1 ít
+2951,407,tiêu ,1 muỗng cafe
+2952,407,bột ngọt (tuỳ thích),1 ít
+2953,407,Hành lá,
+2954,408,cá ngừ,1 kg
+2955,408,củ cải,100 g
+2956,408,thịt heo,200 g
+2957,408,ớt ,3 quả
+2958,408,riềng ,100 g
+2959,408,Gia vị,
+2960,409,Da heo,400 g
+2961,409,Thính gạo,30 g
+2962,409,Sả,2 cây
+2963,409,Muối,5 g
+2964,410,"nấm đùi gà ,nấm hương ",2 cây
+2965,410,đậu làng Mơ,1 hộp
+2966,410,"gừng , tỏi, hành , tiêu",1 miếng
+2968,410,"Hành lá , rau mùi",
+2969,411,đậu hũ,300 g
+2970,411,thơm,1/4 trái
+2971,411,nấm mèo,15 g
+2972,411,nấm đùi gà,100 g
+2973,411,đậu cô ve,200 g
+2974,411,cà rốt,1/2 củ
+2975,412,cá lăng,1 kg
+2976,412,măng,3 củ
+2977,412,hành khô,3 củ
+2978,412,cà chua,2 quả
+2979,412,muối,3 thìa
+2980,412,nước mắm,2 thìa
+2981,412,mì chính,1/2 thìa
+2982,412,nước,"2,5 lít"
+2983,412,Dầu ăn,
+2984,412,Hành lá,
+2985,413,Bột gạo,400 g
+2986,413,Nước,2 lít
+2987,413,Xương heo,500 g
+2988,413,Tôm ,100 g
+2989,413,Ruốc Huế,2 thìa cà phê
+2990,413,Muối,1 thìa cà phê
+2991,413,Nước mắm,1 thìa canh
+2992,413,Hành lá,2 cây
+2993,413,hành tím,3 củ
+2994,414,Nấm đông cô hoặc nấm mỡ,
+2995,414,"Dầu olive , bơ",
+2996,414,Rượu,
+2997,414,"Nấm hương , lá nguyệt quế , tiêu đen, hành tỏi",
+2998,414,Miso paste,
+2999,414,Cooking cream hoặc whipping cream,
+3000,415,gà,1 kg
+3001,415,gừng,50 g
+3002,415, hành tím,Vài củ
+3003,415, hành tây,1 củ
+3004,415, cà rốt,1 củ
+3005,415,dưa leo,1 trái
+3006,415,cà chua,2 trái
+3007,416,cá nục,1 kg
+3008,416,chuối xanh,5 quả
+3009,416,củ cải,200 g
+3010,416,riềng,200 g
+3011,416,thịt heo,200
+3012,416,cà chua,5 quả
+3013,416,ớt,3 quả
+3014,416,gia vị,
+3015,417,Bí đỏ,200 g
+3016,417,Đậu phộng,50 g
+3017,417,Muối,1/2 muỗng cà phê
+3018,417,Hành lá,2 nhánh
+3019,417,Ngò gai,2 nhánh
+3020,417,Rau om,2 nhánh
+3021,417,Nước,800 ml
+3027,419,bí đỏ,150 g
+3028,419,nấm kim châm,1/2 gói
+3029,419,Bột chiên giòn,
+3030,419,Bột năng,
+3031,419,Gia vị,
+3032,420,cá linh,500 g
+3033,420,hành,2 tép
+3034,420,tỏi,2 tép
+3035,420,hành tím,2 củ
+3036,420,nước mắm,1 vá
+3037,420,nước dừa ,2 vá
+3038,420,bột ngọt,1/3 mcf
+3039,420,nước màu,1 mcf
+3040,420,đường,1/3 vá
+3041,420,tiêu,1/4 mcf
+3042,421,thịt heo xay,500 g
+3043,421,tôm,300 g
+3044,421,bắp ngọt,1/2 trái
+3045,421,vỏ sủi cảo,1 xấp
+3046,421,hành lá,30 g
+3047,421,nước mắm,1 mc
+3048,421,hạt nêm,1 mcf
+3049,421,tiêu ,1/2 mcf
+3050,422,chân gà,600 g
+3051,422,bột tẩm khô chiên giòn,1 gói
+3052,422,nước mắm,20 g
+3053,422,đường,20 g
+3054,422,tỏi,1 củ
+3055,422,dầu ăn,150 g
+3056,422,ớt,3-4 trái
+3057,423,Rau cải cúc ( rau tần ô ),300 g
+3058,423,Nước,500 ml
+3059,423,Hạt nêm,2 muỗng cà phê
+3060,423,Nước mắm,1 muỗng
+3061,423,Khô cá mặn chay (không bắt buộc),
+3062,423,Dầu ăn (nếu dùng cá mặn chay),1 muỗng canh
+3063,424,Bắp cải / bắp sú,
+3064,424,Tôm ,
+3065,424,"Mắm , muối, bột ngọt, tiêu",
+3066,425,Bắp cải,100 g
+3067,425,Ngô ngọt,50 g
+3068,425,đùi gà,150 g
+3069,425,Gừng,1 lát
+3070,425,Hành tím ,1 củ
+3071,425,Cà chua,6 quả
+3072,425,Sốt mè rang,2 thìa cà phê
+3073,426,Nấm hải sản,150 g
+3074,426,Nấm đông cô ,100 g
+3075,426,Nấm mèo,1 cái
+3076,426,Nấm rơm,100 g
+3077,426,(khoảng 50g) Cà rốt,1 khúc
+3078,426,Rau mùi,
+3079,426,Hạt nêm,3 thìa cà phê
+3080,426,Hạt tiêu,1/2 thìa cà phê
+3081,426,Bánh đa nem,
+3082,426,Dầu ăn,
+3087,428,thịt ba chỉ,500 g
+3088,428,bột chiên giòn,3 mc
+3089,428,tỏi ,1 mc
+3090,428,nước mắm,1/2 chén
+3091,428,Gia vị,
+3092,429,Nấm hầu thủ,100 g
+3093,429,Nấm hương,50 g
+3094,429,chả chay,40 gr
+3095,429,Phở sắn,4 lá
+3096,429,xà lách,30 g
+3097,429,"Rau thơm (húng, mùi ...)",10 g
+3098,429,Sa tế,1 muỗng canh
+3099,429,Nước tương,2 muỗng canh
+3100,429,Đường,1 muỗng cà phê
+3101,429,chanh,1 muỗng cà phê
+3102,429,Ớt ,1/2 quả
+3103,429,Tỏi ,1 muỗng cà phê
+3104,429,Dầu ăn,1 muỗng canh
+3105,430,"mỳ lá  (vỏ mandu),Vỏ bánh mandu (sủi cảo Hàn Quốc)",50 gram
+3106,430,cà chua,1 quả
+3107,430,thịt ,30-40 gram
+3108,430,hành,1 củ
+3109,430,hành / hẹ ,1 cây
+3110,430,nước mắm / bột nêm,1 thìa
+3111,430,dầu ăn,1/2 thìa
+3112,431,Nước lẩu Thái,2 lít
+3113,431,Tôm,6 con
+3114,431,(hoặc mì gói: 3 gói) Bún ,500 g
+3115,431,Rau nhút,200 g
+3116,431,Kèo nèo,150 g
+3117,431,Hoa chuối,100 g
+3118,431,Rau muống,150 g
+3119,431,Cà chua,2 quả
+3120,431,Bắp ngọt,1 trái
+3121,432,cua ,1 bịch
+3122,432,rau ngót,1 rổ
+3123,432,mướp,1 trái
+3124,432,"Đường , bột ngọt, hạt nêm",2 mcf
+3125,433,thịt ba chỉ,400 g
+3126,433,hành tây,2 củ
+3127,433,dưa leo,1 trái
+3128,433,cà chua,1 trái
+3129,433,Hành lá,
+3130,433,Mè,
+3131,433,Gia vị,
+3132,434,Thịt ba chỉ,200 g
+3133,434,Mắm ruốc,1 muỗng canh
+3134,434,me,1 muỗng cà phê
+3135,434,Sả ,1 cây
+3136,434,Ớt,1 trái
+3137,434,đường,1 muỗng canh
+3138,435,gà ta ,1 con
+3139,435,bột ớt ( loại dùng kèm lạp xưởng nướng đá),2 mc
+3140,435,Gia vị,
+3141,436,Sườn non,300 g
+3142,436,Đu đủ mỏ vịt,200 g
+3143,436,Cánh hoa sen,6 cánh
+3144,436,Muối,1/2 thìa cà phê
+3145,436,Nước,1 lít
+3146,437,cá nục,300 gram
+3147,437,Ớt,
+3148,437,Hành,
+3149,437,"Dầu , mắm , đường, ớt bột",
+3150,438,vỏ bánh hamburger (nướng sẵn trong siêu thị),1 bịch
+3151,438,bò  Úc,2 lát
+3152,438,salad,1 cây
+3153,438,cà chua,1 trái
+3154,438, hành tây,1 củ
+3155,438, hành tím (ko có cũng được),1 củ
+3156,438, cà rốt ,1 củ
+3157,438,trứng,2 quả
+3158,438,sốt bbq,1 chai
+3159,438,cheese,2 miếng
+3160,439,tôm,300 g
+3161,439,mỡ heo,200 g
+3162,439,Gia vị,
+3167,441,thịt heo xay,300 g
+3168,441,"hành củ , hành lá , tiêu, gia vị",
+3169,442,đuôi heo,200 gr
+3170,442,củ cải ,250 gr
+3171,442,tôm khô,10 gr
+3172,442,hành tím,3 củ
+3173,442,hành phi,10 gr
+3174,442,hủ tiếu,200 gr
+3175,442,"hẹ , hành lá , giá, xà lách , nước mắm, tỏi",
+3176,442,"Gia vị: Muối, hạt nêm, đường, nước mắm , tiêu",
+3177,443,thịt heo,400 g
+3178,443,hạt nêm,1/2 mcf
+3179,443,muối,1 mc
+3180,444,Mì ý,200 g
+3181,444,Bacon,80 g
+3182,444,Nấm mối,100 g
+3183,444,Bông cải xanh,100 g
+3184,444,Cream cheese,50 g
+3185,444,Trứng,1 cái
+3186,444,Cooking cream,60 ml
+3187,444,Hạt nêm,1/2 muỗng cà phê
+3188,444,Tiêu,1/4 muỗng cà phê
+3190,445,cánh gà,600 g
+3191,445,dầu ăn,50 ml
+3192,445,tỏi,1 củ
+3193,445,hành tây ,1/2 củ
+3194,445,đường,2 muỗng canh
+3195,445,nước mắm,2 muỗng canh
+3196,445,tương ớt,2 muỗng canh
+3197,445,hạt nêm,1 muỗng cà phê
+3198,445,tiêu,1/2 muỗng cà phê
+3199,445,ớt,2 trái
+3200,446,"thịt heo xay (như mình hay mua thịt Meatdeli vì nó có mỡ khi làm nhân sẽ không bị khô, nếu ai thích nạc hơn có thể mua thịt tự xay)",400 gr
+3201,446,hành tím ,1 củ
+3202,446,cà rốt ,1 củ
+3203,446,hành lá,30 gr
+3204,446,hạt tiêu,1/2 thìa cafe
+3205,446,dầu hào,1 thìa cafe
+3206,446,dầu mè,1 thìa
+3207,446,bột bắp,2 thìa
+3208,446,nước mắm,1 thìa
+3209,446,vỏ há cảo  (kích thước 10x10cm),50 chiếc
+3210,447,"(khoảng 2 miếng, 1.5 lb) Ức gà",680 g
+3211,447,Mật ong,60 ml (1/4 chén)
+3212,447,ketchup,60 ml (1/4 chén)
+3213,447,xì dầu,1 muỗng canh
+3214,447,(1/3 củ nhỏ) Hành tây,30 g
+3215,447,(  nhỏ) Tỏi,4 tép
+3216,447,(tùy độ sánh mong muốn) Bột bắp,1-3 muỗng cà phê
+3217,447,Nước lọc (để pha bột bắp ),30 ml (2 muỗng canh)
+3218,448,Mì Ý,200 g
+3219,448,Bacon,100 g
+3220,448,Nấm mỡ,100 g
+3221,448,Rau húng quế,30 g
+3222,448,Hạt điều,20 g
+3223,448,Cooking cream,20 ml
+3224,448,Cream cheese,30 g
+3225,448,Phô mai,1 muỗng canh
+3226,448,Tỏi,2 tép
+3227,448,Dầu oliu,3 muỗng canh
+3228,448,Nước ấm,3-5 ml
+3229,448,Muối,1/4 muỗng cà phê
+3230,448,Hạt nêm,1/2 muỗng cà phê
+3231,448,Mì chính,1/4 muỗng cà phê
+3232,448,Tiêu,1/4 muỗng cà phê
+3233,448,lá Oregano,1 nhúm nhỏ
+3234,449,ức gà,500 g
+3235,449,cà rốt,1 củ
+3236,449,hành tây,1 củ
+3237,449,muối,1 thìa
+3238,449,tiêu,1/2 thìa
+3239,449,nước mắm,1/2 thìa
+3240,449,bột chiên xù,1 gói rưỡi
+3241,449,Bột mì,7 thìa
+3242,449,trứng,1 quả
+3243,449,nước lọc,80 ml
+3245,449,Dầu ăn,
+3246,450,lòng gà,1 bộ
+3247,450,tép khô,20 g
+3248,450,bắp cải,1/2 cái
+3249,450,Hành lá,
+3250,450,Gia vị,
+3251,451,da heo,300 gam
+3252,451,cải chua,500 gam
+3253,451,hành tím ,1 tbsp
+3254,451,củ tỏi,1
+3255,451,đường,4 tbsp
+3256,451,nước mắm,4 tbsp
+3257,451,hạt nêm,1 tbsp
+3258,451,bột ngọt,1/2 tsp
+3259,451,sa tế,1 tbsp
+3260,451,dầu hào,1/2 tbsp
+3261,451,tiêu,1 tsp
+3262,451,dầu ăn,3 tbsp
+3263,452,thịt gà (xé sẵn),200 gr
+3264,452,"bồn bồn (lặt phần gốc non -1 gang tay từ gốc, bẻ khúc vừa ăn)",1 nắm
+3265,452,"rau tiến vua (đã ngâm nở bằng nước lạnh , rửa sạch, cắt khúc)",100 gr
+3266,452,cà rốt,50 gr
+3267,452,dưa leo,50 gr
+3268,452,rau răm,10 cọng
+3269,452,húng quế,5 cọng
+3270,452,hành phi,1 muỗng canh
+3271,452,nước mắm,3 muỗng canh
+3272,453,lạp xưởng,200 g
+3273,453,nguội,2 bát cơm
+3274,453,đậu que,100 g
+3275,453,hạt nêm,2 tsp
+3276,453,nước tương,1 tbsp
+3277,453,dầu mè,1 tsp
+3278,453,tiêu,1/2 tsp
+3279,453,trứng vịt (hoặc gà),1 quả
+3280,454,cải rổ,2 cây
+3281,454,trứng,1-2 quả
+3282,454,nước mắm,1 muỗng canh
+3283,454,muối,1/2 muỗng cafe
+3284,455,phở,3 tấm
+3285,455,thịt heo,100-150 gram
+3286,455,cà chua,1 quả
+3287,455,sấu,4_5 quả
+3288,455,"hành lá , rau mùi",Vài
+3289,455,nước mắm,2 thìa
+3290,455,bột nêm,1 thìa
+3291,455,hành khô,1 củ
+3292,456,thịt heo,200 g
+3293,456,cải chua,300 g
+3294,456,ớt,1 trái
+3295,456,tỏi,2 tép
+3296,456,hành tím,2 củ
+3297,456,mỡ,2 muỗng
+3298,456,dầu hào,1 muỗng
+3299,456,mắm,1 muỗng
+3300,456,bột ngọt (tuỳ sở thích),1 ít
+3301,456,ngò rí,1 ít
+3302,456,rau răm,1 ít
+3303,457,Chân gà,500 g
+3304,457,Bột mì,2 thìa canh
+3305,457,Chanh,1 quả
+3306,457,Muối,2 thìa cà phê
+3307,457,Rượu,2 thìa canh
+3308,457,Dấm,2 thìa canh
+3309,457,Hành tây,1 củ
+3310,457,Gừng,20 g
+3311,457,Tiêu,1 thìa cà phê
+3312,457,hành lá,1 ít
+3313,457,Ớt,1 quả
+3314,457,Muối,1 chén nhỏ
+3315,458,(khoảng 300g) Đậu hũ,2 miếng
+3316,458,Lòng đỏ trứng muối,3 cái
+3317,458,Bơ,10 g
+3318,458,Hành lá,1 nhánh
+3319,458,Dầu ăn,30 ml
+3320,458,Muối,1/4 muỗng cà phê
+3321,458,Đường,1/2 muỗng cà phê
+3322,459,bông cải xanh,1 cây
+3323,459,nấm lộc nhung,10-15 cây
+3324,459,tỏi,1 củ
+3325,459,dầu hào,1 thìa
+3326,459,muối,1 ít
+3327,459,dầu ăn,1-2 thìa
+3328,460,(khoảng 600g) Cá khế,1 con
+3329,460,Muối,2 g
+3330,460,Ớt chuông đỏ,1/2 quả
+3331,460,Ớt chuông vàng,1/2 quả
+3332,460,Hành tây,1/4 củ
+3333,460,Dầu ăn,30 ml
+3335,460,xì dầu,30 ml
+3336,460,dấm,20 ml
+3337,460,Đường,20 g
+3338,460,muối,1 chút
+3339,460,tỏi ,1 tbsp
+3340,460,dầu ăn,1 tbsp
+3341,461,Cánh gà,8 cái
+3342,461,Bột khoai tây,2 muỗng canh
+3343,461,Muối,1/2 muỗng cà phê
+3344,461,Tiêu,1/3 muỗng cà phê
+3345,461,Dầu ăn,300 ml
+3346,462,thịt bò,150 g
+3347,462,dưa leo,2 trái
+3348,462,tỏi ,1 mc
+3349,462,Gia vị,
+3350,463,Nạm bò hoặc bắp bò,500 g
+3351,463,Táo,1 trái
+3352,463,Hành tây,1 củ
+3353,463,Cà chua,2 trái
+3354,463,Tỏi,1 củ
+3355,463,(khoảng 10g) Gừng,1 miếng
+3356,463,"(khoảng 0,5g) Quế",1 miếng
+3357,463,Hoa hồi,2 cái
+3358,463,Nước,2000 ml
+3359,463,"Gia vị : nước mắm, bột ngọt, tiêu, hành tím , dầu hào, tương ớt..",
+3360,463,Mì tôm hoặc mì trứng,4 phần
+3361,463,Cải thìa,1 bó
+3362,463,Cải chua,100 g
+3363,464,"Rong biển ( ngâm nở, rửa sạch)",5 g
+3364,464,Giò sống,120 g
+3365,464,Đậu hũ (tuỳ chọn),1 miếng
+3366,464,miso,1 thìa
+3367,464,hạt nêm,1/2 thìa
+3368,464,nước lọc,1l
+3369,465,cá hú,1 kg
+3370,465,nấm hương ,50 g
+3371,465,tương,200 g
+3372,465,tỏi ,1 củ
+3373,465,ớt,Vài lát
+3374,465,hành tím ,Vài củ
+3375,466,thịt gà,800 gam
+3376,466,hành tím ,1 tbsp
+3377,466,tỏi ,1/2 tbsp
+3378,466,ớt ,1/2 tbsp
+3379,466,hạt nêm,1/2 tbsp
+3380,466,đường,1 tbsp
+3381,466,muối,1/3 tbsp
+3382,466,ngũ vị hương,1/2 tbsp
+3383,466,bột ngọt,1/3 tbsp
+3384,466,dầu mè,1/2 tbsp
+3385,466,dầu màu điều,4 tbsp
+3386,466,nước tương,5 tbsp
+3387,466,nước dừa ,1.5 cup
+3388,467,thịt bò,300 g
+3389,467,cà chua,1 trái
+3390,467,dưa leo,2 trái
+3391,467,tỏi,1 củ
+3392,467,xì dầu,1 muỗng
+3393,467,dầu hào,1 muỗng
+3394,467,dầu ăn,1 muỗng
+3395,467,tiêu ,1 ít
+3396,468,chả cá,1 miếng
+3397,468,mắm ngon,2 mc
+3398,468,đường,2 mc
+3399,468,"hành tím , tiêu, ớt",
+3400,469,cá hồi,500 gr
+3401,469,sốt teriyaki,2 tbsp
+3402,469,bơ,1 tsp
+3403,469,tỏi,3 tép
+3404,470,cá bớp,2 lát
+3405,470,sả,3 nhánh
+3406,470,muối,1 mcf
+3407,470,bột ngọt,1/2 mcf
+3408,470,ớt bột,1/2 mc
+3409,470,ớt,1 trái
+3410,471,thịt gà (luộc xé sợi),200 g
+3411,471,cua,1 con
+3412,471,"Nấm mỡ, nấm bào ngư , nấm đùi gà , nấm kim châm , nấm đông cô",
+3413,471,Nấm rơm,
+3414,471,cà rốt,50 g
+3415,471,bắp ngọt,50 g
+3417,471,Bột năng,
+3418,471,"Gia vị: muối,tiêu,hạt nêm",
+3419,472,đuôi heo,1 cái
+3420,472,bí xanh,1 trái
+3421,472,Hành lá,
+3422,472,Gia vị,
+3423,473,đùi gà,2 cái
+3424,473,"mirin (không bắt buộc,có thể thay bằng giấm gạo)",1 tbsp
+3425,473,nước tương,3 tbsp
+3426,473,rượu vodka,2 tbsp
+3427,473,trứng,3 cái
+3428,473,bột mì,80 g
+3429,473,bột khoai tây,60 g
+3430,473,bột bắp,60 g
+3431,473,"Gia vị: hạt nêm,bột tỏi,tiêu,muối",
+3432,474,thịt ba chỉ,600 g
+3433,474,gừng,50 g
+3434,474,ngò rí,100 g
+3435,474,tàu xì,20 g
+3436,474,nước tương,1 chén
+3437,474,xì dầu,2 muỗng cafe
+3438,474,dầu hào,1 muỗng canh
+3439,474,nước lọc,2 chén
+3440,474,rượu,1/2 chén
+3441,474,đường phèn,50 g
+3442,475,bánh canh,1 kg
+3443,475,sườn non,400 gr
+3444,475,trứng cút,1 vỉ
+3445,475,cà rốt,1 củ
+3446,475,cải,1 củ
+3447,475,hành tây,1 củ
+3448,475,Tỏi,
+3449,475,"Ớt, tiêu, hành tím , hành lá , ngò rí",
+3450,476,nấm đùi gà,200 g
+3451,476,tàu hũ ky,200 g
+3452,476,bột năng,1 mc
+3453,476,dầu hào,1 mc
+3454,476,tương ,2 mc
+3455,476,tương ớt,1 mc
+3456,476,nước lọc,2 mc
+3457,476,cà rốt,1/2 củ
+3458,477,thịt heo (30% mỡ),150 gam
+3459,477,lòng đỏ trứng muối,3 cái
+3460,477,trứng vịt,2 cái
+3461,477,cá mòi,1 hộp
+3462,477,nước mắm,1/2 tbsp
+3463,477,hạt nêm,1 tsp
+3464,477,đường,1 tsp
+3465,477,tiêu,1/2 tsp
+3466,477,bột ngọt,1/4 tsp
+3467,477,dầu mè,1 tbsp
+3468,477,dầu màu điều,1 tbsp
+3469,477,ớt,1 trái
+3470,477,hành lá,1 nhánh
+3471,477,hành tím ,1 tbsp
+3472,478,mì Udon,1 vắt
+3473,478,trứng 🥚,1 quả
+3474,478,boaro 4-5 cm,1 khúc
+3475,478,nước lọc,350-400 ml
+3476,478,mirin,1 mc
+3478,478,bột cá bào,1 mcf
+3479,478,rong biển,1 ít
+3480,478,mơ muối,1 quả
+3481,479,đùi gà,1 cái
+3482,479,bột chiên giòn,1 mc
+3483,479,gừng,2 củ
+3484,480,thịt bò,"1,2 kg"
+3485,480,"sả, tỏi",3 cây
+3486,480,hành tây,1 củ
+3487,480,gừng,1 củ
+3489,480,đường thốt nốt (nếu không có dùng palm syrup ),4 tbsp
+3490,480,bột ớt hoặc bột paprika ngọt),3 tbsp
+3491,480,hạt nêm,3 tbsp
+3492,480,ngũ vị hương,10 g
+3493,480,dầu hào,100 ml
+3494,480,bột cà ri,10 g
+3495,480,hạt tiêu,1 tsp
+3496,480,dầu màu điều (không có bỏ qua ),1 tbsp
+3497,481,Ếch,
+3498,481,măng chua,
+3499,481,Măng củ,
+3500,481,Tỏi  và hành ,
+3501,481,Bột chiên giòn,
+3502,481,Cà chua,
+3503,481,Xương gà,
+3504,481,"Gia vị: mắm, đường, hạt nêm, sate, bột nghệ, mẻ, dầu hào",
+3505,481,"Hành lá , mùi tàu , lá lốt , tía tô",
+3506,481,"rau muống , đậu phụ , váng đậu , thịt bò",
+3507,482,ức gà,1 kg
+3508,482,bột bắp hoặc bột năng,2 muỗng cf
+3509,482,cà rốt,1 củ
+3510,482,hành tây,1/2
+3511,482,rong biển,1 bịch
+3512,483,đùi gà,2 cái
+3513,483,Chao,1 muỗng canh
+3515,483,Đường,1 muỗng canh
+3516,483,Chanh,2/3 muỗng canh
+3517,483,(nếu ăn cay) Sa tế,1/2 muỗng canh
+3518,484,Cá ngừ ,
+3519,484,Nước dừa,
+3520,484,Thơm,
+3521,484,Nước màu,
+3522,485,thịt heo xay,100 g
+3523,485,tép khô,20 g
+3524,485,khoai mỡ,200 g
+3525,485,ngò gai,30 g
+3526,485,hành,Ít
+3527,485,Gia vị,
+3528,486,cá duội,300 g
+3529,486,su hào,1 củ
+3530,486,cà chua,2 quả
+3531,486,"Hành, rau răm, thì là, gia vị",
+3532,487,Thịt bò,500 gr
+3533,487,Ớt chuông,
+3534,487,Hành tây,
+3535,487,Cần tây,
+3536,487,tỏi,1 thìa
+3538,487,nước tương,1 thìa
+3539,487,"dầu hào,",1 thìa
+3540,487,"tiêu,",1/2 thìa
+3541,487,bột năng,2 thìa
+3542,487,dầu ăn,2 thìa
+3544,487,nước tương,3 thìa
+3545,487,tương ớt,1 thìa
+3546,487,tương cà,1 thìa
+3547,487,dầu hào,1 thìa
+3548,487,đường,1 thìa
+3549,487,nước lọc,1 muỗng canh
+3550,487,tiêu,1/2 thìa
+3551,488,Bí xanh (đã làm sạch),150 g
+3552,488,Bí đỏ,150 g
+3553,488,nấm ,100 gr
+3554,488,Hạt nêm,
+3555,488,Rau mùi,
+3556,489,cá đuối,300 gr
+3557,489,khóm,1/4 trái
+3558,489,tỏi,1 tép
+3559,489,hành tím,1 củ
+3560,489,Ớt,
+3561,489,Gia vị,
+3562,489,Nước màu,
+3563,489,Đường,
+3564,489,Nước mắm,
+3565,489,Tiêu ,
+3566,489,Tóp mỡ (optional),
+3567,489,Bột ngọt,
+3568,490,đầu cá nheo,1 chiếc
+3569,490,măng chua,300 g
+3570,490,cà chua,3 quả
+3571,490,sả,1 củ
+3572,490,ớt,2 quả
+3573,490,"bột nghệ, tiêu, hành, gừng, tỏi",
+3574,490,Gia vị,
+3575,490,"Hành lá , rau răm, thì là",
+3576,491,thịt bò,300 gr
+3577,491,sả,1 cây
+3578,491,hành tây,1/2 củ
+3579,491,tía tô,1 nắm
+3580,491,ớt,5 lát
+3581,491,chao,1 chén
+3582,492,tôm,3 con
+3583,492,khoai tây,10 củ
+3584,492,cà rốt ,2 củ
+3585,492,Hành lá,
+3586,492,Gia vị,
+3587,493,Cá chẽm,300 g
+3588,493,Gừng ,20 g
+3589,493,Rượu,1 muỗng canh
+3590,493,Nấm đông cô,50 g
+3591,493,Mộc nhĩ,20 g
+3592,493,Dầu hào,1 muỗng canh
+3593,493,Nước lọc,60 ml (1/2 chén)
+3594,493,(trang trí) Rau mùi,1 ít
+3595,493,Muối,1/2 muỗng cà phê
+3596,493,Tiêu,1/4 muỗng cà phê
+3597,494,Nấm kim châm,50 g
+3598,494,Nấm bào ngư,50 g
+3599,494,Nấm đông cô ,10 g
+3600,494,Nấm đùi gà,50 g
+3601,494,gừng,5 cái lá
+3602,494,(cắt lát) Gừng ,20 g
+3603,494,Ớt ,1 trái
+3604,494,Hành lá,2 cây
+3605,494,Nước mắm,1 muỗng canh
+3606,494,Đường,1 muỗng canh
+3607,494,Nước lọc,1 muỗng canh
+3608,494,Gừng  (  nhuyễn),1 muỗng cà phê
+3609,494,Tỏi (  nhuyễn),1 muỗng cà phê
+3610,494,Ớt (  nhỏ),1 trái
+3611,494,chanh,1 muỗng canh
+3612,495,Cá tầm,800 g
+3613,495,Măng chua,200 g
+3615,495,dầu màu điều,1 tbsp
+3616,495,Cà chua,2 quả
+3617,495,Sả,2 cây
+3618,495,Dấm,30 ml
+3619,495,Muối,10 g
+3620,495,Hành tím,2 củ
+3621,495,Tỏi,2 tép
+3622,495,ớt,3 quả
+3623,495,Dầu ăn,10 ml
+3624,495,Nước lọc,1 lít
+3625,495,"ngò gai , rau ngổ",1 ít
+3626,495,Rau nhút,100 g
+3627,495,Nấm,100 g
+3628,495,Rau muống,100 g
+3629,495,Kèo nèo,100 g
+3630,495,"Gia vị: nước mắm , đường, tiêu",
+3631,496,Cà chua (tuỳ theo cá to hay bé),1-2 quả
+3632,496,cá chép hoặc loại cá tuỳ ý,1 con/khúc
+3633,496,Dưa chua,
+3634,496,"Hành lá , thì là , tỏi, ớt, hành",
+3635,496,"Mắm , muối, đường, hạt nêm, bột ngọt, dấm",
+3636,497,mì tôm (hãng nào cũng được),1 gói
+3638,497,Rau muống,1/2 mớ
+3639,497,mực,300 gram
+3640,497,Nước mắm,
+3642,497,Tiêu,
+3643,497,Ớt,
+3644,498,Tàu hũ ky,100 g
+3645,498,Đậu hũ,200 g
+3646,498,Nấm mỡ (dùng nấm rơm sẽ ngon hơn),100 g
+3647,498,Thơm ( dứa ),80 g
+3648,498,Gừng,5 lát
+3649,498,Tiêu xanh,2 nhánh
+3650,498,hành,2 cây
+3652,498,Nước tương ,2 muỗng canh
+3653,498,Đường,1 muỗng canh
+3654,498,Dầu hào,1 muỗng canh
+3655,498,Tương ớt,1 muỗng canh
+3656,498,Nước lọc,5 muỗng canh
+3659,500,Miến dong,50 g
+3660,500,Đậu hũ non,200 g
+3661,500,Nấm đùi gà,100 g
+3662,500,(khoảng 100g) Cà chua,1 quả
+3663,500,Nước lọc,800 ml
+3664,500,Hành lá,2 nhánh
+3665,500,Muối,1/2 thìa cà phê
+3666,500,Hạt nêm,1 thìa cà phê
+3667,501,Nấm kim châm,150 g
+3668,501,bột chiên giòn,100 g
+3669,501,Cà rốt,20 g
+3670,501,Hạt nêm,2 mcf
+3671,501,Ớt,1 mcp
+3673,501,Rau mùi,
+3674,502,bò,"1,5 kg"
+3675,502,bún,"1,5 kg"
+3676,502,sả,10-12 tép
+3677,502,Gừng,
+3678,502,thơm,Vài
+3680,502,"Rau răm, hành lá",
+3681,502,Hành tây,
+3682,502,"Rau thơm , giá ..",
+3683,502,Huyết heo,
+3684,502,Chả,
+3685,503,Miến dong,100 g
+3686,503,Sườn heo,300 g
+3687,503,Nấm tuyết (khô),20 g
+3688,503,Nấm đông cô,3 tai
+3689,503,Gừng,2 lát
+3690,503,Hành tím,2 củ
+3691,503,Nước,1 L
+3692,503,Muối,1/2 thìa cà phê
+3693,503,Tiêu,1/4 thìa cà phê
+3694,504,ức gà ,200 g
+3695,504,đậu hũ,1 miếng
+3696,504,"gia vị: sa tế, nước mắm, hạt nêm, dầu hào, dầu mè, xì dầu, ớt bột /tiêu, hành , dầu ăn",1 ít
+3697,505,Bí xanh,1 trái
+3698,505,Tôm ,100 g
+3699,505,Tỏi (  nhỏ),1 tép
+3700,505,Hành lá (cắt nhỏ),2 nhánh
+3701,505,Hạt nêm,1 muỗng cà phê
+3702,505,Muối,1/3 muỗng cà phê
+3703,505,Tiêu ,1/2 muỗng cà phê
+3704,505,Nước,800 ml
+3705,506,ức gà,500 gr
+3706,506,trứng gà,1 trái
+3707,506,bột mì,200 gr
+3708,506,bột bắp,90 gr
+3709,506,bột tỏi,1 mcf
+3710,506,bột hành,1 mcf
+3711,506,bột nghệ,1/3 mcf
+3712,506,muối,1/3 mcf
+3713,506,bột ngọt,1/3 mcf
+3714,506,hạt nêm,1/2 mcf
+3715,506,đường,1 mcf
+3716,507,đùi gà,150 gr
+3717,507,nấm hương,8 cái
+3718,507,gạo lứt,100 gr
+3719,507,hành tím,1 củ
+3720,507,"Gia vị: Hạt nêm , đường, tiêu",
+3721,508,Nấm hương,10 cái
+3722,508,Súp lơ trắng,200 g
+3723,508,Đậu cô ve,200 g
+3724,508,Đường,1 thìa cà phê
+3725,508,Muối,1 thìa cà phê
+3726,508,"Hạt nêm , dầu ăn",
+3727,509,rong biển,30 g
+3728,509,bí xanh,1 trái
+3729,509,tôm khô,50 g
+3730,509,đầu hành,1 mc
+3731,509,Gia vị,
+3732,510,Tôm ,6 con
+3733,510,Phô mai mozzarella,10 g
+3734,510,Phô mai cheddar,10 g
+3735,510,Rau răm,5 g
+3736,510,Muối,1 chén nhỏ
+3737,511,Ức gà,1 cái
+3738,511,tôm,10 con
+3739,511,Hành Tây,1 củ
+3740,511,bắp cải,2
+3741,511,tắc,5 trái
+3742,511,ớt,5 trái
+3743,511,hành tím,10 củ
+3744,511,nước lọc,500 ml
+3745,511,"Gia vị : đường, bột ngọt, dầu ăn",1 chén
+3746,512,thịt ba chỉ,250 gr
+3747,512,cá hộp,2 lon
+3748,512,trứng,8 quả
+3749,512,"Tiêu, hạt nêm, nước mắm, đường, bột ớt",
+3750,512,Dầu màu điều,
+3751,512,"Hành tím , hành lá",
+3752,512,Ớt ,
+3753,513,rong biển,50 g
+3754,513,sốt miso,2 mc
+3755,513,tép khô,1 mc
+3756,513,Gia vị,
+3757,514,trứng gà,4 trái
+3758,514,hẹ,20 g
+3759,514,nước mắm,2 mc
+3760,514,tiêu ,1/3 mcf
+3761,514,Dầu ăn,
+3762,515,đậu gà ( ngâm trước 8 tiếng),60 g
+3763,515,hành,1 củ
+3764,515,tiêu,1 thìa café
+3765,515,nước tương,2 thìa canh
+3766,515,đường mía,1/2 thìa canh
+3767,515,muối,1/4 thìa cafe
+3768,515,nước lọc,1/2 bát
+3769,516,Mít non,500 g
+3770,516,Tôm,150 g
+3771,516,Da heo,100 g
+3772,516,Mỡ heo,100 g
+3773,516,Nước mắm,2 muỗng canh
+3774,516,Đường,1 muỗng canh
+3775,516,Tỏi,2 tép
+3776,516,Ớt,1 trái
+3777,517,bánh canh,2 cuộn
+3778,517,cà chua,100 g
+3779,517,nấm đùi gà,300 g
+3780,517,phô mai morrazella,200 g
+3781,517,"Hành lá , mùi tàu , tiêu, gia vị",
+3782,518,heo quay,200 g
+3783,518,chả lụa,200 g
+3784,518,kim chi,1/3 chén
+3785,518,Hành lá,
+3786,518,tỏi ,1 mc
+3787,518,nước mắm,1/2 chén
+3788,518,Gia vị,
+3789,519,Đậu rồng ( đỗ khế ),300 gram
+3790,519,trứng gà/ vịt,2 quả
+3791,519,tiêu ,1 nhúm
+3792,519,nước mắm,1 tsp
+3793,519,nước lọc,1 tsp
+3794,519,mỡ heo,1 tbsp
+3795,519,tỏi ,1 tsp
+3796,520,Đậu đen,100 g
+3797,520,Gạo nếp,400 g
+3798,520,Baking soda,1/4 thìa cà phê
+3799,520,Muối,1/2 thìa cà phê
+3800,520,Dầu dừa,1 thìa canh
+3801,520,Dừa ,30 g
+3802,520,Muối,20 g
+3803,520,(tùy khẩu vị) Đường,20 g
+3804,520,"(nước nấu đậu , nước ngâm gạo ) Nước",1
+3805,521,Đậu hũ,3 miếng
+3806,521,Rong biển,1
+3807,521,Bột chiên giòn,1 muỗng canh đầy
+3808,521,Hạt nêm,1 ít
+3814,523,trứng vịt,4 trái
+3815,523,thịt heo xay,100 g
+3816,523,nước mắm,1 mc
+3817,523,dầu ăn,3 mc
+3818,524,gà,1/2 con
+3819,524,Gia vị,
+3820,525,mướp,1 trái
+3821,525,Su su,1 trái
+3822,525,củ sắn ( củ đậu ),1
+3823,525,Boaro,1 khúc
+3824,525,Sả,2 củ
+3825,525,Nấm rơm,200 g
+3826,525,Măng ,100 g
+3827,525,Ớt,3 trái
+3828,525,"Muối, hạt nêm",
+3829,525,Đường,1-2 muỗng cà phê
+3830,525,Bún ,500 g
+3831,525,lá é,200 gr
+3832,525,"Đậu hũ , tàu hũ ky",
+3833,525,Nấm kim châm (tuỳ thích),100 g
+3834,526,đùi gà,400-500 g
+3835,526,Muối,1 g
+3836,526,Tiêu,1 g
+3837,526,Trứng gà,1 quả
+3838,526,Bột mì,2 muỗng canh
+3840,526,Shoyu,1 muỗng canh
+3841,526,Giấm,1 muỗng canh
+3842,526,Mirin,0.5 muỗng canh
+3843,526,Đường,0.5 muỗng canh
+3845,526,Mayonnaise,45 g
+3846,526,Dưa leo,20 g
+3847,526,Hành tây,20 g
+3848,526,Trứng luộc,1 quả
+3849,527,cánh gà,4 cái
+3850,527,đùi gà ,1 cái
+3851,527,bột chiên giòn,4 mc
+3852,527,Gia vị,
+3853,528,cá diêu hồng,1 con
+3854,528,xương gà,1 bộ
+3855,528,bánh canh,500 g
+3856,528,hẹ,20 g
+3857,528,hành,10 g
+3858,528,Gia vị,
+3859,529,thịt bò,500 gram
+3860,529,cà rốt,2 củ
+3861,529,khoai tây,2 củ
+3862,529,hành tây,1 củ
+3865,529,hạt nêm,1 tbsp
+3866,529,nước mắm,1 tbsp
+3867,529,dầu màu điều,1 tbsp
+3868,530,rau má,400 g
+3869,530,bắp bò,150 g
+3870,530,Nước mắm,
+3871,530,tỏi ,1 mc
+3873,530,bột bắp,1 mc
+3874,530,Gia vị,
+3875,531,Đậu phụ,4 miếng
+3876,531,Sốt tomyum,1 muỗng canh
+3877,531,Đường,1 muỗng cà phê
+3878,531,Nước tương,1 muỗng canh
+3879,531,húng quế,1 nắm nhỏ
+3880,531,Dầu ăn,
+3881,531,Nước lọc,2-3 muỗng canh
+3882,532,Cơm,200 g
+3883,532,Đậu gà,100 g
+3884,532,Cà rốt,30 g
+3885,532,Ớt chuông đỏ,30 g
+3886,532,Hành tây,30 g
+3887,532,Bắp cải,20 g
+3888,532,Xì dầu,2 muỗng canh
+3890,532,Dầu ăn,1 muỗng canh
+3891,532,Tỏi ,1 muỗng cà phê
+3892,532,Gừng,1 muỗng cà phê
+3893,532,Mè,1 muỗng cà phê
+3894,532,Đường,1 muỗng cà phê
+3895,532,Tiêu,1/4 muỗng cà phê
+3896,533,sườn heo,500 g
+3897,533,củ sen,350 g
+3898,533,táo đỏ,10 trái
+3899,533,hành lá,Vài nhánh
+3900,533,Nước lọc,
+3901,533,Gia vị,
+3902,534,tôm hùm,1 con (1.1 kg)
+3903,534,rượu,2 muỗng canh
+3904,534,nước lọc,1/2 chén
+3905,535,cá hồi (150-200 gram),1 miếng
+3906,535,Cơm,3 bát
+3907,535,gừng,1 nhánh
+3908,535,cà rốt,1/2 củ
+3909,535,dưa chuột,1 quả
+3910,535,trứng,1 quả
+3911,535,dấm,1 thìa
+3912,535,đường,1 thìa
+3913,535,mayonnaise,1 thìa
+3914,535,dầu ăn,3 thìa
+3915,535,dầu mè,1/3 thìa
+3916,535,muối,1 ít
+3917,535,rong biển,3-4 tấm
+3918,536,Dứa,100 g
+3919,536,Đậu bắp (cắt xéo dày 2-3cm),100 g
+3920,536,Bạc hà,200 gr
+3921,536,Cà chua,100 g
+3922,536,Măng  (tuỳ chọn),50 g
+3923,536,Bông súng,50 g
+3924,536,Nước,1 lít
+3925,536,Nước mắm,1 muỗng canh
+3926,536,Hạt nêm,
+3927,536,Ngò om,
+3928,536,Ngò gai,
+3929,536,Ớt ,
+3930,537, bò,500 g
+3931,537,nghêu,500 g
+3932,537,tôm,500 g
+3933,537,cá bông lau,4 lát
+3934,537,mực,500 g
+3935,537,"Nấm kim châm , nấm linh chi",
+3936,537,rau muống,1 bó
+3937,537,cải xoăn,1 cây
+3938,537,sả,2 cây
+3939,537,cà chua,2 trái
+3940,537,hành tây,1 củ
+3941,537,lẩu Thái,1 gói
+3942,537,sốt chấm lẩu,1 gói
+3943,537,bún,1 kg
+3944,537,Gia vị,
+3945,538,(khoảng 400g) Dưa hường,1 quả
+3946,538,Tôm khô,30 g
+3947,538,ngò rí / ngò gai,3 nhánh
+3948,538,Hành lá,2 nhánh
+3949,538,Hành tím,1 củ
+3950,538,Muối,1/2 muỗng cà phê
+3951,538,Nước mắm,1 muỗng canh
+3952,538,Dầu ăn,1 muỗng canh
+3953,538,Nước lọc,800 ml
+3954,538,Tiêu ,1/4 muỗng cà phê
+3955,539,cá viên,150 g
+3956,539,cải thìa,6 cây
+3957,539,Gia vị,
+3958,540,Tôm,5 con
+3959,540,Bột chiên giòn,1 bịch
+3960,540,bột chiên xù,1 bịch
+3961,540,trứng gà,1 quả
+3962,540,"muối, tiêu, bột tỏi",2 mc
+3963,540,Dầu ăn,1 chén
+3964,540,nước lọc,1 chén
+3965,541,Bí xanh,300 g
+3966,541,Mộc nhĩ,1 tai
+3967,541,Hạt nêm,1 thìa cà phê
+3968,541,Nước lọc hoặc nước ép củ sắn /nước rau củ,800 ml
+3969,541,Ngò gai,
+3970,542,Rong,1 miếng nhỏ
+3971,542,mồng tơi,200 g
+3972,542,Đậu hũ,1/2 bìa
+3973,542,Hạt nêm ,2-3 muỗng cf
+3974,542,Nước mắm,1 muỗng
+3975,542,Nước,800 ml
+3976,543,bánh mỳ sandwich,4 lát
+3977,543,trứng gà,2 quả
+3978,543,mayo,2 tbsp
+3979,543,mù tạt (dijon mustard ),1 tsp
+3980,543,"muối, tiêu",1 nhúm
+3981,544,thịt heo,400 g
+3982,544,dầu hào,2 muỗng
+3983,544,đường,1 muỗng
+3984,544,mắm,2 muỗng
+3985,544,bột ngọt,1 ít
+3986,544,tiêu xanh,4 chùm
+3987,544,dầu ăn,2 muỗng
+3988,544,hành tím,1 củ
+4010,547,mực,4 con
+4011,547,nấm rơm,50 g
+4012,547,kì trứng,2 vắt
+4013,547,Hành lá,
+4014,547,Gia vị,
+4015,548,củ sen đã làm sạch,200 g
+4016,548,nấm hương,10 tai
+4017,548,"Nước mắm chay, nước tương, mật mía , tiêu, hành củ",
+4018,549,thịt heo,500 g
+4019,549,muối ớt,20 g
+4020,549,lá chuối,1 ít
+4021,550,Lòng đỏ trứng muối,6 cái
+4022,550,Whipping cream,45 g
+4023,550,Nước cốt dừa,30 g
+4024,550,trứng gà,3 cái
+4025,550,Bột bắp,20 g
+4026,550,"Bột mì (số 8, đa dụng)",20 g
+4027,550,Sữa bột,20 g
+4028,550,Đường ,40 g
+4029,550,Bơ,15 g
+4030,551,Cá tầm,3 khứa (khoảng 300g)
+4031,551,Giá,100 g
+4032,551,Thơm ( dứa ),1/4 trái (khoảng 80g)
+4033,551,Cà chua,2 trái (khoảng 120g)
+4034,551,Me,30 g
+4035,551,"Rau om, ngò gai",10 g
+4036,551,Hành tím,2 củ (10g)
+4037,551,Ớt bột,1/2 muỗng cà phê
+4038,551,Dầu ăn,1 muỗng canh
+4039,551,Nước mắm,1 muỗng canh
+4040,551,Muối,1/2 muỗng cà phê
+4041,551,Đường,1 muỗng cà phê
+4042,551,Nước,800 ml
+4047,553,mì,2 lọn
+4048,553,cà chua,1 trái
+4049,553,trứng gà,2 quả
+4050,553,hành,2 tép
+4051,553,bột nêm,2 mcf
+4052,553,tiêu,1/2 mcf
+4053,553,đường,1/2 mcf
+4054,554,thịt ba chỉ,2 lbs
+4055,554,dầu mè,1 tbsp
+4056,554,dầu hào,2 tbsp
+4057,554,gourmet sauce,2 tbsp
+4058,554,"hồi, lá thơm",4 tai
+4059,554,dầu màu điều,1 tbsp
+4060,554,bột tỏi,1 tbsp
+4061,554,táo tàu,1 chén
+4062,554,"gừng , hành lá , ớt chuông",1 miếng
+4063,554,rau cải thìa,1 bó
+4084,556,đậu hũ,3 túi
+4085,556,bột chiên xù,100 g
+4086,556,bột bắp ( corn starch không phải corn flour ạ),30 gr
+4087,556,trứng gà,2 quả
+4088,557,Bánh tráng,24 cái
+4089,557,Củ sắn,400 g
+4090,557,Lạp xưởng,2 cây
+4091,557,Lạp xưởng,2 cây
+4092,557,Chả quế,200 g
+4093,557,Dầu ăn,1 muỗng cà phê
+4094,557,Hột gà,2 quả
+4095,557,Xốt tương mè Kewpie,4 muỗng canh
+4096,557,Mật dừa nước,1 muỗng canh
+4097,557,Tương đen,4 muỗng canh
+4098,557,Tương ớt,1 muỗng canh
+4099,557,"xà lách , húng thơm , húng quế",
+4100,558,mực ,2 con
+4101,558,cà chua,4 trái
+4103,558,hành,1 mcf
+4104,558,Gia vị,
+4105,559,măng ,200-300 gram
+4106,559," nấm hương , nấm lộc nhung",30-50 gram
+4107,559,hành,4/5 củ
+4108,559,muối,1 bát
+4109,559,dầu ăn,1 bát con
+4110,559,hạt nêm/ dầu hào,2 thìa
+4111,559,muối,1 thìa
+4112,560,Bánh phở,100 g
+4113,560,Mực,200 g
+4114,560,Tôm,200 g
+4115,560,trứng gà,1 quả
+4116,560,hẹ,30 g
+4117,560,giá,50 g
+4118,560,Đậu phộng,20 g
+4119,560,Muối,1/4 muỗng cà phê
+4120,560,Hạt nêm,1 muỗng cà phê
+4121,560,Nước mắm,1 muỗng canh
+4122,560,Tiêu,1/4 muỗng cà phê
+4123,560,Hành tím,1 củ
+4124,560,Dầu ăn,2 muỗng canh
+4125,561,đuôi heo,250 gr
+4126,561,cà rốt,300 gr
+4127,561,hành tím,3 củ
+4128,561,hành lá,3 tép
+4129,561,"Gia vị: muối, hạt nêm, nước mắm , bột ngọt, tiêu",
+4130,562,thịt heo,300 g
+4131,562,Cơm,
+4133,562,Gia vị,
+4134,563,Gà,1.4 kg
+4135,563,Hành lá,30 g
+4136,563,Sả,3 cây
+4137,563,Ớt,2 trái
+4138,563,Hành tím,3 củ
+4139,563,Tỏi,4 tép
+4140,563,Rượu,1.5 chén
+4141,563,(khoảng 400ml) Nước dừa,1 trái
+4142,563,Muối,1 thìa cà phê
+4143,563,Đường,1 thìa cà phê
+4144,563,Nước mắm,2 thìa canh
+4145,563,Cải bẹ / cải ngồng,200 g
+4146,563,Cải thảo,200 g
+4147,563,Muối,1 chén nhỏ
+4148,564,bún,200 g
+4149,564,đậu tây,100 g
+4150,565,Đậu cô ve,200 g
+4151,565,Nấm đông cô (hoặc nấm hương khô ),5 tai
+4152,565,Muối,1/2 thìa cà phê
+4153,565,Đường,1/2 thìa cà phê
+4154,565,Hạt nêm,1 thìa cà phê
+4155,566,cá chim,2 bộ
+4156,566,thơm,1/4 trái
+4157,566,mắm,1.5 mc
+4158,566,đường,1 mc
+4159,566,"muối, hạt nêm, bột ngọt, tiêu, ớt, hành tím , nước màu",xíu
+4160,566,nước lọc / nước dừa,1/2 chén
+4161,567,Thịt gà,200 gr
+4162,567,Lòng gà,2 bộ
+4163,567,Bánh ướt,400 gr
+4164,567,Rau răm,1 ít
+4165,567,Húng quế,1 ít
+4166,567,Hành,3 tsp
+4167,567,đậu phộng,3 tsp
+4169,568,Cá hú,3 khứa (300g)
+4170,568,Đậu bắp,5 trái
+4171,568,Cà chua,2 trái
+4172,568,Bạc hà ( dọc mùng ),1 cây
+4173,568,Thơm ( dứa ),1/4 trái
+4174,568,Me chua,20 g
+4175,568,Ớt,1 trái
+4176,568,"Rau ngò, ngổ",2 nhánh
+4177,568,Nước mắm,1 muỗng canh
+4178,568,Đường,2 muỗng cà phê
+4179,568,Muối,1/2 muỗng cà phê
+4180,568,Nước,1 lít
+4181,569,ếch,3 con
+4182,569,bột áo khô,1 gói
+4183,569,sả,6 tép
+4184,569,nước mắm,2mc
+4185,570,mực lá,500 g
+4186,570,hành tây,1 củ
+4187,570,cà chua,2 trái
+4188,570,hành lá,5 cây
+4189,570,ngò rí,2 cây
+4190,570,dầu hào,1 muỗng
+4191,570,mắm,1 muỗng cafe
+4192,570,muối,1 ít
+4193,570,bột ngọt (tuỳ thích),1 ít
+4194,570,ỏi,1 củ t
+4195,570,tiêu,1/2 muỗng cafe
+4196,570,dầu ăn,1-2 muỗng
+4197,571,mướp ,2 trái
+4198,571,rong biển,1 nắm
+4199,571,thịt heo xay,100 g
+4200,571,tép khô,20 g
+4201,571,sốt miso,1 mc
+4202,571,hạt nêm,Ít
+4203,572,thịt heo,400 g
+4204,572,cà chua,3 trái
+4205,572,hành lá,20 g
+4206,572,Gia vị,
+4207,573,khô mực,200 gr
+4208,573,Ớt ,
+4209,573,Hành lá,
+4210,573,Đường,
+4211,573,Dầu ăn,
+4212,573,Bột ngọt,
+4213,573,nước mắm,
+4214,574,lòng heo,800 gr
+4215,574,hành tây,1 củ
+4216,574,hẹ,150 gr
+4217,574,nghệ  ,1 chén nhỏ
+4218,574,hành,
+4219,574,dầu ăn,2 muỗng canh
+4220,574,bún ,1 kg
+4221,574,"Gia vị: Nước mắm , đường, bột ngọt, tiêu",
+4222,575,Hành tím,3 củ
+4223,575,Nước,3 lít
+4225,575,"Hành lá , ngò rí",1 ít
+4226,575,Tiêu,1/2 muỗng cà phê
+4227,575,Muối,1 muỗng cà phê
+4228,575,Hạt nêm,2 muỗng canh
+4229,575,Bột ngọt,1 muỗng cà phê
+4230,575,Đường,2 muỗng canh
+4231,575,ruốc Huế,2 muỗng cà phê
+4232,575,Nước mắm,2 muỗng canh
+4233,575,Bún ,1 kg
+4234,575,Cà chua,2 quả
+4235,575,Thơm ( dứa ),1/4 trái
+4236,575,Bắp cải,1/4 cái
+4237,575,Cà rốt,1 củ
+4238,575,Su su,1 quả
+4239,575,Bắp ngọt,1 trái
+4240,575,Chả cá,500 g
+4241,575,cá ngừ,1 con
+4242,576,Trứng cút,30 quả
+4243,576,Hành lá,10 g
+4244,576,Hành,15 g
+4245,576,Tương ớt,20 ml
+4246,576,Xì dầu,20 ml
+4247,576,Dầu ăn,30 ml
+4248,577,đậu bắp,400 gam
+4249,577,nấm đông cô ,12 cái
+4250,577,dầu ăn,2 tbsp
+4251,577,tỏi ,1 tbsp
+4252,577,hạt nêm,1 tsp
+4253,577,bột ngọt,1/4 tsp
+4254,577,dầu hào,1 tbsp
+4255,577,tiêu,1/4 tsp
+4256,577,ngò,1 nhánh
+4257,578,ếch ,1 kg
+4258,578,bạc hà,1 bó
+4259,578,lá giang,1 bó
+4260,578,ớt,1-2 trái
+4261,579,thịt ba chỉ,600 g
+4262,579,tôm,500 g
+4263,579,đậu hũ,1 miếng
+4265,579,bún,500 g
+4266,579,bánh tráng,1 xấp
+4267,579,Nước mắm,
+4268,580,thịt ba chỉ,2 lbs
+4269,580,trứng,10 trái
+4270,580,nước dừa,1 hộp
+4271,580,"Gia vị : nước màu , nước mắm , đường",
+4272,581,củ cải ,400 gr
+4273,581,cà rốt,100 gr
+4274,581,đường,66 gr
+4275,581,giấm,90 ml
+4276,581,muối,10 gr
+4277,581,nước,180 ml
+4278,582,nấm lộc nhung,50 gr
+4279,582,cà rốt,1/2 củ
+4280,582,cần tây,100 gr
+4281,582,nấm mèo,1 tai
+4282,582,"Muối, tiêu",
+4283,582,nước tương,1 tbsp
+4284,582,tỏi  hoặc poro,1 mcf
+4285,583,Cá chim,1 con (khoảng 800g)
+4286,583,Bún tàu,1 vắt (khoảng 50g)
+4287,583,Dầu mè,1 muỗng canh
+4288,583,Nước tương,1 muỗng canh
+4289,583,Dầu hào,1 muỗng canh
+4290,583,Đường,1 muỗng canh
+4291,583,ớt bột,1/2 muỗng cà phê
+4292,583,Hành lá,2 cây
+4293,583,hành ,1 củ nhỏ
+4294,583,Gừng,1 nhánh (khoảng 20g)
+4295,583,Tiêu,nhiều (tùy khẩu vị)
+4296,584,Sò điệp,100 g
+4297,584,Bong bóng cá,50 g
+4298,584,Nấm đùi gà,50 g
+4300,584,Cà rốt,30 g
+4301,584,Ngò rí,10 g
+4302,584,Tiêu,1 g
+4303,584,Dầu mè,5 ml
+4304,584,(hòa tan với 30ml nước) Bột bắp,10 g
+4305,584,Hành phi,10 g
+4306,584,Trứng gà,1 quả
+4307,584,Hành lá,10 g
+4308,584,Muối,3 g
+4309,584,Nước mắm,5 ml
+4310,585,sườn non,400 g
+4311,585,khoai mỡ,250 g
+4312,585,muối,1 ít
+4313,585,hành tím,2 củ
+4314,585,bột ngọt (tuỳ thích),1 ít
+4315,585,hành lá,2 cây
+4316,585,ngò rí,2 cây
+4317,585,tiêu ,1 ít
+4318,586,khoai tây,2 củ
+4319,586,cà chua,2 quả
+4320,586,cần nước,1/3 bó
+4321,586,"hành lá , thì là",1 nắm
+4322,586,tỏi,2 tép
+4323,586,hành,1 củ
+4324,586,nước mắm (hoặc 1 thìa bột canh),2 thìa
+4325,586,hạt nêm hoặc bột ngọt,1/2 thìa
+4326,586,dầu ăn,3 thìa
+4327,586,nước lọc hoặc nước dùng xương,1 bát
+4328,587,trứng gà hoặc 2 trứng gà lớn,4 quả
+4329,587,Tôm,4 con
+4330,587,Nước dashi,
+4331,587,hành lá,
+4332,587,dầu mè,
+4333,588,Rau đay,50 g
+4334,588,Mồng tơi,50 g
+4335,588,Mướp,1 quả (khoảng 150g)
+4336,588,Tôm khô,20 g
+4337,588,Thịt xay,50 g
+4338,588,Nước,1200 ml
+4339,588,Hành tím,1 củ
+4340,588,Dầu ăn,1 muỗng cà phê
+4341,588,Muối,1/2 muỗng cà phê
+4342,588,Hạt nêm,1 muỗng cà phê
+4343,589,thịt heo ,400 g
+4344,589,cải chua,300 g
+4345,589,tỏi,1 củ
+4346,589,dầu ăn (bạn có thể cho thêm theo ý),1 muỗng
+4347,589,mắm,1 muỗng
+4348,589,muối,1 ít
+4349,589,bột ngọt,1 ít
+4354,591,cánh gà,4-5 miếng
+4355,591,Lòng đỏ trứng muối,2 quả
+4356,591,dầu ăn,1 bát
+4357,591,dầu mè,1 thìa
+4358,592,Lòng gà,500 g
+4359,592,Bạc hà,400 g
+4360,592,Lá giang,50 g
+4361,592,gia vị,
+4362,592,tỏi,
+4363,593,gạo nếp,200 gram
+4364,593,đậu đỏ,50-70 gram
+4365,593,muối,1 thìa nhỏ
+4366,593,dầu ăn,1 thìa
+4367,594,thịt bò,300 g
+4368,594,súp lơ trắng,1
+4369,594,tỏi,2-3 tép
+4370,594,hạt nêm,2 tsp
+4371,594,dầu hào,1 tbsp
+4372,594,tiêu,1 tsp
+4373,594,dầu ăn,1 tbsp
+4374,595,Xương heo,400 g
+4375,595,Cải chua,200 g
+4376,595,ngò gai,1 ít
+4377,595,Hành tím,2 củ
+4378,595,Dầu ăn,1 muỗng canh
+4379,595,Nước,1 lít
+4380,595,Muối,1/2 muỗng cà phê
+4381,595,Đường,1/2 muỗng cà phê
+4382,595,Nước mắm,1 muỗng canh
+4383,596,trứng,2
+4384,596,nước,150 ml
+4385,596,muối (pinch),1/5mcf 
+4386,597,cánh gà,600 g
+4387,597,bột mì,1/3 cup
+4388,597,bột khoai tây,1/3 cup
+4389,597,bột bắp,1/4 cup
+4390,597,bột nở,2/3 tsp
+4391,597,trứng,2 quả
+4392,597,"Gia vị: hạt nêm,tiêu,bột tỏi, bột hành",
+4394,597,tương cà,5 tbsp
+4395,597,tương ớt,3 tbsp
+4397,597,bột ớt,2 tsp
+4398,597,nước tương,1 tbsp
+4399,597,đường,3 tbsp
+4400,597,phô mai mozzarella,200-250 g
+4401,597,bơ,3 tbsp
+4402,598,cá chim ,1 chú
+4403,598,lá chuối,Vài
+4404,598,ớt,Vài
+4405,598,tiêu xanh,Vài chùm
+4406,598,sả,Vài
+4407,598,hành tím,Vài củ
+4408,598,"hành lá , ngò rí",1 ít
+4409,599,đầu cá lóc,4
+4410,599,"giá, khóm , me",15 k
+4411,599,dưa leo,5k
+4412,599,gia vị,10k
+4413,600,sụn heo (phần sườn sụn ),150 g
+4414,600,bí ngòi ,"0,5 quả"
+4415,600,súp lơ trắng,50 g
+4416,600,cà rốt (tỉa hoa cho xinh),1 chút
+4417,600,tỏi,1 tép
+4418,600,"Gia vị : dầu oliu, mắm , dầu hào",
+4419,601,tôm,4 con
+4420,601,tỏi,1 tép
+4421,601,hành tím,1 củ
+4422,601,"Nước mắm , muối, đường, tương ớt, tiêu",
+4423,602,thịt bò ( thịt thăn bò bằm hoặc vụn làm phần thịt tái;thịt gân bò; thịt bắp bò hoặc gầu bò; thịt nạm bò),1 kg
+4424,602,"xương bò( xương cổ, xương có tuỷ , xương ống , xương sống lưng)",1.5-2 kg
+4425,602,sườn bò (ko bắt buộc),700 g
+4426,602,nước,3.5 l
+4427,602,"Gia vị: đinh hương , hoa hồi , thảo quả , hạt mùi ,quế cây,rễ ngò,hành tây,gừng, hành tím",
+4428,602,cải trắng,2 củ
+4429,602,"Đường phèn ,hạt nêm,bột ngọt,muối,bột canh,nước mắm",
+4430,602,rượu vodka hoặc rượu trắng (khoảng 40-50 độ để khử mùi bò),50 ml
+4431,602,dấm,50 ml
+4432,602,Bánh phở (cắt sợi  vừa),1 kg
+4433,602,"Hành tây, hành lá ,rau răm",
+4434,602,"Rau thơm ,tương ớt,bánh giò, quẩy",
+4435,602,Bò viên,
+4437,602,"mỡ heo (chọn phần mở gáy),rửa sạch(  chung với bò)",200 g
+4438,602,bột khoai tây,50 g
+4439,602,bột bắp,2 tbsp
+4440,602,bột nở,1/2-1 tsp
+4442,602,rượu,1 tbsp
+4443,602,dầu ăn,20 ml
+4444,602,"Gia vị:nước mắm ,bột tỏi,hạt nêm,tiêu hạt",
+4445,603,cá thác lá,300 gr
+4446,603,cốm,20 gr
+4447,603,nước mắm,1 tbsp
+4448,603,tiêu,1 chút xíu
+4449,603,hành lá ,1 tbsp
+4450,604,bột mì,25 g
+4451,604,bột năng,25 g
+4452,604,sữa ,75 g
+4453,604,bột gạo,50 g
+4454,604,sữa ,50 ml
+4455,604,đậu xanh,50 g
+4456,604,ớt ,1/2 trái
+4457,604,tỏi,2 tép
+4458,604,nước mắm,2 mc
+4459,604,đường,1 mc
+4460,604,bột ngọt,1/3 mcf
+4461,604,tương ớt,1 mcf
+4462,605,rau đay,1 bó
+4463,605,mướp,1 trái
+4464,605,thịt heo xay,100 g
+4465,605,Gia vị,
+4467,606,Thịt ba chỉ,100 g
+4468,606,Tôm ,100 g
+4469,606,Bầu,300 g
+4470,606,Hành tím,2 củ
+4471,606,Dầu ăn,1 muỗng canh
+4472,606,Nước mắm,1 muỗng cà phê
+4473,606,Đường,1/2 muỗng cà phê
+4474,606,Bột ngọt,1/3 muỗng cà phê
+4475,606,Muối,1/4 muỗng cà phê
+4476,606,Nước,1 lít
+4477,607,Nấm đông cô ,100 g
+4478,607,nấm rơm ,50 gr
+4479,607,Gừng (thái lát mỏng),10 g
+4480,607,Hành hoặc hẹ lá,1 ít
+4482,607,kỉ tử,1 nhúm
+4483,607,Gia vị: muối hồng,
+4484,608,Nấm,300 g
+4485,608,Đậu hũ,150 g (2 miếng)
+4486,608,Sả,1 muỗng canh
+4487,608,Hạt nêm,2-3 muỗng cà phê
+4488,608,Nước mắm,1 muỗng canh
+4489,608,Ớt ,1 quả
+4490,608,Rau răm,1 nắm nhỏ
+4491,608,Bánh đa ( bánh tráng nướng),
+4492,609,Nấm bào ngư,200 g
+4493,609,Mật ong (nếu thích ngọt hơn thì cho thêm),2 muỗng cà phê
+4494,609,Ớt ,1/2 muỗng cà phê
+4495,609,Hạt nêm,1 muỗng cà phê
+4496,609,Nước tương,1 muỗng
+4497,609,Sả  ,1 muỗng canh
+4498,610,Cải bắp,200 g
+4499,610,Nấm hạ thảo,2 g
+4500,610,Chả chay hoặc viên chay (không bắt buộc),50-80 g
+4501,610,Hạt nêm,2 thìa cà phê
+4502,610,Muối,
+4503,610,Nước,800 ml
+4504,611,thịt heo,500 g
+4505,611,lá quế,1 bó
+4506,611,dầu hào,2 muỗng canh
+4507,611,xì dầu,2 muỗng canh
+4508,611,đường,1 muỗng canh
+4509,611,nước mắm,1 muỗng canh
+4510,611,tỏi,Vài tép
+4511,611,ớt,2-3 trái
+4512,611,chanh,1/2 trái
+4513,611,dầu ăn,2 muỗng canh
+4514,612,thịt ba chỉ,400 g
+4515,612,cà chua,3 trái
+4516,612,Hành lá,
+4517,612,Gia vị,
+4518,613,khổ qua,1 kg
+4519,613,chả cá,500 g
+4520,613,mắm,1 muỗng cafe
+4521,613,muối,1 muỗng cafe
+4522,613,tiêu ,1/2 muỗng cafe
+4523,613,bột ngọt (tuỳ thích),1 ít
+4524,613,hành lá,2-5 cây
+4525,614,Nấm kim châm,150 g
+4526,614,Bột chiên giòn,3-4 muỗng canh
+4527,614, Rau mùi,1 nắm
+4528,614,Tiêu,1 ít
+4529,614,Hạt nêm,1 ít
+4530,614,Ớt ,1 ít
+4531,615,Lòng heo,300 g
+4532,615,Bột baking soda,1 thìa cà phê
+4533,615,Nước,500 ml
+4534,615,Nghệ  (  nhuyễn),1 củ nhỏ
+4535,615,nén (  nhuyễn),5 củ
+4536,615,Hẹ (cắt khúc),50 g
+4537,615,"Ớt (  nhỏ, tùy chọn)",1 quả
+4538,615,Dầu ăn,2 thìa canh
+4539,615,Muối,1/2 thìa cà phê
+4540,615,Nước mắm,1 thìa canh
+4541,615,Tiêu,1/4 thìa cà phê
+4542,616,Đu đủ,1 trái
+4543,616,mắm cá linh,1 chén
+4544,616,gừng,1 ít
+4545,616,ớt,1 ít
+4546,616,Nước mắm,1 ít
+4547,616,đường,1 ít
+4550,618,tai heo,1 cái
+4551,618,tôm,200 g
+4552,618,đu đủ,1 quả
+4553,618,"đường, bột ngọt, nước mắm",2 mcf
+4554,618,húng lủi,200 g
+4555,618,"tỏi, ớt",2 củ
+4556,619,gà (1.5kg),1 con
+4557,619,hành lá,5 cây
+4558,619,gừng,25 gam
+4560,619,muối,1.5 tsp
+4561,619,đường,1.5 tsp
+4562,619,tiêu,1 tsp
+4563,619,bột ngọt,1/4 tsp
+4564,619,dầu mè,1 tbsp
+4565,619,mỡ,1.5 tbsp
+4566,620,bông cải xanh,300 gr
+4567,620,thịt heo,200 gr
+4568,620,"gia vị:mì chính ,hạt nêm",
+4569,621,cánh gà,12
+4570,621,bột quế ( ground cinnamon ),3 mcf
+4571,621,tỏi ,2 mcf
+4572,621,nước mắm,10 ml
+4573,621,tiêu ,1/2 mcf
+4574,621,bơ 🧈,50 gr
+4575,622,Gạo,200 g
+4576,622,Nước luộc gà (nấu cơm),300 ml
+4577,622,Bột nghệ,1 mcf
+4578,622,Gà(khoảng 600g),1/2 con
+4579,622,Rau răm,10 g
+4580,622,Hành tây,1/2 củ
+4581,622,"Lòng heo ( gan , tim ...)",100 g
+4582,622,Hành tím ,2 muỗng canh
+4583,622,Tỏi ,1 muỗng canh
+4584,622,Nước mắm,2 muỗng canh
+4585,622,Đường,1 mcf
+4586,622,Tiêu,1/2 mcf
+4587,622,Nước luộc gà (nước mạ),100 ml
+4588,623,vịt,1/2 con
+4589,623,gừng,1 củ
+4590,623,hành tím,1 củ
+4591,623,tỏi,vài tép
+4592,623,nước mắm,2 tbsp
+4593,623,hạt nêm,1 tbsp
+4594,623,tiêu,1 tsp
+4595,624,Cải thìa,500 g
+4596,624,Nấm đông cô ,100 g
+4597,624,Boaro,1 nhánh
+4598,624,Hạt nêm,1 muỗng cà phê
+4599,624,Muối,1/2 muỗng cà phê
+4600,624,Dầu hào,1 muỗng canh
+4601,624,Nước tương,1 muỗng canh
+4602,624,Dầu ăn,1 muỗng canh
+4603,625,cá Chim,700 gam
+4604,625,đậu bắp,200 gam
+4605,625,cà chua,3 trái
+4606,625,cà ri bột,2 tbsp
+4607,625,cà ri dầu,1 tbsp
+4608,625,bột nghệ,1/2 tbsp
+4609,625,muối,1 tsp
+4610,625,tiêu,1/2 tsp
+4611,625,đường,3 tbsp
+4613,625,hạt nêm,1/2 tbsp
+4614,625,bột ngọt,1 tsp
+4615,625,nước mắm,3 tbsp
+4616,625,tỏi ,1 tbsp
+4617,625,gừng,1 tbsp
+4618,625,ớt,1 trái
+4619,625,ngò rí,1 nhánh
+4620,625,nước cốt dừa,300 ml
+4621,626,nấm đùi gà,300 g
+4622,626,Tương kikoman,1 thìa
+4623,626,đường,1 thìa
+4624,626,mayone,1 thìa
+4625,626,tương ớt,1/2 thìa
+4626,626,dầu mè,20 ml
+4627,626,chanh,1 thìa
+4628,626,tỏi ,1 tép
+4638,628,Đùi gà,1 cái
+4639,628,Bột năng,"1,5 muỗng canh"
+4641,628,Nước tương,1 muỗng canh
+4642,628,Mirin,2 muỗng canh
+4643,628,Đường,1 muỗng canh
+4644,629,giò heo,300 gr
+4645,629,cà chua,100 gr
+4646,629,"muối, bột ngọt, đường, hành lá , tiêu",
+4647,629,bún,
+4648,630,củ niễng,300 gram
+4649,630,bề bề,100-150 gram
+4650,630,hành,1 củ
+4651,630,hành lá,1-2 cây
+4652,630,dầu ăn/ mỡ lợn,1/2 thìa
+4653,630,nước mắm,1 thìa
+4654,630,hạt nêm,1/2 thìa
+4655,631,cá bớp,2 khoanh
+4656,631,thịt ba chỉ,200 g
+4657,631,dừa,1 trái
+4658,631,Hành,
+4659,631,Gia vị,
+4660,632,đậu hũ,1 miếng
+4661,632,cà chua,2 trái
+4662,632,Nấm rơm,
+4663,632,chao,2 muỗng canh
+4664,632,"Xì dầu , đường, muối, tiêu, hành tím / hành boaro",
+4665,633,Ức gà,100 g
+4666,633,Đậu đỏ,2 muỗng canh
+4667,633,Đào,1 quả
+4668,633,Xà lách,5 lá
+4670,633,Tỏi,1/2 muỗng cà phê
+4671,633,Mật ong,1 muỗng cà phê
+4672,633,Giấm,1 muỗng cà phê
+4673,633,Dầu olive,1 muỗng cà phê
+4674,634,Da heo,300 g
+4675,634,Muối,1 muỗng cà phê
+4676,634,Sả,3 cây
+4677,634,Nước,1000 ml
+4678,634,nước mắm,2 vá (khoảng 60ml)
+4679,634,Đường,1 vá (khoảng 30g)
+4680,634,Giấm,1 vá (khoảng 30ml)
+4681,635,lưỡi heo hoặc thịt chân giò,300 g
+4682,635,đậu hũ,200 gr
+4683,635,bún ,300 g
+4684,635,"kinh giới , xà lách , rau mùi , dưa leo",1 số loại rau ăn kèm:
+4685,635,Mắm tôm,
+4686,635,đường,2 tbsp
+4687,635,chanh,1 quả
+4688,635,nước lọc,2 tsp
+4690,636,chả cá,500 gr
+4691,636,khổ qua,5 trái
+4692,636,hành lá,1 ít
+4693,636,ngò rí( mùi thơm ),1 ít
+4694,636,nước lọc hoặc nước hầm xương,1 lít
+4698,638,thuốc bắ,1 gói
+4699,638,Long nhãn,6 trái
+4700,638,Nấm hầu thủ (đã sơ chế),100 g
+4701,638,Nấm hạ thảo (nếu có),2 gr
+4702,638,"Rau ngải cứu (hoặc thay bằng rau tần ô , rau cải thìa )",1 nắm
+4703,638,Kỷ tử,10 g
+4704,638,Muối,1 thìa cà phê
+4705,638,Hạt nêm,1 thìa cà phê
+4706,638,Nước,1 lít
+4707,639,đuôi heo,1 cái
+4708,639,hành lá,30 g
+4709,639,nước mắm,1 chén
+4710,639,Gia vị,
+4711,640,Thịt bò,200 g
+4712,640,Rau mầm,50 g
+4713,640,xà lách,100 gr
+4714,640,Cà rốt,30 g
+4715,640,Ớt chuông vàng,30 g
+4716,640,Đậu phộng,10 g
+4717,640,Vừng,5 g
+4718,640,Dầu ăn,10 ml
+4719,640,Tỏi ,5 g
+4720,640,Nước tương,10 ml
+4721,640,Đường,5 g
+4722,640,dầu hào ,1 tsp
+4723,640,Tiêu,1 g
+4724,641,nước lèo phở bò,"1,5 tô"
+4725,641,chả cá thác lác,300 g
+4726,641,cà chua,3 trái
+4727,641,trưng,1
+4728,641,mỡ,1 muỗng canh
+4729,641,tỏi,1 muỗng canh
+4730,641,nước mắm,1/2 muỗng canh
+4731,641,tiêu,1 muỗng cafe
+4732,641,hành lá,Vài nhánh
+4733,642,tôm,100 g
+4734,642,thịt heo xay,50 g
+4735,642,bí đỏ,100 g
+4736,642,cà rốt,50 g
+4737,642,su su,50 g
+4738,642,Hành lá / hành tím / hành tây (tuỳ chọn),10 g - 20 g
+4739,642,Mì somen hoặc tuỳ ý mẹ chọn,150 g
+4740,642,"Xì dầu , bột ngọt, hạt nêm, muối (tuỳ chọn)",1 xíu
+4741,642,"nấm (linh chi, rơm, bào ngư )",20 g
+4742,643,nấm đùi gà,200 g
+4743,643,thịt heo xay,100 g
+4745,643,hành lá,5 g
+4746,643,nước lọc,1 tô
+4747,643,dầu ăn,1 muỗng canh
+4748,643,dầu mè,1 muỗng cf
+4749,643,hạt nêm,2 muỗng cf
+4750,643,muối hồng,1 muỗng cf
+4751,644,đùi gà,300 g
+4752,644,Nước mắm,1 muỗng canh
+4753,644,bột tỏi,1 mcf
+4754,644,Chanh dây,2 quả
+4755,644,Đường,2 muỗng canh
+4756,644,Muối,1/4 mcf
+4757,644,Dầu ăn,1 muỗng canh
+4758,645,rau tần ô / cải cúc,1 bó
+4759,645,tôm ,130 gr
+4760,645,thịt heo xay,130 gr
+4761,645,giò sống,80 gr
+4762,645,"gia vị: mắm , muối, bột ngọt",
+4763,646,chả cá thác lác,200 g
+4764,646,khổ qua,1 trái
+4765,646,Nước lọc,1 tô
+4766,646,hành lá,vài nhánh
+4767,646,tiêu ,1 mcf
+4768,646,muối hồng,1 mcf
+4770,647,khổ qua,3 trái
+4771,647,trứng gà,2 quả
+4772,647,"gia vị: tỏi , mắm, hạt nêm, tiêu, hành lá",
+4773,648,"tỏ, gừng",vài lát
+4774,648,"muối, 1 thìa mì chính , 1 thìa nước mắm , 1 thìa xì dầu",1 thìa
+4775,649,mỳ trứng sợi ,2 vắt
+4776,649,thịt chiên xù,2-3 miếng
+4777,649,rau cải,1 cây
+4778,649,cà rốt,1 miếng
+4779,649,hành ,1 củ
+4780,649,dầu ăn,4 thìa
+4781,649,dầu hào,1 thìa
+4782,649,xì dầu,1 thìa
+4783,650,đùi gà,2 cái
+4784,650,ngũ vị hương,1 muỗng cà phê
+4785,650,mật ong,2 muỗng canh
+4786,650,tỏi ,2 muỗng canh
+4787,650,nước tương,2 muỗng canh
+4788,650,hạt nêm,1 muỗng cà phê
+4789,650,đường,1/2 thìa
+4790,650,tiêu,1/3 thìa
+4791,650,dầu hào,1 muỗng canh
+4792,650,tương ớt ,1 muỗng canh
+4793,650,dầu ăn,3 muỗng canh
+4794,650,gạo,1 lon
+4795,650,Nước,300 ml
+4796,651,trứng,3 quả
+4797,651,bông cải xanh,1 cây
+4798,651,nước tương,2 mc
+4799,651,dầu mè,1 mcf
+4800,652,trứng vịt,3
+4801,652,thịt xay,80 gr
+4802,652,nước mắm,1 mcf
+4803,652,tiêu,1 xíu
+4804,652,hành tím ,1 tsp
+4805,652,chả cá,2 lạng
+4806,652,cà chua,1 quả
+4807,652,thơm,1/4 quả
+4808,652,rau cần nước,1 nắm
+4809,652,cà tím,2 quả
+4810,652,sốt teriyaki,1 tbsp
+4811,652,mayonaise,1 tbsp
+4812,652,táo,5 quả
+4813,653,đậu bắp,6 trái
+4814,653,thịt heo xay,100 g
+4815,653,củ cải,1
+4816,653,bột nêm,1/2 mcf
+4817,653,tiêu ,1/3 mcf
+4818,653,nước tương,2 mc
+4819,653,nước lọc,2 mcf
+4820,653,tỏi,2 tép
+4821,653,ớt,1/3 trái
+4822,654,Đùi gà,4-6 cái
+4823,654,Bột mì,
+4824,654,Bột nở,
+4825,654,Soda,
+4826,654,"Bột hành , bột tỏi, bột ớt",
+4827,654,Bột bắp,
+4828,654,Trứng,
+4829,654,"Muối, đường, tiêu, hạt nêm",
+4830,654,Hành,
+4831,654,Sữa không đường,
+4832,655,Bún,200 gr
+4833,655,cà chua,3 trái
+4834,655,nấm hương ,100 gr
+4835,655,đậu hũ,1 bìa
+4836,655,hành tím,1 củ
+4837,655,tỏi,2 tép
+4838,655,hành lá,2 cây
+4839,655,ớt,1 trái
+4840,655,tiêu ,1 nhúm
+4841,655,rau thơm : kinh giới,1 ít
+4842,656,nui,1/2 gói
+4843,656,thịt heo xay,100 g
+4844,656,hẹ,10 g
+4845,656,Gia vị,
+4846,657,ức vịt,1
+4847,657,khoai tây,3/4 củ
+4848,657,muối,1 ít
+4850,658,thịt ba chỉ hoặc thịt đầu vai (nói chung phần thịt nào không bị khô ấy),300 gr
+4851,658,kim chi (phải loại đã chua nhiều mới ngon nha),1 bát ăn cơm đầy
+4852,658,đậu,1 khoanh
+4853,658,Hành,
+4854,658,tỏi,4-5 tép
+4855,658,hành tây,1/2 củ
+4856,658,Rượu nấu ăn (có thể lược bỏ),
+4858,658,nước dùng xương ninh (사골 코인 search shopee có nha),2 viên
+4860,659,đùi gà,500 gr
+4861,659,gừng ,1 muỗng cafe
+4862,659,hành tím,4 củ
+4863,659,ớt bột,1/2 muỗng cafe
+4865,659,sốt ướp thịt nướng,1 muỗng canh
+4866,659,nước mắm,1 muỗng canh
+4867,659,hạt nêm,1/2 muỗng cafe
+4868,659,tương ớt,1 muỗng cafe
+4869,659,mật ong,2 muỗng canh
+4870,659,nước lọc,3 muỗng canh
+4871,660,cải Rapini (Cải xanh Ý),1 bó
+4872,660,nấm mỡ,100 gr
+4873,660,bột nêm,1 ít
+4874,660,tiêu ,1 ít
+4875,660,tỏi,1 tép
+4876,660,dầu olive,1 mc
+4877,661,thịt heo,450 gr
+4878,661,hành tím ,1 củ
+4879,661,tỏi ,1 tép
+4880,661,nước mắm,1.5 mc
+4881,661,đường,1 mc
+4882,661,bột ngọt,0.5 mcf
+4883,661,muối,1 xíu
+4884,661,tương ớt,1 mcf
+4885,661,nước màu dừa,0.5 mcf
+4886,661,tiêu,1 xíu
+4887,662,trứng,8 quả
+4888,662,thịt xay,1 hộp
+4889,662,hành,
+4890,662,"muối, nước mắm",
+4891,663,Bột bánh xèo,1 gói
+4892,663,bột chiên giòn,1 gói
+4893,663,Hành lá,100 g
+4894,663,Tôm,500 g
+4895,663,thịt,100 g
+4896,663,sắn,1 củ
+4897,663,hành tây,1/2 củ
+4899,663,"tỏi, ớt",1 củ
+4900,663,"Gia vị : đường, nước mắm , bột ngọt, nuối",1
+4901,663,nước,1 chén
+4902,664,gà,1 con
+4903,664,bắp cải tím,1/2
+4904,664,củ cải,1
+4905,664,hành tây,1
+4906,664,ớt,1 trái
+4907,664,rau răm,1 ít
+4908,665,Hủ tiếu(150gr/tô),750 g
+4909,665,Gà ,1.4 kg
+4911,665,Hẹ,20 g
+4912,665,Tỏi,1 muỗng canh
+4913,665,Gừng,20 g
+4914,665,Hành tím,3 củ
+4915,665,cải trắng,100 g Củ
+4916,665,Nước,2 lít
+4917,665,Muối,1 muỗng cà phê
+4918,665,Nước mắm,1 muỗng canh
+4919,665,đường phèn,1 muỗng cà phê
+4920,665,Tiêu ,1/2 muỗng cà phê
+4921,665,hành lá,1 ít
+4925,667,tép khô,100 g
+4926,667,thịt nạc xay,100 g
+4927,667,cà chua,3 trái
+4929,668,Gà ( đùi hoặc cánh) (trong hình là rút xương ),400 g
+4930,668,Bột năng hoặc bột bắp,30 g
+4931,668,Dầu hào,1 muỗng canh
+4933,668,Dầu hào,1 muỗng canh
+4934,668,Đường,4 muỗng canh
+4935,668,Nước mắm,2 muỗng canh
+4936,669,nấm đông cô,200 g
+4937,669,Gừng ,1 miếng
+4938,669,Nước mắm,1 muỗng
+4939,669,Nước tương,1 muỗng
+4940,669,đường,1 muỗng cà phê
+4941,669,"tiêu , ớt",
+4942,669,Dầu ăn,1 muỗng
+4943,669,Nước,30 ml
+4944,670,thịt bò,200 gr
+4945,670,hành tây,1/3 củ
+4946,670,hành tím ,1 củ
+4948,670,mirin (không có thì thay bằng 1mcf đường),1 mc
+4949,670,xì dầu,2.5 mc
+4951,670,rượu,1 mc
+4952,671,Hành,"0,5 g"
+4953,671,Tỏi,"0,5 g"
+4954,671,sữa đặc,50 ml
+4955,671,dầu hào,50 ml
+4956,671,tương ớt,50 ml
+4957,671,chanh,10 ml
+4958,671,hạt nêm,"0,5 g"
+4959,671,xả ,30 g
+4960,672,Nấm rơm (hoặc 200gr nấm rơm  ),100 g
+4961,672,Nước mắm,1 muỗng
+4962,672,Hạt nêm,1-2 muỗng cà phê
+4963,672,Đường,1 muỗng cà phê
+4964,672,Tiêu xanh,1 ít
+4965,672,Dầu ăn,1 muỗng canh
+4966,673,Bò viên,8 viên
+4967,673,Cà rốt,1 củ (cắt khúc)
+4968,673,Khoai tây,1 củ (cắt miếng vừa ăn)
+4969,673,Củ dền,1/2 củ (cắt miếng vừa ăn)
+4970,673,(cắt nhỏ) Đậu que,50 g
+4971,673,Bắp ngọt,50 g
+4972,673,(cắt nhỏ) Hành lá,1 nhánh
+4973,673,Dầu ăn,1 muỗng canh
+4974,673,Nước,800 ml
+4975,673,Muối,1/2 muỗng cà phê
+4976,673,Hạt nêm,1 muỗng cà phê
+4977,673,Tiêu,1/4 muỗng cà phê
+4978,674,bắp ngọt (2 trái ),500 gr
+4979,674,bột năng,400 gr
+4980,674,bột báng,70 gr
+4981,674,đường cát,200 gr
+4982,674,nước cốt dừa,250 gr
+4983,674,nước lọc,"1,1 lít"
+4984,674,muối,1/3 muỗng cafe
+4985,674,lá dứa,3 cọng
+4986,675,cánh gà,700 g
+4987,675,bột chiên giòn,1/2 cup
+4988,675,lòng đỏ trứng,3
+4989,675,tương ớt,3 tbsp
+4990,675,tương cà,1 tbsp
+4991,675,dầu hào,2 tbsp
+4992,675,dầu màu điều,2 1/2 tbsp
+4993,675,phẩm màu cam,1 giọt
+4994,675,"Tỏi  , ớt , hành tím ,đầu hành , hành tây",
+4995,675,"Gia vị: hạt nêm,muối, ngũ vị hương ,tiêu,bột ớt",
+4996,676,cá ong căn,600 gr
+4997,676,nước mắm,2 mc
+4998,676,đường,1 mc
+4999,676,bột ngọt,1 mcf
+5000,676,muối,1 xíu
+5001,676,củ hành tím ,2
+5002,676,tiêu,1 mcf
+5003,676,tóp mỡ,1 vài miếng
+5004,676,ớt,3 trái
+5009,678,Thịt ba chỉ,600 g
+5010,678,Thịt nạc dăm,400 g
+5011,678,Trứng vịt,10 quả
+5012,678,Chanh,1 quả
+5013,678,Muối,10 g
+5014,678,"Hành , tỏi, ớt ",50 g
+5015,678,Đường,30 g
+5016,678,Nước dừa ,2 lít
+5017,678,Nước mắm,40 ml
+5018,678,Dầu ăn,10 ml
+5019,679,sườn non,400 g
+5020,679,bắp non,200 g
+5021,679,hành lá,10 g
+5022,679,hạt nêm,1 muỗng cf
+5023,679,muối,1/2 muỗng cf
+5024,679,nước,1 lít
+5025,680,Bông cải xanh,200 g
+5026,680,Viên chay ( mọc chay hoặc viên gà chay ),100 g
+5027,680,Cà rốt,1/2 củ (50g)
+5028,680,Nước,800 ml
+5029,680,Hạt nêm,1 thìa cà phê
+5030,680,Muối,1/2 thìa cà phê
+5031,680,Tiêu,1/4 thìa cà phê
+5032,680,Nấm  (nếu thay thế),100 g
+5033,681,ghẹ xanh (khoảng 1 con thịt ghẹ bóc ),1-2 con
+5034,681,cơm nguội,2 bát
+5035,681,"cà rốt , bắp ngọt , đậu hà lan",1 bát con
+5036,681,hành tây,1/4 củ
+5037,681,dầu ăn,3 thìa
+5038,681,trứng (có thể bỏ qua ),1 quả
+5039,681,dầu hào,1 thìa
+5040,681,xì dầu hoặc mắm ngon,1 thìa
+5041,681,tiêu ,1 xíu
+5042,682,cà chua,2 trái
+5043,682,thơm,1/4 trái
+5044,682,tôm ,150 g
+5045,682,cá viên,100 g
+5046,682,hành lá,30 g
+5047,682,Gia vị,
+5048,683,thịt heo xay,300 g
+5049,683,hành lá,50 g
+5050,683,Gia vị,
+5051,684,cá thác lác ,150 g
+5052,684,tỏi ,1 mcf
+5053,684, hành lá,5 g
+5054,684,nước mắm,1/2 chén
+5055,684,Gia vị,
+5060,686,mướp hương,2 trái
+5061,686,mồng tơi,1 bó
+5062,686,tôm khô,1/2 cup
+5063,686,Gia vị,
+5064,687,tôm hùm ( lobsters ),2 con
+5065,687,bông cải xanh ( broccoli ),1 cái
+5066,687,nấm đông cô,1 chén
+5067,687,bột chiên,1 tô
+5068,687,trứng gà,2 quả
+5069,687,Hành tây,1 củ
+5071,687,"Gia vị: dầu hào, dầu mè, bột nêm, soy sauce",
+5076,689,tôm,500 g
+5077,689,mực,500 g
+5078,689,Bông điên điển,600 g
+5079,689,ngó sen,500 g
+5080,689,cà chua,2 quả
+5081,689,ớt,5 quả
+5082,689,đậu bắp,500 gam
+5083,689,khóm,1 quả
+5084,689,"ngò gai, quế, rau om",100 gam
+5085,689,tắc,2 quả
+5086,689,hành tím,5 củ
+5087,689,dầu ăn,1 chén
+5088,689,nước,500 ml
+5089,689,"Gia vị : đường, bột ngọt  hạt nêm, muối",1 muỗng
+5090,690,cá nục,1 kg
+5091,690,gừng,100 g
+5092,690,sả,5 củ
+5093,690,"Hành lá , rau răm, thì là",
+5094,690,Gia vị,
+5095,691,thịt bò,1 kg
+5096,691,"Gừng (tuỳ theo sở thích, nửa đập dập nửa thái chỉ)",
+5098,691,Gừng,
+5099,691,bột canh,1/2 thìa canh
+5100,691,hạt nêm,1 thìa canh
+5101,691,hạt tiêu,1 thìa canh
+5102,691,đường,2 thìa canh
+5103,691,nước mắm,1 thìa canh
+5104,691,nước hàng,2 thìa canh
+5105,691,dầu màu điều (màu đẹp) hoặc dầu ăn (nên ướp dầu ăn cuối cho gia vị được thấm đều trong thịt ),3 thìa canh
+5106,692,Đậu rồng ( đỗ khế ),100 g
+5107,692,Nấm kim châm,50 g
+5108,692,Đậu hũ,1 miếng (150 g)
+5109,692,Cà chua,1 quả (80 g)
+5110,692,Thơm ( dứa ),50 g
+5111,692,Ngò gai,5 g
+5112,692,tắc,2 muỗng canh
+5113,692,Nước lọc,500 ml
+5114,692,Muối,1/2 muỗng cà phê
+5115,692,Đường,1/2 muỗng cà phê
+5116,692,Nước mắm,1 muỗng canh
+5117,693,bí,1 trái
+5118,693,xương heo,500 g
+5119,693,hành tím,4 củ
+5120,693,hành lá,2 tép
+5121,693,tiêu,1/2 mcf
+5122,693,bột nêm,2 mcf
+5123,693,đường,1 mcf
+5124,694,phở (1 người ăn thì sẽ hơi nhiều chút ạ),2 vắt
+5125,694,Bắp bò,
+5126,694,Cà rốt,
+5127,694,Hành tây,
+5128,694,Giá,
+5129,694,Rau cải chíp,
+5130,694,Hành,
+5132,694,Tỏi ,
+5133,694,"Tiêu , hạt nêm, dầu hào",
+5135,694,"Hạt nêm , tiêu, bột canh, đường, dầu hào, nước tương, tương ớt",
+5136,694,Tỏi ,
+5137,694,Bột năng,
+5138,695,Khoai tây,500 g
+5139,695,Thịt heo xay,150 g
+5140,695,Dầu ăn,2 muỗng canh
+5141,695,Hành tím,1 củ
+5142,695,Hạt nêm,1 muỗng cà phê
+5143,695,Nước mắm,1 muỗng cà phê
+5144,695,Muối,1/2 muỗng cà phê
+5145,695,Tiêu,1/2 muỗng cà phê
+5146,696,Gạo,1 nắm to
+5147,696,nghệ ,1 củ (cỡ 2 đốt tay)
+5148,696,Nấm đùi gà,100 g
+5149,696,Dầu ăn,1 thìa canh
+5150,696,"Muối, hạt nêm",
+5151,696,nước,"1,5 lít"
+5152,696,Rau mùi hoặc rau mùi ta,10 g
+5153,697,Bún ,600 g
+5154,697,Sườn non,500 g
+5155,697,Thanh cua,6 thanh
+5156,697,Chả cá (narutomaki),1 cây
+5157,697,Trứng gà,3 quả
+5158,697,Hành lá,20 g
+5159,697,Hành tím,1 củ
+5160,697,Muối,1 muỗng cà phê
+5161,697,Nước mắm,1 muỗng canh
+5162,697,Hạt nêm,1 muỗng canh
+5163,697,Tiêu,1/2 muỗng cà phê
+5168,699,thịt ba chỉ,100 g
+5169,699,dưa leo,2 trái
+5170,699,thơm,1/4 trái
+5171,699,cà chua,1 trái
+5172,699,hành tây,1 củ
+5173,699,Hành lá,
+5174,699,Gia vị,
+5179,701,thịt heo xay,100 g
+5180,701,tôm ,50 g
+5181,701,cải con,400 g
+5182,701,Gia vị,
+5183,702,cá chim,700 g
+5184,702,ớt ,1 trái
+5185,702,muối,3 mcf
+5186,702,bột ngọt,1/2 mcf
+5187,702,sả,3 tép
+5188,703,cá chẽm,1 con
+5189,703,cam,2 trái
+5190,703,bột chiên giòn,1 gói
+5191,703,hành tây,1/2 củ
+5192,703,ớt,3 trái
+5193,703,hành lá,1 cây
+5206,705,Nấm rơm,100 gr
+5207,705,Bí xanh (đã làm sạch),300gr
+5208,705,Hạt nêm,
+5209,706,giò heo (rút xương Meat deli),400 gr
+5210,706,mồng tơi,2 bó
+5211,706,nấm rơm,150 gr
+5212,706,kim chi,1 hộp
+5213,707,Nấm đùi gà,30 g
+5214,707,Nấm bào ngư,30 g
+5215,707,Nấm đông cô ,30 g
+5216,707,(khoảng 200g) Mướp hương,1 trái
+5217,707,Rau đay,100 g
+5218,707,Nước dùng chay,1 lít
+5219,707,Dầu ăn,1 muỗng canh
+5220,707,Muối,1/2 muỗng cà phê
+5221,707,boaro,1 muỗng cà phê
+5222,708,Tôm ,200 g
+5223,708,Cải thìa,1 bó
+5224,708,Muối,1 muỗng cà phê
+5225,708,Hạt nêm,1 muỗng cà phê
+5226,708,Nước,800 ml
+5227,709,đuôi heo,1 cái
+5228,709,bí xanh,2 trái
+5229,709,hành lá,20 g
+5230,709,Gia vị,
+5231,710,mì tôm,2 gói
+5232,710,da heo,200 g
+5233,710,hành tây,1 củ
+5234,710,nấm đông cô ,5 tai
+5235,710,hành lá,2 cây
+5236,710,Gia vị,
+5237,711,nấm rơm,100 gam
+5238,711,thơm,150 gam
+5239,711,Poireaux,15 gam
+5240,711,nước tương,3 tbsp
+5241,711,xì dầu,1/2 tbsp
+5242,711,dầu hào,1 tbsp
+5243,711,dầu mè,1/2 tbsp
+5244,711,đường,2 tbsp
+5245,711,hạt nêm,1 tsp
+5246,711,tiêu,1 tsp
+5247,711,bột ngọt,1/4 tsp
+5248,711,chao,1 viên
+5249,711,nước chao,2 tbsp
+5250,711,dầu ăn,1/2 tbsp
+5251,711,dầu màu điều,1 tbsp
+5252,712,bánh mì sandwiches,2 miếng
+5253,712,trứng gà,2 quả
+5254,712,sausage (đã nướng),1 miếng
+5255,712,phô mai (laughing cow cheese ),1 miếng
+5256,712,butter,2 tbsp
+5257,713,cá cơm trỏng ,200 gr
+5258,713,cà chua,2 quả
+5259,713,cần tàu,3 cây
+5261,713,Nước mắm,1 tbsp
+5262,713,hành lá,1 ít
+5263,713,tiêu ,1 nhúm
+5264,713,nước lọc,1 tô
+5265,714,Cá khoai,500 g
+5266,714,Rong biển ,150 g
+5267,714,hành tím,5 củ
+5268,714,"Hành lá , ngò rí",
+5269,714,ớt,2 quả
+5270,714,Nước mắm,
+5271,715,bột bánh xèo,1/2 gói
+5272,715,tôm,200 gr
+5273,715,giá đỗ,100 gr
+5274,716,Cánh gà,500 g
+5275,716,Bột chiên giòn (vị phô mai),60 g
+5276,716,Dầu ăn,200 ml
+5277,716,Dưa leo,1 quả
+5278,716,Tương ớt,30 ml
+5279,717,gà (xé),200 g
+5280,717,nấm đông cô,4 cái
+5281,717,cà rốt,1 củ
+5282,717,hạt sen,30 g
+5283,717,bắp hạt,30 g
+5284,717,táo tàu đỏ,6 quả
+5285,717,táo tàu đen,6 quả
+5286,717,nho khô,15 g
+5287,717,kỷ tử,10 g
+5288,717,đông trùng hạ thảo,10 g
+5289,717,ngò rí,1 nhánh
+5290,717,Viên gia vị knorr Ayam,1 viên
+5291,717,bột bắp,1 muỗng canh
+5293,717,nước,1 lít
+5294,718,thịt ba chỉ,150 g
+5295,718,dưa leo,1 trái
+5296,718,cà rốt,1/2 củ
+5297,718,nấm linh chi,Ít
+5298,718,Hành lá,
+5299,718,Gia vị,
+5300,719,trứng gà,2 trái
+5301,719,Thịt heo xay,100 gr
+5302,719,hành tím ,1 củ
+5303,719,hành lá,1 nhánh
+5304,719,"gia vị: mắm , bột ngọt, tiêu",
+5305,720,Mộc nhĩ ( nấm mèo ),10 g
+5306,720,(khoảng 300g) Đậu hũ,2 miếng
+5307,720, Boaro,1 cọng
+5308,720,Nước mắm ,1 muỗng canh
+5309,720,Hạt nêm ,1 muỗng
+5310,720,Đường ,1-2 muỗng cà phê
+5311,720,Dầu ăn,2 muỗng canh
+5312,720,Nước,100 ml
+5313,720,(tùy chọn) Ớt ,1 quả
+5314,721,đậu rồng ( đỗ khế ),150 gr
+5315,721,cà chua,1 quả
+5316,721,rau đắng (hoặc rau xào lách),50 gr
+5317,721,thịt bò ,150 gr
+5318,721,sốt mè rang ( loại 50gr),1 gói
+5319,721,hạt điều,30 gr
+5320,721,trứng gà (nếu thích),2 quả
+5321,721,dầu ăn,2 muỗng canh
+5322,721,tỏi,3 tép
+5323,721,"Gia vị: Hạt nêm , dầu hào, bột ngọt, tiêu",
+5324,722,cá bàn sa,1 con (700 gr)
+5325,722,nghệ,1 mẩu
+5326,722,sả,3 tép
+5327,722,ớt,2 trái
+5328,723,Cánh gà,500 g
+5329,723,Lá mắc mật,10 cái
+5330,723,Mirin,1 muỗng canh
+5331,723,Mật mía,1 muỗng canh
+5332,723,Ngũ vị hương,1/2 muỗng cà phê
+5333,723,Muối,1/4 muỗng cà phê
+5334,723,Nước tương,1/2 muỗng canh
+5335,723,Dưa leo,1/2 quả
+5336,723,Rau răm,1 nhúm
+5337,724,đậu hũ,3 thanh
+5338,724,thịt ba chỉ,250 gr
+5339,724,"hành tím , mắm , muối, tiêu, bột ngọt",
+5340,725,đùi gà,1 hộp
+5341,725,dầu hào,1 thìa
+5342,725,mật ong,1/2 thìa
+5343,725,xì dầu,1/2 thìa
+5344,725,mắm,1 thìa
+5345,725,tiêu xanh,2 nhánh
+5346,725,hành,1 củ
+5347,725,tỏi,2 tép
+5348,725,gừng  (cỡ 1 đốt ngón tay),1 nhánh
+5349,725,dầu ăn,1 thìa
+5350,725,dầu mè,1 thìa
+5351,725,giấy bạc,1 cuộn
+5352,726,trứng cá,300 gr
+5353,726,ớt,2 quả
+5354,726,mì chính,2 thìa cafe
+5355,726,đường,2 thìa cafe
+5356,726,tương ớt,1 thìa canh
+5357,726,nước mắm,1 thìa canh
+5358,727,cơm,1 bát con đầy
+5359,727,cà rốt,1/2 củ
+5360,727,củ sen,100 g
+5361,727,hạt sen,100 g
+5362,727,lá sen,1 chiếc
+5363,727,Gia vị,
+5364,728,gà (tầm 1kg5 trở sẽ ngon hơn),1 con
+5365,728,lá lốt,300 g
+5366,728,muối,1 muỗng
+5367,728,mắm,1 muỗng
+5368,728,dầu hào,1 muỗng
+5369,728,hạt nêm,1 muỗng
+5370,728,hành tím,5 củ
+5371,729,Cá kèo,400 g
+5372,729,Sốt kho cá,3 muỗng canh
+5373,729,Rau răm,20 g
+5374,729,Tiêu xanh,1 nhánh
+5375,729,Tỏi,5 tép
+5376,729,Ớt,1 trái
+5377,729,Dầu ăn,1 muỗng canh
+5378,729,Nước,100 ml
+5379,730,đậu hũ,2 miếng
+5380,730,sả  ,2 cây
+5381,730,"Gia vị: nước mắm, đường, bột ngọt",
+5382,731,chân gà rút xương,1 vỉ 10 cái
+5383,731,dưa chuột ,3 trái
+5384,731,rau răm,1 nắm
+5385,731,tắc,3 trái
+5386,731,sốt Thái,1 mc
+5387,731,Gia vị,
+5391,733,bông cải xanh,1 bắp
+5392,733,thịt bò,200 gram
+5393,733,"Tỏi , hành",
+5394,733,"Dầu ăn , tiêu, hạt nêm, muối, mắm, nước tương",Gia vị:
+5395,734,nấm kim châm,1 cuộn
+5396,734,rong biển,2 cái
+5397,734,bột chiên giòn,1/2 bịch
+5398,734,tương ớt,1 mc
+5399,734,mayonnaise,1 mc
+5400,735,Bí đỏ,300 g
+5401,735,Thịt heo xay,150 g
+5402,735,Hành lá,2 nhánh
+5403,735,Ngò rí,1 nhánh
+5404,735,Muối hồng,1/2 muỗng cà phê
+5405,735,Nước,800 ml
+5406,735,Tiêu ,1/4 muỗng cà phê
+5407,735,Nước ( ướp thịt ),1 muỗng canh
+5408,736,bí xanh,1/2 trái
+5409,736,rau chân vịt,1 rổ nhỏ
+5410,736,súp,1 viên
+5411,737,"xoài, vừng , bạc hà , sả",
+5412,737,"bánh tráng , chuối xanh , tương bần",
+5413,737,"gia vị: mì chính, hạt nêm, đường, dầu ăn, dầu hào, ngũ vị hương , tiêu",
+5414,738,Khoai tây,200 g
+5415,738,Rau cần,100 g
+5416,738,Cà chua,100 g
+5417,738,Thì là,10 g
+5418,738,Tóp mỡ,1 muỗng canh
+5419,738,Hành tím hoặc tỏi ,10 g
+5420,738,Nước mắm,1 muỗng canh
+5421,738,Muối,1/2 muỗng cà phê
+5422,738,mỡ lợn,1 muỗng canh
+5423,738,hành lá,2 nhánh
+5424,738,Nước lọc,800 ml
+5425,739,măng ,300 g
+5426,739,thịt gà (mình sử dụng ức),200 g
+5427,739,tỏi,1 tép
+5428,739,"Mùi tàu , dầu hào, muối, mì chính , dầu oliu",
+5429,740,Mắm cá,1 chén
+5430,740,trứng (Ngon 1 trứng vịt nhé),5 quả
+5431,740,thịt ,"0,5 kg"
+5432,740,"đường, bột ngọt",1 mc
+5433,740,hành tím,1 ít
+5434,741,chân gà,300 gr
+5435,741,khoai sọ,2 củ to (~600gr)
+5436,741,"Muối, hạt nêm, bột ngọt, hành lá , tiêu",
+5437,742,sườn non,500 g
+5438,742,trứng gà,5 quả
+5439,742,dừa,1 quả
+5440,742,tỏi,1/2 củ
+5441,742,hành,2 củ
+5442,742,"nước hàng , gia vị",
+5443,743,Đậu hũ (trong bài mình dùng đậu phụ mộc nhĩ ),3 miếng
+5444,743,Ngũ vị hương,1/3 thìa cà phê
+5445,743,Hạt nêm,1 thìa cà phê
+5446,743,Dầu ăn,
+5447,744,Cá bánh đường (đã làm sạch),1 con (750 g)
+5448,744,Muối,2 g
+5449,744,Hành tây,1/2 củ
+5450,744,Thì là,10 g
+5451,744,Sả,2 cây
+5452,744,củ Hành tím,3 củ
+5453,744,Nước mắm ,30 ml
+5454,744,Giấy bạc,1 tờ lớn
+5455,745,Nấm bào ngư,100 g
+5456,745,(150gr) Đậu hũ ,1 hộp
+5457,745,Cà chua,2 quả
+5458,745,Nước hầm rau củ,800 ml
+5459,745,Hành lá,2 nhánh
+5460,745,Ngò rí,1 nhánh
+5461,745,Muối,1/2 muỗng cà phê
+5462,745,Đường,1/2 muỗng cà phê
+5463,745,Tiêu,1/4 muỗng cà phê
+5464,746,cá cơm kho,100 g
+5465,746,trứng gà,1 trái
+5466,746,cơm,2 chén
+5467,746,hành lá,30 g
+5468,747,thịt bê  (lựa phần thịt mềm),300 g
+5469,747,lá lốt,1 nắm
+5470,747,sả,1 củ
+5471,747,tép tỏi,1 vài
+5472,747,hạt nêm,1 tsp
+5473,747,nước mắm,2 tsp
+5474,747,tiêu,1/2 tsp
+5486,751,Thịt ba chỉ,300 g
+5487,751,Muối hồng,3 g
+5488,751,Dầu mè,5 ml
+5489,751,Tỏi,10 g
+5491,751,Lá sen khô,1
+5492,752,cà chua,2 trái
+5493,752,thịt heo xay,300 g
+5494,752,hành lá,20 g
+5495,752,Gia vị,
+5496,753,cánh gà,10 cái
+5497,753,phô mai,100 g
+5498,753,"Gia vị: bột tỏi, bột hành , bột ớt ,dầu hào",
+5500,753,tương cà,1 tbsp
+5501,753,tương ớt,1/2 tbsp
+5502,753,sốt bbq,2 tbsp
+5503,753,nước tương,1 1/2 tbsp
+5504,753,dầu hào,1 tbsp
+5505,753,mật ong,2 tbsp
+5506,753,"Bột tỏi , bột hành",
+5507,753,Sốt cay,
+5509,753,tương cà,1 tbsp
+5510,753,tương ớt,1-2 tsp
+5511,753,ớt bột,1 tsp
+5512,753,dầu hào,1 tbsp
+5513,754,gà,300 g
+5514,754,bột chiên giòn,50 g
+5515,754,bột bắp,30 g
+5516,754,trứng gà,1 quả
+5518,754,nước,50 ml
+5519,754,đường,30 g
+5520,754,muối,1 g
+5521,754,dầu ăn,300 ml
+5522,754,xà lách,2 lá
+5523,754,chanh ,1 lát
+5524,755,cơm,2 chén
+5525,755,trứng gà,1 trái
+5526,755,tôm sú,5 con
+5527,755,nước mắm,2 mc
+5528,755,hành lá,20 g
+5529,756,củ khoai ,1/2
+5530,756,tôm sú,Vài con
+5531,756,"Muối, bột ngọt, tiêu, hành lá",
+5532,757,thịt bò,100 g
+5533,757,xà lách,300 g
+5534,757,cà chua,5 trái
+5535,757,tỏi,1 mcf
+5536,757,Gia vị,
+5537,758,gà,500 g
+5538,758,cam,2 trái
+5539,758,cải bắp,100 g
+5540,758,đường ,20 g
+5541,758,muối hồng,2 g
+5542,758,bột bắp,10 g
+5543,758,Dầu ăn,
+5544,759,Chân gà,
+5545,759,"Tỏi , hành khô và sả",
+5546,759,Bột gia vị lẩu Thái,
+5547,759,"Đường, dầu hào",
+5548,759,Ớt,
+5549,759,Xoài,
+5555,761,vịt,1/2 con
+5556,761,tỏi,100 g
+5557,761,củ gừng,1
+5558,761,Bột mì,
+5559,761,Gia vị,
+5568,763,Bầu,1 quả nhỏ
+5569,763,Long nhãn,3-4 cái
+5570,763,"Muối, hạt nêm",
+5571,763,thì là,
+5572,764,Su Su,2 trái
+5573,764,trứng gà,2 cái
+5574,764,hành lá,2 nhánh
+5575,764,dầu ăn,2 tbsp
+5576,764,tỏi,1 tbsp
+5577,764,dầu hào,1/2 tbsp
+5578,764,hạt nêm,1 tsp
+5579,764,bột ngọt,1/4 tsp
+5580,764,nước tương,1 tbsp
+5581,764,tiêu,1/4 tsp
+5582,765,thịt ba chỉ,500 g
+5583,765,sả,1 mc
+5584,765,mắm ruốc Huế,2 mc
+5585,765,đường,2 mc
+5586,765,tiêu,1/2 mcf
+5587,765,dầu ăn,1 mc
+5588,765,"Rau củ: cà rốt , bắp non , đậu bắp , dưa leo",
+5589,766,thịt đùi,300 g
+5590,766,trứng gà,1 trái
+5591,766,bột chiên giòn,2 mc
+5592,766,Dầu ăn,
+5593,766,bột ớt,1/2 mcf
+5594,767,thịt bò xay,200 g
+5595,767,thịt heo xay,200 g
+5596,767,sả,2
+5598,767,lá lốt,200 g
+5599,767,"hạt nêm, 1tsp tiêu, 2tbsp dầu hào",1 tbsp
+5600,768,cá bè,2 lát
+5601,768,sấu,5 quả
+5602,768,bạc hà ( dọc mùng ),1 bẹ
+5603,768,lá me non,1
+5604,768,cà chua,1 trái
+5606,768,nước mắm,1 muỗng
+5607,768,muối,1 ít
+5608,768,đường (tuỳ khẩu vị),1-2 muỗng cafe
+5609,769,Tôm,7 con
+5610,769,Nấm đông cô,1/2 gói
+5611,769,"Gia vị : dầu hào, dầu oliu, mắm , tỏi",2 tép
+5612,769,Củ cải khô,3 dây
+5613,770,cua ghẹ bóc vỏ,100 g
+5614,770,tép khô,20 g
+5615,770,tôm,100 g
+5616,770,trứng gà,3 trái
+5617,770,hành lá,10 g
+5618,770,nước mắm,2 mc
+5619,770,tiêu,Ít
+5620,771,nấm rơm,500 g
+5621,771,dầu hào,1 tbsp
+5622,771,nước tương,2 tbsp
+5623,771,đường (nhà mình dùng đường ăn kiêng Lakanto),2 tsp
+5624,771,sả (giúp nấm thêm thơm không có bỏ qua ạ),1 cây
+5625,772,bơ,1 quả
+5626,772,hộp cá ngừ,1/2
+5627,772,hành tây,1/4 củ
+5628,772,cà chua,1/2 quả
+5629,772,rau mùi,"3,4 cọng"
+5630,772,mayonnaise,2 thìa
+5631,772,tiêu,1 ít
+5659,774,Gạo nếp,300 g
+5660,774,Đậu phộng,70 g
+5661,774,Muối,1/2 muỗng cà phê
+5662,774,Dầu ăn,1 muỗng
+5663,775,thịt ba chỉ,350 gr
+5664,775,trứng gà,6 quả
+5665,775,mắm,2 mc
+5666,775,nước dừa,1 mcf
+5667,775,đường,3/4 mc
+5668,775,bột ngọt,1/2 mcf
+5669,775,muối,1/2 mcf
+5670,775,hạt nêm,1 mcf
+5671,775,"hành tím, tiêu",2 củ
+5672,776,lòng vịt,1 bộ
+5673,776,bí xanh,1 trái
+5674,776,ngó rí,20 g
+5675,776,Gia vị,
+5676,777,bí đỏ,150 gr
+5677,777,sườn heo,200 gr
+5678,777,hành tây,1/2 củ
+5679,777,hành lá ,1 muỗng canh
+5680,777,ngò rí/ ngò gai ,1 muỗng canh
+5681,777,nước lọc,500 ml
+5682,778,đùi gà,2 cái
+5683,778,Gia vị,
+5701,780,Nấm đùi gà,300 g
+5702,780,Đậu hũ,150 g
+5703,780,Rau răm,10 g
+5704,780,hành tây,1 củ
+5705,780,sả,3 cây
+5706,780,ớt,2 trái
+5707,780,củ hành tím,3
+5708,780,Ớt bột,1/2 muỗng cà phê
+5709,780,Dầu ăn,3 muỗng canh
+5710,780,"Gia vị (muối, tiêu, hạt nêm)",
+5721,782,thịt heo,400 g
+5722,782,tôm,200 g
+5724,782,Hành lá,
+5725,782,Gia vị,
+5726,783,mực,3 con
+5727,783,hành lá,20 g
+5728,783,nước mắm,1/2 chén
+5729,783,Gia vị,
+5730,784,gà,200 g
+5731,784,tép khô,50 g
+5732,784,bí xanh,1 trái
+5733,784,hành lá,10 g
+5734,784,Gia vị,
+5735,785,nấm rơm,300 gr
+5736,785,hành,2 củ
+5737,785,tỏi,7 tép
+5738,785,nước tương,4 thìa canh
+5739,785,nước mắm chay,1 thìa canh
+5740,785,tương ớt,1 thìa canh
+5741,785,hạt nêm,1
+5742,785,dầu ăn,1 thìa canh
+5743,785,đường,1 thìa canh
+5744,785,mì chính,2 thìa cà phê
+5745,785,ớt,2 quả
+5746,785,hạt tiêu,1/2 thìa cà phê
+5747,786,cá chim,2 con (khoảng 500-600 gram)
+5748,786,cà chua,2 quả
+5749,786,hành lá,
+5750,786,dầu ăn,1 bát con
+5751,786,hành,1 củ
+5752,786,nước mắm,2 thìa
+5753,787,Nấm bào ngư,250 g
+5754,787,Nước tương,2 muỗng canh
+5755,787,Mật mía,1 muỗng cà phê
+5756,787,Tiêu xanh (đập dập),1 chùm
+5757,787,(đập dập) Ớt,1 trái
+5758,787,( nhỏ) Hành tím hoặc tỏi (hoặc hành boa rô cho chay),1 muỗng canh
+5759,787,Dầu ăn,1 muỗng canh
+5760,787,Nước lọc,50 ml
+5766,789,bầu,1 quả
+5767,789,tôm ,20 g
+5768,789,hạt nêm,2 tsp
+5769,790,cá mú,1/2 con
+5770,790,giá,1 túi
+5771,790,cà chua,4 trái
+5772,790,thơm,1/4 trái
+5773,790,húng quế,1 nắm
+5774,790,"Gia vị: muối, đường, bột ngọt, me",cục
+5775,791,bí đỏ,300 g
+5776,791,đậu phộng,100 g
+5777,791,mì căn ống,6 cây
+5778,791,đậu hũ,200 g
+5779,791,nấm rơm,100 g
+5780,791,thơm,1/4 trái
+5781,791,cà rốt,1/2 củ
+5782,791,đậu cô ve,100 g
+5783,791,nấm mèo,10 g
+5784,792,rong biển khô,50 g
+5785,792,nấm kim châm,1/2 túi
+5786,792,thịt xay,100 g
+5787,792,tép khô,20 g
+5788,792,Gia vị,
+5789,793,khoai môn,500 g
+5790,793,bột tàn,200 g
+5791,793,shorterning,70g
+5792,793,nước sôi,225 g
+5793,793,Thịt xay,100g 
+5794,793,nấm đông cô,4 tai 
+5795,793,tép,100g 
+5796,793,củ hành,2
+5797,793,dầu hào,1mc 
+5798,793,tiêu,1/4mcf 
+5802,795,sườn chay,3 miếng
+5803,795,bột gạo,50 g
+5804,795,màu gạch tôm,1 xíu
+5805,795,hạt nêm,2/3 mcf
+5806,796,bột mì,400 g
+5807,796,đường,200 g
+5808,796,bơ,100 g
+5809,796,sữa chua,100 g
+5810,796,trứng,1 quả
+5811,796,bột nở,1 mcf
+5812,796,bột khai,1/3 mcf
+5813,796,chanh,
+5814,796,trứng,1 cái
+5815,796,đường,200 g
+5816,796,mè đen,1 mc
+5817,796,chocolate,100 g
+5818,797,trứng gà,5 quả
+5819,797,bột nêm,1/2 mcf
+5820,797,hành lá,2 tép
+5821,797,củ cải đỏ,1 chút
+5822,797,rong biển,1 lá
+5823,798,Cá sơn thóc (700 gr),2 con
+5824,798,Rau cần nước,100 gr
+5825,798,Cà chua,1 quả
+5826,798,Hành tỏi ,1 tbsp
+5827,798,Hành lá,1 tbsp
+5828,798,nước,300 ml
+5829,799,nhân kem trứng muối,140 gr
+5830,799,nhân sen,140 gr
+5831,799,bột bánh dẻo,140 gr
+5832,799,Trứng muối,4 quả
+5833,799,nước đường,280 gr
+5835,801,bầu,1 trái
+5836,801,tỏi,1 tép
+5837,801,chao,2 viên
+5838,801,đường,1 tsp
+5839,801,nước lọc,1 tsp
+5840,801,cánh gà,500 gr
+5841,801,cà pháo muối,400 gr
+5842,801,rau ngót,200 gr
+5843,801,tôm khô,50 gr
+5844,802,cánh gà,2 lbs
+5845,802,"Hành tím , đường, nước mắm",
+5846,802,dưa leo,1 trái
+5847,803,cá diêu hồng,
+5848,803,tép khô,20 g
+5849,803,cà chua,2 trái
+5850,803,hành tây,2 củ
+5851,803,Ngò rí,
+5852,803,Gia vị,
+5853,804,Rau đay,100 g
+5854,804,Mùng tơi,70 g
+5855,804,mướp,1 quả
+5856,804,Hạt nêm,1 thìa cà phê
+5857,804,Nước mắm chay,1 thìa nhỏ
+5858,804,Nước,500 ml
+5859,805,thịt heo,300 gr
+5860,805,mắm nêm,2 muỗng canh
+5861,805,đường,1 muỗng canh
+5863,805,dưa leo,1 trái
+5864,805,đu đủ,1 ít
+5865,805,cà pháo tím,1 chén
+5866,805,rau húng lủi,1 ít
+5867,806,trứng gà,2 lạng
+5868,806,mỡ,5 lạng
+5869,806,muối,1 g
+5870,806,gia vị gà chiên mắm,1 gói
+5871,806,tỏi,5 tép
+5872,806,hành khô,1 củ
+5873,806,Mỡ,
+5874,807,nước hầm xương,"2,5 L"
+5875,807,thịt ba rọi,600 gr
+5876,807,tôm sú,750 gr
+5877,807,nước cốt dừa,450 ml
+5878,807,bánh canh,1 kg
+5879,807,tỏi,2-3 tép
+5881,807,ngò rí,
+5882,807,hành lá,
+5883,807,Gia vị,
+5884,808,(khoảng 500g) Cá chim,1 con
+5885,808,( ngâm nở) Nấm mèo,20 g
+5886,808,Gừng,10 g
+5887,808,Hành lá,2 cây
+5888,808,Ớt,1 quả
+5889,808,Muối,1/2 thìa cà phê
+5890,808,Nước mắm,1 thìa canh
+5891,808,Nước tương,40 ml
+5892,809,Bột chiên giòn,10-15 thìa
+5893,809,Trứng gà,1 cái
+5894,809,Nước,
+5895,809,Tôm,
+5896,810,bóng cá chay,100 g
+5897,810,dưa leo,5 trái
+5898,810,đậu phộng,2 thìa canh
+5899,810,nước mắm ,2 thìa canh
+5900,810,đường,1 thìa canh
+5901,810,chanh,
+5902,810,tỏi,1 thìa cà phê
+5904,810,Rau thơm,
+5905,811,bò,400 gr
+5906,811,gừng,1.5 muỗng canh
+5907,811,bột nêm,1/2 mcf
+5908,811,muối,1/3 mcf
+5909,811,mắm,2 mcf
+5910,811,đường,2 mcf
+5911,811,nước dừa,1 mcf
+5912,811,tiêu,Xíu
+5913,812,lưỡi heo,1 cái
+5914,812,hành tây,2 củ
+5915,812,Xôi trắng,
+5916,812,Hành lá,
+5917,812,Gia vị,
+5918,813,bánh canh,500 gr
+5919,813,hẹ,50 gr
+5920,813,củ hành tây,1
+5921,813,xương heo,400 gr
+5922,813,chả cá,500 gr
+5923,814,súp rau củ,1/2 viên
+5924,814,nấm mỡ,100 gr
+5925,814,cải bó xôi,1 rổ
+5926,814,kỷ tử,1 nắm
+5927,815,rau má,150 g
+5928,815,tôm (hoặc tép đồng ),200 g
+5929,815,hành tây,1/4 củ
+5930,815,nước mắm,1 chén
+5931,815,chanh,1/2 trái
+5932,815,hành,2 muỗng
+5933,816,chả cá,500 gr
+5934,816,xương gà,2 bộ
+5935,816,hành tây,1 củ
+5936,816,hành tím,5 củ
+5937,816,bánh canh,1 kg
+5938,816,"hành lá, ngò rí , hành tím, chanh , ớt",
+5939,816,"Gia vi: Muối, hạt nêm, nước mắm, đường, bột ngọt, tiêu",
+5946,818,trứng gà,4 trái
+5947,818,sốt mayonaise,1 mc
+5948,818,tương ớt,1 mcf
+5949,818,Ngò rí,Ít
+5954,820,Thịt ba chỉ,400 g
+5955,820,Mắm tép,2 muỗng cà phê
+5956,820,Đường,1 muỗng cà phê
+5957,820,Sả,1 muỗng cà phê
+5958,820,Dầu màu điều,1 muỗng cà phê
+5960,820,Dưa leo,2 quả
+5961,820,Ớt,1 trái
+5962,821,tôm sú,100 g
+5963,821,rau má,300 g
+5964,821,Gia vị,
+5965,822,thịt ba chỉ,150 gr
+5966,822,mì trứng,7 vắt
+5967,822,rau cải,1 bó
+5968,822,bắp cải,1/4 trái
+5970,822,xì dầu,2 mc
+5971,822,dầu hào,1 mc
+5972,822,tương ớt,1 mc
+5973,822,hạt nêm,1/2 mcf
+5974,823,Sườn heo,300 g
+5975,823,Su su,200 g
+5976,823,Củ cải trắng,150 g
+5977,823,Cà rốt,100 g
+5978,823,Hành lá,10 g
+5979,823,Muối hồng,5 g
+5980,823,Nước,1 lít
+5981,824,vịt lộn,1 chục
+5982,824,Bầu,1 trái
+5983,824,"Hạt nêm , muối, mắm , rau răm ",
+5987,826,gạo,150 g
+5988,826,bắp,50 g
+5989,826,mè (tuỳ thích),1 ít
+5990,827,thịt heo,500 g
+5991,827,hành tím ,1 mc
+5992,827,Gia vị,
+5993,828,Cá bống,300 g
+5994,828,Tiêu,
+5996,828,Dầu ăn,2 thìa canh
+5997,828,Đường,1 thìa canh
+5998,828,ớt,Vài
+5999,828,Nước mắm,2 thìa canh
+6000,829,khoai môn,700 g
+6001,829,trứng muối,8 cái
+6002,829,chà bông heo,150 g
+6003,829,bơ,20g
+6004,829,bột nếp,240g
+6005,829,bột năng,60g
+6006,829,đường,60 g
+6007,829,sữa ,400g
+6008,829,mạch nha,1 mc
+6009,829,bột mì,750g
+6010,829,nước đường,400g
+6011,829,trứng gà,2 quả
+6012,829,bơ đậu phộng,1 mc
+6013,829,muối,1 mcf
+6014,829,dầu,100 g
+6015,830,đậu hũ ( đậu phụ ),100 g
+6016,830,rong biển,1/2 miếng
+6017,830,nghệ,2-3 g
+6018,830,Gia vị,
+6019,831,xương heo,500 g
+6020,831,bắp ngọt,1 trái
+6021,831,cà rốt,1 củ
+6022,831,khoai tây,1 củ
+6023,831,táo đỏ,10 g
+6024,832,hoa chuối,35 g
+6025,832,xoài,45 g
+6026,832,hành tây,45 g
+6027,832,cá rốt,20 g
+6028,832,nước mắm,1 chén nhỏ
+6029,832,chanh,1-2 miếng
+6030,832,đậu phộng rang,2-3 muỗng
+6031,832,"rau mùi : ngò gai , rau răm, rau thơm , rau tía tô",1 chén nhỏ
+6032,832,cà chua (cắt tạo hoa hồng để trang trí),1 trái
+6033,832,hành lá chẻ (trang trí),1 ít
+6034,832,ngò rí (trang trí),1 ít
+6035,832,dầu ăn,2 muỗng
+6036,832,dầu hào,1 muỗng
+6037,832,tỏi,1 củ
+6038,832,xì dầu,1 muỗng cafe
+6039,832,tiêu xay,1 ít
+6040,832,Nước mắm,
+6041,832,ớt,1 trái
+6043,832,tỏi,1 củ
+6044,832,chanh,
+6045,832,mắm,2 muỗng
+6046,832,đường,3 muỗng
+6047,833,má đùi gà nướng và sốt nướng,1/2 cái
+6048,833,tép khô,1 mc
+6049,833,lạp xưởng,
+6050,833,cơm,1 chén
+6051,833,cải thìa,2 cây
+6052,834,thịt heo xay,200 g
+6053,834,khoai tây,2 củ
+6054,834,cà rốt,1/2 củ
+6055,834,hành tím,2 củ
+6056,834,tiêu,1 ít
+6057,834,muối hồng,1 ít
+6058,834,bột ngọt,1 ít
+6059,834,hành lá,2 cây
+6060,835,thịt ba rọi,200 g
+6061,835,tôm ,200 g
+6062,835,Ngò rí,
+6063,835,hẹ,
+6064,835,Gia vị,
+6065,836,gà,500 gr
+6066,836,mắm,2 mc
+6067,836,sa tế,1 mc
+6068,836,tương ớt,1 mc
+6069,836,đường,1.5 mc
+6070,836,ớt (nếu thích cay),1 trái
+6071,836,muối,1/3 mcf
+6072,836,hạt nêm,1/2 mcf
+6073,836,"hành tím, tiêu",
+6082,838,Bún ,300 g
+6083,838,Nấm rơm,150 g
+6084,838,Đậu hũ,200 g
+6085,838,Chao,2 viên
+6086,838,Sả,2 cây
+6087,838,Nước dừa,500 ml
+6088,838,Cà rốt,1 củ
+6089,838,Rau muống,100 g
+6090,838,ngò gai,5 cọng
+6091,838,Dầu màu điều,1 muỗng canh
+6092,838,Dầu ăn,2 muỗng canh
+6093,838,Nước lọc,500 ml
+6094,838,Muối,1/2 muỗng cà phê
+6095,838,Đường,1 muỗng cà phê
+6096,838,muối,1/2 tsp
+6097,839,cá lăng,1
+6098,839,chuối,3 quả
+6099,839,đậu,1 bìa
+6100,839,thịt ba chỉ,200 g
+6101,839,"Hành , tía tô , lá lốt",
+6102,839,"Riềng, mẻ, bột nghệ, mắm tôm , gia vị",
+6103,840, Cơm nguội,1 chén 
+6104,840,bông cải xanh ,3 miếng
+6105,840,"Hạt nêm chay , dầu ăn",
+6106,840,Chả chay,
+6107,841,Thịt ba rọi,200 g
+6108,841,Tép,300 g
+6109,841,Hành tím,2 củ
+6110,841,Tỏi,3 tép
+6111,841,Dầu màu điều,1 muỗng canh
+6112,841,Nước mắm,2 muỗng canh
+6113,841,đường,2.5 muỗng canh
+6114,841,Tiêu,1/2 muỗng cà phê
+6115,842,dưa mắm (làm từ dưa gang ),▪︎ 2 miếng
+6116,842,ớt,3 trái
+6117,842,tỏi,4 tép
+6118,842,chanh,1 trái
+6119,842,đường,2 muỗng canh
+6120,842,bột ngọt,1 muỗng cafe
+6121,842,tôm,▪︎ 200 gr
+6122,842,thịt đùi heo,150 gr
+6123,842,hành tím,4 củ
+6124,842,tỏi,3 tép
+6125,842,dầu ăn,2 muỗng cafe
+6126,842,dầu màu điều,2 muỗng cafe
+6127,842,"muối, hạt nêm, đường, nước mắm , tiêu",Gia vị:
+6128,842,khoai mỡ,▪︎ 400 gr
+6129,842,thịt heo xay,100 gr
+6130,842,hành tím,4 củ
+6131,842,dầu ăn,1 muỗng canh
+6132,842,"muối, hạt nêm, đường, nước mắm , bột ngọt, tiêu",Gia vị:
+6133,842,"hành lá , ngò gai",Rau nêm:
+6134,843,tép,100 g
+6135,843,rau má,300 g
+6136,843,Gia vị,
+6137,844,Nui,150 g
+6138,844,Bò,200 g
+6139,844,Hành tây,50 g
+6140,844,Sốt cà chua,100 g
+6141,844,Lá thơm Provence,1 thìa cà phê
+6142,844,Phô mai cheddar,50 g
+6143,844,Phô mai mozzarella,50 g
+6144,844,Dầu ăn,1 thìa canh
+6145,844,Muối,1/2 thìa cà phê
+6146,844,Tiêu,1/4 thìa cà phê
+6147,845,(khoảng 400g) Đầu cá hú,1 cái
+6148,845,Bắp cải,200 g
+6149,845,Lá giang,50 g
+6150,845,Cà chua,2 quả (100 g)
+6151,845,củ (20g) Hành tím,2
+6152,845,Tỏi,3 tép (10 g)
+6153,845,Dầu ăn,2 muỗng canh
+6154,845,Nước mắm,1 muỗng canh
+6155,845,Muối,1/2 muỗng cà phê
+6156,845,Đường,1/2 muỗng cà phê
+6157,845,(rửa cá) Dấm,2 muỗng canh
+6158,845,"ngò gai , rau ngổ ",1/2 chén
+6159,845,hành tỏi phi,1 muỗng cafe
+6160,845,Nước,1 lít
+6168,847,nấm mũ,450 gr
+6169,847,dầu hào,3 tbsp
+6170,847,nước tương,2 tbsp
+6171,847,đường,1 tbsp
+6172,848,nấm rơm,200 gram
+6173,848,đậu hũ,1 lát
+6174,848,"Măng chua , đậu bắp",
+6175,848,"Thơm , cà chua",
+6176,848,"Baoro, hành , ngò gai , lá lốt , rau ngổ , saua",
+6177,848,"Gia vị: Dầu ăn , hạt nêm, muối",
+6178,849,thịt thăn hoặc vai giòn,300 gram
+6179,849,bột chiên giòn,1/2 gói
+6180,849,trứng,1 quả
+6181,849,bột nêm,1 ít
+6182,849,dầu ăn,1 bát
+6183,850,củ niễng,1 bó
+6184,850,tôm ,100 gr
+6185,850,mì chính,2 thìa cafe
+6186,850,hạt nêm,2 thìa cafe
+6187,851,thịt xay,100 g
+6188,851,đậu hũ,1 miếng
+6189,851,rong biển khô,15 g
+6190,851,hành lá,4 cây
+6191,851,muối hồng,1 ít
+6192,851,xì dầu,1 muỗng cafe
+6193,851,dầu mè,1 xíu xiu
+6194,851,gừng,1 lát
+6195,852,"lòng heo ( thú linh , khấu đuôi )",2 kg
+6196,852,bột mì,4 muỗng canh đầy
+6197,852,muối(hoặc hạt ),3 muỗng canh đầy
+6198,852,chanh,3 quả
+6199,852,nước mắm,2/3 chén ăn cơm
+6200,853,Cánh giữa gà,400 g
+6201,853,Nước mắm,2 muỗng canh
+6202,853,Hành tỏi ,1 muỗng canh
+6203,853,Bột mì,3 muỗng canh
+6204,853,Dầu ăn,300 ml
+6205,853,Xà lách,8 lá
+6210,855,đùi gà,5
+6211,855,Gia vị ướp thịt,
+6212,855,Tỏi,10 tép
+6213,855,nước mắm,2 tbsp
+6214,855,đường,1 tbsp
+6215,855,tiêu,1 tsp
+6216,855,dầu hào,1 tbsp
+6217,855,"bột hành , bột tỏi",1 tsp
+6218,856,dưa leo 🥒,2 trái
+6219,856,táo xanh 🍏,2 trái
+6220,856,rau chân vịt,1 nắm lớn
+6221,856,chanh vàng,1 trái
+6222,856,nước lọc,300 ml
+6223,856,muối ,1 nhúm
+6224,857,Cánh gà,500 g
+6225,857,tiêu xay,1/2 mcf
+6226,857,hạt nêm,1/2 mcf
+6227,857,bột nghệ,1/2 mcf
+6228,857,bột tỏi,1 mcf
+6229,857,bột chiên giòn,50 g
+6230,857,dầu ăn,200 ml
+6231,857,tỏi,1 mc
+6232,857,nước mắm (mua sẵn),5 mc
+6233,858,Nui,80 g
+6234,858,Tôm khô,20 g
+6235,858,Thịt ,100 g
+6236,858,cải muối ( xá bấu ),1/2 củ
+6237,858,Nước,800 ml
+6238,858,Cà rốt,1/2 củ
+6239,858,Trứng cút,6 quả
+6240,858,Hành lá,2 nhánh
+6241,858,ngò rí,1 ít
+6242,858,Nước mắm,1 muỗng canh
+6243,858,Muối,1/2 muỗng cà phê
+6244,858,Tiêu,1/4 muỗng cà phê
+6245,858,hành phi,1 muỗng canh
+6246,859,Nấm hầu thủ (đã sơ chế),200 g
+6247,859,Sa tế,1 muỗng canh
+6248,859,Nước tương,1 muỗng canh
+6249,859,Bột bắp,1 muỗng cà phê
+6250,859,Dầu ăn,1 muỗng canh
+6251,859,Nước lọc,2 muỗng canh
+6252,859,Rau thơm,30 g
+6253,859,Xà lách,20 g
+6254,860,Dưa chua,300 g
+6255,860,to) Lạc khô,50 g (1 nắm)
+6256,860,(tuỳ thích) Dọc mùng,50 g
+6257,860,(tuỳ thích) Đậu phụ,100 g
+6258,860,Thì là,5 g
+6259,860,Boa rô,1 nhánh
+6260,860,(hoặc tuỳ khẩu vị) Ớt,1 quả
+6261,860,Hạt nêm,1 thìa cà phê
+6262,860,Dầu ăn,2 muỗng canh
+6263,860,Nước,1 lít
+6264,861,thịt ba rọi,1 kg
+6265,861,khoai tây bi,400 g
+6266,861,cà rốt,2 củ
+6267,861,hành lá,50 g
+6268,861,hành,2 mc
+6269,861,Gia vị,
+6270,862,rau tần ô ( cải cúc ),1 bó
+6271,862,trứng,2-4 quả
+6272,862,nước mắm,2 mc
+6273,862,ớt hiểm,1 trái
+6274,862,tỏi,1 tép
+6275,863,chả chá,200 g
+6276,863,nấm đùi gà,200 g
+6277,863,nấm hương,100 g
+6278,863,"ớt chuông ,",1/2 quả
+6279,863,cà rốt,1/2 củ
+6280,863,su su,1/2 củ
+6281,863,"Gia vị, hành lá , rau răm, hành củ , tiêu",
+6282,864,thịt heo xay,500 g
+6283,864,hành lá,15 g
+6284,864,Gia vị,
+6285,865,gà,
+6286,865,nui,3 cup
+6287,865,mè rang,1 ít
+6288,865,muối,1 nhúm
+6289,865,bột tỏi,1 mcf
+6290,865,tiêu,1 nhúm
+6291,866,Cơm nguội,1 tô
+6292,866,bông cải xanh (70gr),3 nhánh
+6293,866,Ham chay hoặc chả chay,
+6294,866,hắc xì dầu,1 muỗng
+6295,866,Hạt nêm chay,
+6296,866,"dầu ăn, muối",
+6297,867,sườn bò,1.5 kg
+6298,867,nước,4 lít
+6299,867,sả,5 cây
+6300,867,"Gia vị: muối, đường, bột ngọt",
+6301,867,Sa tế,
+6302,867,sả,3 cây
+6303,867,tỏi,2 tép
+6304,867,ớt đỏ,2 trái
+6305,867,dầu màu điều,2 mc
+6306,868,rau tập tàng,200 g
+6307,868,tôm ,150 g
+6308,868,muối hồng,1 ít
+6309,868,bột ngọt (tuỳ thích),1 ít
+6310,869,gà,2 lbs
+6311,869,gạo,1 cup
+6312,869,"Rau răm, hành , gừng , hành tây, gia vị",
+6313,870,thịt bò,100 g
+6314,870,rau muống,400 g
+6315,870,tỏi ,1 mc
+6316,870,Gia vị,
+6322,872,gạo,1 bơ
+6323,872,"cá hồi , dưa chuột",1-2 miếng
+6324,872,mayonnaise và tương ớt,
+6325,873,đùi tỏi gà hay má đùi gà,2 lbs
+6326,873,cánh gà,3 cặp
+6327,873,mì trứng,1 ký
+6328,873,carrots,5 củ
+6329,873,nấm mỡ,4
+6330,873,rau cải ngọt,1 bó
+6331,873,Hành tây,
+6332,874,thịt ba rọi,200 gr
+6333,874,củ cải khô,50 gr
+6334,874,hành lá,1 ít
+6335,874,nước,1/4 chén
+6336,874,hành tím,1 tsp
+6337,874,tỏi,1 tsp
+6338,874,nước mắm,1 tbsp
+6339,874,nước màu,1 tsp
+6340,874,đường thốt nốt,1 tbsp
+6341,874,tiêu,1 ít
+6342,875,rau mồng tơi,1 bó
+6343,875,mướp,1 trái
+6344,875,thịt xay,100 g
+6345,875,tép,100 g
+6346,875,Gia vị,
+6347,876,trứng gà,5
+6348,876,thịt heo(tầm 300-400gr),1 vỉ
+6349,876,mộc nhĩ,1 ít
+6350,876,Hành,
+6351,876,Miến(tuỳ),
+6352,876,Chao,
+6353,876,Nước mắm,
+6354,876,Đường,
+6355,876,Tiêu,
+6356,877,tôm sú,8 con
+6357,877,trứng gà,4 trái
+6358,877,"Hành lá , ớt, tiêu",
+6359,877,"Dầu mè , nước tương, đường,",
+6360,878,cá diêu hồng,4 lát
+6361,878,hẹ,20 g
+6362,878,Nước mắm,
+6363,879,bột xắt  hoặc 250gr bột bánh canh khô,500 gr
+6364,879,nước,1.5 lít
+6365,879,cá thu,2/3
+6366,879,chả cá chiên,1 miếng
+6367,879,"củ hành tím , hành lá , muối, bột ngọt, đường, tiêu, ớt",Vài
+6368,880,ức gà,800 gr
+6369,880,dầu ăn,40 ml
+6370,880,tinh bột khoai tây,25 gr
+6371,880,nước mắm,1 thìa
+6372,880,bột nở,5 gr
+6373,880,hạt nêm,2 thìa cà phê
+6374,880,Bột hành,
+6375,880,Tiêu,
+6376,880,Nấm hương,
+6377,881,thịt bò,150 g
+6378,881,măng ,300 g
+6379,881,dầu hào,1 muỗng
+6380,881,củ tỏi,1/2
+6381,881,muối,1 ít
+6382,881,tiêu xay,1/2 muỗng cà phê
+6383,881,mỡ heo,2 muỗng
+6384,881,hành lá,2 cây
+6385,881,ngò rí,2 cây
+6386,882,đuôi heo,700 gam
+6387,882,cà rốt,2 củ
+6388,882,khoai tây,3 củ
+6389,882,hành tím,1 tbsp
+6390,882,tỏi,1 tbsp
+6391,882,bột ướp bò kho,1 tbsp
+6392,882,bột cà ri,1/2 tsp
+6393,882,xốt bò kho dầu,2 tbsp
+6394,882,sa tế,1 tbsp
+6395,882,dầu màu điều,1 tbsp
+6396,882,muối,1 tsp
+6397,882,hạt nêm,1 tsp
+6398,882,đường phèn,2 tbsp
+6399,882,nước mắm,2 tbsp
+6400,882,tiêu trắng,1/2 tsp
+6401,882,ngũ vị hương,1/4 tsp
+6402,882,rượu,1 tsp
+6403,882,dầu mè,1.5 tbsp
+6404,882,nước dừa ,700 ml
+6405,882,sả,3 nhánh
+6406,882,gừng,3 lát
+6407,882,hoa đại hồi,2 cái
+6408,882,bột bắp,1.5 tbsp
+6409,883,hột vịt lộn,5 quả
+6410,883,me,1 hộp
+6411,883,Rau răm,100 g
+6412,883,"gia vị : dầu ăn, tỏi, đường, nước mắm , bột ngọt",2 mc
+6413,883,nước lọc,200 ml
+6414,884,sườn non,400 g
+6415,884,hoa lơ trắng,300 g
+6416,884,hành lá,3 nhánh
+6417,884,nước lọc,1 tô
+6418,884,Gia vị,
+6422,886,cải cúc,300 g
+6423,886,tôm,100 g
+6424,886,bột nêm,1mcf
+6425,886,tiêu,1/4 mcf
+6426,887,gà,1/2 con
+6427,887,nấm rơm,100 g
+6428,887,nấm linh chi,1 hộp
+6429,887,sả,2 cây
+6430,887,Hành lá,
+6431,887,lá é,150 g
+6432,887,bún,500 g
+6433,887,Gia vị¹,
+6434,888,cần tây,1 nhánh
+6435,888,bông cải xanh,1
+6436,888,cà rốt,1 củ
+6437,888,hành tây,1 củ
+6438,889,chân gà,10 cái
+6439,889,hành lá,20 g
+6440,889,tỏi,1 mcf
+6441,889,Gia vị,
+6442,890,sườn heo,500 g
+6443,890,"nấm khô: nấm đông trùng hạ thảo , nấm lộc nhung , nấm đùi gà..,",300 g
+6444,890,táo tàu,6 trái
+6445,890,đậu hũ,2 bìa
+6446,890,muối hồng,1 ít
+6447,890,hành ngò,1 ít
+6448,890,tiêu xay,1 ít
+6449,891,thịt ba chỉ,300 gr
+6450,891,mắm,1.5 mc
+6451,891,đường,1 mc
+6452,891,hành lá,1 nhánh
+6453,891,tiêu,xíu
+6454,892,thịt rang,100 g
+6455,892,dưa leo,2 trái
+6456,892,cà rốt,1 củ
+6457,892,hành lá,20 g
+6458,892,nước mắm,1 mc
+6459,893,Vỏ bánh mandu (sủi cảo Hàn Quốc),200 gram
+6460,893,thịt ,100 gram
+6461,893,tôm,50 gram
+6462,893,hẹ,5-6 cây
+6463,893,tỏi,2 tép
+6464,893,hành tây,1/4 củ
+6465,893,nấm hương,2 cây
+6466,893,tiêu,1 ít
+6467,893,bột nêm,1/2 thìa
+6468,893,dầu ăn,4 thìa
+6469,894,cá Linh,300 gam
+6470,894,dừa xiêm,1 trái
+6471,894,hành tím,1 tbsp
+6472,894,tỏi,1 tbsp
+6473,894,nước mắm,2 tbsp
+6474,894,muối,1/4 tsp
+6475,894,tiêu,1/2 tsp
+6476,894,đường,1 tsp
+6477,894,ớt,1/2 trái
+6479,894,hành lá,3 nhánh
+6480,895,mực lá,2 con
+6481,895,sa tế,2 muỗng
+6482,895,muối hồng,1 ít
+6483,895,bột ngọt,1 ít
+6484,895,tỏi,1 muỗng
+6485,895,mỡ,1 muỗng
+6486,896,đậu ngự ,200 gr
+6487,896,nước hầm xương,1 tô
+6488,896,súp lơ xanh,5 cây
+6489,896,Cà rốt,1/2 củ
+6490,896,Hành ngò,5 nhánh
+6491,896,"Gia vị: muối,tiêu,đường",
+6492,897,Su hào,150 g (1 củ nhỏ)
+6493,897,Cà rốt,50 g (1 khúc nhỏ)
+6494,897,"Nấm mèo khô ( ngâm nở, cắt sợi )",5 g
+6495,897,Muối,
+6496,897,Hạt nêm,1 mcf
+6497,897,Dầu ăn,
+6498,897,Rau mùi ta ( ngò rí ),
+6499,898,đế bánh ngàn lớp,1
+6500,898,thịt cua nhện,1 tô
+6501,898,boa rô,4 cây
+6502,898,hành tím,1 củ
+6503,898,hẹ,1 nắm
+6504,898,phô mai parmesan,150 gr
+6505,898,trứng gà,4
+6506,898,crème fraîche (kem  ),200 ml
+6507,898,bột nhục đậu khấu,1/2 mcf
+6508,898,tiêu xay,1/3 mcf
+6509,898,muối,1 nhúm
+6510,898,phô mai,150 gr
+6511,899,Cá ba sa,300 g
+6512,899,Cải chua,150 g
+6513,899,Cà chua,1 quả
+6514,899,Ớt,1 trái
+6515,899,Hành lá,2 nhánh
+6516,899,Rau ngổ,5 g
+6517,899,Ngò gai,5 g
+6518,899,Nước,800 ml
+6519,899,Dầu ăn,1 muỗng canh
+6520,899,Nước mắm,1 muỗng canh
+6521,899,Muối,1/2 muỗng cà phê
+6522,899,Đường,1/2 muỗng cà phê
+6523,899,Bột ngọt,1/4 muỗng cà phê
+6524,900,nấm đùi gà,300 g
+6525,900,mì căn ống,6 cây
+6526,900,lá quế,30 g
+6527,900,dầu ăn,30 g
+6528,900,hạt nêm,5 g
+6529,900,đường,15 g
+6530,900,nước tương,10 g
+6531,900,tương ớt,15 g
+6532,900,ba rô,1 nhánh
+6533,901,thịt ba chỉ,1 kg
+6534,901,nước mắm,1 bát
+6535,901,đường,1 bát
+6536,901,dấm,1/2 bát
+6537,901,tỏi,1 củ
+6538,901,gừng (có thể bỏ qua nếu không thích mùi gừng át vị thịt ),1 ít
+6539,901,ớt,2 quả
+6540,901,tiêu xanh,4-5 nhánh
+6541,902,nấm đông cô ,100 gr
+6542,902,rong biển khô,1 nắm
+6543,902,súp nấm hương chay,1 viên
+6544,902,tiêu,1 ít
+6545,903,sườn heo,350 g
+6546,903,khoai tây,2 củ
+6547,903,táo tàu,10 trái
+6548,903,kỷ tử,5 g
+6549,903,hành tím,2 củ
+6550,903,Nước lọc,
+6551,903,Gia vị,
+6552,904,đùi gà,4 miếng
+6553,904,carrot,1 củ
+6554,904,khoai tây,1 củ
+6555,904,đậu Hà lan,1 cup
+6556,904,hành tây,1 củ
+6557,904,"ngò , tiêu, gia vị",1 ít
+6558,904,soup Knorr,1 viên
+6559,904,nui,1 hộp
+6560,905,Thịt heo (phần có cả da và mỡ mới ngon nhen),
+6561,905,Nước dừa,
+6562,905,"Gia vị: bột ngọt, nước mắm, đường, muối, hành tím và tỏi , chanh , ớt, tiêu",
+6563,905,"Rau sống , dưa leo , bún  , bánh tráng",
+6564,906,bắp cải,100 gr
+6565,906,cánh gà,4 cái
+6566,906,"Gia vị, hành ngò , hành tím",
+6567,907,Nấm bào ngư,300 g
+6568,907,Sả,2 cây
+6569,907,Muối,1/2 muỗng cà phê
+6570,907,Nước mắm chay,2 muỗng canh
+6571,907,Đường,2 muỗng canh
+6572,907,tắc,
+6573,907,Gừng,1 nhánh nhỏ
+6574,907,Nước lọc,2 muỗng canh
+6575,908,Cơm nguội,1 tô
+6576,908,heo quay chay (khoảng 50g),1 miếng
+6577,908,Dưa cải chua,50 g
+6578,908,Nước tương,1 muỗng canh
+6579,908,Hạt nêm chay,1 muỗng cà phê
+6580,908,Dầu ăn,1 muỗng canh
+6581,909,tép khô,50 g
+6582,909,thịt xay,100 g
+6583,909,rau tần ô,1 bó
+6584,909,Gia vị,
+6585,910,cá liệt lệ,500 gr
+6586,910,"Sốt Kho Thịt, Cá, Gà, Vịt Tiện Lợi",50 ml
+6587,910,khế chua,2 trái
+6588,910,ớt,2-3 trái
+6589,910,hành lá ,1 tsp
+6590,910,tỏi ,1 tbsp
+6591,911,cá dò,600 gr
+6592,911,thơm,1/3 trái
+6593,911,cà chua,3 trái
+6594,911,"hành lá , ngò rí",1 ít
+6595,911,tiêu,1 xíu
+6596,911,"Gia vị nêm: muối, bột ngọt",
+6597,912,mực ống,300 gr
+6598,912,thơm,100 gr
+6599,912,cà chua,150 gr
+6600,912,ngò tàu và cần tây,100 gr
+6601,912,ớt sim xanh,1 ít
+6602,913,trứng gà,2-3 cái
+6603,913,tôm thẻ,6 con
+6604,913,cà rốt,1 củ
+6605,913,mắm,1.5 mcf
+6606,913,"hành lá , hành tím , bột ngọt, tiêu",gia vị nêm:
+6607,914,cá bông lau,1 khoanh
+6608,914,nước mắm tỏi ớt,1 chén
+6609,914,tỏi,5 g
+6610,914,Dầu ăn,
+6611,915,khoai mỡ,1 củ
+6612,915,tôm sú,1 ít
+6613,915,nước lọc,2 chén
+6614,915,"đường, hạt nêm, bột ngọt",1 muỗng cf
+6615,915,"Dầu ăn , tỏi",1 ít
+6616,916,thịt ba rọi rút sườn,500 gr
+6617,916,mè trắng,50 gr
+6618,916,hành tím ,2 muỗng canh
+6619,916,Gia vị ướp thịt,
+6620,916,nước tương,4 muỗng cafe
+6621,916,dầu hào,2 muỗng cà phê
+6622,916,đường thốt nốt,2 muỗng cà phê
+6623,916,muối,1/2 muỗng cà phê
+6624,916,nước mắm,2 muỗng cà phê
+6625,916,hắc xì dầu/ nước màu / nước hàng,1 muỗng cà phê
+6626,917,trứng,8 quả
+6627,917,"nấm kim châm , hành lá",100 g
+6628,917,Gia vị,
+6629,918,má heo,1 bên
+6630,918,nước,3/4 nồi
+6631,918,"xì dầu, nước mắm ,",1.3 muỗng canh
+6632,918,"bột canh,",2 muỗng ăn
+6633,918,đường,1 muỗng canh
+6635,918,Hành khô và hành lá,
+6636,919,Vịt xiêm,3.5 kg (1 con)
+6637,919,Khoai sọ,2 kg (3 củ to)
+6638,919,Cà tím,700 g (3 trái)
+6639,919,Củ cải trắng,1 kg (3 củ)
+6640,919,Hành tây,500 g (1 củ)
+6641,919,Chao,380 g (1 hũ)
+6642,919,Sâm dây,300 g
+6643,919,Nước mắm,8 muỗng canh
+6644,919,Muối hột,1 muỗng canh
+6645,919,Dầu điều,1/2 chén con
+6646,919,Bún ,3 kg
+6647,919,Rau cải xanh,1 kg
+6648,919,nước lọc,8 L
+6649,919,Nước chấm,
+6650,919,nước mắm,10 muỗng canh
+6651,919,nước lọc,10 muỗng canh
+6652,919,hành tím  ,10 củ
+6653,919,đường,2 muỗng canh
+6654,919,chanh,2 quả
+6655,919,ớt,5 quả
+6656,920,Hạt sen,100 g
+6657,920,Bắp ngọt,1/2 chén ăn cơm
+6658,920,Nấm đông cô,6 cái
+6659,920,Bột năng,3 muỗng canh
+6660,920,Hạt nêm,1 muỗng cà phê
+6661,920,Hạt tiêu,1/2 muỗng cà phê
+6662,920,Dầu ăn,1 muỗng canh
+6663,920,Dầu mè,vài giọt
+6667,922,cá thác lác,100 g
+6668,922,tôm ,100 g
+6669,922,cà chua,3 trái
+6670,922,hành lá,20 g
+6671,922,Gia vị,
+6672,923,nước lọc,3 mc
+6673,923,nước mắm,1 mc
+6674,923,đường,1.5 mc
+6675,923,"bột ngọt, tiêu",tí xíu
+6676,923,tương ớt,1 mc
+6677,923,hạt nêm,1 tí
+6678,924,mì khô,6 vắt
+6679,924,tôm ,10 con
+6680,924,nấm hương khô,6 cái
+6681,924,bắp cải,1/5 trái
+6682,924,giá,1 ít
+6683,924,hành lá,1 nhánh
+6684,924,Nước sốt xào mì,
+6685,924,xì dầu,1 mc
+6686,924,dầu hào,1 mc
+6687,924,đường,1/2 mcf
+6688,924,hạt nêm,1/2 mcf
+6689,925,Mì gạo lứt,1 nắm nhỏ
+6690,925,Tôm,5 con
+6691,925,Bạch tuộc,2 con mini
+6692,925,Mực,1 con mini
+6693,925,Cà chua,"0,5 quả"
+6694,925,Nấm hải sản,1/3 gói
+6695,925,sả,2 củ
+6696,925,Mùi tàu,3 lá
+6697,925,"Gia vị : gói lẩu thái, dầu ăn, muối, mắm, hành khô 1 củ",
+6698,926,củ khoai từ,1 kg
+6699,926,sườn vai heo,500 gr
+6700,926,"gia vị nêm: hành , tiêu, muối, bột ngọt",
+6701,927,trứng muối,2 quả
+6702,927,cà ra (khoảng 200gram),2 con
+6703,927,hành tây,1/4 củ
+6704,927,hành lá,1 ít
+6705,927,tiêu,1 ít
+6706,927,bột năng,1/2 thìa
+6707,927,dầu ăn,2 thìa
+6708,927,mắm,1 thìa
+6709,927,bột nêm,1/2 thìa
+6710,927,mỳ trứng (50-70 gram mỳ),2-3 vắt
+6714,929,mực,400 g
+6715,929,tôm,4 con
+6716,929,ớt sừng hoặc ớt hiểm,1/2 trái
+6717,929,tỏi,1 củ
+6718,929,hành lá,1
+6719,929,dầu hào,1 muỗng
+6720,929,lá húng quế trắng,150 g
+6721,929,muối,1 ít
+6722,929,bột ngọt,1 ít
+6725,931,đầu cá mú,1 cái
+6726,931,bạc hà ( dọc mùng ),1 bẹ
+6727,931,lá rau tần dày,1 ít
+6728,931,lá húng quế,2 cây
+6729,931,hành lá,2 cây
+6730,931,ngò gai ( ngò tàu ),3 lá
+6731,931,ngỗ ( ngò om ),3 cây
+6732,931,ớt xiêm xanh,3 trái
+6733,931,lá me non,1 chén
+6734,931,giá đỗ,1 chén
+6735,932,Su hào,1200 g
+6736,932,Mộc nhĩ,1 cái
+6737,932,Nấm đùi gà,50 g
+6738,932,(tách hạt ) Bắp ngọt,1/2
+6739,932,cà rốt,1 khúc
+6740,932,Cần tây,30 g
+6741,932,Hạt nêm,2 thìa cà phê
+6742,932,Dầu ăn,1 thìa canh
+6743,932,Tiêu,1/2 thìa cà phê
+6744,933,cá hồi (khoảng 150-200 gram),1 miếng
+6745,933,cơm,2 bát
+6746,933,rong biển vụn,1 bịch
+6747,933,hành khô,1 củ
+6748,933,bột nêm,1 thìa
+6749,933,dầu mè,1 thìa
+6750,933,hạt mè ( vừng ),1 thìa nhỏ
+6751,934,(khoảng 900g) Thịt vịt,1/2 con
+6752,934,Rượu trắng,20 ml
+6753,934,Gừng,1 củ
+6754,934,Nước mắm,2 muỗng canh
+6755,934,Bột ngọt,1/2 muỗng cà phê
+6756,934,Đường,1 muỗng cà phê
+6757,934,Ớt bột,1/2 muỗng cà phê
+6758,934,Tiêu,1/2 muỗng cà phê
+6759,934,Rau muống,1 bó (300 g)
+6760,934,Muối,1/2 muỗng cà phê
+6761,934,Chanh,1/2 quả
+6762,934,Mắm nêm,2 muỗng canh
+6763,935,lòng heo,400 g
+6764,935,dưa cải muối chua,400 g
+6765,935,Rau răm,50 g
+6766,935,"Dầu ăn , dầu hào, mắm, mì chính , hành",
+6768,936,Gà,1 miếng
+6769,936,Phở khô,70 gr
+6770,936,Bột nghệ,1/2 muỗng cà phê
+6771,936,Hành phi (tuỳ ý),
+6772,936,Hành lá (tuỳ ý trang trí),
+6773,936,Giá đỗ (có giá mới ngon),50 g
+6774,936,Đậu phộng rang (tùy ý),2 muỗng canh
+6775,936,Dưa leo (tuỳ ý),
+6777,936,Nước tương,1 muỗng canh
+6778,936,Dầu hào,1/2 muỗng canh
+6779,936,Nước luộc gà,3 muỗng canh
+6780,936,Đường,1 muỗng canh
+6781,937,Trứng gà,4 quả
+6782,937,Giấm,1 muỗng canh
+6783,937,Mayonnaise,2 muỗng canh
+6784,937,bơ,1/2 quả
+6785,937,Màu thực phẩm xanh lá,1 giọt
+6786,937,Màu thực phẩm đỏ,1 ít
+6787,937,Olive đen,1-2 quả
+6788,938,heo quay,200 g
+6789,938,vịt quay,200 g
+6790,938,lưỡi heo luộc,50 g
+6791,938,hành lá,10 g
+6792,938,Gia vị,
+6793,939,đùi gà,1 cái
+6794,939,hạt sen,80 g
+6795,939,bắp hạt,50 g
+6796,939,quả táo tàu đỏ,50 g
+6797,939,cà rốt,1 củ
+6798,939,nấm đông cô,12 tai
+6799,939,bông trùng thảo,5 g
+6800,939,nước,1 lít
+6801,939,gia vị Knorr Ayam,1 viên
+6810,942,cánh gà,2 cái
+6811,942,hành tím ,1/2 tbsp
+6812,942,tỏi ,1/4 tbsp
+6813,942,gừng ,1/4 tbsp
+6814,942,hành lá,1 tbsp
+6815,942,tiêu đen,1/2 tbsp
+6816,942,tiêu xanh,1/2 tbsp
+6817,942,tiêu xanh,2 nhánh
+6818,942,nước tương,1 tbsp
+6819,942,dầu hào,1/2 tbsp
+6820,942,nước mắm,1 tbsp
+6821,942,dầu ăn,1/2 tbsp
+6822,942,mật ong,1 tbsp
+6823,942,muối,1 nhúm
+6824,942,dầu mè,2 tsp
+6825,943,Mì Ý,200 g
+6826,943,Thịt bò ,150 g
+6827,943,Hành tây,1/2 củ
+6828,943,Tỏi,2 tép
+6829,943,Dầu ăn,1 muỗng canh
+6830,943,Muối,1/2 muỗng cà phê
+6831,943,Tiêu,1/4 muỗng cà phê
+6832,943,Nước mắm hoặc xì dầu,1 muỗng cà phê
+6838,945,cá rô,600 g (4 con)
+6839,945,trứng cá sặc,3 bộ
+6840,945,mỡ,50 g
+6841,945,hành,4 gốc
+6842,945,tỏi,4 tép
+6843,945,tiêu,1/2 mcf
+6844,945,nước mắm,1/2 chén
+6845,945,đường,2 mc
+6846,945,bột ngọt,1 mcf
+6847,946,cải chua,100 gr
+6848,946,tóp mỡ,2 thìa canh
+6849,946,cà chua beef,1/2 quả
+6850,946,thì là / mùi tàu,1 ít
+6851,946,"Gia vị đường, mắm",
+6852,947,Cá,
+6853,947,cà chua,2 trái
+6854,947,cần tây,50 g
+6855,947,đầu hành,1 mcf
+6856,947,Gia vị,
+6857,948,bắp cải,1/2 cái
+6858,948,thịt xay,100 g
+6859,948,tép khô,20 g
+6860,948,Hành lá,
+6861,948,Gia vị,
+6862,950,Bít tết bò ,
+6863,950,thịt bò xay (chọn loại ngon nạc mỡ xen lẫn và không có gân),300 gram
+6864,950,hành tây,1 củ
+6865,950,bột chiên xù (bread crumb ),2 tbsp
+6866,950,trứng vừa,1 quả
+6867,950,bột hành,1 tsp
+6868,950,hạt nêm,2 tsp
+6869,950,sữa  không đường,2 tbsp
+6870,950,Nước sốt thịt,
+6871,950,nước tương,3 tbsp
+6872,950,tương cà,1 tbsp
+6873,950,đường,1 tbsp
+6874,950,nước lọc,1 tbsp
+6875,951,đùi gà,4
+6876,951,cà rốt ,1 củ
+6877,951,chanh,1 trái
+6878,951,cần tây,3 thanh
+6879,951,tim gà,300 gr
+6880,952,Cơm nguội,1 chén
+6881,952,Rong biển khô (cắt nhỏ),10 g
+6882,952,Cơm giòn (mua sẵn),20 g
+6883,952,Nước mắm chay,1 muỗng canh
+6884,952,Nấm bào ngư,50 g
+6885,952,Hạt nêm chay (tùy chọn),1/2 muỗng cà phê
+6886,952,Rau xà lách,30 g
+6887,953,nếp,300 g
+6888,953,dành dành,3 trái
+6889,953,nước cốt kẹo,1 chén
+6890,953,muối,1/2mcf
+6891,953,đường,1mc
+6892,954,cá hồi,300 gr
+6893,954,gừng,1 mẩu
+6894,954,ớt xanh,Vài quả
+6895,954,hành tây,Vài lát
+6896,954,dầu mè,1 tbsp
+6897,954,mè vàng,1/2 tsp
+6898,954,nước tương,4 muỗng canh
+6899,954,mirin,2 muỗng canh
+6900,954,nước lọc,2 muỗng canh
+6901,954,wasabi,1 chút xíu
+6902,954,rượu trắng,1 chút xíu
+6907,956,Chân gà rút xương,500 g
+6908,956,Đường cát,5 muỗng canh
+6909,956,nước mắm,4 muỗng canh
+6910,956,Giấm hoặc chanh,3 muỗng canh
+6911,956,Muối hột,1 muỗng canh
+6912,956,Nước lọc,500 ml
+6921,958,măng chua,1 bịch
+6922,958,cá bông lau,1 khoanh
+6923,958,cà chua,1 trái
+6924,958,"Hành lá , rau ôm, ngò gai",
+6925,958,Gia vị,
+6926,959,chả cá hàn quốc,1 gói
+6927,959,củ hành tím,Vài
+6928,959,Hành lá,
+6929,959,củ cải trắng,1 ít
+6930,959,rong biển,1 nhúm
+6931,959,Sa tế,
+6932,959,Gia vị,
+6933,959,Hạt nêm,
+6934,959,Nước tương,
+6935,960,nọng heo,1 kg
+6936,960,khoai tây,3 củ
+6937,960,cà rốt,3 củ
+6938,960,hành tây,1 củ
+6939,960,bột cà ri Nhật,5 muỗng canh đầy
+6940,960,nước mắm,3 muỗng canh
+6941,960,bột mì (pha với 100ml nước lọc ),3 muỗng canh đầy
+6942,960,nước lọc,2 L
+6946,962,vây cá hồi,400 g
+6947,962,bột rang muối,1 bịch
+6951,964,tôm ,200 gr
+6952,964,bánh tráng,Vài
+6953,964,rong biển,Vài
+6954,964,Hành lá,
+6955,964,"Gia vị: hạt nêm rau củ , tiêu",
+6956,965,cá trích,4 thanh
+6957,965,nui nơ,200 gr
+6958,965,tỏi,1 tép
+6959,965,hành Tây,1 củ
+6960,965,dầu olive,1 mc
+6961,965,ngò tây persil,1 nhánh
+6962,966,da gà nướng giòn,1 đĩa
+6963,966,cà rốt,1/2 củ
+6964,966,phở sắn,4 miếng
+6965,966,hẹ,Vài nhánh
+6966,966,húng lủi,1 nắm
+6967,966,đậu phộng rang,1 mc
+6968,966,hành phi (Không Áo Bột),1 mc
+6969,966,sốt trộn gỏi,1 mc
+6970,966,chanh,1/2 trái
+6971,967,thịt heo,100 g
+6972,967,cá nục,300 g
+6973,967,mắm,2 muỗng
+6974,967,chuối xanh,5 trái
+6975,967,hành tím,5 củ
+6976,967,tiêu,1 muỗng cafe
+6977,967,ớt sừng,1 trái
+6978,967,ớt xiêm,10 trái
+6979,967,bột ngọt,1 ít
+6980,967,mỡ,2 muỗng
+6981,967,đường,1 muỗng
+6982,967,muối hồng,1 ít
+6983,967,hành lá,1 cây
+6984,968,đậu lăng,300 gr
+6985,968,- 900 nước,700 ml
+6986,969,cá liệt búa,500 gr
+6987,969,hành lá,1 nhánh
+6988,969,ngò rí,1 ít
+6989,969,tiêu,1 xíu
+6990,969,"gia vị: muối, bột ngọt",
+6991,970,cá linh,300 g
+6992,970,bông súng,500 g
+6993,970,cơm mẻ,3 mc
+6994,970,"rau ngò gai , ngò om",50 g
+6995,970,nước mắm,1 vá
+6996,970,đường,2 vá
+6997,970,"sả, tỏi",2 tép
+6998,971,Ếch đồng,500 gr
+6999,971,Cần nước,200 gr
+7000,971,Tỏi ,1 tbsp
+7001,971,Nước tương dằm ớt,1 chén
+7002,971,"Gia vị: dầu ăn, muối, tiêu, đường",
+7003,972,thịt đùi,400 g
+7004,972,thịt xay,100 g
+7005,972,xà lách xoong,300 g
+7006,972,quýt,400 g
+7007,972,Gia vị,
+7008,973,thịt nạc dăm,6 miếng
+7009,973,bột chiên giòn,1 chén
+7010,973,bột năng,2 mc
+7011,973,bột chiên xù,1 chén
+7012,973,Gia vị,
+7013,974,cua đồng xay,0.5 kg
+7014,974,gạch cua,1/4 chén
+7015,974,bắp bò,0.5 kg
+7016,974,Đậu hũ bi,0.5 kg
+7017,974,chả bì,250 gr
+7018,974,bò viên,0.5 kg
+7019,974,nước,4 lít
+7020,974,Bún,1 kg
+7021,974,Cà chua,4 trái
+7022,974,bông bí,1 ít
+7023,974,Mồng tơi,2 bó
+7024,974,Mướp,2 trái
+7025,974,hoa chuối,1 ít
+7026,974,Rau muống,1 ít
+7027,974,Nấm đùi gà,400 gr
+7028,974,"rau thơm : tía tô , kinh giới",1 ít
+7029,974,hành lá,1 ít
+7030,974,hành tím,2 củ
+7031,974,hành phi,2 muỗng canh
+7032,974,màu dầu điều,1 muỗng canh
+7033,974,dấm bỗng,2/3 chén
+7034,974,mắm tôm,1 ít
+7035,974,trái ớt hiểm,Vài
+7036,974,"Gia vị: muối, đường",
+7037,975,thịt heo ba chỉ,1 m
+7038,975,Tóp mỡ heo,1 m
+7039,975,tôm khô,1 m
+7040,975,ớt,1 trái
+7041,975,"gia vị : đường, nước mắm , mỡ heo",2 mc
+7042,975,nước cơm,1 m
+7043,975,hành tím,1 củ
+7044,975,tỏi,1 củ
+7045,976,Khô mực (150g),5 con
+7046,976,Bột bắp hoặc tinh bột khoai tây (hoặc bột chiên giòn không gia vị),20 g
+7047,976,Hành tây,1/2 củ (60g)
+7048,976,Nước mắm,1/2 muỗng canh
+7049,976,Đường,1/2 muỗng canh
+7050,976,Ớt  (tuỳ ý),1 trái
+7051,976,Dầu ăn,30 ml
+7052,976,Chanh,1/4 quả
+7053,977,mực,500 gr
+7054,977,sả,2 củ
+7055,977,ớt,2 quả
+7056,977,hành khô,1 củ
+7057,977,tỏi,2 tép
+7058,977,sa tế,1 thìa canh
+7059,977,tương ớt,1 thìa canh
+7060,977,mì chính,2 thìa cafe
+7061,977,đường,2 thìa cafe
+7062,977,muối tôm tây ninh,1 thìa canh
+7063,977,Dầu ăn,
+7064,978,xương heo,300 g
+7065,978,cải trắng,1/2 củ
+7066,978,cải đỏ,1/2 củ
+7067,978,khoai tây,2 củ
+7068,978,dền,2 củ
+7069,978,hành lá,Vài nhánh
+7070,978,muối hồng,1 muỗng cf
+7071,978,Nước lọc,
+7082,980,xương heo,500 g
+7083,980,bí xanh,1 kg
+7084,980,hành lá,3 tép
+7085,980,bột nêm,2 mcf
+7086,980,gừng,50g
+7087,980,tiêu,1/3mcf
+7088,981,Mướp,2 quả
+7089,981,Nấm kim châm,100 g
+7090,981,Nấm hạ thảo,1 nhúm nhỏ
+7091,981,Muối,
+7092,981,Hạt nêm,
+7093,981,Dầu ăn,
+7094,982,cá bạc má,500-500 g
+7095,982,Cà chua,
+7096,982,Thơm,
+7097,982,Lá me,
+7098,982,Rau nêm,
+7099,982,Bạc hà,
+7100,982,Đậu bắp,
+7101,982,Giá (tùy thích),
+7102,983,cá chim (1-2 con),500-600 gram
+7103,983,cà chua,2 quả
+7104,983,me,1 quả
+7105,983,dầu hào,1 thìa
+7106,983,mật mía,1 thìa
+7107,983,riềng xay,1-2 thìa
+7108,983,hành,2 củ
+7109,983,tiêu xanh,2 nhánh
+7110,983,gừng ,1 nhánh
+7111,983,mắm,3-4 thìa
+7112,983,dầu ăn/ mỡ,3 thìa
+7113,984,cá hồi,1 lát
+7114,984,bột tỏi,1 ít
+7115,984,bột ớt,1 ít
+7116,984,lá thảo mộc,1 ít
+7117,984,muối hồng,1 ít
+7122,986,Gạo nếp,300 g
+7123,986,Nấm đùi gà,200 g
+7124,986,Bột gia vị xá xíu Thái hoặc sốt xá xíu,1 muỗng canh
+7125,986,Hạt nêm,1 ít
+7126,986,Dầu ăn,1 ít
+7127,987,gạo,100-150 gram
+7128,987,mầm đá,300 gram
+7129,987,cá kho sẵn,2 khúc
+7130,987,gừng,1 mẩu
+7131,987,muối,1 nhúm
+7132,988,cá thu,2 lát
+7133,988,dầu ăn,1 ít
+7134,989,gạo lứt,1 chén cơm
+7135,989,"trứng, đánh tan",1 quả
+7136,989,dầu bơ ( avocado oil ),1 muỗng canh
+7137,989,hành tây,1/2 củ
+7138,989,tỏi ,1 muỗng cà phê
+7139,989,nấm (thái miếng lớn),
+7140,989,cà rốt,1 củ
+7141,989,bông cải xanh ( súp lơ xanh ),1 chén
+7142,989,gừng ,1 muỗng cà phê
+7143,989,sốt Tamari (một loại nước tương không chứa hoặc ít gluten ),3 muỗng canh
+7144,989,"Hành lá , ngò rí ( rau mùi ), dầu mè (tùy chọn)",
+7145,989,thịt gà (tuỳ chọn),1 chén
+7146,990,"Gà ( gà thả vườn , gà ta , gà ri, gà mía ,...)",1.5 kg
+7147,990,(khoảng 800ml) Nước dừa,2 quả
+7148,990,Ngũ vị hương,1 gói (5 g)
+7149,990,Muối,2 muỗng cà phê
+7150,990,Nước tương,3 muỗng canh
+7151,990,Đường,2 muỗng canh
+7152,990,Tỏi,5 tép
+7153,990,củ lớn Hành tây,1
+7154,990,Dầu màu điều,2 muỗng canh
+7155,990,Tiêu,1 muỗng cà phê
+7156,990,Dầu hào,1 muỗng canh
+7157,991,đùi tỏi gà,1 cái
+7158,991,xôi trắng,1 chén
+7159,991,Gia vị,
+7160,992,thịt vai heo,500 g
+7161,992,bắp cải trắng,1/2 cái
+7162,992,cà rốt,1/2 củ
+7163,992,ngũ vị hương,1 muỗng cf
+7164,992,dầu hào,2 muỗng canh
+7165,992,sữa đặc,1 muỗng canh
+7166,992,dầu ăn,1 muỗng canh
+7167,992,nước mắm,1 muỗng canh
+7168,992,tép tỏi,Vài
+7169,992,củ hành hương,Vài
+7170,992,Gia vị,
+7171,992,Xốt Mentaiko,
+7176,994,Rong biển Hàn Quốc khô,10 g
+7177,994,Thịt heo xay,100 g
+7178,994,Con ruốc ( tép khô ),20 g
+7179,994,Hành tím ,1 muỗng canh
+7180,994,Nước,700 ml
+7181,994,Dầu ăn,1 muỗng canh
+7182,994,Nước mắm,1 muỗng canh
+7183,994,Muối,1/2 muỗng cà phê
+7184,994,Tiêu,1/4 muỗng cà phê
+7185,995,cá nục,300 gam
+7186,995,cà chua,2 trái
+7187,995,rau muống,200 gam
+7188,995,đậu hũ,2 miếng
+7189,995,sả ,3 tbsp
+7190,995,hành tím ,1/2 tbsp
+7191,995,tỏi ,1/2 tbsp
+7192,995,hành lá,4 nhánh
+7193,995,hành phi,1 tbsp
+7194,995,đường,3 tbsp
+7195,995,hạt nêm,2 tbsp
+7196,995,sa tế,1 tsp
+7197,995,tiêu,1/2 tsp
+7198,995,bột ngọt,1/2 tsp
+7199,995,nước mắm,1 tbsp
+7200,995,cà chua,1 tbsp
+7201,995,nước tương,3 tbsp
+7202,995,bột nghệ,1.5 tsp
+7203,995,dầu mè,1/2 tsp
+7204,995,chao,2 tbsp
+7205,995,giấm,1 tbsp
+7206,996,tôm,500 g
+7207,996,thanh cua,200 g
+7208,996,cà rốt,1 củ
+7209,996,hành tây,1 củ
+7210,996,bắp mỹ,1 trái
+7212,996,mayo,200 g
+7213,996,creamcheese,100 g
+7214,996,sữa đặc,1 tbsp
+7215,996,muối,1 tsp
+7216,997,Thịt ba chỉ,500 g
+7217,997,Gốc hành baro,1 chút
+7218,997,Ớt ,1 quả
+7220,997,Tỏi  (đặc điểm của món này là thật nhiều tỏi),5 thìa ăn cơm
+7221,997,Bột ớt,3 thìa ăn cơm
+7222,997,Nước tương (진간장),3 thìa ăn cơm
+7223,997,Dầu hào (굴소스),0.5 thìa ăn cơm
+7224,997,Tương đậu(된장),0.5 thìa ăn cơm
+7225,997,Rượu nấu ăn,2 thìa ăn cơm
+7226,997,Đường,2 thìa ăn cơm
+7227,997,Tiêu,1/2 thìa cà phê
+7229,998,chà bông gà cay rong biển,1 cup
+7230,998,sốt dầu trứng,1/4 cup
+7232,998,lòng đỏ trứng gà,1
+7233,998,muỗng canh,1
+7234,999,cá lóc,1 con (1 kg)
+7235,999,miến,200 gram
+7236,999,cải cay,200 gram
+7237,999,"Củ nén , hành tím , ớt",
+7238,999,Hành lá,
+7239,999,"Gia vị: dầu, mắm , hạt nêm, muối, tiêu",
+7240,1000,tôm,400 gr
+7241,1000,bột chiên giòn,1/2 gói
+7242,1000,"hành lá , tiêu",

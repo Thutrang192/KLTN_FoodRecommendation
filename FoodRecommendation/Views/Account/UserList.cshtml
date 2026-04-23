@@ -3,7 +3,7 @@
 @using Microsoft.AspNetCore.Http;
 @using FoodRecommendation.Constant;
 @using System.Security.Claims
-
+  @model IEnumerable<FoodRecommendation.Models.Entity.Account>
 
 
 <!DOCTYPE html>
@@ -99,7 +99,7 @@
                                 </li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li>
-                                    <a class="dropdown-item d-flex align-items-center" href="/account/logout">
+                                    <a class="dropdown-item d-flex align-items-center" asp-controller="Account" asp-action="Logout">
                                         <i class="fas fa-sign-out-alt me-2"></i> Đăng xuất
                                     </a>
                                 </li>
@@ -141,13 +141,7 @@
                             </a>
                         </li>
 
-                        @* <li class="nav-item"> *@
-
-                        @*     <a class="dropdown-item @GetActiveClass("Home", "CreateRecipe")" *@
-                        @*        asp-area="" asp-controller="Home" asp-action="CreateRecipe"> *@
-                        @*         <i class="fa fa-book me-2"></i> Viết công thức *@
-                        @*     </a> *@
-                        @* </li> *@
+                        
                         
                     </ul>
 
@@ -155,29 +149,20 @@
                         <span>Cá nhân</span>
                     </h6>
                     <ul class="nav flex-column mb-2">
-                        <li class="nav-item">
-                            <a class="dropdown-item"
-                               asp-controller="Collection"
-                               asp-action="Saved">
-                                <i class="fa fa-bookmark me-2"></i> Món đã lưu
-                            </a>
-                        </li>
-                        @* <li class="nav-item"> *@
-                        @*     <a class="dropdown-item" href="#"> *@
-                        @*         <i class="fa fa-user me-2"></i> Món của tôi *@
-                        @*     </a> *@
-                        @* </li> *@
-                        @* <li class="nav-item"> *@
-                        @*     <a class="dropdown-item" href="#"> *@
-                        @*         <i class="fa fa-check-square me-2"></i> Đã lên sóng *@
-                        @*     </a> *@
-                        @* </li> *@
+                         <li class="nav-item">
+    <a class="dropdown-item"
+       asp-controller="Collection"
+       asp-action="Saved">
+        <i class="fa fa-bookmark me-2"></i> Món đã lưu
+    </a>
+</li>
+                        
                     </ul>
 
                     @if (User.IsInRole("Admin"))
                     {
                         <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase text-custom">
-                            <span>Quản trị viên</span>
+                            <span>Quản trị</span>
                         </h6>
                         <ul class="nav flex-column mb-2">
                             <li class="nav-item">
@@ -189,14 +174,14 @@
 
                             <li class="nav-item">
                                 <a class="dropdown-item @GetActiveClass("Admin", "Recipe")"
-                                    asp-area="" asp-controller="Admin" asp-action="Recipe">
+                                   asp-area="" asp-controller="Admin" asp-action="Recipe">
                                     <i class="fa fa-utensils me-2"></i> Món ăn
                                 </a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="dropdown-item @GetActiveClass("Admin", "Report")" 
-                                    asp-area="" asp-controller="Admin" asp-action="Report">
+                                <a class="dropdown-item @GetActiveClass("Admin", "Report")"
+                                   asp-area="" asp-controller="Admin" asp-action="Report">
                                     <i class="fa fa-flag me-2"></i> Báo cáo
                                 </a>
                             </li>
@@ -207,17 +192,100 @@
             </nav>
 
             <!-- MAIN BODY -->
-            <div class="col-md-9 ms-sm-auto col-lg-10 p-0 d-flex flex-column min-vh-100">
-                <main class="container flex-grow-1">
-                    @RenderBody()
-                </main>
+       
 
-                <!-- FOOTER -->
-                <footer class="px-md-4 py-3 bg-light border-top">
-                    <div class="text-center text-muted">
-                        © 2026. Chef Tất cả quyền được bảo lưu
-                    </div>
-                </footer>
+@{
+    ViewData["Title"] = "Danh sách người dùng";
+}
+
+<div class="user-container">
+
+    <h2>Danh sách người dùng</h2>
+
+    <!-- SEARCH -->
+    <div class="filter-box">
+        <div class="search-group">
+            <input type="text" id="searchInput"
+                   placeholder="Tìm theo tên, email hoặc tên đăng nhập..." />
+
+            
+        </div>
+    </div>
+
+    <!-- TABLE -->
+    <div class="table-wrapper">
+        <table class="user-table">
+            <thead>
+                <tr>
+                    <th><input type="checkbox" /></th>
+                    <th>Họ và tên</th>
+                    <th>Email cá nhân</th>
+                    <th>Tên đăng nhập</th>
+                    <th>Thao tác</th>
+                </tr>
+            </thead>
+
+            <tbody id="userTable">
+                @foreach (var item in Model)
+                {
+                    <tr data-name="@item.FullName?.ToLower()"
+                        data-email="@item.Email.ToLower()"
+                        data-username="@item.Username.ToLower()">
+
+                        <td><input type="checkbox" /></td>
+                       
+                        <td>
+                            @item.FullName <br />
+
+                            @if (item.IsActivated == false)
+                            {
+                                <span class="badge-inactive">Không hoạt động</span>
+                            }
+                        </td>
+                        <td>@item.Email</td>
+                        <td>@item.Username</td>
+
+                        <td class="action">
+                            <a asp-controller="User" asp-action="Edit" asp-route-id="@item.UserId" class="btn-icon edit">
+                                <i class="fa fa-edit"></i>
+                            </a>
+    
+  
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <!-- PAGINATION -->
+    <div class="pagination">
+
+        <a asp-action="UserList" asp-route-page="1">«</a>
+
+        <a asp-action="UserList"
+           asp-route-page="@(ViewBag.CurrentPage > 1 ? ViewBag.CurrentPage - 1 : 1)">
+            ‹
+        </a>
+
+        <div class="page-info">
+    Trang @(ViewBag.CurrentPage ?? 1) / @(ViewBag.TotalPages ?? 1)
+</div>
+
+        <a asp-action="UserList"
+           asp-route-page="@(ViewBag.CurrentPage < ViewBag.TotalPages ? ViewBag.CurrentPage + 1 : ViewBag.TotalPages)">
+            ›
+        </a>
+
+        <a asp-action="UserList" asp-route-page="@ViewBag.TotalPages">»</a>
+
+    </div>
+
+</div>
+
+
+<link rel="stylesheet" href="~/css/userlist.css" asp-append-version="true" />
+              
             </div>
         </div>
     </div>
@@ -225,39 +293,9 @@
     
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    
     <script src="~/js/site.js" asp-append-version="true"></script>
     
-    @await RenderSectionAsync("Scripts", required: false)
-
-    <!-- Script SweetAlert2 và Toast -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var message = '@TempData["ToastMessage"]';
-            var type = '@TempData["ToastType"]'; 
-
-            if (message) {
-                const Toast = Swal.mixin({
-                    toast: true,
-                    position: 'top-end',
-                    showConfirmButton: false,
-                    timer: 2000,
-                    timerProgressBar: true,
-                    didOpen: (toast) => {
-                        toast.addEventListener('mouseenter', Swal.stopTimer)
-                        toast.addEventListener('mouseleave', Swal.resumeTimer)
-                    }
-                });
-
-                Toast.fire({
-                    icon: type || 'info', 
-                    title: message
-                });
-            }
-        });
-    </script>
+    
 
     <script>
         window.addEventListener('pageshow', function (event) {
@@ -268,5 +306,23 @@
             }
         });
     </script>
+    <script>
+document.getElementById("searchInput").addEventListener("keyup", function () {
+    let keyword = this.value.toLowerCase();
+    let rows = document.querySelectorAll("#userTable tr");
+
+    rows.forEach(row => {
+        let name = row.dataset.name || "";
+        let email = row.dataset.email || "";
+        let username = row.dataset.username || "";
+
+        if (name.includes(keyword) || email.includes(keyword) || username.includes(keyword)) {
+            row.style.display = "";
+        } else {
+            row.style.display = "none";
+        }
+    });
+});
+</script>
 </body>
 </html>

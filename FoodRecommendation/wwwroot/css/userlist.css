@@ -1,0 +1,166 @@
+﻿.user-container {
+    padding: 20px 40px 20px; /* tránh header đè */
+    background: #fff;
+    min-height: 100vh;
+}
+
+    .user-container h2 {
+        margin-bottom: 15px;
+    }
+
+/* SEARCH */
+.filter-box {
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.search-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+    .search-group input {
+        width: 350px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+/* SWITCH */
+.switch {
+    position: relative;
+    width: 40px;
+    height: 20px;
+}
+
+    .switch input {
+        display: none;
+    }
+
+.slider {
+    position: absolute;
+    background: #ccc;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+    .slider:before {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background: white;
+        top: 2px;
+        left: 2px;
+        border-radius: 50%;
+        transition: 0.3s;
+    }
+
+input:checked + .slider {
+    background: rgb(255,153,51);
+}
+
+    input:checked + .slider:before {
+        transform: translateX(20px);
+    }
+
+/* TABLE */
+.table-wrapper {
+    border: 1px solid #eee;
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+    .user-table th, .user-table td {
+        padding: 12px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .user-table th {
+        background: #f9fafb;
+    }
+
+/* ACTION */
+.action {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 8px;
+    border: 1px solid #ddd;
+    background: #fff;
+    color: #a19c9c;
+    cursor: pointer;
+    text-decoration: none; /* Bỏ gạch chân cho thẻ a */
+    border-radius: 4px; /* Bo góc nhẹ cho giống btn-change */
+    transition: all 0.2s ease;
+}
+
+    /* EDIT hover màu cam */
+    .btn-icon.edit:hover {
+        background-color: rgb(255, 153, 51);
+        color: #fff;
+        border-color: rgb(255, 153, 51);
+    }
+
+    /* DELETE hover màu đỏ */
+    .btn-icon.delete:hover {
+        background: #e53935;
+        color: #fff;
+        border-color: #e53935;
+    }
+
+/* PAGINATION */
+.pagination {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+    .pagination a {
+        padding: 6px 10px;
+        border: 1px solid #ddd;
+        background: #fff;
+        text-decoration: none;
+        color: #333;
+    }
+
+        .pagination a:hover {
+            background: rgb(255,153,51);
+            color: #fff;
+        }
+
+.page-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    font-weight: 500;
+}
+.badge-active {
+    background: #808080;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.badge-inactive {
+    background: #808080;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}

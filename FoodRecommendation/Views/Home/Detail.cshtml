@@ -31,6 +31,36 @@
                 }
             });
         });
+
+        function saveRecipe(id) {
+            fetch('/Collection/Toggle', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: 'recipeId=' + id
+            })
+            .then(res => res.json())
+            .then(data => {
+
+                const btn = document.getElementById("saveBtn");
+
+                if (data.isSaved) {
+                    btn.classList.remove("btn-outline-orange");
+                    btn.classList.add("btn-orange");
+
+                    btn.innerHTML = '<i class="fa-solid fa-bookmark"></i> Đã lưu';
+                }
+                else {
+                    btn.classList.remove("btn-orange");
+                    btn.classList.add("btn-outline-orange");
+
+                    btn.innerHTML = '<i class="fa-regular fa-bookmark"></i> Lưu';
+                }
+
+                btn.disabled = false; // luôn cho click lại
+            });
+        }
     </script>
 
 }
@@ -71,8 +101,13 @@
             @* <p class="italic text-gray-600 border-l-4 border-gray-200 pl-4 mb-6 mt-3">@Model.DescriptionRecipes</p> *@
 
             <div class="d-flex gap-3 mt-auto">
-                <button class="px-4 py-2 flex items-center gap-2 btn btn-outline-orange fw-medium">
-                    <i class="fa-regular fa-bookmark"></i> Lưu
+                <button id="saveBtn"
+                        onclick="saveRecipe(@Model.RecipeId)"
+                        class="btn @(Model.IsSaved ? "btn-orange" : "btn-outline-orange")">
+
+                    <i class="@(Model.IsSaved ? "fa-solid" : "fa-regular") fa-bookmark"></i>
+
+                    @(Model.IsSaved ? "Đã lưu" : "Lưu")
                 </button>
 
                 <div id="report-container">

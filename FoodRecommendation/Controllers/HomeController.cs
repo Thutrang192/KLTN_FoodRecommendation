@@ -52,7 +52,11 @@ namespace FoodRecommendation.Controllers
             var model = await _homeService.GetRecipeById(id, currentUserId); 
             if (model == null)
                 return NotFound();
-
+            if (currentUserId != 0)
+            {
+                model.IsSaved = await _db.Collections
+                    .AnyAsync(x => x.UserId == currentUserId && x.RecipeId == id);
+            }
             return View(model);
         }
 
@@ -125,11 +129,6 @@ namespace FoodRecommendation.Controllers
 
             return RedirectToAction("Detail", "Home", new { id = RecipeId });
 
-        }
-
-        public IActionResult Noti()
-        {
-            return View();
         }
 
         public IActionResult Privacy()

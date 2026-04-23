@@ -49,7 +49,7 @@
                 {
                     <div class="d-flex align-items-center ms-auto">
 
-                        <a class="nav-link px-2 py-2 position-relative" asp-controller="Home" asp-action="Notifications">
+                        <a class="nav-link px-2 py-2 position-relative" asp-controller="Home" asp-action="Noti">
                             <i class="far fa-bell fs-5 text-dark"></i>
                             <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger p-1"></span>
                         </a>
@@ -99,7 +99,7 @@
                                 </li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li>
-                                    <a class="dropdown-item d-flex align-items-center" href="/account/logout">
+                                    <a class="dropdown-item d-flex align-items-center" asp-controller="Account" asp-action="Logout">
                                         <i class="fas fa-sign-out-alt me-2"></i> Đăng xuất
                                     </a>
                                 </li>
@@ -141,13 +141,7 @@
                             </a>
                         </li>
 
-                        @* <li class="nav-item"> *@
-
-                        @*     <a class="dropdown-item @GetActiveClass("Home", "CreateRecipe")" *@
-                        @*        asp-area="" asp-controller="Home" asp-action="CreateRecipe"> *@
-                        @*         <i class="fa fa-book me-2"></i> Viết công thức *@
-                        @*     </a> *@
-                        @* </li> *@
+                      
                         
                     </ul>
 
@@ -155,48 +149,36 @@
                         <span>Cá nhân</span>
                     </h6>
                     <ul class="nav flex-column mb-2">
-                        <li class="nav-item">
+                         <li class="nav-item">
                             <a class="dropdown-item"
                                asp-controller="Collection"
                                asp-action="Saved">
                                 <i class="fa fa-bookmark me-2"></i> Món đã lưu
                             </a>
                         </li>
-                        @* <li class="nav-item"> *@
-                        @*     <a class="dropdown-item" href="#"> *@
-                        @*         <i class="fa fa-user me-2"></i> Món của tôi *@
-                        @*     </a> *@
-                        @* </li> *@
-                        @* <li class="nav-item"> *@
-                        @*     <a class="dropdown-item" href="#"> *@
-                        @*         <i class="fa fa-check-square me-2"></i> Đã lên sóng *@
-                        @*     </a> *@
-                        @* </li> *@
+                        
                     </ul>
 
                     @if (User.IsInRole("Admin"))
                     {
                         <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase text-custom">
-                            <span>Quản trị viên</span>
+                            <span>Quản trị</span>
                         </h6>
                         <ul class="nav flex-column mb-2">
-                            <li class="nav-item">
-                                <a class="dropdown-item @GetActiveClass("Account", "UserList")"
-                                   asp-controller="Account" asp-action="UserList">
-                                    <i class="fa fa-user me-2"></i> Người dùng
-                                </a>
-                            </li>
+                             <li class="nav-item">
+                                 <a class="dropdown-item @GetActiveClass("Account", "UserList")" 
+                                    asp-controller="Account" asp-action="UserList">
+                                     <i class="fa fa-user me-2"></i> Người dùng
+                                 </a>
+                             </li>
 
                             <li class="nav-item">
-                                <a class="dropdown-item @GetActiveClass("Admin", "Recipe")"
-                                    asp-area="" asp-controller="Admin" asp-action="Recipe">
+                                <a class="dropdown-item" href="#">
                                     <i class="fa fa-utensils me-2"></i> Món ăn
                                 </a>
                             </li>
-
                             <li class="nav-item">
-                                <a class="dropdown-item @GetActiveClass("Admin", "Report")" 
-                                    asp-area="" asp-controller="Admin" asp-action="Report">
+                                <a class="dropdown-item" href="#">
                                     <i class="fa fa-flag me-2"></i> Báo cáo
                                 </a>
                             </li>
@@ -207,57 +189,76 @@
             </nav>
 
             <!-- MAIN BODY -->
-            <div class="col-md-9 ms-sm-auto col-lg-10 p-0 d-flex flex-column min-vh-100">
-                <main class="container flex-grow-1">
-                    @RenderBody()
-                </main>
+           @model List<SavedRecipeVM>
 
-                <!-- FOOTER -->
-                <footer class="px-md-4 py-3 bg-light border-top">
-                    <div class="text-center text-muted">
-                        © 2026. Chef Tất cả quyền được bảo lưu
-                    </div>
-                </footer>
-            </div>
-        </div>
+<link rel="stylesheet" href="~/css/saved.css" />
+
+<div class="saved-header mt-5">
+    <h3>Món đã lưu (@ViewBag.TotalItems)</h3>
+
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder=" Tìm trong kho món của bạn" />
     </div>
+</div>
+@if (!Model.Any())
+{
+    <div class="empty-state">
+        <i class="fa fa-bookmark"></i>
+        <p>Bạn chưa lưu món nào </p>
+    </div>
+}
+else
+{
+   
 
-    
+    <!-- GRID -->
+   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+    @foreach (var item in Model)
+    {
+        <div class="col recipe-item" data-title="@item.Title.ToLower()">
+
+            <a asp-controller="Home"
+               asp-action="Detail"
+               asp-route-id="@item.Id"
+               class="text-decoration-none">
+
+                <div class="card h-100 border-0 shadow-sm">
+
+                    <div class="ratio ratio-1x1 bg-light position-relative overflow-hidden">
+                        <img src="@(string.IsNullOrEmpty(item.ImageUrl) ? "/img/default-recipe.jpg" : item.ImageUrl)"
+                             class="object-fit-cover w-100 h-100" />
+                    </div>
+
+                    <div class="card-body p-3">
+                                <h6 class="card-title fw-bold text-dark mb-2 multiline-ellipsis">@item.Title</h6>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="text-muted small d-flex align-items-center">
+                                        <i class="fa-solid fa-square me-2" style="font-size: 8px; color: #dee2e6;"></i>
+                                        <span class="text-truncate" style="max-width: 100px;">
+                                            @(string.Equals(item.RoleUser, "Admin", StringComparison.OrdinalIgnoreCase) ? "Chef" : item.Author)
+                                        </span>
+                                    </div>
+                                    @if (item.Cooktime > 0)
+                                    {
+                                        <span class="text-muted small">
+                                            <i class="fa-regular fa-clock me-1"></i>@item.Cooktime'
+                                        </span>
+                                    }
+                                </div>
+                            </div>
+
+                </div>
+            </a>
+        </div>
+    }
+</div>
+
+  }  
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    
     <script src="~/js/site.js" asp-append-version="true"></script>
     
-    @await RenderSectionAsync("Scripts", required: false)
-
-    <!-- Script SweetAlert2 và Toast -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var message = '@TempData["ToastMessage"]';
-            var type = '@TempData["ToastType"]'; 
-
-            if (message) {
-                const Toast = Swal.mixin({
-                    toast: true,
-                    position: 'top-end',
-                    showConfirmButton: false,
-                    timer: 2000,
-                    timerProgressBar: true,
-                    didOpen: (toast) => {
-                        toast.addEventListener('mouseenter', Swal.stopTimer)
-                        toast.addEventListener('mouseleave', Swal.resumeTimer)
-                    }
-                });
-
-                Toast.fire({
-                    icon: type || 'info', 
-                    title: message
-                });
-            }
-        });
-    </script>
+    
 
     <script>
         window.addEventListener('pageshow', function (event) {
@@ -268,5 +269,78 @@
             }
         });
     </script>
+    <script>
+// ===== REMOVE =====
+function removeItem(id, btn) {
+    fetch('/Collection/Remove', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: 'recipeId=' + id
+    })
+    .then(() => {
+        btn.closest('.recipe-card').remove();
+    });
+}
+
+// ===== SEARCH =====
+document.getElementById("searchInput").addEventListener("keyup", function () {
+    const keyword = this.value.toLowerCase();
+    const cards = document.querySelectorAll(".recipe-item");
+
+    cards.forEach(card => {
+        const title = card.dataset.title;
+        card.style.display = title.includes(keyword) ? "block" : "none";
+    });
+});
+</script>
+<script>
+function removeItem(id, btn) {
+    fetch('/Collection/Remove', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: 'recipeId=' + id
+    })
+    .then(() => {
+        btn.closest('.recipe-card').remove();
+
+        // update count
+        let countText = document.querySelector(".saved-header h3");
+        let current = parseInt(countText.innerText.match(/\d+/)[0]);
+        countText.innerText = "Món đã lưu (" + (current - 1) + ")";
+    });
+}
+
+// SEARCH
+document.getElementById("searchInput").addEventListener("keyup", function () {
+    const keyword = this.value.toLowerCase();
+    const cards = document.querySelectorAll(".recipe-card");
+
+    cards.forEach(card => {
+        const title = card.dataset.title;
+        card.style.display = title.includes(keyword) ? "block" : "none";
+    });
+});
+</script>
+<script>
+function saveRecipe(id) {
+    fetch('/Collection/Save', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: 'recipeId=' + id
+    })
+    .then(() => {
+        alert("Đã lưu món!");
+
+    
+        window.location.href = "/Collection/Saved";
+    });
+}
+</script>
 </body>
 </html>

@@ -1,0 +1,128 @@
+﻿.saved-container {
+    padding: 30px 40px;
+    margin-top: 80px;
+}
+    .saved-container h3 {
+        margin-top: 80px; 
+    }
+/* ===== SEARCH CENTER ===== */
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+    .search-box input {
+        width: 400px;
+        max-width: 100%;
+        padding: 10px 15px;
+        border: 1px solid #ddd;
+        border-radius: 25px;
+        outline: none;
+        transition: 0.2s;
+    }
+
+        .search-box input:focus {
+            border-color: rgb(255,153,51);
+            box-shadow: 0 0 0 2px rgba(255,153,51,0.2);
+        }
+
+/* ===== GRID ===== */
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* ===== CARD ===== */
+.recipe-card {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+    transition: 0.25s ease;
+}
+
+    .recipe-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+    }
+
+/* ===== IMAGE ===== */
+.recipe-img {
+    position: relative;
+    height: 170px;
+    background: #f3f4f6;
+}
+
+    .recipe-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+/* ===== BOOKMARK ===== */
+.bookmark-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #fff;
+    border: none;
+    padding: 6px 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: 0.2s;
+}
+
+    .bookmark-btn i {
+        color: #888;
+    }
+
+    .bookmark-btn:hover i {
+        color: rgb(255,153,51);
+    }
+
+/* ===== INFO ===== */
+.recipe-info {
+    padding: 12px;
+}
+
+.title {
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.author {
+    font-size: 13px;
+    color: #888;
+}
+
+/* ===== EMPTY STATE ===== */
+.empty-state {
+    text-align: center;
+    padding: 60px 0;
+    color: #999;
+}
+
+    .empty-state i {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+    .recipe-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .recipe-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .saved-container {
+        padding: 20px;
+    }
+}

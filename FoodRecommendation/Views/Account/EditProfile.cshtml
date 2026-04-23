@@ -3,7 +3,7 @@
 @using Microsoft.AspNetCore.Http;
 @using FoodRecommendation.Constant;
 @using System.Security.Claims
-
+@model UpdateProfileVM
 
 
 <!DOCTYPE html>
@@ -99,7 +99,7 @@
                                 </li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li>
-                                    <a class="dropdown-item d-flex align-items-center" href="/account/logout">
+                                    <a class="dropdown-item d-flex align-items-center" asp-controller="Account" asp-action="Logout">
                                         <i class="fas fa-sign-out-alt me-2"></i> Đăng xuất
                                     </a>
                                 </li>
@@ -141,14 +141,6 @@
                             </a>
                         </li>
 
-                        @* <li class="nav-item"> *@
-
-                        @*     <a class="dropdown-item @GetActiveClass("Home", "CreateRecipe")" *@
-                        @*        asp-area="" asp-controller="Home" asp-action="CreateRecipe"> *@
-                        @*         <i class="fa fa-book me-2"></i> Viết công thức *@
-                        @*     </a> *@
-                        @* </li> *@
-                        
                     </ul>
 
                     <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase text-custom">
@@ -156,30 +148,22 @@
                     </h6>
                     <ul class="nav flex-column mb-2">
                         <li class="nav-item">
-                            <a class="dropdown-item"
-                               asp-controller="Collection"
-                               asp-action="Saved">
-                                <i class="fa fa-bookmark me-2"></i> Món đã lưu
-                            </a>
-                        </li>
-                        @* <li class="nav-item"> *@
-                        @*     <a class="dropdown-item" href="#"> *@
-                        @*         <i class="fa fa-user me-2"></i> Món của tôi *@
-                        @*     </a> *@
-                        @* </li> *@
-                        @* <li class="nav-item"> *@
-                        @*     <a class="dropdown-item" href="#"> *@
-                        @*         <i class="fa fa-check-square me-2"></i> Đã lên sóng *@
-                        @*     </a> *@
-                        @* </li> *@
+                        <a class="dropdown-item"
+                           asp-controller="Collection"
+                           asp-action="Saved">
+                            <i class="fa fa-bookmark me-2"></i> Món đã lưu
+                        </a>
+                    </li>
+                       
                     </ul>
 
                     @if (User.IsInRole("Admin"))
                     {
                         <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase text-custom">
-                            <span>Quản trị viên</span>
+                            <span>Quản trị</span>
                         </h6>
                         <ul class="nav flex-column mb-2">
+                             <li class="nav-item">
                             <li class="nav-item">
                                 <a class="dropdown-item @GetActiveClass("Account", "UserList")"
                                    asp-controller="Account" asp-action="UserList">
@@ -189,14 +173,14 @@
 
                             <li class="nav-item">
                                 <a class="dropdown-item @GetActiveClass("Admin", "Recipe")"
-                                    asp-area="" asp-controller="Admin" asp-action="Recipe">
+                                   asp-area="" asp-controller="Admin" asp-action="Recipe">
                                     <i class="fa fa-utensils me-2"></i> Món ăn
                                 </a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="dropdown-item @GetActiveClass("Admin", "Report")" 
-                                    asp-area="" asp-controller="Admin" asp-action="Report">
+                                <a class="dropdown-item @GetActiveClass("Admin", "Report")"
+                                   asp-area="" asp-controller="Admin" asp-action="Report">
                                     <i class="fa fa-flag me-2"></i> Báo cáo
                                 </a>
                             </li>
@@ -207,66 +191,123 @@
             </nav>
 
             <!-- MAIN BODY -->
-            <div class="col-md-9 ms-sm-auto col-lg-10 p-0 d-flex flex-column min-vh-100">
-                <main class="container flex-grow-1">
-                    @RenderBody()
-                </main>
+            
 
-                <!-- FOOTER -->
-                <footer class="px-md-4 py-3 bg-light border-top">
-                    <div class="text-center text-muted">
-                        © 2026. Chef Tất cả quyền được bảo lưu
-                    </div>
-                </footer>
-            </div>
-        </div>
+<div class="profile-container">
+
+    <div class="profile-header">
+        <h2><i class="fas fa-user-circle"></i> Chỉnh sửa thông tin cá nhân</h2>
+        <p>Cập nhật thông tin cá nhân và tài khoản của bạn</p>
     </div>
 
-    
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    
-    @await RenderSectionAsync("Scripts", required: false)
+         @if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
 
-    <!-- Script SweetAlert2 và Toast -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <div class="profile-card">
+  
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var message = '@TempData["ToastMessage"]';
-            var type = '@TempData["ToastType"]'; 
+        <!-- FORM UPDATE -->
+        <form asp-action="EditProfile" method="post" enctype="multipart/form-data">
+            @Html.AntiForgeryToken()
 
-            if (message) {
-                const Toast = Swal.mixin({
-                    toast: true,
-                    position: 'top-end',
-                    showConfirmButton: false,
-                    timer: 2000,
-                    timerProgressBar: true,
-                    didOpen: (toast) => {
-                        toast.addEventListener('mouseenter', Swal.stopTimer)
-                        toast.addEventListener('mouseleave', Swal.resumeTimer)
-                    }
-                });
+            <div class="form-grid">
+                <div class="form-group">
+                    <label>Họ và tên</label>
+                    <input asp-for="FullName" class="form-control" />
+                </div>
+ <div class="form-group">
+        <label>Tên đăng nhập *</label>
+        <input asp-for="Username" class="form-control" />
+        <span asp-validation-for="Username" class="text-danger"></span>
+    </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input asp-for="Email" class="form-control" />
+<span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+            </div>
 
-                Toast.fire({
-                    icon: type || 'info', 
-                    title: message
-                });
-            }
-        });
-    </script>
+            <!-- AVATAR -->
+           <div class="avatar-section">
+    <label>Ảnh đại diện</label>
 
-    <script>
-        window.addEventListener('pageshow', function (event) {
-            // Nếu trang được lấy từ bộ nhớ đệm (Back button)
-            if (event.persisted || (window.performance && window.performance.navigation.type === 2)) {
-                // Tải lại trang để Server render lại giao diện đúng (Ẩn/Hiện nút Login)
-                window.location.reload();
-            }
-        });
-    </script>
+    <div class="avatar-wrapper">
+
+        <!-- PREVIEW -->
+        <img id="previewImg"
+             src="@(string.IsNullOrEmpty(Model.AvatarUrl) ? "/img/user-icon.png" : Model.AvatarUrl)"
+             style="width:120px;height:120px;border-radius:8px;" />
+
+        <!-- INPUT FILE -->
+        <input type="file" asp-for="AvatarFile" id="avatarInput" hidden />
+
+        <div class="avatar-actions">
+            <!-- UPLOAD -->
+            <button type="button" class="btn-upload"
+                    onclick="document.getElementById('avatarInput').click()">
+                <i class="fas fa-cloud-upload-alt"></i> Tải lên ảnh
+            </button>
+            <input type="hidden" name="RemoveAvatar" id="removeAvatarFlag" value="false" />
+            <!-- DELETE -->
+            <button type="button" class="btn-delete" onclick="removeAvatar()">
+                <i class="fas fa-trash-alt"></i> Xóa
+            </button>
+        </div>
+    </div>
+</div>
+
+            <!-- SAVE -->
+            <div class="form-actions">
+                <button type="submit" class="btn-save">
+                    <i class="fas fa-save"></i> Lưu
+                </button>
+            </div>
+
+        </form>
+
+        
+
+    </div>
+</div>
+
+<link rel="stylesheet" href="~/css/profile.css" asp-append-version="true" />
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const input = document.getElementById("avatarInput");
+    const preview = document.getElementById("previewImg");
+    const removeFlag = document.getElementById("removeAvatarFlag");
+
+    // ===== PREVIEW KHI CHỌN ẢNH =====
+    input.addEventListener("change", function (e) {
+        const file = e.target.files[0];
+        if (file) {
+            preview.src = URL.createObjectURL(file);
+
+            // nếu chọn ảnh mới thì bỏ trạng thái xóa
+            removeFlag.value = "false";
+        }
+    });
+
+    // ===== XÓA ẢNH =====
+    window.removeAvatar = function () {
+        preview.src = "/img/user-icon.png";
+        input.value = "";
+        removeFlag.value = "true";
+    };
+
+});
+</script>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+
+}
+
+</script>
 </body>
 </html>
