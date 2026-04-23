@@ -489,3 +489,6 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+
+Service_python/recipe_vectors.pkl
+*.pkl
