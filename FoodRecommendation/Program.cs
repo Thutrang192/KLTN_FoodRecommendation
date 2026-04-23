@@ -22,6 +22,8 @@ builder.Services.AddScoped<DbSeeder>();
 builder.Services.AddScoped(typeof(IBaseService<>), typeof(BaseService<>)); 
 builder.Services.AddSession();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.AddHttpClient<PythonService>();
+builder.Services.AddScoped<RecipeRepository>();
 
 builder.Services.AddAuthentication(options =>
 {

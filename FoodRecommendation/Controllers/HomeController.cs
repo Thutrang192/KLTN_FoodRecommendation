@@ -16,18 +16,21 @@ namespace FoodRecommendation.Controllers
         private readonly IHomeService _homeService;
         private readonly HttpClient _httpClient;
         private readonly FoodContext _db;
+        private readonly PythonService _pythonService;
 
         public HomeController(
             ILogger<HomeController> logger, 
             IHomeService homeService,
             IHttpClientFactory httpClientFactory,
-            FoodContext db)
+            FoodContext db,
+            PythonService pythonService)
         {
             _logger = logger;
             _homeService = homeService;
             _httpClient = httpClientFactory.CreateClient();
             _httpClient.BaseAddress = new Uri("http://127.0.0.1:8000/");
             _db = db;
+            _pythonService = pythonService;
             _httpClient.Timeout = TimeSpan.FromSeconds(30);
         }
 
@@ -136,62 +139,60 @@ namespace FoodRecommendation.Controllers
             return View();
         }
 
+
         [HttpGet]
         public async Task<IActionResult> GetRelatedRecipe(int id)
         {
             try
             {
-                var pythonUrl = $"/recommend/{id}";
-                var response = await _httpClient.GetAsync(pythonUrl);
+                var ingredients = await _db.Ingredients
+                    .Where(x => x.RecipeId == id)
+                    .Select(x => x.IngredientsText)
+                    .ToListAsync();
 
-                if (response.IsSuccessStatusCode)
-                {
-                    var relatedIds = await response.Content.ReadFromJsonAsync<List<int>>();
-                    
-                    if (relatedIds != null && relatedIds.Count > 0)
+                if (ingredients == null || ingredients.Count == 0)
+                    return Content("<p>Không có món ăn gợi ý phù hợp.</p>");
+
+                var recipeIds = await _pythonService.GetRecipeIds(ingredients);
+
+                if (recipeIds == null || recipeIds.Count == 0)
+                    return Content("<p>Không có món ăn gợi ý phù hợp.</p>");
+
+                // bỏ món đang xem
+                recipeIds = recipeIds
+                    .Where(x => x != id)
+                    .Take(6)
+                    .ToList();
+
+               var recipesFromDb = await _db.Recipes
+                .Include(r => r.User)
+                .Where(r => recipeIds.Contains(r.RecipeId)
+                            && r.IsDeleted == false
+                            && r.RecipeStatus == 2)
+                .ToListAsync();
+
+                var sortedRelatedRecipes = recipeIds
+                    .Select(rid => recipesFromDb.FirstOrDefault(r => r.RecipeId == rid))
+                    .Where(r => r != null)
+                    .Select(r => new RecipeModel
                     {
+                        RecipeId = r.RecipeId,
+                        Title = r.Title,
+                        ImageUrl = r.ImageUrl,
+                        Cooktime = r.Cooktime,
+                        Serving = r.Serving,
+                        UserName = r.User?.Username,
+                        RoleUser = r.User?.RoleUser
+                    })
+                    .ToList();
 
-                        var recipesFromDb = await _db.Recipes
-                            .Include(r => r.User)
-                            .Where(r => relatedIds.Contains(r.RecipeId) && r.IsDeleted == false)
-                            .ToListAsync();
-
-                        var sortedRelatedRecipes = relatedIds
-                        .Select(rid => recipesFromDb.FirstOrDefault(r => r.RecipeId == rid))
-                        .Where(r => r != null)
-                        .Select(r => new RecipeModel()
-                        {
-                            RecipeId = r.RecipeId,
-                            Title = r.Title,
-                            ImageUrl = r.ImageUrl,
-                            Cooktime = r.Cooktime,
-                            Serving = r.Serving,
-                            UserName = r.User?.Username,
-                            RoleUser = r.User?.RoleUser,
-                        });
-
-                        return PartialView("_RelatedRecipePartial", sortedRelatedRecipes);
-                    }
-                    else
-                    {
-                        Console.WriteLine("Luu y: Co ID tu Python nhung khong tim thay mon nao trong DB (Check IsDeleted hoac RecipeId).");
-                    }    
-                }
-                else
-                {
-                    Console.WriteLine($"LOI: Python tra ve StatusCode = {response.StatusCode}");
-                }    
-            }
-            catch (HttpRequestException ex)
-            {
-                Console.WriteLine($"Lỗi kết nối Python API: {ex.Message}");
+                return PartialView("_RelatedRecipePartial", sortedRelatedRecipes);
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"Lỗi hệ thống: {ex.Message}");
+                Console.WriteLine("ERROR GetRelatedRecipe: " + ex.Message);
+                return Content("<p>Lỗi hệ thống khi gợi ý món ăn.</p>");
             }
-
-            return Content("<p>Không có món ăn gợi ý phù hợp.</p>");
         }
 
         [HttpGet]

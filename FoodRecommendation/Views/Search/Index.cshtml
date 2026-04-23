@@ -1,0 +1,148 @@
+@model IEnumerable<FoodRecommendation.Models.Entity.Recipe>
+
+@{
+    ViewData["Title"] = "Kết quả tìm kiếm";
+}
+@{
+    var favorite = ViewBag.Favorite as Dictionary<int, int>;
+    var rating = ViewBag.Rating as Dictionary<int, double>;
+}
+
+<h2 class="mb-4">🍽 Kết quả gợi ý món ăn</h2>
+
+<div class="d-flex justify-content-between mb-4">
+
+    <h4>Danh sách món ăn</h4>
+
+    <div>
+        <a href="/Search?query=@ViewBag.Query&sort=favorite"
+           class="btn btn-outline-danger me-2"
+           class="btn btn-light border"
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            title="Sắp xếp theo số lượt yêu thích (giảm dần)">
+            ❤️ Yêu thích
+        </a>
+
+        <a href="/Search?query=@ViewBag.Query&sort=rating"
+           class="btn btn-outline-warning"
+           class="btn btn-light border"
+            data-bs-toggle="tooltip"
+            data-bs-placement="top"
+            title="Sắp xếp theo điểm đánh giá (giảm dần)">
+            ⭐ Đánh giá
+        </a>
+    </div>
+
+</div>
+
+
+@if (Model == null || !Model.Any())
+{
+    <div class="alert alert-warning">
+        Không tìm thấy món ăn phù hợp.
+    </div>
+}
+else
+{
+    @foreach (var item in Model)
+    {
+        <a href="/Home/Detail/@item.RecipeId"
+           class="text-decoration-none text-dark">
+
+            <div class="card mb-3 shadow-sm recipe-card">
+
+                <div class="row g-0">
+
+                    <!-- ẢNH -->
+                    <div class="col-md-3">
+                        <img src="@item.ImageUrl"
+                             class="img-fluid rounded-start"
+                             style="height:180px; width:100%; object-fit:cover;">
+                    </div>
+
+                    <!-- NỘI DUNG -->
+                    <div class="col-md-9">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title fw-bold">
+                                @item.Title
+                            </h5>
+
+                            <p class="card-text text-muted">
+                                @item.DescriptionRecipes
+                            </p>
+
+                            <div class="d-flex gap-4 text-muted">
+
+                                <span>
+                                    ⏱ @item.Cooktime
+                                </span>
+
+                                <span>
+                                    🍽 @item.Serving
+                                </span>
+
+                                <span>
+                                    👤 @item.User?.Username
+                                </span>
+
+                                <span class="text-danger">
+                                    ❤️ @favorite.GetValueOrDefault(item.RecipeId, 0)
+                                </span>
+
+                                <span class="text-warning">
+                                    ⭐ @rating.GetValueOrDefault(item.RecipeId, 0).ToString("F1")
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </a>
+    }
+}
+
+<style>
+
+.recipe-card{
+    cursor:pointer;
+}
+
+.recipe-card:hover{
+    transform:scale(1.02);
+    transition:0.2s;
+    box-shadow:0 6px 20px rgba(0,0,0,0.15);
+}
+.tooltip.tooltip-inner {
+    background: linear-gradient(135deg,#ff7a00,#ff9a3c);
+    color: white;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-weight: 500;
+}
+/* Mũi tên tooltip */
+.tooltip.bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: #ff7a00;
+}
+
+.tooltip.bs-tooltip-bottom .tooltip-arrow::before {
+    border-bottom-color: #ff7a00;
+}
+
+.tooltip.bs-tooltip-start .tooltip-arrow::before {
+    border-left-color: #ff7a00;
+}
+
+.tooltip.bs-tooltip-end .tooltip-arrow::before {
+    border-right-color: #ff7a00;
+}
+
+</style>

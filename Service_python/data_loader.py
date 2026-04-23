@@ -5,7 +5,7 @@ def get_data_from_sql():
     # Cấu hình chuỗi kết nối (giống appsettings.json)
     conn_str = (
         "Driver={SQL Server};"
-        "Server=LAPTOP-QQ5PR77M;"
+        "Server=DESKTOP-S3N6LFM;"
         "Database=FoodRecommendation;"
         "Trusted_Connection=yes;"
     )
