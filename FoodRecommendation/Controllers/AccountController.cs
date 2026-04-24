@@ -11,6 +11,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace FoodRecommendation.Controllers
 {
@@ -81,8 +82,8 @@ namespace FoodRecommendation.Controllers
 
             if (user.IsActivated == false)
             {
-                ViewBag.ToastMessage = "Tài khoản đã bị khóa!";
-                ViewBag.ToastType = Constants.Error;
+                ModelState.AddModelError("Email", " ");
+                ModelState.AddModelError("Password", "Tài khoản của bạn đang bị khóa. Vui lòng liên hệ admin để biết thêm chi tiết.");
 
                 return View(model);
             }

@@ -2,40 +2,53 @@
 
 @{
     ViewData["Title"] = "Kết quả tìm kiếm";
-}
-@{
     var favorite = ViewBag.Favorite as Dictionary<int, int>;
     var rating = ViewBag.Rating as Dictionary<int, double>;
 }
 
-<h2 class="mb-4">🍽 Kết quả gợi ý món ăn</h2>
+<h2 class="mb-3" style="margin-top: 20px;">🍽 Kết quả gợi ý món ăn</h2>
 
-<div class="d-flex justify-content-between mb-4">
+<!-- 🔍 SEARCH BAR -->
+<form method="get" action="/Search" class="mb-4">
+    <input type="hidden" name="sort" value="@Context.Request.Query["sort"]" />
 
-    <h4>Danh sách món ăn</h4>
+    <div class="input-group search-box">
+        <input type="text"
+               name="query"
+               value="@ViewBag.Query"
+               class="form-control search-input"
+               placeholder="Nhập món ăn hoặc nguyên liệu..." />
+
+        <button class="btn btn-search-orange" type="submit">
+            Tìm kiếm
+        </button>
+    </div>
+</form>
+
+<!-- SORT BUTTONS -->
+<div class="d-flex justify-content-between align-items-center mb-3">
+
+    <h5>Danh sách món ăn</h5>
 
     <div>
         <a href="/Search?query=@ViewBag.Query&sort=favorite"
            class="btn btn-outline-danger me-2"
-           class="btn btn-light border"
-            data-bs-toggle="tooltip"
-            data-bs-placement="top"
-            title="Sắp xếp theo số lượt yêu thích (giảm dần)">
+           data-bs-toggle="tooltip"
+           data-bs-placement="top"
+           title="Sắp xếp theo số lượt yêu thích (giảm dần)">
             ❤️ Yêu thích
         </a>
 
         <a href="/Search?query=@ViewBag.Query&sort=rating"
            class="btn btn-outline-warning"
-           class="btn btn-light border"
-            data-bs-toggle="tooltip"
-            data-bs-placement="top"
-            title="Sắp xếp theo điểm đánh giá (giảm dần)">
+           data-bs-toggle="tooltip"
+           data-bs-placement="top"
+           title="Sắp xếp theo điểm đánh giá (giảm dần)">
             ⭐ Đánh giá
         </a>
     </div>
 
 </div>
-
 
 @if (Model == null || !Model.Any())
 {
@@ -54,16 +67,15 @@ else
 
                 <div class="row g-0">
 
-                    <!-- ẢNH -->
+                    <!-- IMAGE -->
                     <div class="col-md-3">
                         <img src="@item.ImageUrl"
                              class="img-fluid rounded-start"
                              style="height:180px; width:100%; object-fit:cover;">
                     </div>
 
-                    <!-- NỘI DUNG -->
+                    <!-- CONTENT -->
                     <div class="col-md-9">
-
                         <div class="card-body">
 
                             <h5 class="card-title fw-bold">
@@ -74,32 +86,25 @@ else
                                 @item.DescriptionRecipes
                             </p>
 
-                            <div class="d-flex gap-4 text-muted">
+                            <div class="d-flex flex-wrap gap-3 text-muted">
 
-                                <span>
-                                    ⏱ @item.Cooktime
-                                </span>
+                                <span>⏱ @item.Cooktime</span>
 
-                                <span>
-                                    🍽 @item.Serving
-                                </span>
+                                <span>🍽 @item.Serving</span>
 
-                                <span>
-                                    👤 @item.User?.Username
-                                </span>
+                                <span>👤 @item.User?.Username</span>
 
                                 <span class="text-danger">
-                                    ❤️ @favorite.GetValueOrDefault(item.RecipeId, 0)
+                                    ❤️ @(favorite?.GetValueOrDefault(item.RecipeId, 0) ?? 0)
                                 </span>
 
                                 <span class="text-warning">
-                                    ⭐ @rating.GetValueOrDefault(item.RecipeId, 0).ToString("F1")
+                                    ⭐ @(rating?.GetValueOrDefault(item.RecipeId, 0) ?? 0).ToString("F1")
                                 </span>
 
                             </div>
 
                         </div>
-
                     </div>
 
                 </div>
@@ -111,24 +116,25 @@ else
 }
 
 <style>
-
-.recipe-card{
-    cursor:pointer;
+.recipe-card {
+    cursor: pointer;
+    transition: 0.2s;
 }
 
-.recipe-card:hover{
-    transform:scale(1.02);
-    transition:0.2s;
-    box-shadow:0 6px 20px rgba(0,0,0,0.15);
+.recipe-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
 }
-.tooltip.tooltip-inner {
-    background: linear-gradient(135deg,#ff7a00,#ff9a3c);
+
+/* Tooltip custom */
+.tooltip-inner {
+    background: linear-gradient(135deg, #ff7a00, #ff9a3c);
     color: white;
     border-radius: 8px;
     padding: 6px 12px;
     font-weight: 500;
 }
-/* Mũi tên tooltip */
+
 .tooltip.bs-tooltip-top .tooltip-arrow::before {
     border-top-color: #ff7a00;
 }
@@ -145,4 +151,39 @@ else
     border-right-color: #ff7a00;
 }
 
+.search-box {
+    border-radius: 50px;
+    overflow: hidden; /* quan trọng để bo tròn cả cụm */
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+/* Ô input */
+.search-input {
+    border: none;
+    padding: 12px 18px;
+    font-size: 15px;
+    outline: none;
+}
+
+/* Khi focus input */
+.search-input:focus {
+    box-shadow: none;
+}
+
+/* Button màu cam */
+.btn-search-orange {
+    background: linear-gradient(135deg, #ff7a00, #ff9a3c);
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+/* Hover button */
+.btn-search-orange:hover {
+    background: linear-gradient(135deg, #ff9a3c, #ff7a00);
+    transform: scale(1.03);
+    color: white;
+}
 </style>

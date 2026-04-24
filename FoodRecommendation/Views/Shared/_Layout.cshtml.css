@@ -39,10 +39,21 @@ button.accept-policy {
   line-height: inherit;
 }
 
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px;
+.footer-custom {
+    width: 100%;
+    background: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    padding: 12px 0;
+}
+
+/* khung bên trong */
+.footer-inner {
+    max-width: 1200px;      
+    margin: 0 auto;         
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 20px;        
+    color: #6c757d;
+    font-size: 14px;
 }
