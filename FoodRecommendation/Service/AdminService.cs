@@ -10,10 +10,19 @@ namespace FoodRecommendation.Service
     {
         public AdminService(FoodContext context) : base(context) { }
 
-        public async Task<List<RecipeModel>> GetAllRecipe(Expression<Func<Recipe, bool>> expression)
+        public async Task<(List<RecipeModel> Data, int TotalItems)> GetAllRecipe(
+            Expression<Func<Recipe, bool>> expression, 
+            int page, 
+            int pageSize)
         {
-            return await _context.Recipes
-                .Where(expression)
+            var query = _context.Recipes.Where(expression);
+
+            int totalItems = await query.CountAsync();
+
+            var data = await query
+                .OrderByDescending(r => r.CreatedAt)
+                .Skip((page-1)*pageSize)
+                .Take(pageSize)
                 .Select(r => new RecipeModel
                 {
                     RecipeId = r.RecipeId,
@@ -29,13 +38,24 @@ namespace FoodRecommendation.Service
                     }).ToList(),
                 })
                 .ToListAsync();
-        }
 
-        public async Task<List<RecipeModel>> GetReportRecipe(Expression<Func<Recipe, bool>> expression)
+            return (data, totalItems);
+        }
+        
+        public async Task<(List<RecipeModel> Data, int TotalItems)> GetReportRecipe(
+            Expression<Func<Recipe, bool>> expression,
+            int page,
+            int pageSize)
         {
-            return await _context.Recipes
-                .Include(r => r.Reports)
-                .Where(expression)
+            var query = _context.Recipes.AsNoTracking().Where(expression);
+
+            int totalItems = await query.CountAsync();
+
+            var data = await query
+                .OrderByDescending(r => r.Reports.Count())
+                .ThenByDescending(r => r.CreatedAt)
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
                 .Select(r => new RecipeModel
                 {
                     RecipeId = r.RecipeId,
@@ -47,7 +67,9 @@ namespace FoodRecommendation.Service
                     IsReported = r.Reports.Any(),
 
                     // map danh sach bao cao
-                    Reports = r.Reports.Select(rep => new ReportModel
+                    Reports = r.Reports
+                        .OrderByDescending(rep => rep.CreatedAt)
+                        .Select(rep => new ReportModel
                     {
                         Username = rep.User.Username,
                         Email = rep.User.Email,
@@ -57,6 +79,8 @@ namespace FoodRecommendation.Service
                     }).ToList(),
                 })
                 .ToListAsync();
+
+            return (data, totalItems);
         }
 
         public async Task<bool> HandleReportProcessAsync(int recipeId, string actionType)

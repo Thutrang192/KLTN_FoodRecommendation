@@ -193,6 +193,7 @@ namespace FoodRecommendation.Controllers
 
             return View(model);
         }
+
         [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -307,25 +308,27 @@ namespace FoodRecommendation.Controllers
         private async Task RefreshSignIn(Account user)
         {
             var claims = new List<Claim>
-    {
-        new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString()),
-        new Claim(ClaimTypes.Name, user.Username ?? user.Email),
-        new Claim(ClaimTypes.Email, user.Email),
-        new Claim(ClaimTypes.Role, user.RoleUser ?? "User"),
-        new Claim("Avatar", user.AvatarUrl ?? "")
-    };
+            {
+                new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString()),
+                new Claim(ClaimTypes.Name, user.Username ?? user.Email),
+                new Claim(ClaimTypes.Email, user.Email),
+                new Claim(ClaimTypes.Role, user.RoleUser ?? "User"),
+                new Claim("Avatar", user.AvatarUrl ?? "")
+            };
 
             var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
             var principal = new ClaimsPrincipal(identity);
 
             await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
         }
+
         [Authorize]
         [HttpGet]
         public IActionResult ChangePassword()
         {
             return View(new ChangePasswordVM());
         }
+
         [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -395,6 +398,7 @@ namespace FoodRecommendation.Controllers
                 .Take(pageSize)
                 .ToListAsync();
 
+            ViewBag.TotalItems = totalItems;
 
             ViewBag.CurrentPage = page;
             ViewBag.TotalPages = (int)Math.Ceiling((double)totalItems / pageSize);

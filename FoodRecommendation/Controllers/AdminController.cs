@@ -5,6 +5,7 @@ using System.Linq.Expressions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Cryptography.Xml;
+using Microsoft.AspNetCore.Authorization;
 
 namespace FoodRecommendation.Controllers
 {
@@ -27,40 +28,59 @@ namespace FoodRecommendation.Controllers
         }
 
         [HttpGet("Recipe")]
-        public async Task<IActionResult> Recipe([FromQuery] string? search, [FromQuery] string? status)
+        public async Task<IActionResult> Recipe([FromQuery] string? search, [FromQuery] string? status, int page = 1)
         {
+            int pageSize = 10;
+
             Expression<Func<Recipe, bool>> filter = x =>
-            (string.IsNullOrEmpty(search) || x.Title.Contains(search)) &&
-            (status == "active" ? (x.IsDeleted == false || x.IsDeleted == null) :
-             status == "hidden" ? (x.IsDeleted == true) : true);
+                (string.IsNullOrEmpty(search) || x.Title.Contains(search)) &&
+                (status == "active" ? (x.IsDeleted == false || x.IsDeleted == null) :
+                 status == "hidden" ? (x.IsDeleted == true) : true);
 
-            var result = await _adminService.GetAllRecipe(filter);
+            var (data, totalItems) = await _adminService.GetAllRecipe(filter, page, pageSize);
 
-            return View(result);
+            // ViewBag cho pagination
+            ViewBag.CurrentPage = page;
+            ViewBag.TotalPages = (int)Math.Ceiling((double)totalItems / pageSize);
+            ViewBag.PageSize = 10;
+
+            // Giữ lại search + status khi chuyển trang
+            ViewBag.Search = search;
+            ViewBag.Status = status;
+
+            ViewBag.TotalItems = totalItems;
+
+            return View(data);
         }
 
         [HttpGet("Report")]
-        public async Task<IActionResult> Report(string? status)
+        public async Task<IActionResult> Report([FromQuery] string? search, [FromQuery] string? status, int page = 1)
         {
+            int pageSize = 10;
+
             string currentStatus = string.IsNullOrEmpty(status) ? "pending" : status.ToLower();
 
-            Expression<Func<Recipe, bool>> filter;
+            Expression<Func<Recipe, bool>> filter = r =>
+                (string.IsNullOrEmpty(search) || r.Title.Contains(search)) &&
 
-            if (currentStatus == "pending")
-            {
-                filter = r => r.Reports.Any(rep => rep.StatusReport == "Pending");
-            }
-            else if (currentStatus == "processed")
-            {
-                filter = r => r.Reports.Any() && r.Reports.All(rep => rep.StatusReport == "Processed");
-            }
-            else
-            {
-                filter = r => r.Reports.Any();
-            }
+                (currentStatus == "pending"
+                    ? r.Reports.Any(rep => rep.StatusReport == "Pending")
 
-            var recipes = await _adminService.GetReportRecipe(filter);
-            return View(recipes);
+                : currentStatus == "processed"
+                    ? r.Reports.Any() && r.Reports.All(rep => rep.StatusReport == "Processed")
+
+                : r.Reports.Any());
+
+            var (data, totalItems) = await _adminService.GetReportRecipe(filter, page, pageSize);
+
+            ViewBag.CurrentPage = page;
+            ViewBag.TotalPages = Math.Max(1, (int)Math.Ceiling((double)totalItems / pageSize));
+            ViewBag.TotalItems = totalItems;
+
+            ViewBag.Search = search;
+            ViewBag.Status = currentStatus;
+
+            return View(data);
         }
 
         public class ReportProcessRequest

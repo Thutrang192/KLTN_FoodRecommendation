@@ -6,8 +6,8 @@ namespace FoodRecommendation.Service
 {
     public interface IAdminService : IBaseService<Recipe>
     {
-        Task<List<RecipeModel>> GetAllRecipe(Expression<Func<Recipe, bool>> expression);
-        Task<List<RecipeModel>> GetReportRecipe(Expression<Func<Recipe, bool>> expression);
+        Task<(List<RecipeModel> Data, int TotalItems)> GetAllRecipe(Expression<Func<Recipe, bool>> expression, int page, int pageSize);
+        Task<(List<RecipeModel> Data, int TotalItems)> GetReportRecipe(Expression<Func<Recipe, bool>> expression, int page, int pageSize);
         Task<bool> HandleReportProcessAsync(int recipeId, string actionType);
         Task<bool> RestoreAndNotifyAsync(int recipeId);
     }

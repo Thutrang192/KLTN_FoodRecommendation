@@ -12,20 +12,20 @@
     margin-bottom: 25px;
 }
 
-    .search-box input {
-        width: 400px;
-        max-width: 100%;
-        padding: 10px 15px;
-        border: 1px solid #ddd;
-        border-radius: 25px;
-        outline: none;
-        transition: 0.2s;
-    }
+.search-box input {
+    width: 400px;
+    max-width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    outline: none;
+    transition: 0.2s;
+}
 
-        .search-box input:focus {
-            border-color: rgb(255,153,51);
-            box-shadow: 0 0 0 2px rgba(255,153,51,0.2);
-        }
+.search-box input:focus {
+    border-color: rgb(255,153,51);
+    box-shadow: 0 0 0 2px rgba(255,153,51,0.2);
+}
 
 /* ===== GRID ===== */
 .recipe-grid {

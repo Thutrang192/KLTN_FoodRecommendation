@@ -77,6 +77,40 @@
             </table>
         </div>
     </div>
+
+    <!-- PAGINATION -->
+    <div class="pagination">
+        <a asp-action="Report"
+           asp-route-page="1"
+           asp-route-search="@ViewBag.Search"
+           asp-route-status="@ViewBag.Status">«</a>
+
+        <a asp-action="Report"
+           asp-route-page="@(ViewBag.CurrentPage > 1 ? ViewBag.CurrentPage - 1 : 1)"
+           asp-route-search="@ViewBag.Search"
+           asp-route-status="@ViewBag.Status">
+            ‹
+        </a>
+
+        <div class="page-info">
+            Trang @(ViewBag.CurrentPage ?? 1) / @(ViewBag.TotalPages ?? 1)
+        </div>
+
+        <a asp-action="Report"
+           asp-route-page="@(ViewBag.CurrentPage < ViewBag.TotalPages ? ViewBag.CurrentPage + 1 : ViewBag.TotalPages)"
+           asp-route-search="@ViewBag.Search"
+           asp-route-status="@ViewBag.Status">
+            ›
+        </a>
+
+        <a asp-action="Report"
+           asp-route-page="@ViewBag.TotalPages"
+           asp-route-search="@ViewBag.Search"
+           asp-route-status="@ViewBag.Status">
+            »
+        </a>
+    </div>
+
 </div>
 
 <div class="modal fade" id="processingModal" tabindex="-1" aria-hidden="true">

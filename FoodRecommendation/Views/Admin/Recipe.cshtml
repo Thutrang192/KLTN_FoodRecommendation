@@ -11,17 +11,11 @@
 
 <div class="container mt-5">
     <div class="d-flex justify-content-between align-items-center mb-4">
-        <h2>Quản lý món ăn (@Model.Count())</h2>
-        <form asp-action="Recipe" method="get" class="d-flex gap-2 mb-3">
-            <div class="input-group">
+        <h2 class="mb-0">Quản lý món ăn (@ViewBag.TotalItems)</h2>
+        <form asp-action="Recipe" method="get" class="d-flex gap-2">
+            <input type="hidden" name="page" value="1" />
+            <div class="search-ct mb-0">
                 <input type="text" name="search" class="form-control" placeholder="Tìm tên công thức..." value="@Context.Request.Query["search"]">
-                <select name="status" class="form-select" style="max-width: 170px;">
-                    <option value="all" selected="@(Context.Request.Query["status"] == "all")">Tất cả</option>
-                    <option value="active" selected="@(Context.Request.Query["status"] == "active")">Đang hoạt động</option>
-                    <option value="hidden" selected="@(Context.Request.Query["status"] == "hidden")">Đã ẩn</option>
-                </select>
-                <button type="submit" class="btn btn-primary">Tìm</button>
-                <a asp-action="Recipe" class="btn btn-outline-secondary">Làm mới</a>
             </div>
         </form>
     </div>
@@ -42,7 +36,9 @@
 
                 <tbody id="recipeTableBody">
                     @{
-                        int i = 1;
+                        int page = ViewBag.CurrentPage ?? 1;
+                        int pageSize = ViewBag.PageSize ?? 10;
+                        int i = (page - 1) * pageSize + 1;
                     }
                     @if (Model != null && Model.Any())
                     {
@@ -87,6 +83,39 @@
                 </tbody>
             </table>
         </div>
+    </div>
+
+    <!-- PAGINATION -->
+    <div class="pagination">
+        <a asp-action="Recipe" 
+           asp-route-page="1"
+           asp-route-search="@ViewBag.Search"
+           asp-route-status="@ViewBag.Status">«</a>
+
+        <a asp-action="Recipe"
+           asp-route-page="@(ViewBag.CurrentPage > 1 ? ViewBag.CurrentPage - 1 : 1)"
+           asp-route-search="@ViewBag.Search"
+           asp-route-status="@ViewBag.Status">
+            ‹
+        </a>
+
+        <div class="page-info">
+            Trang @(ViewBag.CurrentPage ?? 1) / @(ViewBag.TotalPages ?? 1)
+        </div>
+
+        <a asp-action="Recipe"
+           asp-route-page="@(ViewBag.CurrentPage < ViewBag.TotalPages ? ViewBag.CurrentPage + 1 : ViewBag.TotalPages)"
+           asp-route-search="@ViewBag.Search"
+           asp-route-status="@ViewBag.Status">
+            ›
+        </a>
+
+        <a asp-action="Recipe" 
+           asp-route-page="@ViewBag.TotalPages"
+           asp-route-search="@ViewBag.Search"
+           asp-route-status="@ViewBag.Status">
+           »
+       </a>
     </div>
 </div>
 

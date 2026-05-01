@@ -53,8 +53,10 @@ namespace FoodRecommendation.Controllers
                 }
             }
             var model = await _homeService.GetRecipeById(id, currentUserId); 
+            
             if (model == null)
                 return NotFound();
+            
             if (currentUserId != 0)
             {
                 model.IsSaved = await _db.Collections
@@ -74,6 +76,8 @@ namespace FoodRecommendation.Controllers
             var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
 
             var result = await _homeService.SubmitReport(userId, recipeId, reason);
+
+            Console.WriteLine($"UserId: {userId}, RecipeId: {recipeId}");
 
             if (result)
             {

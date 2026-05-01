@@ -1,2 +1,7 @@
+cd KLTN_FoodRecommendation
+
 cd Service_python
-venv\Scripts\activate
+
+uvicorn app:app --reload 
+
+pip install --upgrade transformers

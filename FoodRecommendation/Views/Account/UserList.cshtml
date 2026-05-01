@@ -3,8 +3,11 @@
 @using Microsoft.AspNetCore.Http;
 @using FoodRecommendation.Constant;
 @using System.Security.Claims
-  @model IEnumerable<FoodRecommendation.Models.Entity.Account>
+@model IEnumerable<FoodRecommendation.Models.Entity.Account>
 
+@{
+    ViewData["Title"] = "Danh sách người dùng";
+}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -133,6 +136,7 @@
                     <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase text-custom">
                         <span>Khám phá</span>
                     </h6>
+                    
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <a class="dropdown-item @GetActiveClass("Home", "Index")"
@@ -140,23 +144,20 @@
                                 <i class="fa-solid fa-magnifying-glass me-2"></i> Tìm kiếm
                             </a>
                         </li>
-
-                        
-                        
                     </ul>
 
                     <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase text-custom">
                         <span>Cá nhân</span>
                     </h6>
+                    
                     <ul class="nav flex-column mb-2">
                          <li class="nav-item">
-    <a class="dropdown-item"
-       asp-controller="Collection"
-       asp-action="Saved">
-        <i class="fa fa-bookmark me-2"></i> Món đã lưu
-    </a>
-</li>
-                        
+                            <a class="dropdown-item"
+                               asp-controller="Collection"
+                               asp-action="Saved">
+                                <i class="fa fa-bookmark me-2"></i> Món đã lưu
+                            </a>
+                        </li>
                     </ul>
 
                     @if (User.IsInRole("Admin"))
@@ -194,108 +195,92 @@
             <!-- MAIN BODY -->
        
 
-@{
-    ViewData["Title"] = "Danh sách người dùng";
-}
-
-<div class="user-container">
-
-    <h2>Danh sách người dùng</h2>
-
-    <!-- SEARCH -->
-    <div class="filter-box">
-        <div class="search-group">
-            <input type="text" id="searchInput"
-                   placeholder="Tìm theo tên, email hoặc tên đăng nhập..." />
-
-            
-        </div>
-    </div>
-
-    <!-- TABLE -->
-    <div class="table-wrapper">
-        <table class="user-table">
-            <thead>
-                <tr>
-                    <th><input type="checkbox" /></th>
-                    <th>Họ và tên</th>
-                    <th>Email cá nhân</th>
-                    <th>Tên đăng nhập</th>
-                    <th>Thao tác</th>
-                </tr>
-            </thead>
-
-            <tbody id="userTable">
-                @foreach (var item in Model)
-                {
-                    <tr data-name="@item.FullName?.ToLower()"
-                        data-email="@item.Email.ToLower()"
-                        data-username="@item.Username.ToLower()">
-
-                        <td><input type="checkbox" /></td>
-                       
-                        <td>
-                            @item.FullName <br />
-
-                            @if (item.IsActivated == false)
-                            {
-                                <span class="badge-inactive">Không hoạt động</span>
-                            }
-                        </td>
-                        <td>@item.Email</td>
-                        <td>@item.Username</td>
-
-                        <td class="action">
-                            <a asp-controller="User" asp-action="Edit" asp-route-id="@item.UserId" class="btn-icon edit">
-                                <i class="fa fa-edit"></i>
-                            </a>
-    
-  
-                        </td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-    </div>
-
-    <!-- PAGINATION -->
-    <div class="pagination">
-
-        <a asp-action="UserList" asp-route-page="1">«</a>
-
-        <a asp-action="UserList"
-           asp-route-page="@(ViewBag.CurrentPage > 1 ? ViewBag.CurrentPage - 1 : 1)">
-            ‹
-        </a>
-
-        <div class="page-info">
-    Trang @(ViewBag.CurrentPage ?? 1) / @(ViewBag.TotalPages ?? 1)
-</div>
-
-        <a asp-action="UserList"
-           asp-route-page="@(ViewBag.CurrentPage < ViewBag.TotalPages ? ViewBag.CurrentPage + 1 : ViewBag.TotalPages)">
-            ›
-        </a>
-
-        <a asp-action="UserList" asp-route-page="@ViewBag.TotalPages">»</a>
-
-    </div>
-
-</div>
 
 
-<link rel="stylesheet" href="~/css/userlist.css" asp-append-version="true" />
-              
+    <div class="user-container">
+        <!-- SEARCH -->
+        <div class="d-flex justify-content-between align-items-center mb-4 mt-4">
+                    <h2 class="mb-0">Danh sách người dùng (@ViewBag.TotalItems)</h2>
+            <div class="search-ct mb-0">
+                <input type="text" id="searchInput"
+                        placeholder="Tìm theo tên, email hoặc tên đăng nhập..." />
             </div>
         </div>
+
+        <!-- TABLE -->
+        <div class="table-wrapper">
+            <table class="user-table">
+                <thead>
+                    <tr>
+                        <th><input type="checkbox" /></th>
+                        <th>Họ và tên</th>
+                        <th>Email cá nhân</th>
+                        <th>Tên đăng nhập</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+
+                <tbody id="userTable">
+                    @foreach (var item in Model)
+                    {
+                        <tr data-name="@item.FullName?.ToLower()"
+                            data-email="@item.Email.ToLower()"
+                            data-username="@item.Username.ToLower()">
+
+                            <td><input type="checkbox" /></td>
+                       
+                            <td>
+                                @item.FullName <br />
+
+                                @if (item.IsActivated == false)
+                                {
+                                    <span class="badge-inactive">Không hoạt động</span>
+                                }
+                            </td>
+                            <td>@item.Email</td>
+                            <td>@item.Username</td>
+
+                            <td class="action">
+                                <a asp-controller="User" asp-action="Edit" asp-route-id="@item.UserId" class="btn-icon edit">
+                                    <i class="fa fa-edit"></i>
+                                </a>
+    
+  
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <!-- PAGINATION -->
+        <div class="pagination">
+            <a asp-action="UserList" asp-route-page="1">«</a>
+
+            <a asp-action="UserList"
+               asp-route-page="@(ViewBag.CurrentPage > 1 ? ViewBag.CurrentPage - 1 : 1)">
+                ‹
+            </a>
+
+            <div class="page-info">
+                Trang @(ViewBag.CurrentPage ?? 1) / @(ViewBag.TotalPages ?? 1)
+            </div>
+
+            <a asp-action="UserList"
+               asp-route-page="@(ViewBag.CurrentPage < ViewBag.TotalPages ? ViewBag.CurrentPage + 1 : ViewBag.TotalPages)">
+                ›
+            </a>
+
+            <a asp-action="UserList" asp-route-page="@ViewBag.TotalPages">»</a>
+        </div>
+
     </div>
 
-    
+
+    <link rel="stylesheet" href="~/css/userlist.css" asp-append-version="true" />
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    
-    
 
     <script>
         window.addEventListener('pageshow', function (event) {
@@ -307,22 +292,22 @@
         });
     </script>
     <script>
-document.getElementById("searchInput").addEventListener("keyup", function () {
-    let keyword = this.value.toLowerCase();
-    let rows = document.querySelectorAll("#userTable tr");
+        document.getElementById("searchInput").addEventListener("keyup", function () {
+            let keyword = this.value.toLowerCase();
+            let rows = document.querySelectorAll("#userTable tr");
 
-    rows.forEach(row => {
-        let name = row.dataset.name || "";
-        let email = row.dataset.email || "";
-        let username = row.dataset.username || "";
+            rows.forEach(row => {
+                let name = row.dataset.name || "";
+                let email = row.dataset.email || "";
+                let username = row.dataset.username || "";
 
-        if (name.includes(keyword) || email.includes(keyword) || username.includes(keyword)) {
-            row.style.display = "";
-        } else {
-            row.style.display = "none";
-        }
-    });
-});
-</script>
+                if (name.includes(keyword) || email.includes(keyword) || username.includes(keyword)) {
+                    row.style.display = "";
+                } else {
+                    row.style.display = "none";
+                }
+            });
+        });
+    </script>
 </body>
 </html>
