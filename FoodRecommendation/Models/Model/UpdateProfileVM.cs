@@ -6,7 +6,6 @@ public class UpdateProfileVM
 {
     public int UserId { get; set; }
 
-    [Required(ErrorMessage = "Họ tên không được để trống")]
     public string? FullName { get; set; }
 
     [Required(ErrorMessage = "Tên đăng nhập không được để trống")]

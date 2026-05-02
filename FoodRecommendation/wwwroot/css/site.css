@@ -37,6 +37,10 @@ body {
     background-color: rgb(255 153 51);
     color: #FFFFFF;
     font-weight: 600;
+    border-color: transparent;
+}
+.btn.bg-orange {
+    color: white !important;
 }
 
 .btn-orange:active {

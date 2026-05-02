@@ -10,8 +10,7 @@ namespace FoodRecommendation.Models.Model
         [Required(ErrorMessage = "Tên đăng nhập không được để trống")]
         public string Username { get; set; }
 
-        [Required(ErrorMessage = "Họ tên không được để trống")]
-        public string FullName { get; set; }
+        public string? FullName { get; set; }
 
         [Required(ErrorMessage = "Email không được để trống")]
         [EmailAddress(ErrorMessage = "Email không hợp lệ")]

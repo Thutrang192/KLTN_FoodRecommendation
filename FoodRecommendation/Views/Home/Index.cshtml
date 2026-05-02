@@ -83,6 +83,27 @@
            }
        </div>
 
+        <!-- PAGINATION -->
+        <div class="pagination">
+            <a asp-action="Index" asp-route-page="1">«</a>
+
+            <a asp-action="Index"
+               asp-route-page="@(ViewBag.CurrentPage > 1 ? ViewBag.CurrentPage - 1 : 1)">
+                ‹
+            </a>
+
+            <div class="page-info">
+                Trang @(ViewBag.CurrentPage ?? 1) / @(ViewBag.TotalPages ?? 1)
+            </div>
+
+            <a asp-action="Index"
+               asp-route-page="@(ViewBag.CurrentPage < ViewBag.TotalPages ? ViewBag.CurrentPage + 1 : ViewBag.TotalPages)">
+                ›
+            </a>
+
+            <a asp-action="Index" asp-route-page="@ViewBag.TotalPages">»</a>
+        </div>
+
    </div>
    <div>
 

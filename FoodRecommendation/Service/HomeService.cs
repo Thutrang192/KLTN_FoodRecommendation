@@ -9,34 +9,40 @@ namespace FoodRecommendation.Service
     {
         public HomeService(FoodContext context) : base(context) {}
 
-        public async Task<List<RecipeModel>> GetRecipeRating(Expression<Func<Recipe, bool>> expression)
+        public async Task<(List<RecipeModel> Data, int TotalItems)> GetRecipeRating(Expression<Func<Recipe, bool>> expression, int page, int pageSize)
         {
-            // 1. Lấy Rating và tính trung bình
-            var ratings = await _context.Ratings.ToListAsync();
-            var avgScoreDic = ratings.GroupBy(r => r.RecipeId)
-                                     .ToDictionary(g => g.Key, g => g.Average(r => (double)r.Score));
+            // 1. Lấy Top 200 món thỏa mãn điều kiện và sắp xếp theo điểm trung bình
+            var top200Recipes = await _context.Recipes
+                .Include(r => r.User)
+                .Where(expression)
+                .Select(r => new RecipeModel
+                {
+                    RecipeId = r.RecipeId,
+                    Title = r.Title,
+                    ImageUrl = r.ImageUrl,
+                    Cooktime = r.Cooktime,
+                    Serving = r.Serving,
+                    UserName = r.User.Username,
+                    RoleUser = r.User.RoleUser,
+                    // Tính trung bình cộng trực tiếp trên Database
+                    AvgScore = (decimal)(_context.Ratings
+                        .Where(rat => rat.RecipeId == r.RecipeId)
+                        .Average(rat => (double?)rat.Score) ?? 0)
+                })
+                .OrderByDescending(r => r.AvgScore)
+                .Take(200) // Giới hạn lấy 200 món tốt nhất
+                .ToListAsync();
 
-            // 2. Lấy Recipe từ DB theo điều kiện truyền vào
-            var recipes = await _context.Recipes
-                                .Include(r => r.User) 
-                                .Where(expression)
-                                .ToListAsync();
+            // 2. Tính toán tổng số item trong tập 200 món này
+            int totalItems = top200Recipes.Count;
 
-            // 3. Map sang RecipeModel và lấy Top 8
-            return recipes.Select(r => new RecipeModel
-            {
-                RecipeId = r.RecipeId,
-                Title = r.Title,
-                ImageUrl = r.ImageUrl,
-                Cooktime = r.Cooktime,
-                Serving = r.Serving,
-                UserName = r.User?.Username,
-                RoleUser = r.User?.RoleUser,
-                AvgScore = (decimal)avgScoreDic.GetValueOrDefault(r.RecipeId, 0)
-            })
-            .OrderByDescending(r => r.AvgScore)
-            .Take(8)
-            .ToList();
+            // 3. Thực hiện phân trang (In-memory paging trên tập 200 món)
+            var pagedData = top200Recipes
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToList();
+
+            return (pagedData, totalItems);
         }
 
         public async Task<RecipeModel?> GetRecipeById(int recipeId, int UserId)

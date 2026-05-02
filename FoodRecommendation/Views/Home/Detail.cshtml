@@ -144,7 +144,7 @@
                     }
                     else 
                     {
-                        <button id="btn-report-trigger"
+                        <button 
                                 class="px-4 py-2 btn btn-outline-orange fw-medium"
                                 data-recipe-id="@Model.RecipeId"
                                 data-logged-in="false"
@@ -237,6 +237,8 @@
 
     <hr>
 
+
+    <!--  RATING -->
     <div class="mb-5">
         <h5 class="fw-bold mb-4">Bình luận (@Model.Ratings.Count())</h5>
             @if (User.Identity.IsAuthenticated)
@@ -295,11 +297,15 @@
 
                     <div class="flex-grow-1">
                         <div class="d-flex">
-                            <input type="text"
-                                    readonly
-                                    class="form-control rounded-pill py-2 shadow-none comment-input bg-white"
-                                    placeholder="Thêm bình luận"
-                               onclick="window.location.href = '/Account/Login?returnUrl=@WebUtility.UrlEncode(Context.Request.Path + Context.Request.QueryString)';">
+
+                        <input type="text"
+                               readonly
+                               class="form-control rounded-pill py-2 shadow-none comment-input bg-white"
+                               placeholder="Thêm bình luận"
+                               data-bs-toggle="modal"
+                               data-bs-target="#loginModal"
+                               style="cursor: pointer;">
+
                             <button class="btn btn-link text-muted"><i class="fa-solid fa-paper-plane"></i></button>
                         </div>
                     </div>
@@ -318,8 +324,6 @@
                                  onerror="this.src='/img/user-icon.png';">
                         </div>
                     </div>
-
-                    
 
                     <div class="flex-grow-1">
                         <div>
@@ -393,7 +397,7 @@
 
             <div class="modal-footer">
                 <button type="button" class="btn btn-light" data-bs-dismiss="modal">Hủy bỏ</button>
-                <button type="button" id="btnSendReport" class="btn btn-danger px-4">
+                <button type="button" id="btnSendReport" class="btn bg-orange px-4">
                     Gửi báo cáo
                 </button>
             </div>
@@ -413,14 +417,12 @@
             </div>
 
             <div class="modal-body text-center">
-                <p>Bạn cần đăng nhập để thực hiện chức năng này.</p>
+                <p>Bạn cần đăng nhập để thực hiện chức năng này!</p>
             </div>
 
             <div class="modal-footer justify-content-center">
-                <button class="btn btn-secondary" data-bs-dismiss="modal">
-                    Hủy
-                </button>
-                <a href="/Account/Login" class="btn btn-primary">
+                <button class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                <a href="/Account/Login?returnUrl=@WebUtility.UrlEncode(Context.Request.Path + Context.Request.QueryString)" class="btn bg-orange">
                     Đăng nhập
                 </a>
             </div>

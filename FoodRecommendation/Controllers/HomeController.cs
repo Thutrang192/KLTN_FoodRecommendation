@@ -35,11 +35,24 @@ namespace FoodRecommendation.Controllers
         }
 
         [ResponseCache(NoStore = true, Location = ResponseCacheLocation.None)]
-        public async Task<IActionResult> Index() 
+        public async Task<IActionResult> Index(int page = 1) 
         {
-            var top8Recipes = await _homeService.GetRecipeRating(x =>
-                x.RecipeStatus == 2 && x.IsDeleted != true);
-            return View(top8Recipes);
+            int pageSize = 8;
+
+            // Lấy dữ liệu từ Top 200 đã phân trang
+            var (data, totalItems) = await _homeService.GetRecipeRating(
+                x => x.RecipeStatus == 2 && x.IsDeleted != true,
+                page,
+                pageSize
+            );
+
+            // Truyền dữ liệu phân trang ra View
+            ViewBag.CurrentPage = page;
+            ViewBag.TotalPages = (int)Math.Ceiling((double)totalItems / pageSize);
+            ViewBag.PageSize = pageSize;
+            ViewBag.TotalItems = totalItems;
+
+            return View(data);
         }
         public async Task<IActionResult> Detail(int id)
         {

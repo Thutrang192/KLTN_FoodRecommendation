@@ -3,195 +3,18 @@
 @using Microsoft.AspNetCore.Http;
 @using FoodRecommendation.Constant;
 @using System.Security.Claims
+@model List<SavedRecipeVM>
 
+@{
+    ViewData["Title"] = "Món ăn đã lưu";
+}
 
+@{
+    Layout = "_Layout";
+}
+      
+<link rel="stylesheet" href="~/css/saved.css" asp-append-version="true" />
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Chef</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/FoodRecommendation.styles.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/lib/font-awesome/css/all.min.css" />
-
-    <link href="~/img/favicon.png" rel="icon" />
-    <link href="~/assets/css/all.min.css" rel="stylesheet" />
-</head>
-<body class="mt-5 mb-0">
-    <!-- HEADER -->
-    <header class="fixed-top">
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid ms-3 me-3">
-                <a class="navbar-brand fw-bold text-custom" asp-area="" asp-controller="Home" asp-action="Index">Chef</a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                @{
-                    var userName = User.Identity?.Name;
-                    var email = User.FindFirst(ClaimTypes.Email)?.Value;
-                    var roleUser = User.FindFirst(ClaimTypes.Role)?.Value;
-                    var avatar = User.FindFirst("Avatar")?.Value;
-                }
-
-                @if (!User.Identity.IsAuthenticated)
-                {
-                    <a href="/account/login" class="btn btn-outline-orange fw-medium rounded-4 ms-auto px-4 text-custom">
-                        Đăng nhập
-                    </a>
-                }
-                else
-                {
-                    <div class="d-flex align-items-center ms-auto">
-
-                        <a class="nav-link px-2 py-2 position-relative" asp-controller="Home" asp-action="Notifications">
-                            <i class="far fa-bell fs-5 text-dark"></i>
-                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger p-1"></span>
-                        </a>
-
-                        <div class="vr mx-3" style="height: 25px; opacity: 0.25; align-self: center"></div>
-
-                        <div class="dropdown">
-                            <a class="d-flex align-items-center text-decoration-none dropdown-toggle"
-                               href="#" data-bs-toggle="dropdown" id="userDropdown">
-
-                                <div class="rounded-circle overflow-hidden me-2 flex-shrink-0 border border-1 border-secondary shadow-sm"
-                                     style="width: 35px; height: 35px; background-color: #e2e8f0;">
-                                    <img src="@(string.IsNullOrEmpty(avatar) ? "/img/user-icon.png" : avatar)"
-                                         alt="Avatar"
-                                         class="w-100 h-100 object-fit-cover"
-                                         onerror="this.src='/img/user-icon.png';">
-                                </div>
-                                <span class="fw-bold text-dark">@userName</span>
-                            </a>
-
-                            <ul class="dropdown-menu dropdown-menu-end shadow border-0 mt-2">
-                                <li class="px-3 py-2">
-                                    <div class="d-flex align-items-center">
-                                        <div class="rounded-circle overflow-hidden me-2 flex-shrink-0 align-items-center justify-content-center border border border-1 border-secondary shadow-sm"
-                                             style="width: 40px; height: 40px; background-color: #e2e8f0;">
-                                            <img src="@(string.IsNullOrEmpty(avatar) ? "/img/user-icon.png" : avatar)"
-                                                 alt="Avatar"
-                                                 class="w-100 h-100 object-fit-cover"
-                                                 onerror="this.src='/img/user-icon.png';">
-                                        </div>
-                                        <div>
-                                            <h6 class="mb-0">@userName</h6>
-                                            <h7 class="mb-0">@email</h7>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li>
-                                    <a class="dropdown-item" asp-controller="Account" asp-action="EditProfile">
-                                        <i class="fas fa-user-circle me-2"></i> Hồ sơ
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item d-flex align-items-center" asp-controller="Account" asp-action="ChangePassword">
-                                        <i class="fas fa-key me-2"></i> Đổi mật khẩu
-                                    </a>
-                                </li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li>
-                                    <a class="dropdown-item d-flex align-items-center" href="/account/logout">
-                                        <i class="fas fa-sign-out-alt me-2"></i> Đăng xuất
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-                }
-
-            </div>
-        </nav>
-    </header>
-
-
-    <!-- BODY -->
-    <div class="container-fluid">
-        <div class="row">
-            <!-- SIDEBAR -->
-            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-white sidebar collapse ps-2 min-vh-100">
-                <div class="position-sticky pt-3">
-
-                    @functions{
-                        string GetActiveClass(string controller, string action)
-                        {
-                            var c = ViewContext.RouteData.Values["Controller"]?.ToString();
-                            var a = ViewContext.RouteData.Values["Action"]?.ToString();
-                            return (c == controller && a == action) ? "active fw-bold" : "";
-                        }
-                    }
-
-                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase text-custom">
-                        <span>Khám phá</span>
-                    </h6>
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="dropdown-item @GetActiveClass("Home", "Index")"
-                                asp-area="" asp-controller="Home" asp-action="Index">
-                                <i class="fa-solid fa-magnifying-glass me-2"></i> Tìm kiếm
-                            </a>
-                        </li>
-
-                      
-                        
-                    </ul>
-
-                    <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase text-custom">
-                        <span>Cá nhân</span>
-                    </h6>
-                    <ul class="nav flex-column mb-2">
-                         <li class="nav-item">
-                            <a class="dropdown-item"
-                               asp-controller="Collection"
-                               asp-action="Saved">
-                                <i class="fa fa-bookmark me-2"></i> Món đã lưu
-                            </a>
-                        </li>
-                        
-                    </ul>
-
-                    @if (User.IsInRole("Admin"))
-                    {
-                        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase text-custom">
-                            <span>Quản trị</span>
-                        </h6>
-                        <ul class="nav flex-column mb-2">
-                             <li class="nav-item">
-                                 <a class="dropdown-item @GetActiveClass("Account", "UserList")" 
-                                    asp-controller="Account" asp-action="UserList">
-                                     <i class="fa fa-user me-2"></i> Người dùng
-                                 </a>
-                             </li>
-
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="#">
-                                    <i class="fa fa-utensils me-2"></i> Món ăn
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="dropdown-item" href="#">
-                                    <i class="fa fa-flag me-2"></i> Báo cáo
-                                </a>
-                            </li>
-                        </ul>
-                    }
-                    
-                </div>
-            </nav>
-
-            <!-- MAIN BODY -->
-           @model List<SavedRecipeVM>
-
-<link rel="stylesheet" href="~/css/saved.css" />
 
 <div class="saved-header mt-5">
     <h3>Món đã lưu (@ViewBag.TotalItems)</h3>
@@ -254,21 +77,7 @@ else
 </div>
 
   }  
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    
-    
 
-    <script>
-        window.addEventListener('pageshow', function (event) {
-            // Nếu trang được lấy từ bộ nhớ đệm (Back button)
-            if (event.persisted || (window.performance && window.performance.navigation.type === 2)) {
-                // Tải lại trang để Server render lại giao diện đúng (Ẩn/Hiện nút Login)
-                window.location.reload();
-            }
-        });
-    </script>
     <script>
 // ===== REMOVE =====
 function removeItem(id, btn) {
@@ -342,5 +151,3 @@ function saveRecipe(id) {
     });
 }
 </script>
-</body>
-</html>

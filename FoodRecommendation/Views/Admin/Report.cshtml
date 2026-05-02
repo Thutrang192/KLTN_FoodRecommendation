@@ -44,7 +44,11 @@
                         </tr>
                     }
 
-                    @{ int i = 1;} 
+                    @{
+                        int page = ViewBag.CurrentPage ?? 1;
+                        int pageSize = ViewBag.PageSize ?? 10;
+                        int i = (page - 1) * pageSize + 1;
+                    } 
                     @foreach (var item in Model)
                     {
                         <tr>

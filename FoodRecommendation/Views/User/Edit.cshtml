@@ -6,7 +6,6 @@
 @using FoodRecommendation.Models.Model
 @model UpdateUserVM
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,7 +28,7 @@
                 <a class="navbar-brand fw-bold text-custom" asp-area="" asp-controller="Home" asp-action="Index">Chef</a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
+                        aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -59,14 +58,14 @@
 
                         <div class="dropdown">
                             <a class="d-flex align-items-center text-decoration-none dropdown-toggle"
-                            href="#" data-bs-toggle="dropdown" id="userDropdown">
+                               href="#" data-bs-toggle="dropdown" id="userDropdown">
 
                                 <div class="rounded-circle overflow-hidden me-2 flex-shrink-0 border border-1 border-secondary shadow-sm"
-                                style="width: 35px; height: 35px; background-color: #e2e8f0;">
+                                     style="width: 35px; height: 35px; background-color: #e2e8f0;">
                                     <img src="@(string.IsNullOrEmpty(avatar) ? "/img/user-icon.png" : avatar)"
-                                    alt="Avatar"
-                                    class="w-100 h-100 object-fit-cover"
-                                    onerror="this.src='/img/user-icon.png';">
+                                         alt="Avatar"
+                                         class="w-100 h-100 object-fit-cover"
+                                         onerror="this.src='/img/user-icon.png';">
                                 </div>
                                 <span class="fw-bold text-dark">@userName</span>
                             </a>
@@ -75,11 +74,11 @@
                                 <li class="px-3 py-2">
                                     <div class="d-flex align-items-center">
                                         <div class="rounded-circle overflow-hidden me-2 flex-shrink-0 align-items-center justify-content-center border border border-1 border-secondary shadow-sm"
-                                        style="width: 40px; height: 40px; background-color: #e2e8f0;">
+                                             style="width: 40px; height: 40px; background-color: #e2e8f0;">
                                             <img src="@(string.IsNullOrEmpty(avatar) ? "/img/user-icon.png" : avatar)"
-                                            alt="Avatar"
-                                            class="w-100 h-100 object-fit-cover"
-                                            onerror="this.src='/img/user-icon.png';">
+                                                 alt="Avatar"
+                                                 class="w-100 h-100 object-fit-cover"
+                                                 onerror="this.src='/img/user-icon.png';">
                                         </div>
                                         <div>
                                             <h6 class="mb-0">@userName</h6>
@@ -272,12 +271,12 @@
 </div>
 <link rel="stylesheet" href="~/css/edituser.css" asp-append-version="true" />
 
+    <script>
+        @section Scripts {
+            <partial name="_ValidationScriptsPartial" />
 
-@section Scripts {
-    <partial name="_ValidationScriptsPartial" />
+        }
+    </script>
 
-}
-
-</script>
 </body>
 </html>

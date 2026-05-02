@@ -78,7 +78,7 @@ namespace FoodRecommendation.Controllers
 
             // ===== UPDATE =====
             user.Username = model.Username.Trim();
-            user.FullName = model.FullName.Trim();
+            user.FullName = model.FullName?.Trim();
             user.Email = model.Email.Trim();
             user.IsActivated = model.IsActivated;
 
@@ -90,6 +90,9 @@ namespace FoodRecommendation.Controllers
         public async Task<IActionResult> UserList()
         {
             var users = await _context.Accounts.ToListAsync();
+
+            ViewBag.TotalItems = users.Count;
+
             return View("~/Views/Account/UserList.cshtml", users);
         }
     }

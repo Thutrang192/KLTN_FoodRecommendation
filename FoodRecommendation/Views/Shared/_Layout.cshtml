@@ -3,6 +3,7 @@
 @using Microsoft.AspNetCore.Http;
 @using FoodRecommendation.Constant;
 @using System.Security.Claims
+@using System.Net
 
 
 
@@ -133,6 +134,7 @@
                     <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase text-custom">
                         <span>Khám phá</span>
                     </h6>
+                    
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <a class="dropdown-item @GetActiveClass("Home", "Index")"
@@ -154,13 +156,26 @@
                     <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase text-custom">
                         <span>Cá nhân</span>
                     </h6>
+                    
                     <ul class="nav flex-column mb-2">
                         <li class="nav-item">
-                            <a class="dropdown-item"
-                               asp-controller="Collection"
-                               asp-action="Saved">
-                                <i class="fa fa-bookmark me-2"></i> Món đã lưu
-                            </a>
+                            @if(User.Identity.IsAuthenticated)
+                            {
+                                <a class="dropdown-item"
+                                   asp-controller="Collection"
+                                   asp-action="Saved">
+                                    <i class="fa fa-bookmark me-2"></i> Món đã lưu
+                                </a>
+                            }
+                            else 
+                            {
+                                <a class="dropdown-item"
+                                   data-bs-toggle="modal"
+                                   data-bs-target="#loginModal">
+                                    <i class="fa fa-bookmark me-2"></i> Món đã lưu
+                                </a>
+                            }
+                            
                         </li>
                         @* <li class="nav-item"> *@
                         @*     <a class="dropdown-item" href="#"> *@
@@ -226,6 +241,34 @@
         </div>
     </div>
 
+    <!-- MODAL LOGIN -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Yêu cầu đăng nhập</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body text-center">
+                    <p>Bạn cần đăng nhập để thực hiện chức năng này!</p>
+                </div>
+
+                <div class="modal-footer justify-content-center">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">
+                        Hủy
+                    </button>
+
+                    <a href="/Account/Login?returnUrl=@WebUtility.UrlEncode(Context.Request.Path + Context.Request.QueryString)" class="btn bg-orange">
+                        Đăng nhập
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -273,4 +316,8 @@
         });
     </script>
 </body>
+
+
 </html>
+
+
