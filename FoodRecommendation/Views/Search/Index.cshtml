@@ -83,7 +83,11 @@ else
                             </h5>
 
                             <p class="card-text text-muted">
-                                @item.DescriptionRecipes
+                                @{
+                                    var desc = item.DescriptionRecipes ?? "";
+                                    desc = desc.Replace("\n", " "); // tránh xuống dòng xấu
+                                }
+                                @(desc.Length > 200 ? desc.Substring(0, 200) + "..." : desc)
                             </p>
 
                             <div class="d-flex flex-wrap gap-3 text-muted">

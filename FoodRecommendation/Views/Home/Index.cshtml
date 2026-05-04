@@ -33,8 +33,28 @@
    </div>
 
    <div>
-       <div class="text-secondary mt-5 mb-2 ps-2">Món ăn nổi bật</div>
+        @* <div class="mt-5 mb-2 ps-2">
+            <a href="https://docs.google.com/forms/d/1E7YDHqatlInC_miEzJjifKp05Wdg5TQSja-n368knlk"
+            style="
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 6px;
+                    color: #ff7a00;
+                    font-weight: 500;
+                    text-decoration: none;
+                    padding: 6px 10px;
+                    border-radius: 6px;
+                    transition: all 0.2s ease;
+            "
+            onmouseover="this.style.background='#fff3e6'; this.style.color='#e66900'"
+            onmouseout="this.style.background='transparent'; this.style.color='#ff7a00'">
 
+                <i class="fa-solid fa-arrow-left"></i>
+                Quay lại form đánh giá
+            </a>
+        </div> *@
+       <div class="text-secondary mt-5 mb-2 ps-2">Món ăn nổi bật</div>
+        
        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 p-2">
            @foreach (var item in Model)
            {

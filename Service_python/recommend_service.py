@@ -8,7 +8,7 @@ from underthesea import word_tokenize
 # =========================
 # LOAD DATA
 # =========================
-with open("recipe_vectors.pkl", "rb") as f:
+with open("recipe_vectors1.pkl", "rb") as f:
     data = pickle.load(f)
 
 recipe_ids = data["RecipeId"]

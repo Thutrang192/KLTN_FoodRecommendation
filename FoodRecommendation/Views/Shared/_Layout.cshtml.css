@@ -57,3 +57,19 @@ button.accept-policy {
     color: #6c757d;
     font-size: 14px;
 }
+
+@media (max-width: 1024px) {
+    #sidebarMenu {
+        position: fixed;
+        top: 55px; /* 👈 chỉnh chỗ này */
+        left: -260px;
+        width: 250px;
+        height: 100%;
+        z-index: 1050;
+        transition: all 0.3s ease;
+    }
+
+    #sidebarMenu.show {
+        left: 0;
+    }
+}
